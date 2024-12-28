@@ -4,3 +4,7 @@ export type TargetingBoxDimension = {
   width: number;
   height: number;
 };
+
+export interface TargetingBoxDimensionWithId extends TargetingBoxDimension {
+  id: string;
+}

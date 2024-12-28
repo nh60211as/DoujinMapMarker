@@ -3,32 +3,43 @@ import FfMap from "../../assets/maps/2025_FF44_MAP_NEW_DAY1.jpg";
 import style from "./style.module.css";
 import { useEffect, useRef, useState } from "preact/hooks";
 import { ImageSize } from "../../types/ImageSize";
-import { TargetingBoxDimension } from "../../types/TargetingBoxDimension";
+import {
+  TargetingBoxDimension,
+  TargetingBoxDimensionWithId,
+} from "../../types/TargetingBoxDimension";
+import { Ff44MapData } from "../../data/F444MapData";
 
 export function Home() {
   const imgRef = useRef<HTMLImageElement>(null);
-  const [targetingBoxDimension, setTargetingBoxDimension] =
-    useState<TargetingBoxDimension>({ x: 0, y: 0, width: 0, height: 0 });
+  const [targetingBoxDimensionWithIdList, setTargetingBoxDimensionWithIdList] =
+    useState<Array<TargetingBoxDimensionWithId>>([]);
 
   useEffect(() => {
     if (imgRef.current) {
-      const targetingBoxRelativeDimension: TargetingBoxDimension =
-        getTargetingBoxRelativeDimension(
-          {
-            width: imgRef.current.naturalWidth,
-            height: imgRef.current.naturalHeight,
-          },
-          { width: imgRef.current.width, height: imgRef.current.height },
+      const imageAbsoluteSize: ImageSize = {
+        width: imgRef.current.naturalWidth,
+        height: imgRef.current.naturalHeight,
+      };
+      const imageCurrentSize: ImageSize = {
+        width: imgRef.current.width,
+        height: imgRef.current.height,
+      };
 
-          {
-            x: 1609,
-            y: 1080,
-            width: 41,
-            height: 51,
-          },
-        );
+      const targetingBoxRelativeDimensionWithIdList: Array<TargetingBoxDimensionWithId> =
+        Ff44MapData.map((e) => {
+          const targetingBoxRelativeDimension: TargetingBoxDimension =
+            getTargetingBoxRelativeDimension(
+              imageAbsoluteSize,
+              imageCurrentSize,
+              e.dimension,
+            );
 
-      setTargetingBoxDimension(targetingBoxRelativeDimension);
+          return { ...targetingBoxRelativeDimension, id: e.id };
+        });
+
+      setTargetingBoxDimensionWithIdList(
+        targetingBoxRelativeDimensionWithIdList,
+      );
     }
   }, [imgRef.current]);
 
@@ -42,23 +53,37 @@ export function Home() {
     ></img>
   );
 
-  const TargetingBox = (): JSX.Element => (
-    <a href={"https://www.google.com"}>
-      <div
-        class={style.targetingBox}
-        style={{
-          left: targetingBoxDimension.x,
-          top: targetingBoxDimension.y,
-          width: targetingBoxDimension.width,
-          height: targetingBoxDimension.height,
-        }}
-      />
-    </a>
-  );
+  const TargetingBoxes = (): Array<JSX.Element> =>
+    Ff44MapData.map((ff44MapData) => {
+      const targetingBoxDimensionWithId:
+        | TargetingBoxDimensionWithId
+        | undefined = targetingBoxDimensionWithIdList.find(
+        (targetingBoxDimensionWithId) =>
+          ff44MapData.id === targetingBoxDimensionWithId.id,
+      );
+
+      if (targetingBoxDimensionWithId == undefined) {
+        return <></>;
+      }
+
+      return (
+        <a href={ff44MapData.boothLink}>
+          <div
+            class={style.targetingBox}
+            style={{
+              left: targetingBoxDimensionWithId.x,
+              top: targetingBoxDimensionWithId.y,
+              width: targetingBoxDimensionWithId.width,
+              height: targetingBoxDimensionWithId.height,
+            }}
+          />
+        </a>
+      );
+    });
 
   return (
     <div className={style.container}>
-      <TargetingBox />
+      {TargetingBoxes()}
       <FfImage />
     </div>
   );
