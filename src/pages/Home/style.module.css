@@ -1,0 +1,10 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.targetingBox {
+  position: absolute;
+  background-color: rgba(138, 43, 226, 0.7);
+  z-index: 1;
+}

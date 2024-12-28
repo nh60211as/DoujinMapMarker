@@ -1,39 +1,99 @@
-import preactLogo from "../../assets/preact.svg";
-import "./style.css";
+import { JSX } from "preact/jsx-runtime";
+import FfMap from "../../assets/maps/2025_FF44_MAP_NEW_DAY1.jpg";
+import style from "./style.module.css";
+import { useEffect, useRef, useState } from "preact/hooks";
+import { ImageSize } from "../../types/ImageSize";
+import { TargetingBoxDimension } from "../../types/TargetingBoxDimension";
 
 export function Home() {
+  const imgRef = useRef<HTMLImageElement>(null);
+  const [targetingBoxDimension, setTargetingBoxDimension] =
+    useState<TargetingBoxDimension>({ x: 0, y: 0, width: 0, height: 0 });
+
+  useEffect(() => {
+    if (imgRef.current) {
+      const targetingBoxRelativeDimension: TargetingBoxDimension =
+        getTargetingBoxRelativeDimension(
+          {
+            width: imgRef.current.naturalWidth,
+            height: imgRef.current.naturalHeight,
+          },
+          { width: imgRef.current.width, height: imgRef.current.height },
+
+          {
+            x: 1609,
+            y: 1080,
+            width: 41,
+            height: 51,
+          },
+        );
+
+      setTargetingBoxDimension(targetingBoxRelativeDimension);
+    }
+  }, [imgRef.current]);
+
+  const FfImage = (): JSX.Element => (
+    <img
+      ref={imgRef}
+      src={FfMap}
+      alt="Fancy Frontier Map"
+      height="100%"
+      width="100%"
+    ></img>
+  );
+
+  const TargetingBox = (): JSX.Element => (
+    <a href={"https://www.google.com"}>
+      <div
+        class={style.targetingBox}
+        style={{
+          left: targetingBoxDimension.x,
+          top: targetingBoxDimension.y,
+          width: targetingBoxDimension.width,
+          height: targetingBoxDimension.height,
+        }}
+      />
+    </a>
+  );
+
   return (
-    <div class="home">
-      <a href="https://preactjs.com" target="_blank">
-        <img src={preactLogo} alt="Preact logo" height="160" width="160" />
-      </a>
-      <h1>Get Started building Vite-powered Preact Apps </h1>
-      <section>
-        <Resource
-          title="Learn Preact"
-          description="If you're new to Preact, try the interactive tutorial to learn important concepts"
-          href="https://preactjs.com/tutorial"
-        />
-        <Resource
-          title="Differences to React"
-          description="If you're coming from React, you may want to check out our docs to see where Preact differs"
-          href="https://preactjs.com/guide/v10/differences-to-react"
-        />
-        <Resource
-          title="Learn Vite"
-          description="To learn more about Vite and how you can customize it to fit your needs, take a look at their excellent documentation"
-          href="https://vitejs.dev"
-        />
-      </section>
+    <div className={style.container}>
+      <TargetingBox />
+      <FfImage />
     </div>
   );
 }
 
-function Resource(props) {
-  return (
-    <a href={props.href} target="_blank" class="resource">
-      <h2>{props.title}</h2>
-      <p>{props.description}</p>
-    </a>
-  );
+function getTargetingBoxRelativeDimension(
+  imageAbsoluteSize: ImageSize,
+  imageCurrentSize: ImageSize,
+  targetingBoxAbsoluteDimension: TargetingBoxDimension,
+): TargetingBoxDimension {
+  // do not proceed if absolute size is 0
+  if (imageAbsoluteSize.width === 0 || imageAbsoluteSize.height === 0) {
+    return {
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0,
+    };
+  }
+
+  // Calculate scaling factors for both width and height
+  const scaleX = imageCurrentSize.width / imageAbsoluteSize.width;
+  const scaleY = imageCurrentSize.height / imageAbsoluteSize.height;
+
+  // Scale the targeting box dimensions based on the image's scaling
+  const scaledX = targetingBoxAbsoluteDimension.x * scaleX;
+  const scaledY = targetingBoxAbsoluteDimension.y * scaleY;
+  const scaledWidth = targetingBoxAbsoluteDimension.width * scaleX;
+  const scaledHeight = targetingBoxAbsoluteDimension.height * scaleY;
+
+  // Return the scaled targeting box as the result
+  return {
+    x: scaledX,
+    y: scaledY,
+    width: scaledWidth,
+    height: scaledHeight,
+  };
 }

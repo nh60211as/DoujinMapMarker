@@ -20,7 +20,7 @@ export default defineConfig({
 		}),
 		VitePWA({
 		  manifest: {
-			name: "FF Map Marker",
+			name: "Fancy Frontier Map Marker",
 			short_name: "FF Map Marker",
 			start_url: "/",
 			display: "standalone",

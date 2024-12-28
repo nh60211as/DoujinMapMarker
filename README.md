@@ -1,4 +1,4 @@
-# FF Map Marker
+# Fancy Frontier Map Marker
 
 ## CLI Commands
 
