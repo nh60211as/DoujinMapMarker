@@ -93,6 +93,9 @@ export function Home(): JSX.Element {
         mapData={currentMapData}
         openDialog={openDialog}
         closeDialog={() => setOpenDialog(false)}
+        setMarker={(marker: Marker) => {
+          mapRecordService.setMarkerById(currentMapData.id, marker);
+        }}
       />
       {TargetingBoxes()}
       <FfImage />

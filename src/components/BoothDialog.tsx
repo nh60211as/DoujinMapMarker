@@ -1,11 +1,13 @@
 import { JSX } from "preact";
 import { MapData } from "../types/MapData";
 import { useEffect, useRef } from "preact/hooks";
+import { Marker } from "../types/Marker";
 
 type BoothDialogProps = {
   mapData: MapData;
   openDialog: boolean;
   closeDialog: () => void;
+  setMarker: (marker: Marker) => void;
 };
 
 export function BoothDialog(props: BoothDialogProps): JSX.Element {
@@ -24,6 +26,16 @@ export function BoothDialog(props: BoothDialogProps): JSX.Element {
       <p>攤位名稱：{props.mapData.boothName}</p>
       <p>攤位編號：{combineBoothNumbers(props.mapData.boothNumbers)}</p>
       <p>攤位連結：{getLink(props.mapData.boothLink)}</p>
+      <p>
+        標記：
+        <button onClick={() => props.setMarker(Marker.plannedToGo)}>
+          還沒去過
+        </button>
+        <button onClick={() => props.setMarker(Marker.alreadyGone)}>
+          已去過
+        </button>
+        <button onClick={() => props.setMarker(Marker.none)}>取消標記</button>
+      </p>
       <button onClick={props.closeDialog}>關閉</button>
     </dialog>
   );

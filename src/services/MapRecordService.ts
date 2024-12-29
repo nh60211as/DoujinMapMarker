@@ -3,7 +3,7 @@ import { Marker } from "../types/Marker";
 export function setMarkerById(id: string, marker: Marker) {
   const localStorageKey = createMapMarkerKeyById(id);
 
-  localStorage.setItem(localStorageKey, marker.toString());
+  localStorage.setItem(localStorageKey, Marker[marker]);
 }
 
 export function getMarkerById(id: string): Marker {
