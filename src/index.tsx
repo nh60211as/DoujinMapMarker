@@ -10,6 +10,7 @@ import { Home } from "./pages/Home/index.jsx";
 import { NotFound } from "./pages/_404.jsx";
 import { Header } from "./components/Header.js";
 import "./index.css";
+import { ROUTE_PREFIX } from "./Config.js";
 
 export function App() {
   return (
@@ -17,7 +18,7 @@ export function App() {
       <Header />
       <main>
         <Router>
-          <Route path="/" component={Home} />
+          <Route path={`/${ROUTE_PREFIX}`} component={Home} />
           <Route default component={NotFound} />
         </Router>
       </main>
