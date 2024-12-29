@@ -1,9 +1,13 @@
 {
 	"private": true,
+	"name": "fancy-frontier-map-marker",
+	"version": "0.0.1",
+	"license": "BSD-3-Clause",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
+		"build:gh": "vite build",
 		"serve": "http-server ./build --port 8080",
 		"format": "prettier --config prettier.config.js src/**/*.{js,jsx,ts,tsx,css,json} --write"
 	},
