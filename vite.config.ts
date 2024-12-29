@@ -10,15 +10,7 @@ export default defineConfig(({ command, mode }) => {
   return {
     base: "/FfMapMarker/",
     plugins: [
-      preact({
-        prerender: {
-          enabled: true,
-          renderTarget: "#app",
-          additionalPrerenderRoutes: ["/404"],
-          previewMiddlewareEnabled: true,
-          previewMiddlewareFallback: "/404",
-        },
-      }),
+      preact(),
       checker({
         typescript: true,
       }),

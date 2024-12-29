@@ -2,8 +2,6 @@ import {
   LocationProvider,
   Router,
   Route,
-  hydrate,
-  prerender as ssr,
 } from "preact-iso";
 
 import { Home } from "./pages/Home/index.jsx";
@@ -11,6 +9,7 @@ import { NotFound } from "./pages/_404.jsx";
 import { Header } from "./components/Header.js";
 import "./index.css";
 import { ROUTE_PREFIX } from "./Config.js";
+import { render } from "preact";
 
 export function App() {
   return (
@@ -26,10 +25,4 @@ export function App() {
   );
 }
 
-if (typeof window !== "undefined") {
-  hydrate(<App />, document.body);
-}
-
-export async function prerender(data) {
-  return await ssr(<App {...data} />);
-}
+render(<App />, document.body);
