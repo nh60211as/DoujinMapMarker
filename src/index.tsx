@@ -8,10 +8,13 @@ import {
 
 import { Home } from "./pages/Home/index.jsx";
 import { NotFound } from "./pages/_404.jsx";
+import { Header } from "./components/Header.js";
+import "./index.css";
 
 export function App() {
   return (
     <LocationProvider>
+      <Header />
       <main>
         <Router>
           <Route path="/" component={Home} />
