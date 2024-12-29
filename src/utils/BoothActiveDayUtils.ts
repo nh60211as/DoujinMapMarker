@@ -8,7 +8,6 @@ export function parseActiveDayOrNull(
       return BoothActiveDay.day1;
     case BoothActiveDay[BoothActiveDay.day2]:
       return BoothActiveDay.day2;
-
     case BoothActiveDay[BoothActiveDay.day3]:
       return BoothActiveDay.day3;
     default:

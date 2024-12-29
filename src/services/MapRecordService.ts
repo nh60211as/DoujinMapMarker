@@ -64,23 +64,39 @@ export function getSettingMapMarkerList(
   return settingMapMarkerList;
 }
 
-export function setActiveDayByEventType(
-  eventType: EventType,
-  activeDay: BoothActiveDay,
-) {
+export function setActiveDay(eventType: EventType, activeDay: BoothActiveDay) {
   const localStorageKey = createMapActiveDayKeyByEventType(eventType);
 
   localStorage.setItem(localStorageKey, BoothActiveDay[activeDay]);
 }
 
-export function getActiveDayByEventTypeOrNull(
+export function getActiveDayOrNull(
   eventType: EventType,
 ): BoothActiveDay | null {
   const localStorageKey = createMapActiveDayKeyByEventType(eventType);
 
   const rawActiveDay: string | null = localStorage.getItem(localStorageKey);
-
   return parseActiveDayOrNull(rawActiveDay);
+}
+
+export function getActiveDayOrDefault(
+  eventType: EventType,
+  defaultValue: BoothActiveDay,
+): BoothActiveDay {
+  const localStorageKey = createMapActiveDayKeyByEventType(eventType);
+
+  const rawActiveDay: string | null = localStorage.getItem(localStorageKey);
+
+  const parsedActiveDay: BoothActiveDay | null =
+    parseActiveDayOrNull(rawActiveDay);
+
+  if (parsedActiveDay === null) {
+    return defaultValue;
+  }
+
+  parseActiveDayOrNull(rawActiveDay);
+
+  return parsedActiveDay;
 }
 
 function createMapMarkerKey(

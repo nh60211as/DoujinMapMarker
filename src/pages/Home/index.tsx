@@ -1,5 +1,7 @@
 import { JSX } from "preact";
-import FfMap from "../../assets/maps/2025_FF44_MAP_NEW_DAY1.jpg";
+import FfMapDay1 from "../../assets/maps/2025_FF44_MAP_NEW_DAY1.jpg";
+import FfMapDay2 from "../../assets/maps/2025_FF44_MAP_NEW_DAY2.jpg";
+import FfMapDay3 from "../../assets/maps/2025_FF44_MAP_NEW_DAY3.jpg";
 import style from "./style.module.css";
 import { useEffect, useRef, useState } from "preact/hooks";
 import { ImageSize } from "../../types/ImageSize";
@@ -14,17 +16,21 @@ import * as mapRecordService from "../../services/MapRecordService";
 import { Marker } from "../../types/Marker";
 import { CURRENT_EVENT_TYPE } from "../../types/EventType";
 
-export function Home(): JSX.Element {
-  //
-  const [activeDay, setActiveDay] = useState<BoothActiveDay>(
-    BoothActiveDay.day1,
+type HomeProps = {
+  activeDay: BoothActiveDay;
+};
+
+export function Home(props: HomeProps): JSX.Element {
+  // active day map data related
+  const [activeMapData, setActiveMapData] = useState<Array<MapData>>(
+    getFf44MapDataByActiveDay(props.activeDay),
   );
-  const [currentFf44ActiveData, setCurrentFf44ActiveData] = useState<
-    Array<MapData>
-  >(getFf44MapDataByActiveDay(activeDay));
 
   // map image related
   const imgRef = useRef<HTMLImageElement>(null);
+  const [imgSrc, setImgSrc] = useState<string>(
+    getImageSrcByActiveDay(props.activeDay),
+  );
   const [targetingBoxDimensionWithIdList, setTargetingBoxDimensionWithIdList] =
     useState<Array<TargetingBoxDimensionWithId>>([]);
 
@@ -33,6 +39,13 @@ export function Home(): JSX.Element {
   const [activeBoothMapData, setActiveBoothMapData] =
     useState<MapData>(DEFAULT_MAP_DATA);
 
+  // on active day change
+  useEffect(() => {
+    setImgSrc(getImageSrcByActiveDay(props.activeDay));
+    setActiveMapData(getFf44MapDataByActiveDay(props.activeDay));
+  }, [props.activeDay]);
+
+  // on image size change
   useEffect(() => {
     if (imgRef.current !== null) {
       const imageAbsoluteSize: ImageSize = {
@@ -45,7 +58,7 @@ export function Home(): JSX.Element {
       };
 
       const targetingBoxRelativeDimensionWithIdList: Array<TargetingBoxDimensionWithId> =
-        currentFf44ActiveData.map((e) => {
+        activeMapData.map((e) => {
           const targetingBoxRelativeDimension: TargetingBoxDimension =
             getTargetingBoxRelativeDimension(
               imageAbsoluteSize,
@@ -62,12 +75,12 @@ export function Home(): JSX.Element {
     }
   }, [imgRef.current]);
 
-  const FfImage = (): JSX.Element => (
-    <img ref={imgRef} src={FfMap} alt="Fancy Frontier Map"></img>
-  );
+  const FfImage = (): JSX.Element => {
+    return <img ref={imgRef} src={imgSrc} alt="Fancy Frontier Map"></img>;
+  };
 
   const TargetingBoxes = (): Array<JSX.Element> =>
-    currentFf44ActiveData.map((ff44MapData) => {
+    activeMapData.map((ff44MapData) => {
       const targetingBoxDimensionWithId:
         | TargetingBoxDimensionWithId
         | undefined = targetingBoxDimensionWithIdList.find(
@@ -81,7 +94,7 @@ export function Home(): JSX.Element {
 
       const marker: Marker = mapRecordService.getMarker(
         CURRENT_EVENT_TYPE,
-        activeDay,
+        props.activeDay,
         ff44MapData.id,
       );
 
@@ -112,7 +125,7 @@ export function Home(): JSX.Element {
         setMarker={(marker: Marker) => {
           mapRecordService.setMarker(
             CURRENT_EVENT_TYPE,
-            activeDay,
+            props.activeDay,
             activeBoothMapData.id,
             marker,
           );
@@ -166,5 +179,16 @@ function getColorByMarker(marker: Marker): string {
       return "#008000b3";
     case Marker.none:
       return "transparent";
+  }
+}
+
+function getImageSrcByActiveDay(activeDay: BoothActiveDay): string {
+  switch (activeDay as BoothActiveDay) {
+    case BoothActiveDay.day1:
+      return FfMapDay1;
+    case BoothActiveDay.day2:
+      return FfMapDay2;
+    case BoothActiveDay.day3:
+      return FfMapDay3;
   }
 }

@@ -7,12 +7,50 @@ import { FileReaderComponent } from "./FileReaderComponent";
 import { parseMarker } from "../utils/MarkerUtils";
 import { BoothActiveDay } from "../types/MapData";
 import { parseActiveDayOrNull } from "../utils/BoothActiveDayUtils";
+import { DropDownList } from "./DropdownList";
+import { StateUpdater } from "preact/hooks";
 
-export function Header(): JSX.Element {
+type HeaderProps = {
+  onActiveDayChange: (activeDay: StateUpdater<BoothActiveDay>) => void;
+};
+
+export function Header(props: HeaderProps): JSX.Element {
+  const activeDayOptionValueList: Array<{
+    option: JSX.Element;
+    value: BoothActiveDay;
+  }> = [
+    {
+      option: <>第一天</>,
+      value: BoothActiveDay.day1,
+    },
+    {
+      option: <>第二天</>,
+      value: BoothActiveDay.day2,
+    },
+    {
+      option: <>第三天</>,
+      value: BoothActiveDay.day3,
+    },
+  ];
+
   return (
     <header>
-      <span>選擇天數：</span>
-      <select>選擇天數</select>
+      <DropDownList
+        tipText="選擇天數："
+        value={mapRecordService.getActiveDayOrDefault(
+          EventType.FF44,
+          BoothActiveDay.day1,
+        )}
+        optionValue={activeDayOptionValueList}
+        onChange={(newActiveDay: BoothActiveDay) => {
+          // FIXME: newActiveDay should be of type BoothActiveDay but is actually string
+          const newActiveDayAsEnum = parseInt(
+            newActiveDay as unknown as string,
+          );
+          mapRecordService.setActiveDay(EventType.FF44, newActiveDayAsEnum);
+          props.onActiveDayChange(newActiveDayAsEnum);
+        }}
+      />
       <span>{"　|　"}</span>
       <button onClick={exportSetting}>匯出設定</button>
       <span>{"　|　"}</span>
