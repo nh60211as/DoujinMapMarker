@@ -1,8 +1,4 @@
-import {
-  LocationProvider,
-  Router,
-  Route,
-} from "preact-iso";
+import { LocationProvider, Router, Route } from "preact-iso";
 
 import { Home } from "./pages/Home/index.jsx";
 import { Header } from "./components/Header.js";

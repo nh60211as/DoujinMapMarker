@@ -1,16 +1,21 @@
 import { JSX } from "preact";
-import { Marker } from "../types/Marker";
 import * as mapRecordService from "../services/MapRecordService";
 import { getIsoDateStringForFilename } from "../utils/DateTimeUtils";
 import { CURRENT_EVENT_TYPE, EventType } from "../types/EventType";
 import { Setting, SettingMapMarker } from "../types/Setting";
 import { FileReaderComponent } from "./FileReaderComponent";
-import { parseMarkerOrNull } from "../utils/MarkerUtils";
+import { parseMarker } from "../utils/MarkerUtils";
+import { BoothActiveDay } from "../types/MapData";
+import { parseActiveDayOrNull } from "../utils/BoothActiveDayUtils";
 
 export function Header(): JSX.Element {
   return (
     <header>
+      <span>選擇天數：</span>
+      <select>選擇天數</select>
+      <span>{"　|　"}</span>
       <button onClick={exportSetting}>匯出設定</button>
+      <span>{"　|　"}</span>
       <span>匯入設定：</span>
       <FileReaderComponent onFileContentChange={importSetting} />
     </header>
@@ -18,16 +23,13 @@ export function Header(): JSX.Element {
 }
 
 function exportSetting() {
-  const settingMap: Map<string, Marker> =
-    mapRecordService.getIdToMarkerMapByEventType(EventType.FF44);
+  const settingMapMarkerList: Array<SettingMapMarker> =
+    mapRecordService.getSettingMapMarkerList(EventType.FF44);
 
   const setting: Setting = {
     eventType: EventType[EventType.FF44],
     version: "1",
-    mapMarker: Array.from(settingMap).map(([id, marker]) => ({
-      id: id,
-      marker: Marker[marker],
-    })),
+    mapMarker: settingMapMarkerList,
   };
 
   const payload: string = JSON.stringify(setting);
@@ -56,10 +58,16 @@ function importSetting(fileContent: string | null) {
   const setting: Setting = JSON.parse(fileContent);
 
   setting.mapMarker.forEach((settingMapMarker: SettingMapMarker) => {
-    mapRecordService.setMarkerByEventTypeAndId(
-      CURRENT_EVENT_TYPE,
-      settingMapMarker.id,
-      parseMarkerOrNull(settingMapMarker.marker),
+    const activeDay: BoothActiveDay | null = parseActiveDayOrNull(
+      settingMapMarker.activeDay,
     );
+    if (activeDay !== null) {
+      mapRecordService.setMarker(
+        CURRENT_EVENT_TYPE,
+        activeDay,
+        settingMapMarker.id,
+        parseMarker(settingMapMarker.marker),
+      );
+    }
   });
 }

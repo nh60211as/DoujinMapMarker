@@ -7,19 +7,30 @@ import {
   TargetingBoxDimension,
   TargetingBoxDimensionWithId,
 } from "../../types/TargetingBoxDimension";
-import { Ff44MapData } from "../../data/F444MapData";
+import { getFf44MapDataByActiveDay } from "../../data/Ff44MapData";
 import { BoothDialog } from "../../components/BoothDialog";
-import { DEFAULT_MAP_DATA, MapData } from "../../types/MapData";
+import { BoothActiveDay, DEFAULT_MAP_DATA, MapData } from "../../types/MapData";
 import * as mapRecordService from "../../services/MapRecordService";
 import { Marker } from "../../types/Marker";
 import { CURRENT_EVENT_TYPE } from "../../types/EventType";
 
 export function Home(): JSX.Element {
+  //
+  const [activeDay, setActiveDay] = useState<BoothActiveDay>(
+    BoothActiveDay.day1,
+  );
+  const [currentFf44ActiveData, setCurrentFf44ActiveData] = useState<
+    Array<MapData>
+  >(getFf44MapDataByActiveDay(activeDay));
+
+  // map image related
   const imgRef = useRef<HTMLImageElement>(null);
   const [targetingBoxDimensionWithIdList, setTargetingBoxDimensionWithIdList] =
     useState<Array<TargetingBoxDimensionWithId>>([]);
-  const [openDialog, setOpenDialog] = useState<boolean>(false);
-  const [currentMapData, setCurrentMapData] =
+
+  // BoothDialog related
+  const [openBoothDialog, setOpenBoothDialog] = useState<boolean>(false);
+  const [activeBoothMapData, setActiveBoothMapData] =
     useState<MapData>(DEFAULT_MAP_DATA);
 
   useEffect(() => {
@@ -34,7 +45,7 @@ export function Home(): JSX.Element {
       };
 
       const targetingBoxRelativeDimensionWithIdList: Array<TargetingBoxDimensionWithId> =
-        Ff44MapData.map((e) => {
+        currentFf44ActiveData.map((e) => {
           const targetingBoxRelativeDimension: TargetingBoxDimension =
             getTargetingBoxRelativeDimension(
               imageAbsoluteSize,
@@ -56,7 +67,7 @@ export function Home(): JSX.Element {
   );
 
   const TargetingBoxes = (): Array<JSX.Element> =>
-    Ff44MapData.map((ff44MapData) => {
+    currentFf44ActiveData.map((ff44MapData) => {
       const targetingBoxDimensionWithId:
         | TargetingBoxDimensionWithId
         | undefined = targetingBoxDimensionWithIdList.find(
@@ -68,8 +79,9 @@ export function Home(): JSX.Element {
         return <></>;
       }
 
-      const marker: Marker = mapRecordService.getMarkerByEventTypeAndId(
+      const marker: Marker = mapRecordService.getMarker(
         CURRENT_EVENT_TYPE,
+        activeDay,
         ff44MapData.id,
       );
 
@@ -84,8 +96,8 @@ export function Home(): JSX.Element {
             height: targetingBoxDimensionWithId.height,
           }}
           onClick={() => {
-            setCurrentMapData(ff44MapData);
-            setOpenDialog(true);
+            setActiveBoothMapData(ff44MapData);
+            setOpenBoothDialog(true);
           }}
         />
       );
@@ -94,13 +106,14 @@ export function Home(): JSX.Element {
   return (
     <div className={style.container}>
       <BoothDialog
-        mapData={currentMapData}
-        openDialog={openDialog}
-        closeDialog={() => setOpenDialog(false)}
+        mapData={activeBoothMapData}
+        openDialog={openBoothDialog}
+        closeDialog={() => setOpenBoothDialog(false)}
         setMarker={(marker: Marker) => {
-          mapRecordService.setMarkerByEventTypeAndId(
+          mapRecordService.setMarker(
             CURRENT_EVENT_TYPE,
-            currentMapData.id,
+            activeDay,
+            activeBoothMapData.id,
             marker,
           );
         }}

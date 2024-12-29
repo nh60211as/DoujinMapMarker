@@ -6,5 +6,6 @@ export type Setting = {
 
 export type SettingMapMarker = {
   id: string;
+  activeDay: string; // should be BoothActiveDay
   marker: string; // should be Marker
 };
