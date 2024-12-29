@@ -10,6 +10,8 @@ import {
 import { Ff44MapData } from "../../data/F444MapData";
 import { BoothDialog } from "../../components/BoothDialog";
 import { DEFAULT_MAP_DATA, MapData } from "../../types/MapData";
+import * as mapRecordService from "../../services/MapRecordService";
+import { Marker } from "../../types/Marker";
 
 export function Home(): JSX.Element {
   const imgRef = useRef<HTMLImageElement>(null);
@@ -65,10 +67,13 @@ export function Home(): JSX.Element {
         return <></>;
       }
 
+      const marker: Marker = mapRecordService.getMarkerById(ff44MapData.id);
+
       return (
         <div
           class={style.targetingBox}
           style={{
+            backgroundColor: getColorByMarker(marker),
             left: targetingBoxDimensionWithId.x,
             top: targetingBoxDimensionWithId.y,
             width: targetingBoxDimensionWithId.width,
@@ -127,4 +132,15 @@ function getTargetingBoxRelativeDimension(
     width: scaledWidth,
     height: scaledHeight,
   };
+}
+
+function getColorByMarker(marker: Marker): string {
+  switch (marker) {
+    case Marker.plannedToGo:
+      return "#ff0000b3";
+    case Marker.alreadyGone:
+      return "#008000b3";
+    case Marker.none:
+      return "transparent";
+  }
 }
