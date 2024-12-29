@@ -7,3 +7,11 @@ export type MapData = {
   boothName: string;
   boothLink: string | undefined;
 };
+
+export const DEFAULT_MAP_DATA = {
+  id: "",
+  dimension: { x: 0, y: 0, width: 0, height: 0 },
+  boothNumbers: [],
+  boothName: "",
+  boothLink: undefined,
+};

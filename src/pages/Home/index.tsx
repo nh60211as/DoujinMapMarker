@@ -1,4 +1,4 @@
-import { JSX } from "preact/jsx-runtime";
+import { JSX } from "preact";
 import FfMap from "../../assets/maps/2025_FF44_MAP_NEW_DAY1.jpg";
 import style from "./style.module.css";
 import { useEffect, useRef, useState } from "preact/hooks";
@@ -8,14 +8,19 @@ import {
   TargetingBoxDimensionWithId,
 } from "../../types/TargetingBoxDimension";
 import { Ff44MapData } from "../../data/F444MapData";
+import { BoothDialog } from "../../components/BoothDialog";
+import { DEFAULT_MAP_DATA, MapData } from "../../types/MapData";
 
-export function Home() {
+export function Home(): JSX.Element {
   const imgRef = useRef<HTMLImageElement>(null);
   const [targetingBoxDimensionWithIdList, setTargetingBoxDimensionWithIdList] =
     useState<Array<TargetingBoxDimensionWithId>>([]);
+  const [openDialog, setOpenDialog] = useState<boolean>(false);
+  const [currentMapData, setCurrentMapData] =
+    useState<MapData>(DEFAULT_MAP_DATA);
 
   useEffect(() => {
-    if (imgRef.current) {
+    if (imgRef.current !== null) {
       const imageAbsoluteSize: ImageSize = {
         width: imgRef.current.naturalWidth,
         height: imgRef.current.naturalHeight,
@@ -44,13 +49,7 @@ export function Home() {
   }, [imgRef.current]);
 
   const FfImage = (): JSX.Element => (
-    <img
-      ref={imgRef}
-      src={FfMap}
-      alt="Fancy Frontier Map"
-      height="100%"
-      width="100%"
-    ></img>
+    <img ref={imgRef} src={FfMap} alt="Fancy Frontier Map"></img>
   );
 
   const TargetingBoxes = (): Array<JSX.Element> =>
@@ -67,22 +66,29 @@ export function Home() {
       }
 
       return (
-        <a href={ff44MapData.boothLink}>
-          <div
-            class={style.targetingBox}
-            style={{
-              left: targetingBoxDimensionWithId.x,
-              top: targetingBoxDimensionWithId.y,
-              width: targetingBoxDimensionWithId.width,
-              height: targetingBoxDimensionWithId.height,
-            }}
-          />
-        </a>
+        <div
+          class={style.targetingBox}
+          style={{
+            left: targetingBoxDimensionWithId.x,
+            top: targetingBoxDimensionWithId.y,
+            width: targetingBoxDimensionWithId.width,
+            height: targetingBoxDimensionWithId.height,
+          }}
+          onClick={() => {
+            setCurrentMapData(ff44MapData);
+            setOpenDialog(true);
+          }}
+        />
       );
     });
 
   return (
     <div className={style.container}>
+      <BoothDialog
+        mapData={currentMapData}
+        openDialog={openDialog}
+        closeDialog={() => setOpenDialog(false)}
+      />
       {TargetingBoxes()}
       <FfImage />
     </div>
