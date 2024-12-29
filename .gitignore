@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# build and secret
+/build
+/coverage
+/gh-pages
+/gh-pages.pub
+.env

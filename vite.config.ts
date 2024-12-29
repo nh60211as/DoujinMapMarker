@@ -22,7 +22,7 @@ export default defineConfig({
 		  manifest: {
 			name: "Fancy Frontier Map Marker",
 			short_name: "FF Map Marker",
-			start_url: "/",
+			start_url: "/FfMapMarker",
 			display: "standalone",
 			orientation: "portrait",
 			background_color: "#000000",
