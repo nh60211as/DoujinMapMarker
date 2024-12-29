@@ -2,14 +2,17 @@ import { JSX } from "preact";
 import { Marker } from "../types/Marker";
 import * as mapRecordService from "../services/MapRecordService";
 import { getIsoDateStringForFilename } from "../utils/DateTimeUtils";
-import { EventType } from "../types/EventType";
-import { Setting } from "../types/Setting";
+import { CURRENT_EVENT_TYPE, EventType } from "../types/EventType";
+import { Setting, SettingMapMarker } from "../types/Setting";
+import { FileReaderComponent } from "./FileReaderComponent";
+import { parseMarkerOrNull } from "../utils/MarkerUtils";
 
 export function Header(): JSX.Element {
   return (
     <header>
       <button onClick={exportSetting}>匯出設定</button>
-      <button>匯入設定</button>
+      <span>匯入設定：</span>
+      <FileReaderComponent onFileContentChange={importSetting} />
     </header>
   );
 }
@@ -43,4 +46,20 @@ function exportSetting() {
 
   // Clean up by revoking the object URL after the download is initiated
   URL.revokeObjectURL(url);
+}
+
+function importSetting(fileContent: string | null) {
+  if (fileContent === null) {
+    return;
+  }
+
+  const setting: Setting = JSON.parse(fileContent);
+
+  setting.mapMarker.forEach((settingMapMarker: SettingMapMarker) => {
+    mapRecordService.setMarkerByEventTypeAndId(
+      CURRENT_EVENT_TYPE,
+      settingMapMarker.id,
+      parseMarkerOrNull(settingMapMarker.marker),
+    );
+  });
 }

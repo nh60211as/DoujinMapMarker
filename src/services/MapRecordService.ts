@@ -1,5 +1,6 @@
 import { EventType } from "../types/EventType";
 import { Marker } from "../types/Marker";
+import { parseMarkerOrNull } from "../utils/MarkerUtils";
 
 export function setMarkerByEventTypeAndId(
   eventType: EventType,
@@ -54,15 +55,4 @@ function createMapMarkerKeyByEventTypeAndId(
   id: string,
 ): string {
   return `${EventType[eventType]}.map.marker.${id}`;
-}
-
-function parseMarkerOrNull(rawMarker: string | null): Marker {
-  switch (rawMarker) {
-    case Marker[Marker.plannedToGo]:
-      return Marker.plannedToGo;
-    case Marker[Marker.alreadyGone]:
-      return Marker.alreadyGone;
-    default:
-      return Marker.none;
-  }
 }

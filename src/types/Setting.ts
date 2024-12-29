@@ -4,7 +4,7 @@ export type Setting = {
   mapMarker: Array<SettingMapMarker>;
 };
 
-type SettingMapMarker = {
+export type SettingMapMarker = {
   id: string;
   marker: string; // should be Marker
 };
