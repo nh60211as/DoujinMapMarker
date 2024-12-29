@@ -1,35 +1,35 @@
 {
-	"homepage": "https://nh60211as.github.io/FfMapMarker/",
-	"private": true,
-	"name": "fancy-frontier-map-marker",
-	"version": "0.0.1",
-	"license": "BSD-3-Clause",
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"build:gh": "vite build",
-		"serve": "http-server ./build --port 8080",
-		"format": "prettier --config prettier.config.js src/**/*.{js,jsx,ts,tsx,css,json} --write"
-	},
-	"dependencies": {
-		"preact": "^10.25.3",
-		"preact-iso": "^2.8.1",
-		"preact-render-to-string": "^6.5.12"
-	},
-	"devDependencies": {
-		"@preact/preset-vite": "^2.9.3",
-		"@types/node": "^22.10.2",
-		"eslint": "^8.57.1",
-		"eslint-config-preact": "^1.5.0",
-		"http-server": "^14.1.1",
-		"prettier": "^3.3.3",
-		"typescript": "^5.7.2",
-		"vite": "^6.0.4",
-		"vite-plugin-checker": "^0.8.0",
-		"vite-plugin-pwa": "^0.21.1"
-	},
-	"eslintConfig": {
-		"extends": "preact"
-	}
+  "homepage": "https://nh60211as.github.io/FfMapMarker/",
+  "private": true,
+  "name": "fancy-frontier-map-marker",
+  "version": "0.0.1",
+  "license": "BSD-3-Clause",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:gh": "vite build",
+    "serve": "http-server ./build --port 8080",
+    "format": "prettier --config prettier.config.js src/**/*.{js,jsx,ts,tsx,css,json} package.json tsconfig.json vite.config.ts --write"
+  },
+  "dependencies": {
+    "preact": "^10.25.3",
+    "preact-iso": "^2.8.1",
+    "preact-render-to-string": "^6.5.12"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.9.3",
+    "@types/node": "^22.10.2",
+    "eslint": "^8.57.1",
+    "eslint-config-preact": "^1.5.0",
+    "http-server": "^14.1.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.4",
+    "vite-plugin-checker": "^0.8.0",
+    "vite-plugin-pwa": "^0.21.1"
+  },
+  "eslintConfig": {
+    "extends": "preact"
+  }
 }
