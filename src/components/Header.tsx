@@ -15,7 +15,8 @@ export function Header(): JSX.Element {
 }
 
 function exportSetting() {
-  const settingMap: Map<string, Marker> = mapRecordService.getIdToMarkerMap();
+  const settingMap: Map<string, Marker> =
+    mapRecordService.getIdToMarkerMapByEventType(EventType.FF44);
 
   const setting: Setting = {
     eventType: EventType[EventType.FF44],

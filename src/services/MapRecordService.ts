@@ -1,20 +1,30 @@
+import { EventType } from "../types/EventType";
 import { Marker } from "../types/Marker";
 
-export function setMarkerById(id: string, marker: Marker) {
-  const localStorageKey = createMapMarkerKeyById(id);
+export function setMarkerByEventTypeAndId(
+  eventType: EventType,
+  id: string,
+  marker: Marker,
+) {
+  const localStorageKey = createMapMarkerKeyByEventTypeAndId(eventType, id);
 
   localStorage.setItem(localStorageKey, Marker[marker]);
 }
 
-export function getMarkerById(id: string): Marker {
-  const localStorageKey = createMapMarkerKeyById(id);
+export function getMarkerByEventTypeAndId(
+  eventType: EventType,
+  id: string,
+): Marker {
+  const localStorageKey = createMapMarkerKeyByEventTypeAndId(eventType, id);
 
   const rawMarker: string | null = localStorage.getItem(localStorageKey);
 
   return parseMarkerOrNull(rawMarker);
 }
 
-export function getIdToMarkerMap(): Map<string, Marker> {
+export function getIdToMarkerMapByEventType(
+  eventType: EventType,
+): Map<string, Marker> {
   let map: Map<string, Marker> = new Map();
 
   for (let i = 0; i < localStorage.length; i++) {
@@ -25,17 +35,25 @@ export function getIdToMarkerMap(): Map<string, Marker> {
 
     // key format: map.marker.<id>
     const tokens: Array<string> = key.split(".");
-    if (tokens.length === 3 && tokens[0] === "map" && tokens[1] === "marker") {
-      const id = tokens[2];
-      map.set(id, getMarkerById(id));
+    if (
+      tokens.length === 4 &&
+      tokens[0] === EventType[eventType] &&
+      tokens[1] === "map" &&
+      tokens[2] === "marker"
+    ) {
+      const id = tokens[3];
+      map.set(id, getMarkerByEventTypeAndId(eventType, id));
     }
   }
 
   return map;
 }
 
-function createMapMarkerKeyById(id: string): string {
-  return `map.marker.${id}`;
+function createMapMarkerKeyByEventTypeAndId(
+  eventType: EventType,
+  id: string,
+): string {
+  return `${EventType[eventType]}.map.marker.${id}`;
 }
 
 function parseMarkerOrNull(rawMarker: string | null): Marker {

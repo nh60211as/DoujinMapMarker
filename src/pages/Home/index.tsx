@@ -12,6 +12,7 @@ import { BoothDialog } from "../../components/BoothDialog";
 import { DEFAULT_MAP_DATA, MapData } from "../../types/MapData";
 import * as mapRecordService from "../../services/MapRecordService";
 import { Marker } from "../../types/Marker";
+import { CURRENT_EVENT_TYPE } from "../../types/EventType";
 
 export function Home(): JSX.Element {
   const imgRef = useRef<HTMLImageElement>(null);
@@ -67,7 +68,10 @@ export function Home(): JSX.Element {
         return <></>;
       }
 
-      const marker: Marker = mapRecordService.getMarkerById(ff44MapData.id);
+      const marker: Marker = mapRecordService.getMarkerByEventTypeAndId(
+        CURRENT_EVENT_TYPE,
+        ff44MapData.id,
+      );
 
       return (
         <div
@@ -94,7 +98,11 @@ export function Home(): JSX.Element {
         openDialog={openDialog}
         closeDialog={() => setOpenDialog(false)}
         setMarker={(marker: Marker) => {
-          mapRecordService.setMarkerById(currentMapData.id, marker);
+          mapRecordService.setMarkerByEventTypeAndId(
+            CURRENT_EVENT_TYPE,
+            currentMapData.id,
+            marker,
+          );
         }}
       />
       {TargetingBoxes()}
