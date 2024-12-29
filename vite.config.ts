@@ -42,9 +42,5 @@ export default defineConfig(({ command, mode }) => {
     build: {
       outDir: "./build",
     },
-    define: {
-      // genius design
-      "import.meta.env.ROUTE_PREFIX": JSON.stringify(env.ROUTE_PREFIX),
-    },
   };
 });
