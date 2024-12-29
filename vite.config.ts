@@ -1,11 +1,13 @@
 import preact from '@preact/preset-vite';
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import checker from "vite-plugin-checker";
 import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
-export default defineConfig({
-	plugins: [
+export default defineConfig(({ command, mode }) => {
+	const env = loadEnv(mode, process.cwd(), "");
+	
+	return {plugins: [
 		preact({
 			prerender: {
 				enabled: true,
@@ -46,4 +48,9 @@ export default defineConfig({
     build: {
       outDir: "./build",
     },
+	define: {
+		// genius design
+		"import.meta.env.ROUTE_PREFIX": JSON.stringify(env.ROUTE_PREFIX),
+	  },
+	}
 });
