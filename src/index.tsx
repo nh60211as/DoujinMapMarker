@@ -8,7 +8,6 @@ import { Home } from "./pages/Home/index.jsx";
 import { NotFound } from "./pages/_404.jsx";
 import { Header } from "./components/Header.js";
 import "./index.css";
-import { ROUTE_PREFIX } from "./Config.js";
 import { render } from "preact";
 
 export function App() {
@@ -17,7 +16,7 @@ export function App() {
       <Header />
       <main>
         <Router>
-          <Route path={`/${ROUTE_PREFIX}`} component={Home} />
+          <Route path={`/`} component={Home} />
           <Route default component={NotFound} />
         </Router>
       </main>
