@@ -1,7 +1,8 @@
 import { JSX } from "preact";
 import { MapData } from "../types/MapData";
-import { useEffect, useRef } from "preact/hooks";
 import { Marker } from "../types/Marker";
+import "./BoothDialog.style.css";
+import { useEffect, useRef } from "preact/hooks";
 
 type BoothDialogProps = {
   mapData: MapData;
@@ -31,9 +32,11 @@ export function BoothDialog(props: BoothDialogProps): JSX.Element {
         <button onClick={() => props.setMarker(Marker.plannedToGo)}>
           還沒去過
         </button>
+        <span>{"　|　"}</span>
         <button onClick={() => props.setMarker(Marker.alreadyGone)}>
           已去過
         </button>
+        <span>{"　|　"}</span>
         <button onClick={() => props.setMarker(Marker.none)}>取消標記</button>
       </p>
       <button onClick={props.closeDialog}>關閉</button>

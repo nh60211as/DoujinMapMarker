@@ -10,14 +10,14 @@ import {
   TargetingBoxDimensionWithId,
 } from "../../types/TargetingBoxDimension";
 import { getFf44MapDataByActiveDay } from "../../data/Ff44MapData";
-import { BoothDialog } from "../../components/BoothDialog";
-import { BoothActiveDay, DEFAULT_MAP_DATA, MapData } from "../../types/MapData";
+import { BoothActiveDay, MapData } from "../../types/MapData";
 import * as mapRecordService from "../../services/MapRecordService";
 import { Marker } from "../../types/Marker";
 import { CURRENT_EVENT_TYPE } from "../../types/EventType";
 
 type HomeProps = {
   activeDay: BoothActiveDay;
+  onTargetBoxClicked: (activeBoothMapData: MapData) => void;
 };
 
 export function Home(props: HomeProps): JSX.Element {
@@ -33,11 +33,6 @@ export function Home(props: HomeProps): JSX.Element {
   );
   const [targetingBoxDimensionWithIdList, setTargetingBoxDimensionWithIdList] =
     useState<Array<TargetingBoxDimensionWithId>>([]);
-
-  // BoothDialog related
-  const [openBoothDialog, setOpenBoothDialog] = useState<boolean>(false);
-  const [activeBoothMapData, setActiveBoothMapData] =
-    useState<MapData>(DEFAULT_MAP_DATA);
 
   // on active day change
   useEffect(() => {
@@ -109,8 +104,7 @@ export function Home(props: HomeProps): JSX.Element {
             height: targetingBoxDimensionWithId.height,
           }}
           onClick={() => {
-            setActiveBoothMapData(ff44MapData);
-            setOpenBoothDialog(true);
+            props.onTargetBoxClicked(ff44MapData);
           }}
         />
       );
@@ -118,19 +112,6 @@ export function Home(props: HomeProps): JSX.Element {
 
   return (
     <div className={style.container}>
-      <BoothDialog
-        mapData={activeBoothMapData}
-        openDialog={openBoothDialog}
-        closeDialog={() => setOpenBoothDialog(false)}
-        setMarker={(marker: Marker) => {
-          mapRecordService.setMarker(
-            CURRENT_EVENT_TYPE,
-            props.activeDay,
-            activeBoothMapData.id,
-            marker,
-          );
-        }}
-      />
       {TargetingBoxes()}
       <FfImage />
     </div>
