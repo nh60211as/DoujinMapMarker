@@ -1,14 +1,15 @@
 import { JSX } from "preact";
 import { MapData } from "../types/MapData";
 import { Marker } from "../types/Marker";
-import "./BoothDialog.style.css";
 import { useEffect, useRef } from "preact/hooks";
+import { Point } from "../types/Point";
 
 type BoothDialogProps = {
   mapData: MapData;
   openDialog: boolean;
   closeDialog: () => void;
   setMarker: (marker: Marker) => void;
+  point: Point;
 };
 
 export function BoothDialog(props: BoothDialogProps): JSX.Element {
@@ -23,7 +24,16 @@ export function BoothDialog(props: BoothDialogProps): JSX.Element {
   }, [props.openDialog]);
 
   return (
-    <dialog ref={ref}>
+    <dialog
+      ref={ref}
+      style={{
+        position: "absolute",
+        left: props.point.x,
+        top: props.point.y,
+        width: 350,
+        height: 250,
+      }}
+    >
       <p>攤位名稱：{props.mapData.boothName}</p>
       <p>攤位編號：{combineBoothNumbers(props.mapData.boothNumbers)}</p>
       <p>攤位連結：{getLink(props.mapData.boothLink)}</p>
