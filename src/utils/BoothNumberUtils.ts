@@ -249,27 +249,27 @@ function getAToU_X_Axis(
     case "A":
       return 3216;
     case "B":
-      return 3020;
+      return 3061;
     case "C":
-      return 2851;
+      return 2893;
     case "D":
-      return 2683;
+      return 2724;
     case "E":
-      return 2512;
+      return 2556;
     case "F":
-      return 2347;
+      return 2388;
     case "G":
-      return 2175;
+      return 2217;
     case "H":
-      return 1870;
+      return 1911;
     case "I":
-      return 1702;
+      return 1743;
     case "J":
-      return 1533;
+      return 1571;
     case "K":
-      return 1365;
+      return 1407;
     case "L":
-      return 1193;
+      return 1235;
     case "M":
       return 2726;
     case "N":
