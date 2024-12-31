@@ -39,7 +39,7 @@ function boothNumberToTargetingBoxDimension(
     case "A":
       return {
         x: getAToU_X_Axis(boothNumber.row),
-        y: A_TO_L_STARTING_Y_AXIS - boothNumber.number * -BOOTH_Y_SIZE,
+        y: A_TO_L_STARTING_Y_AXIS - (boothNumber.number - 1) * BOOTH_Y_SIZE,
         width: BOOTH_X_SIZE,
         height: BOOTH_Y_SIZE,
       };
@@ -65,7 +65,7 @@ function boothNumberToTargetingBoxDimension(
         // 23 ~
         return {
           x: getAToU_X_Axis(boothNumber.row) - BOOTH_X_SIZE,
-          y: A_TO_L_STARTING_Y_AXIS - (boothNumber.number - 23) * BOOTH_Y_SIZE,
+          y: A_TO_L_STARTING_Y_AXIS - (44 - boothNumber.number) * BOOTH_Y_SIZE,
           width: BOOTH_X_SIZE,
           height: BOOTH_Y_SIZE,
         };
@@ -83,7 +83,7 @@ function boothNumberToTargetingBoxDimension(
         // 23 ~
         return {
           x: getAToU_X_Axis(boothNumber.row) - BOOTH_X_SIZE,
-          y: M_TO_U_STARTING_Y_AXIS - (boothNumber.number - 23) * BOOTH_Y_SIZE,
+          y: M_TO_U_STARTING_Y_AXIS - (44 - boothNumber.number) * BOOTH_Y_SIZE,
           width: BOOTH_X_SIZE,
           height: BOOTH_Y_SIZE,
         };
@@ -105,7 +105,7 @@ function boothNumberToTargetingBoxDimension(
         // 25 ~
         return {
           x: getAToU_X_Axis(boothNumber.row) - BOOTH_X_SIZE,
-          y: M_TO_U_STARTING_Y_AXIS - (boothNumber.number - 25) * BOOTH_Y_SIZE,
+          y: M_TO_U_STARTING_Y_AXIS - (48 - boothNumber.number) * BOOTH_Y_SIZE,
           width: BOOTH_X_SIZE,
           height: BOOTH_Y_SIZE,
         };
@@ -122,7 +122,7 @@ function boothNumberToTargetingBoxDimension(
         // 23 ~
         return {
           x: getAToU_X_Axis(boothNumber.row) - BOOTH_X_SIZE,
-          y: M_TO_U_STARTING_Y_AXIS - (boothNumber.number - 23) * BOOTH_Y_SIZE,
+          y: M_TO_U_STARTING_Y_AXIS - (44 - boothNumber.number) * BOOTH_Y_SIZE,
           width: BOOTH_X_SIZE,
           height: BOOTH_Y_SIZE,
         };
