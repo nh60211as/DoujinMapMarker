@@ -8,6 +8,7 @@ import { useState } from "preact/hooks";
 import * as mapRecordService from "./services/MapRecordService";
 import { BoothActiveDay } from "./types/MapData.js";
 import { EventType } from "./types/EventType.js";
+import ReloadPrompt from "./components/ReloadPrompt.js";
 
 export function App() {
   const [activeDay, setActiveDay] = useState<BoothActiveDay>(
@@ -16,6 +17,7 @@ export function App() {
 
   return (
     <LocationProvider>
+      <ReloadPrompt />
       <Header onActiveDayChange={setActiveDay} />
       <main>
         <Router>

@@ -27,7 +27,8 @@
     "typescript": "^5.7.2",
     "vite": "^6.0.4",
     "vite-plugin-checker": "^0.8.0",
-    "vite-plugin-pwa": "^0.21.1"
+    "vite-plugin-pwa": "^0.21.1",
+    "workbox-window": "^7.3.0"
   },
   "eslintConfig": {
     "extends": "preact"
