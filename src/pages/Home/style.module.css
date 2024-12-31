@@ -7,4 +7,10 @@
   position: absolute;
   z-index: 1;
   cursor: pointer;
+  border: 2px solid;
+  border-color: red;
+}
+
+.targetingBox:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Adds a shadow on hover */
 }
