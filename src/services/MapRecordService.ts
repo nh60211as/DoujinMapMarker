@@ -1,5 +1,5 @@
+import { BoothActiveDay } from "../types/BoothActiveDay";
 import { EventType } from "../types/EventType";
-import { BoothActiveDay } from "../types/MapData";
 import { Marker } from "../types/Marker";
 import { SettingMapMarker } from "../types/Setting";
 import { parseActiveDayOrNull } from "../utils/BoothActiveDayUtils";

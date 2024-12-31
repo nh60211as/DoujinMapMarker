@@ -5,11 +5,11 @@ import { CURRENT_EVENT_TYPE, EventType } from "../types/EventType";
 import { Setting, SettingMapMarker } from "../types/Setting";
 import { FileReaderComponent } from "./FileReaderComponent";
 import { parseMarker } from "../utils/MarkerUtils";
-import { BoothActiveDay } from "../types/MapData";
 import { parseActiveDayOrNull } from "../utils/BoothActiveDayUtils";
 import { DropDownList } from "./DropdownList";
 import { StateUpdater } from "preact/hooks";
 import "./Header.css";
+import { BoothActiveDay } from "../types/BoothActiveDay";
 
 type HeaderProps = {
   onActiveDayChange: (activeDay: StateUpdater<BoothActiveDay>) => void;

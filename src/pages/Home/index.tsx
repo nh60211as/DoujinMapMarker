@@ -7,15 +7,19 @@ import { useEffect, useRef, useState } from "preact/hooks";
 import { ImageSize } from "../../types/ImageSize";
 import {
   TargetingBoxDimension,
-  TargetingBoxDimensionWithId,
+  TargetingBoxDimensionWithGroupId,
 } from "../../types/TargetingBoxDimension";
-import { getFf44MapDataByActiveDay } from "../../data/Ff44MapData";
 import { BoothDialog } from "../../components/BoothDialog";
-import { BoothActiveDay, DEFAULT_MAP_DATA, MapData } from "../../types/MapData";
 import * as mapRecordService from "../../services/MapRecordService";
 import { Marker } from "../../types/Marker";
 import { CURRENT_EVENT_TYPE } from "../../types/EventType";
 import { Point } from "../../types/Point";
+import { BoothActiveDay } from "../../types/BoothActiveDay";
+import {
+  BoothDataOnMap,
+  DEFAULT_BOOTH_DATA_ON_MAP,
+} from "../../types/BoothData";
+import { getFf44BoothDataOnMapByActiveDay } from "../../data/Ff44MapData";
 
 type HomeProps = {
   activeDay: BoothActiveDay;
@@ -23,31 +27,35 @@ type HomeProps = {
 
 export function Home(props: HomeProps): JSX.Element {
   // active day map data related
-  const [activeMapData, setActiveMapData] = useState<Array<MapData>>(
-    getFf44MapDataByActiveDay(props.activeDay),
-  );
+  const [activeBoothDataOnMapList, setActiveBoothDataOnMapList] = useState<
+    Array<BoothDataOnMap>
+  >(getFf44BoothDataOnMapByActiveDay(props.activeDay));
+
+  // BoothDialog related
+  const [openBoothDialog, setOpenBoothDialog] = useState<boolean>(false);
+  const [activeBoothDataOnMap, setActiveBoothDataOnMap] =
+    useState<BoothDataOnMap>(DEFAULT_BOOTH_DATA_ON_MAP);
+  const [boothDialogPoint, setBoothDialogPoint] = useState<Point>({
+    x: 0,
+    y: 0,
+  });
 
   // map image related
   const imgRef = useRef<HTMLImageElement>(null);
   const [imgSrc, setImgSrc] = useState<string>(
     getImageSrcByActiveDay(props.activeDay),
   );
-  const [targetingBoxDimensionWithIdList, setTargetingBoxDimensionWithIdList] =
-    useState<Array<TargetingBoxDimensionWithId>>([]);
-
-  // BoothDialog related
-  const [openBoothDialog, setOpenBoothDialog] = useState<boolean>(false);
-  const [activeBoothMapData, setActiveBoothMapData] =
-    useState<MapData>(DEFAULT_MAP_DATA);
-  const [boothDialogPoint, setBoothDialogPoint] = useState<Point>({
-    x: 0,
-    y: 0,
-  });
+  const [
+    targetingBoxDimensionWithGroupIdList,
+    setTargetingBoxDimensionWithGroupIdList,
+  ] = useState<Array<TargetingBoxDimensionWithGroupId>>([]);
 
   // on active day change
   useEffect(() => {
     setImgSrc(getImageSrcByActiveDay(props.activeDay));
-    setActiveMapData(getFf44MapDataByActiveDay(props.activeDay));
+    setActiveBoothDataOnMapList(
+      getFf44BoothDataOnMapByActiveDay(props.activeDay),
+    );
   }, [props.activeDay]);
 
   // on image size change
@@ -62,8 +70,8 @@ export function Home(props: HomeProps): JSX.Element {
         height: imgRef.current.height,
       };
 
-      const targetingBoxRelativeDimensionWithIdList: Array<TargetingBoxDimensionWithId> =
-        activeMapData.map((e) => {
+      const TargetingBoxRelativeDimensionWithGroupIdList: Array<TargetingBoxDimensionWithGroupId> =
+        activeBoothDataOnMapList.map((e) => {
           const targetingBoxRelativeDimension: TargetingBoxDimension =
             getTargetingBoxRelativeDimension(
               imageAbsoluteSize,
@@ -71,11 +79,11 @@ export function Home(props: HomeProps): JSX.Element {
               e.dimension,
             );
 
-          return { ...targetingBoxRelativeDimension, id: e.id };
+          return { ...targetingBoxRelativeDimension, groupId: e.groupId };
         });
 
-      setTargetingBoxDimensionWithIdList(
-        targetingBoxRelativeDimensionWithIdList,
+      setTargetingBoxDimensionWithGroupIdList(
+        TargetingBoxRelativeDimensionWithGroupIdList,
       );
     }
   }, [imgRef.current]);
@@ -85,12 +93,12 @@ export function Home(props: HomeProps): JSX.Element {
   };
 
   const TargetingBoxes = (): Array<JSX.Element> =>
-    activeMapData.map((ff44MapData) => {
+    activeBoothDataOnMapList.map((boothDataOnMap) => {
       const targetingBoxDimensionWithId:
-        | TargetingBoxDimensionWithId
-        | undefined = targetingBoxDimensionWithIdList.find(
-        (targetingBoxDimensionWithId) =>
-          ff44MapData.id === targetingBoxDimensionWithId.id,
+        | TargetingBoxDimensionWithGroupId
+        | undefined = targetingBoxDimensionWithGroupIdList.find(
+        (targetingBoxDimensionWithGroupId) =>
+          boothDataOnMap.groupId === targetingBoxDimensionWithGroupId.groupId,
       );
 
       if (targetingBoxDimensionWithId == undefined) {
@@ -100,7 +108,7 @@ export function Home(props: HomeProps): JSX.Element {
       const marker: Marker = mapRecordService.getMarker(
         CURRENT_EVENT_TYPE,
         props.activeDay,
-        ff44MapData.id,
+        boothDataOnMap.groupId,
       );
 
       return (
@@ -114,7 +122,7 @@ export function Home(props: HomeProps): JSX.Element {
             height: targetingBoxDimensionWithId.height,
           }}
           onClick={() => {
-            setActiveBoothMapData(ff44MapData);
+            setActiveBoothDataOnMap(boothDataOnMap);
             setBoothDialogPoint({
               x: targetingBoxDimensionWithId.x,
               y: targetingBoxDimensionWithId.y,
@@ -128,18 +136,18 @@ export function Home(props: HomeProps): JSX.Element {
   return (
     <div className={style.container}>
       <BoothDialog
-        mapData={activeBoothMapData}
+        boothDataOnMap={activeBoothDataOnMap}
+        point={boothDialogPoint}
         openDialog={openBoothDialog}
         closeDialog={() => setOpenBoothDialog(false)}
         setMarker={(marker: Marker) => {
           mapRecordService.setMarker(
             CURRENT_EVENT_TYPE,
             props.activeDay,
-            activeBoothMapData.id,
+            activeBoothDataOnMap.groupId,
             marker,
           );
         }}
-        point={boothDialogPoint}
       />
       {TargetingBoxes()}
       <FfImage />

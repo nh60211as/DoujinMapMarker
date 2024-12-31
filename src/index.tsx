@@ -6,9 +6,9 @@ import "./index.css";
 import { render } from "preact";
 import { useState } from "preact/hooks";
 import * as mapRecordService from "./services/MapRecordService";
-import { BoothActiveDay } from "./types/MapData.js";
 import { EventType } from "./types/EventType.js";
 import ReloadPrompt from "./components/ReloadPrompt.js";
+import { BoothActiveDay } from "./types/BoothActiveDay.js";
 
 export function App() {
   const [activeDay, setActiveDay] = useState<BoothActiveDay>(

@@ -1,15 +1,16 @@
 import { JSX } from "preact";
-import { MapData } from "../types/MapData";
 import { Marker } from "../types/Marker";
 import { useEffect, useRef } from "preact/hooks";
 import { Point } from "../types/Point";
+import { BoothDataOnMap } from "../types/BoothData";
+import { BoothNumber } from "../types/BoothNumber";
 
 type BoothDialogProps = {
-  mapData: MapData;
+  boothDataOnMap: BoothDataOnMap;
+  point: Point;
   openDialog: boolean;
   closeDialog: () => void;
   setMarker: (marker: Marker) => void;
-  point: Point;
 };
 
 export function BoothDialog(props: BoothDialogProps): JSX.Element {
@@ -34,9 +35,12 @@ export function BoothDialog(props: BoothDialogProps): JSX.Element {
         height: 250,
       }}
     >
-      <p>攤位名稱：{props.mapData.boothName}</p>
-      <p>攤位編號：{combineBoothNumbers(props.mapData.boothNumbers)}</p>
-      <p>攤位連結：{getLink(props.mapData.boothLink)}</p>
+      <p>攤位名稱：{props.boothDataOnMap.groupName}</p>
+      <p>
+        攤位編號：
+        {combineBoothNumbers(props.boothDataOnMap.booth.boothNumberList)}
+      </p>
+      <p>攤位連結：{getLink(props.boothDataOnMap.groupLink)}</p>
       <p>
         標記：
         <button onClick={() => props.setMarker(Marker.plannedToGo)}>
@@ -54,12 +58,16 @@ export function BoothDialog(props: BoothDialogProps): JSX.Element {
   );
 }
 
-function combineBoothNumbers(boothNumbers: Array<string>): string {
-  return boothNumbers.join(", ");
+function boothNumberToString(boothNumber: BoothNumber): string {
+  return boothNumber.row + boothNumber.number.toString().padStart(2, "0");
 }
 
-function getLink(boothLink: string | undefined): JSX.Element {
-  if (boothLink === undefined) {
+function combineBoothNumbers(boothNumberList: Array<BoothNumber>): string {
+  return boothNumberList.map(boothNumberToString).join(", ");
+}
+
+function getLink(boothLink: string | null): JSX.Element {
+  if (boothLink === null) {
     return <></>;
   }
   return (

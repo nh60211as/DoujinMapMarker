@@ -1,4 +1,4 @@
-import { BoothActiveDay } from "../types/MapData";
+import { BoothActiveDay } from "../types/BoothActiveDay";
 
 export function parseActiveDayOrNull(
   rawActiveDay: string | null,
