@@ -9,6 +9,7 @@ import { BoothActiveDay } from "../types/MapData";
 import { parseActiveDayOrNull } from "../utils/BoothActiveDayUtils";
 import { DropDownList } from "./DropdownList";
 import { StateUpdater } from "preact/hooks";
+import "./Header.css";
 
 type HeaderProps = {
   onActiveDayChange: (activeDay: StateUpdater<BoothActiveDay>) => void;
