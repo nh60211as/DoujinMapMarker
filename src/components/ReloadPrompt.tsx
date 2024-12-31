@@ -2,6 +2,7 @@ import "./ReloadPrompt.css";
 
 import { useRegisterSW } from "virtual:pwa-register/preact";
 
+// https://vite-pwa-org.netlify.app/frameworks/preact
 function ReloadPrompt() {
   const {
     offlineReady: [offlineReady],
