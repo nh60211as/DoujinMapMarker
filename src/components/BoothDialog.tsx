@@ -2,11 +2,13 @@ import { JSX } from "preact";
 import { Marker } from "../types/Marker";
 import { useEffect, useRef } from "preact/hooks";
 import { Point } from "../types/Point";
-import { BoothDataOnMap } from "../types/BoothData";
-import { BoothNumber } from "../types/BoothNumber";
+import { GroupData } from "../types/GroupData";
+import { BoothInfo } from "./BoothInfo";
+import { BoothActiveDay } from "../types/BoothActiveDay";
 
 type BoothDialogProps = {
-  boothDataOnMap: BoothDataOnMap;
+  groupData: GroupData;
+  currentActiveDay: BoothActiveDay;
   point: Point;
   openDialog: boolean;
   closeDialog: () => void;
@@ -32,15 +34,11 @@ export function BoothDialog(props: BoothDialogProps): JSX.Element {
         left: props.point.x,
         top: props.point.y,
         width: 350,
-        height: 250,
+        maxHeight: 500,
       }}
     >
-      <p>攤位名稱：{props.boothDataOnMap.groupName}</p>
-      <p>
-        攤位編號：
-        {combineBoothNumbers(props.boothDataOnMap.booth.boothNumberList)}
-      </p>
-      <p>攤位連結：{getLink(props.boothDataOnMap.groupLink)}</p>
+      <p>攤位名稱：{props.groupData.groupName}</p>
+      <p>攤位連結：{getLink(props.groupData.groupLink)}</p>
       <p>
         標記：
         <button onClick={() => props.setMarker(Marker.plannedToGo)}>
@@ -53,17 +51,13 @@ export function BoothDialog(props: BoothDialogProps): JSX.Element {
         <span>{"　|　"}</span>
         <button onClick={() => props.setMarker(Marker.none)}>取消標記</button>
       </p>
+      <BoothInfo
+        boothList={props.groupData.boothList}
+        currentActiveDay={props.currentActiveDay}
+      />
       <button onClick={props.closeDialog}>關閉</button>
     </dialog>
   );
-}
-
-function boothNumberToString(boothNumber: BoothNumber): string {
-  return boothNumber.row + boothNumber.number.toString().padStart(2, "0");
-}
-
-function combineBoothNumbers(boothNumberList: Array<BoothNumber>): string {
-  return boothNumberList.map(boothNumberToString).join(", ");
 }
 
 function getLink(boothLink: string | null): JSX.Element {

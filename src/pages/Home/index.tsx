@@ -15,12 +15,13 @@ import { Marker } from "../../types/Marker";
 import { CURRENT_EVENT_TYPE } from "../../types/EventType";
 import { Point } from "../../types/Point";
 import { BoothActiveDay } from "../../types/BoothActiveDay";
+import { BoothDataOnMap } from "../../types/BoothData";
 import {
-  BoothDataOnMap,
-  DEFAULT_BOOTH_DATA_ON_MAP,
-} from "../../types/BoothData";
-import { getFf44BoothDataOnMapByActiveDay } from "../../data/Ff44MapData";
+  getFf44BoothDataOnMapByActiveDay,
+  getGroupDataByGroupId,
+} from "../../data/Ff44MapData";
 import { ValidZoomInValue } from "../../types/ZoomInValue";
+import { DEFAULT_GROUP_DATA, GroupData } from "../../types/GroupData";
 
 type HomeProps = {
   activeDay: BoothActiveDay;
@@ -35,8 +36,8 @@ export function Home(props: HomeProps): JSX.Element {
 
   // BoothDialog related
   const [openBoothDialog, setOpenBoothDialog] = useState<boolean>(false);
-  const [activeBoothDataOnMap, setActiveBoothDataOnMap] =
-    useState<BoothDataOnMap>(DEFAULT_BOOTH_DATA_ON_MAP);
+  const [activeGroupData, setActiveGroupData] =
+    useState<GroupData>(DEFAULT_GROUP_DATA);
   const [boothDialogPoint, setBoothDialogPoint] = useState<Point>({
     x: 0,
     y: 0,
@@ -140,7 +141,7 @@ export function Home(props: HomeProps): JSX.Element {
             height: targetingBoxDimensionWithId.height,
           }}
           onClick={() => {
-            setActiveBoothDataOnMap(boothDataOnMap);
+            setActiveGroupData(getGroupDataByGroupId(boothDataOnMap.groupId));
             setBoothDialogPoint({
               x: targetingBoxDimensionWithId.x,
               y: targetingBoxDimensionWithId.y,
@@ -154,7 +155,8 @@ export function Home(props: HomeProps): JSX.Element {
   return (
     <div className={style.container}>
       <BoothDialog
-        boothDataOnMap={activeBoothDataOnMap}
+        groupData={activeGroupData}
+        currentActiveDay={props.activeDay}
         point={boothDialogPoint}
         openDialog={openBoothDialog}
         closeDialog={() => setOpenBoothDialog(false)}
@@ -162,7 +164,7 @@ export function Home(props: HomeProps): JSX.Element {
           mapRecordService.setMarker(
             CURRENT_EVENT_TYPE,
             props.activeDay,
-            activeBoothDataOnMap.groupId,
+            activeGroupData.groupId,
             marker,
           );
         }}

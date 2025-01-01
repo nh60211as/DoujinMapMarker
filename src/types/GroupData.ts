@@ -6,3 +6,10 @@ export type GroupData = {
   groupLink: string | null;
   boothList: Array<Booth>;
 };
+
+export const DEFAULT_GROUP_DATA: GroupData = {
+  groupId: "",
+  groupName: "",
+  groupLink: null,
+  boothList: [],
+};

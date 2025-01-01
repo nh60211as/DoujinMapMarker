@@ -4,7 +4,7 @@ import { GroupData } from "../types/GroupData";
 import { boothNumberListToTargetingBoxDimension } from "../utils/BoothNumberUtils";
 import { defined } from "../utils/TypeUtils";
 
-const Ff44GroupData: Array<GroupData> = [
+const FF44_GROUP_DATA: Array<GroupData> = [
   {
     groupId: "ffdde4aff94540ef8725db5dfc1db204",
     groupName: "殺必死天國",
@@ -1713,7 +1713,7 @@ const Ff44GroupData: Array<GroupData> = [
 function getFf44BoothDataByActiveDay(
   boothActiveDay: BoothActiveDay,
 ): Array<BoothData> {
-  return Ff44GroupData.filter((groupData) =>
+  return FF44_GROUP_DATA.filter((groupData) =>
     groupData.boothList.some((booth) => booth.activeDay === boothActiveDay),
   ).map((groupData) => {
     return {
@@ -1738,4 +1738,8 @@ export function getFf44BoothDataOnMapByActiveDay(
       ),
     };
   });
+}
+
+export function getGroupDataByGroupId(groupId: string): GroupData {
+  return defined(FF44_GROUP_DATA.find((e) => e.groupId === groupId));
 }
