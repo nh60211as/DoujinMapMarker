@@ -1364,7 +1364,7 @@ export const FF44_GROUP_DATA: Array<GroupData> = [
   },
   {
     groupId: "9303a7b6c94940d8a30be1ce452350e3",
-    groupName: "りべるて",
+    groupName: "鬼山蓬萊支部",
     groupLink: null,
     boothList: [
       {
