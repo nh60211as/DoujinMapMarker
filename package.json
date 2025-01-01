@@ -10,7 +10,8 @@
     "build": "vite build",
     "build:gh": "vite build",
     "serve": "http-server ./build --port 8080",
-    "format": "prettier --config prettier.config.js src/**/*.{js,jsx,ts,tsx,css,json} package.json tsconfig.json vite.config.ts --write"
+    "test": "vitest ./tests --run --coverage",
+    "format": "prettier --config prettier.config.js src/**/*.{js,jsx,ts,tsx,css,json} tests/*.ts package.json tsconfig.json vite.config.ts --write"
   },
   "dependencies": {
     "preact": "^10.25.3",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@preact/preset-vite": "^2.9.3",
     "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "^2.1.8",
     "eslint": "^8.57.1",
     "eslint-config-preact": "^1.5.0",
     "http-server": "^14.1.1",
@@ -28,6 +30,7 @@
     "vite": "^6.0.4",
     "vite-plugin-checker": "^0.8.0",
     "vite-plugin-pwa": "^0.21.1",
+    "vitest": "^2.1.8",
     "workbox-window": "^7.3.0"
   },
   "eslintConfig": {
