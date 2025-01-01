@@ -163,12 +163,10 @@ function getZoomInIndexOrDefault(zoomInValue: ValidZoomInValue): number {
     zoomInValueList,
     DEFAULT_ZOOM_IN_VALUE,
   );
-  console.log("storageZoomInValue", storageZoomInValue);
-
+  
   const foundZoomInIndex: number = zoomInValueList.findIndex(
     (e) => e === storageZoomInValue,
   );
-  console.log("foundZoomInIndex", foundZoomInIndex);
 
   return foundZoomInIndex === -1
     ? DEFAULT_ZOOM_IN_VALUE_INDEX
