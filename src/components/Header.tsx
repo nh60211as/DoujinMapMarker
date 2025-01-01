@@ -1,5 +1,6 @@
 import { JSX } from "preact";
 import * as mapRecordService from "../services/MapRecordService";
+import * as browserSettingService from "../services/BrowserSettingService";
 import { getIsoDateStringForFilename } from "../utils/DateTimeUtils";
 import { CURRENT_EVENT_TYPE, EventType } from "../types/EventType";
 import { Setting, SettingMapMarker } from "../types/Setting";
@@ -7,15 +8,32 @@ import { FileReaderComponent } from "./FileReaderComponent";
 import { parseMarker } from "../utils/MarkerUtils";
 import { parseActiveDayOrNull } from "../utils/BoothActiveDayUtils";
 import { DropDownList } from "./DropdownList";
-import { StateUpdater } from "preact/hooks";
+import { StateUpdater, useEffect, useState } from "preact/hooks";
 import "./Header.css";
 import { BoothActiveDay } from "../types/BoothActiveDay";
+import {
+  DEFAULT_ZOOM_IN_VALUE,
+  DEFAULT_ZOOM_IN_VALUE_INDEX,
+  ValidZoomInValue,
+  zoomInValueList,
+} from "../types/ZoomInValue";
+import { clamp } from "../utils/NumberUtils";
 
 type HeaderProps = {
   onActiveDayChange: (activeDay: StateUpdater<BoothActiveDay>) => void;
+  currentZoomInValue: ValidZoomInValue;
+  onZoomInValueChange: (zoomInValue: ValidZoomInValue) => void;
 };
 
 export function Header(props: HeaderProps): JSX.Element {
+  const [zoomInIndex, setZoomInIndex] = useState<number>(
+    getZoomInIndexOrDefault(props.currentZoomInValue),
+  );
+
+  useEffect(() => {
+    setZoomInIndex(getZoomInIndexOrDefault(props.currentZoomInValue));
+  }, [props.currentZoomInValue]);
+
   const activeDayOptionValueList: Array<{
     option: JSX.Element;
     value: BoothActiveDay;
@@ -33,6 +51,30 @@ export function Header(props: HeaderProps): JSX.Element {
       value: BoothActiveDay.day3,
     },
   ];
+  function onZoomOut() {
+    const newZoomInIndex = clamp(
+      zoomInIndex - 1,
+      0,
+      zoomInValueList.length - 1,
+    );
+    setZoomInIndex(newZoomInIndex);
+
+    const newZoomInValue = zoomInValueList[newZoomInIndex];
+    browserSettingService.setZoomIn(newZoomInValue);
+    props.onZoomInValueChange(newZoomInValue);
+  }
+
+  function onZoomIn() {
+    const newZoomInIndex = clamp(
+      zoomInIndex + 1,
+      0,
+      zoomInValueList.length - 1,
+    );
+
+    const newZoomInValue = zoomInValueList[newZoomInIndex];
+    browserSettingService.setZoomIn(newZoomInValue);
+    props.onZoomInValueChange(newZoomInValue);
+  }
 
   return (
     <header>
@@ -57,6 +99,11 @@ export function Header(props: HeaderProps): JSX.Element {
       <span>{"　|　"}</span>
       <span>匯入設定：</span>
       <FileReaderComponent onFileContentChange={importSetting} />
+      <span>{"　|　"}</span>
+      <span>調整大小：</span>
+      <span>{`　x${zoomInValueList[zoomInIndex]}　`}</span>
+      <button onClick={onZoomOut}>{"　--　"}</button>
+      <button onClick={onZoomIn}>{"　++　"}</button>
     </header>
   );
 }
@@ -109,4 +156,21 @@ function importSetting(fileContent: string | null) {
       );
     }
   });
+}
+
+function getZoomInIndexOrDefault(zoomInValue: ValidZoomInValue): number {
+  const storageZoomInValue = browserSettingService.getZoomInOrDefault(
+    zoomInValueList,
+    DEFAULT_ZOOM_IN_VALUE,
+  );
+  console.log("storageZoomInValue", storageZoomInValue);
+
+  const foundZoomInIndex: number = zoomInValueList.findIndex(
+    (e) => e === storageZoomInValue,
+  );
+  console.log("foundZoomInIndex", foundZoomInIndex);
+
+  return foundZoomInIndex === -1
+    ? DEFAULT_ZOOM_IN_VALUE_INDEX
+    : foundZoomInIndex;
 }

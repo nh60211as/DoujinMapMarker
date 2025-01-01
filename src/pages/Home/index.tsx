@@ -20,9 +20,11 @@ import {
   DEFAULT_BOOTH_DATA_ON_MAP,
 } from "../../types/BoothData";
 import { getFf44BoothDataOnMapByActiveDay } from "../../data/Ff44MapData";
+import { ValidZoomInValue } from "../../types/ZoomInValue";
 
 type HomeProps = {
   activeDay: BoothActiveDay;
+  zoomInValue: ValidZoomInValue;
 };
 
 export function Home(props: HomeProps): JSX.Element {
@@ -42,6 +44,8 @@ export function Home(props: HomeProps): JSX.Element {
 
   // map image related
   const imgRef = useRef<HTMLImageElement>(null);
+  const [naturalWidth, setNaturalWidth] = useState(0);
+  const [naturalHeight, setNaturalHeight] = useState(0);
   const [imgSrc, setImgSrc] = useState<string>(
     getImageSrcByActiveDay(props.activeDay),
   );
@@ -61,6 +65,9 @@ export function Home(props: HomeProps): JSX.Element {
   // on image size change
   useEffect(() => {
     if (imgRef.current !== null) {
+      setNaturalWidth(imgRef.current.naturalWidth);
+      setNaturalHeight(imgRef.current.naturalHeight);
+
       const imageAbsoluteSize: ImageSize = {
         width: imgRef.current.naturalWidth,
         height: imgRef.current.naturalHeight,
@@ -89,7 +96,18 @@ export function Home(props: HomeProps): JSX.Element {
   }, [imgRef.current]);
 
   const FfImage = (): JSX.Element => {
-    return <img ref={imgRef} src={imgSrc} alt="Fancy Frontier Map"></img>;
+    return (
+      <img
+        ref={imgRef}
+        src={imgSrc}
+        alt="Fancy Frontier Map"
+        style={{
+          width: `${naturalWidth * props.zoomInValue}px`,
+          height: `${naturalHeight * props.zoomInValue}px`, // Maintain aspect ratio
+          transition: "width 0.3s ease-in-out", // Smooth transition for zoom effect
+        }}
+      ></img>
+    );
   };
 
   const TargetingBoxes = (): Array<JSX.Element> =>
