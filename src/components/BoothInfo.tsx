@@ -40,7 +40,7 @@ function SingleDayBoothInfo(props: {
   boothList: Array<Booth>;
   currentActiveDay: BoothActiveDay;
 }) {
-  const content = `${props.prefix}${getBoothNumberListAsString(props.boothList, BoothActiveDay.day1)}`;
+  const content = `${props.prefix}${getBoothNumberListAsString(props.boothList, props.activeDay)}`;
   if (props.activeDay === props.currentActiveDay) {
     return <p class="highlightText">{content}</p>;
   }
