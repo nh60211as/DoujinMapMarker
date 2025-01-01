@@ -110,6 +110,10 @@ const Ff44GroupData: Array<GroupData> = [
         activeDay: BoothActiveDay.day1,
         boothNumberList: [{ row: "A", number: 11 }],
       },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [{ row: "M", number: 32 }],
+      },
     ],
   },
   {
@@ -1168,6 +1172,35 @@ const Ff44GroupData: Array<GroupData> = [
     ],
   },
   {
+    groupId: "5a18df7a718d41d98945db3d542695e1",
+    groupName: "七兒777",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [
+          { row: "H", number: 35 },
+          { row: "H", number: 36 },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: "07965c22c0d6496c818d5c46d5e2f637",
+    groupName: "無限地雷",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [{ row: "I", number: 10 }],
+      },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "I", number: 8 }],
+      },
+    ],
+  },
+  {
     groupId: "a9e0fbb683004392a0f5f0828a18c1a0",
     groupName: "闇夢館",
     groupLink: "https://www.facebook.com/darkmaya12",
@@ -1386,6 +1419,292 @@ const Ff44GroupData: Array<GroupData> = [
       {
         activeDay: BoothActiveDay.day1,
         boothNumberList: [{ row: "U", number: 18 }],
+      },
+    ],
+  },
+  {
+    groupId: "a89caa6cd4f04caa92c671f99f6306a7",
+    groupName: "Hosto",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [
+          { row: "B", number: 5 },
+          { row: "B", number: 6 },
+        ],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [
+          { row: "B", number: 5 },
+          { row: "B", number: 6 },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: "b0cd29b4b6f54fdb9364e9611b336bc2",
+    groupName: "Eroge Japan",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "B", number: 9 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [{ row: "B", number: 10 }],
+      },
+    ],
+  },
+  {
+    groupId: "c299c53ff49b4e81b3270b0fdd2b0bb0",
+    groupName: "茶の魔王",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "E", number: 26 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [{ row: "I", number: 7 }],
+      },
+    ],
+  },
+  {
+    groupId: "24778b054f2144ad8c41c975aea54809",
+    groupName: "超大玉米力",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "F", number: 31 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [{ row: "F", number: 5 }],
+      },
+    ],
+  },
+  {
+    groupId: "64f8d33654af4ca19dfc835d0fd88f23",
+    groupName: "天之火",
+    groupLink: "https://www.facebook.com/@nnnnoooo007",
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [
+          { row: "H", number: 1 },
+          { row: "H", number: 2 },
+        ],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [
+          { row: "H", number: 1 },
+          { row: "H", number: 2 },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: "c21a35005f18474daa2b75396175dbb0",
+    groupName: "Karen",
+    groupLink: "https://x.com/chung791114",
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "I", number: 19 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [{ row: "I", number: 11 }],
+      },
+    ],
+  },
+  {
+    groupId: "f19c32e8b5f14f70aba1d5ae1c3946c7",
+    groupName: "我老婆今年8歲",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "M", number: 29 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [{ row: "A", number: 17 }],
+      },
+    ],
+  },
+  {
+    groupId: "a276d1b948e047d4b070762f030baea2",
+    groupName: "虛力中年",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "M", number: 37 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [{ row: "M", number: 37 }],
+      },
+    ],
+  },
+  {
+    groupId: "50994776c8d0432f8f4f58b1ba6f0b71",
+    groupName: "non_nonsummerjack",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [
+          { row: "R", number: 45 },
+          { row: "R", number: 46 },
+        ],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [
+          { row: "R", number: 45 },
+          { row: "R", number: 46 },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: "4f3d1cbccebe4134a04213ee759711f5",
+    groupName: "龍龍的畫畫倉庫",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [
+          { row: "S", number: 25 },
+          { row: "S", number: 26 },
+        ],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [
+          { row: "S", number: 25 },
+          { row: "S", number: 26 },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: "b5473828516b4af0b184418fe632d7c6",
+    groupName: "百合室內盆栽",
+    groupLink: "https://www.facebook.com/ZhongIN9611",
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "S", number: 27 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [{ row: "S", number: 27 }],
+      },
+    ],
+  },
+  {
+    groupId: "2bda417b01354a61ae4b55bfe52b9857",
+    groupName: "鴨子塗鴉",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "S", number: 31 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [
+          { row: "S", number: 31 },
+          { row: "S", number: 32 },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: "7fac37297b7e4d9d94034e99fcad9fdf",
+    groupName: "にゃんション-貓宅",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "T", number: 10 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [
+          { row: "T", number: 7 },
+          { row: "T", number: 8 },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: "6d3d60c16fb64a469ac53b5ec482800a",
+    groupName: "芋煮坊",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "T", number: 17 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [{ row: "T", number: 17 }],
+      },
+    ],
+  },
+  {
+    groupId: "1ca0ace21d70479a9c665cfa6efcada2",
+    groupName: "AJ4N3",
+    groupLink: "https://x.com/aj4n3_a4",
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "T", number: 27 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [
+          { row: "T", number: 27 },
+          { row: "T", number: 28 },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: "3a2aaafd0b7f410c88ddff6b9156b4ac",
+    groupName: "小撿存檔點",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [
+          { row: "I", number: 13 },
+          { row: "I", number: 14 },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: "bf541c31178243a1ae4c12d779df2e65",
+    groupName: "Glassturz",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [
+          { row: "L", number: 9 },
+          { row: "L", number: 10 },
+        ],
       },
     ],
   },
