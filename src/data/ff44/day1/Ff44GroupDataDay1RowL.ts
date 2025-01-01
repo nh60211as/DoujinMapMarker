@@ -1,7 +1,8 @@
 import { BoothActiveDay } from "../../../types/BoothActiveDay";
 import { GroupData } from "../../../types/GroupData";
 
-export const FF44_GROUP_DATA_DAY_1_ROW_L: Array<GroupData> = [{
+export const FF44_GROUP_DATA_DAY_1_ROW_L: Array<GroupData> = [
+  {
     groupId: "ed07bea0389e452c842e7ed73f9b9b38",
     groupName: "B.W.Teahouse",
     groupLink: null,
@@ -515,4 +516,5 @@ export const FF44_GROUP_DATA_DAY_1_ROW_L: Array<GroupData> = [{
         ],
       },
     ],
-  },];
+  },
+];
