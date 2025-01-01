@@ -19,7 +19,7 @@ import { BoothDataOnMap } from "../../types/BoothData";
 import {
   getFf44BoothDataOnMapByActiveDay,
   getGroupDataByGroupId,
-} from "../../data/Ff44MapData";
+} from "../../data/Ff44GroupData";
 import { ValidZoomInValue } from "../../types/ZoomInValue";
 import { DEFAULT_GROUP_DATA, GroupData } from "../../types/GroupData";
 

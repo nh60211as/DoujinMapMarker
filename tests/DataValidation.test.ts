@@ -1,7 +1,7 @@
-import { assert, describe, expect, test } from "vitest";
-import { FF44_GROUP_DATA } from "../src/data/Ff44MapData";
+import { assert, describe, test } from "vitest";
+import { FF44_GROUP_DATA } from "../src/data/Ff44GroupData";
 
-describe("Validate FF 44 Map Data", () => {
+describe("Validate FF 44 Group Data", () => {
   test("No Duplicate Group ID", () => {
     const groupIdList = new Set<string>();
 
