@@ -16,6 +16,7 @@ import { FF44_GROUP_DATA_DAY_1_ROW_J } from "./ff44/day1/Ff44GroupDataDay1RowJ";
 import { FF44_GROUP_DATA_DAY_1_ROW_K } from "./ff44/day1/Ff44GroupDataDay1RowK";
 import { FF44_GROUP_DATA_DAY_1_ROW_L } from "./ff44/day1/Ff44GroupDataDay1RowL";
 import { FF44_GROUP_DATA_DAY_1_ROW_M } from "./ff44/day1/Ff44GroupDataDay1RowM";
+import { FF44_GROUP_DATA_DAY_1_ROW_N } from "./ff44/day1/Ff44GroupDataDay1RowN";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -33,54 +34,8 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_1_ROW_K,
   FF44_GROUP_DATA_DAY_1_ROW_L,
   FF44_GROUP_DATA_DAY_1_ROW_M,
+  FF44_GROUP_DATA_DAY_1_ROW_N,
   [
-    {
-      groupId: "aa35afe73cda4d4fa51534adc75a66f8",
-      groupName: "吹雪翻譯",
-      groupLink: "https://www.facebook.com/FubukiTranslate",
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day1,
-          boothNumberList: [{ row: "N", number: 36 }],
-        },
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "O", number: 10 }],
-        },
-      ],
-    },
-    {
-      groupId: "bb3f6e20fd3f4399b303809d74cb0a13",
-      groupName: "筑波的快樂輻射森林",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day1,
-          boothNumberList: [
-            { row: "N", number: 31 },
-            { row: "N", number: 32 },
-          ],
-        },
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "O", number: 14 }],
-        },
-      ],
-    },
-    {
-      groupId: "ae60c5b4541d4cd29be5e44abadc50b9",
-      groupName: "魔法燒酒",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day1,
-          boothNumberList: [
-            { row: "N", number: 41 },
-            { row: "N", number: 42 },
-          ],
-        },
-      ],
-    },
     {
       groupId: "32014cff102c4d70a654d6b02d3e7276",
       groupName: "台北人",
