@@ -4,7 +4,7 @@ import { GroupData } from "../types/GroupData";
 import { boothNumberListToTargetingBoxDimension } from "../utils/BoothNumberUtils";
 import { defined } from "../utils/TypeUtils";
 
-const FF44_GROUP_DATA: Array<GroupData> = [
+export const FF44_GROUP_DATA: Array<GroupData> = [
   {
     groupId: "ffdde4aff94540ef8725db5dfc1db204",
     groupName: "殺必死天國",
@@ -4127,27 +4127,6 @@ const FF44_GROUP_DATA: Array<GroupData> = [
         boothNumberList: [
           { row: "J", number: 7 },
           { row: "J", number: 8 },
-        ],
-      },
-    ],
-  },
-  {
-    groupId: "c3e449a91cfe47c799cc7c4c6607f5fa",
-    groupName: "バイキング",
-    groupLink: null,
-    boothList: [
-      {
-        activeDay: BoothActiveDay.day1,
-        boothNumberList: [
-          { row: "J", number: 9 },
-          { row: "J", number: 10 },
-        ],
-      },
-      {
-        activeDay: BoothActiveDay.day2,
-        boothNumberList: [
-          { row: "J", number: 9 },
-          { row: "J", number: 10 },
         ],
       },
     ],
