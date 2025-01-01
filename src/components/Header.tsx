@@ -27,11 +27,11 @@ type HeaderProps = {
 
 export function Header(props: HeaderProps): JSX.Element {
   const [zoomInIndex, setZoomInIndex] = useState<number>(
-    getZoomInIndexOrDefault(props.currentZoomInValue),
+    getZoomInIndexOrDefault(),
   );
 
   useEffect(() => {
-    setZoomInIndex(getZoomInIndexOrDefault(props.currentZoomInValue));
+    setZoomInIndex(getZoomInIndexOrDefault());
   }, [props.currentZoomInValue]);
 
   const activeDayOptionValueList: Array<{
@@ -143,6 +143,8 @@ function importSetting(fileContent: string | null) {
 
   const setting: Setting = JSON.parse(fileContent);
 
+  mapRecordService.clear();
+
   setting.mapMarker.forEach((settingMapMarker: SettingMapMarker) => {
     const activeDay: BoothActiveDay | null = parseActiveDayOrNull(
       settingMapMarker.activeDay,
@@ -158,7 +160,7 @@ function importSetting(fileContent: string | null) {
   });
 }
 
-function getZoomInIndexOrDefault(zoomInValue: ValidZoomInValue): number {
+function getZoomInIndexOrDefault(): number {
   const storageZoomInValue = browserSettingService.getZoomInOrDefault(
     zoomInValueList,
     DEFAULT_ZOOM_IN_VALUE,

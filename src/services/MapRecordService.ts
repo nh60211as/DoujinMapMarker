@@ -5,6 +5,11 @@ import { SettingMapMarker } from "../types/Setting";
 import { parseActiveDayOrNull } from "../utils/BoothActiveDayUtils";
 import { parseMarker } from "../utils/MarkerUtils";
 
+// TODO: this will clear everything in localStorage.
+export function clear() {
+  localStorage.clear();
+}
+
 export function setMarker(
   eventType: EventType,
   activeDay: BoothActiveDay,
