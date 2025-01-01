@@ -1153,6 +1153,136 @@ const Ff44GroupData: Array<GroupData> = [
     ],
   },
   {
+    groupId: "7d9a2f29855241cb8c7c435ea34020e2",
+    groupName: "F.W.ZHolic",
+    groupLink: "https://www.facebook.com/fwzholic",
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [{ row: "G", number: 15 }],
+      },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "G", number: 14 }],
+      },
+    ],
+  },
+  {
+    groupId: "a9e0fbb683004392a0f5f0828a18c1a0",
+    groupName: "闇夢館",
+    groupLink: "https://www.facebook.com/darkmaya12",
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [
+          { row: "I", number: 11 },
+          { row: "I", number: 12 },
+        ],
+      },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [
+          { row: "I", number: 11 },
+          { row: "I", number: 12 },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: "b59b9e16dedf4fdebc278e0ffd312ba1",
+    groupName: "反式實驗劇場",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [{ row: "I", number: 13 }],
+      },
+    ],
+  },
+  {
+    groupId: "1a9aad7902834e5684689b099ad9a798",
+    groupName: "萌妹子前線",
+    groupLink: "https://www.facebook.com/LiushengArt",
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [
+          { row: "K", number: 13 },
+          { row: "K", number: 14 },
+        ],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [
+          { row: "J", number: 37 },
+          { row: "J", number: 38 },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: "05c4bacc3b444bf6a5fc2c38086d233a",
+    groupName: "red miso soup",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [{ row: "J", number: 11 }],
+      },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "J", number: 11 }],
+      },
+    ],
+  },
+  {
+    groupId: "aa35afe73cda4d4fa51534adc75a66f8",
+    groupName: "吹雪翻譯",
+    groupLink: "https://www.facebook.com/FubukiTranslate",
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [{ row: "N", number: 36 }],
+      },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "O", number: 10 }],
+      },
+    ],
+  },
+  {
+    groupId: "bb3f6e20fd3f4399b303809d74cb0a13",
+    groupName: "筑波的快樂輻射森林",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [
+          { row: "N", number: 31 },
+          { row: "N", number: 32 },
+        ],
+      },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "O", number: 14 }],
+      },
+    ],
+  },
+  {
+    groupId: "ae60c5b4541d4cd29be5e44abadc50b9",
+    groupName: "魔法燒酒",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [
+          { row: "N", number: 41 },
+          { row: "N", number: 42 },
+        ],
+      },
+    ],
+  },
+  {
     groupId: "32014cff102c4d70a654d6b02d3e7276",
     groupName: "台北人",
     groupLink: null,
@@ -1167,6 +1297,56 @@ const Ff44GroupData: Array<GroupData> = [
       {
         activeDay: BoothActiveDay.day2,
         boothNumberList: [{ row: "S", number: 33 }],
+      },
+    ],
+  },
+  {
+    groupId: "4d835709a4d7434fa8508ef6e5c5ee4e",
+    groupName: "企鵝冰屋",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [{ row: "S", number: 5 }],
+      },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "S", number: 30 }],
+      },
+    ],
+  },
+  {
+    groupId: "4769e8b865024b45a9da77ee452e6f86",
+    groupName: "MAIDOLL",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [
+          { row: "S", number: 23 },
+          { row: "S", number: 24 },
+        ],
+      },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [
+          { row: "S", number: 23 },
+          { row: "S", number: 24 },
+        ],
+      },
+    ],
+  },
+  {
+    groupId: "9a8cf144d75140f885d8a64a76c7e76f",
+    groupName: "新生ロリショタ",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [
+          { row: "S", number: 33 },
+          { row: "S", number: 34 },
+        ],
       },
     ],
   },
@@ -1195,6 +1375,17 @@ const Ff44GroupData: Array<GroupData> = [
           { row: "T", number: 25 },
           { row: "T", number: 26 },
         ],
+      },
+    ],
+  },
+  {
+    groupId: "c89fa859a64243feadb66b23b8f79b57",
+    groupName: "迷你翠",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day1,
+        boothNumberList: [{ row: "U", number: 18 }],
       },
     ],
   },
