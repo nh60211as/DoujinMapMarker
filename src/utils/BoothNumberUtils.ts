@@ -25,14 +25,14 @@ function boothNumberToTargetingBoxDimension(
   const A_TO_L_STARTING_Y_AXIS = 1969;
   const M_TO_U_STARTING_Y_AXIS = 1158;
   const BOOTH_X_SIZE = 41;
-  const BOOTH_Y_SIZE = 26.6190476190476;
+  const BOOTH_Y_SIZE = 26.6;
   const W_1_X_AXIS = 2898;
   const W_7_X_AXIS = 2526;
   const W_19_X_AXIS = 2179;
   const W_25_X_AXIS = 1783;
   const W_35_X_AXIS = 1476;
   const W_Y_AXIS = 399;
-  const W_BOOTH_X_SIZE = 28;
+  const W_BOOTH_X_SIZE = 26.6;
   const W_BOOTH_Y_SIZE = 41;
 
   switch (boothNumber.row) {
