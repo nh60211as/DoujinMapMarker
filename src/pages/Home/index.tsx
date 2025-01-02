@@ -141,8 +141,8 @@ export function Home(props: HomeProps): JSX.Element {
             top: targetingBoxDimensionWithId.y,
             width: targetingBoxDimensionWithId.width,
             height: targetingBoxDimensionWithId.height,
-            border: `${getBorderEmByZoomInValue(props.zoomInValue * 1)}em solid`,
-            borderColor: `blue`,
+            outline: `${getOutlineEmByZoomInValue(props.zoomInValue * 1)}em solid`,
+            outlineColor: `gold`,
           }}
           onClick={() => {
             setActiveGroupData(getGroupDataByGroupId(boothDataOnMap.groupId));
@@ -225,8 +225,8 @@ function getColorByMarker(marker: Marker): string {
   }
 }
 
-function getBorderEmByZoomInValue(zoomInValue: number): number {
-  return zoomInValue * 0.1;
+function getOutlineEmByZoomInValue(zoomInValue: number): number {
+  return zoomInValue * 0.2;
 }
 
 function getImageSrcByActiveDay(activeDay: BoothActiveDay): string {
