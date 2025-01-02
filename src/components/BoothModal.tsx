@@ -29,6 +29,7 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
   return (
     <div
       class="modalBackground"
+      onClick={props.closeDialog}
       style={{ display: props.openDialog ? "block" : "none" }}
     >
       <div
