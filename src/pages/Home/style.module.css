@@ -7,8 +7,6 @@
   position: absolute;
   z-index: 1;
   cursor: pointer;
-  border: 2px solid;
-  border-color: blue;
 }
 
 .targetingBox:hover {

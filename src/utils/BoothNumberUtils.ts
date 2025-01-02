@@ -22,10 +22,10 @@ export function boothNumberListToTargetingBoxDimension(
 function boothNumberToTargetingBoxDimension(
   boothNumber: BoothNumber,
 ): TargetingBoxDimension {
-  const A_TO_L_STARTING_Y_AXIS = 1969;
-  const M_TO_U_STARTING_Y_AXIS = 1158;
-  const BOOTH_X_SIZE = 41;
-  const BOOTH_Y_SIZE = 26.6;
+  const A_TO_L_STARTING_Y_AXIS = 1968;
+  const M_TO_U_STARTING_Y_AXIS = 1157;
+  const BOOTH_X_SIZE = 41.5;
+  const BOOTH_Y_SIZE = 26.59090909090909;
   const W_1_X_AXIS = 2898;
   const W_7_X_AXIS = 2526;
   const W_19_X_AXIS = 2179;
@@ -265,7 +265,7 @@ function getAToU_X_Axis(
     case "I":
       return 1743;
     case "J":
-      return 1571;
+      return 1575;
     case "K":
       return 1407;
     case "L":
