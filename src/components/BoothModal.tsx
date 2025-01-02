@@ -53,6 +53,10 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
           width: modalWidth,
           maxHeight: modalMaxHeight,
         }}
+        onClick={(e): void => {
+          // stop click event to go to modalBackground and trigger its click event
+          e.stopPropagation();
+        }}
       >
         <div class="modalContent">
           <p>攤位名稱：{props.groupData.groupName}</p>
