@@ -9,7 +9,7 @@ import {
   TargetingBoxDimension,
   TargetingBoxDimensionWithGroupId,
 } from "../../types/TargetingBoxDimension";
-import { BoothDialog } from "../../components/BoothDialog";
+import { BoothModal } from "../../components/BoothModal";
 import * as mapRecordService from "../../services/MapRecordService";
 import { Marker } from "../../types/Marker";
 import { CURRENT_EVENT_TYPE } from "../../types/EventType";
@@ -156,7 +156,7 @@ export function Home(props: HomeProps): JSX.Element {
 
   return (
     <div className={style.container}>
-      <BoothDialog
+      <BoothModal
         groupData={activeGroupData}
         currentActiveDay={props.activeDay}
         point={boothDialogPoint}
