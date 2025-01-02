@@ -21,6 +21,7 @@ import { FF44_GROUP_DATA_DAY_1_ROW_O } from "./ff44/day1/Ff44GroupDataDay1RowO";
 import { FF44_GROUP_DATA_DAY_1_ROW_P } from "./ff44/day1/Ff44GroupDataDay1RowP";
 import { FF44_GROUP_DATA_DAY_1_ROW_Q } from "./ff44/day1/Ff44GroupDataDay1RowQ";
 import { FF44_GROUP_DATA_DAY_1_ROW_R } from "./ff44/day1/Ff44GroupDataDay1RowR";
+import { FF44_GROUP_DATA_DAY_1_ROW_S } from "./ff44/day1/Ff44GroupDataDay1RowS";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -43,75 +44,8 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_1_ROW_P,
   FF44_GROUP_DATA_DAY_1_ROW_Q,
   FF44_GROUP_DATA_DAY_1_ROW_R,
+  FF44_GROUP_DATA_DAY_1_ROW_S,
   [
-    {
-      groupId: "32014cff102c4d70a654d6b02d3e7276",
-      groupName: "台北人",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day1,
-          boothNumberList: [
-            { row: "S", number: 3 },
-            { row: "S", number: 4 },
-          ],
-        },
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "S", number: 33 }],
-        },
-      ],
-    },
-    {
-      groupId: "4d835709a4d7434fa8508ef6e5c5ee4e",
-      groupName: "企鵝冰屋",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day1,
-          boothNumberList: [{ row: "S", number: 5 }],
-        },
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "S", number: 30 }],
-        },
-      ],
-    },
-    {
-      groupId: "4769e8b865024b45a9da77ee452e6f86",
-      groupName: "MAIDOLL",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day1,
-          boothNumberList: [
-            { row: "S", number: 23 },
-            { row: "S", number: 24 },
-          ],
-        },
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [
-            { row: "S", number: 23 },
-            { row: "S", number: 24 },
-          ],
-        },
-      ],
-    },
-    {
-      groupId: "9a8cf144d75140f885d8a64a76c7e76f",
-      groupName: "新生ロリショタ",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day1,
-          boothNumberList: [
-            { row: "S", number: 33 },
-            { row: "S", number: 34 },
-          ],
-        },
-      ],
-    },
     {
       groupId: "c8c7be762d444bb8b8f3b14bedda760a",
       groupName: "壞菇社",
