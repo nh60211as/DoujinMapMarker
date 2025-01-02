@@ -30,6 +30,7 @@ import { FF44_GROUP_DATA_DAY_2_ROW_B } from "./ff44/day2/Ff44GroupDataDay2RowB";
 import { FF44_GROUP_DATA_DAY_2_ROW_C } from "./ff44/day2/Ff44GroupDataDay2RowC";
 import { FF44_GROUP_DATA_DAY_2_ROW_D } from "./ff44/day2/Ff44GroupDataDay2RowD";
 import { FF44_GROUP_DATA_DAY_2_ROW_E } from "./ff44/day2/Ff44GroupDataDay2RowE";
+import { FF44_GROUP_DATA_DAY_2_ROW_F } from "./ff44/day2/Ff44GroupDataDay2RowF";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -61,22 +62,8 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_2_ROW_C,
   FF44_GROUP_DATA_DAY_2_ROW_D,
   FF44_GROUP_DATA_DAY_2_ROW_E,
+  FF44_GROUP_DATA_DAY_2_ROW_F,
   [
-    {
-      groupId: "24778b054f2144ad8c41c975aea54809",
-      groupName: "超大玉米力",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "F", number: 31 }],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [{ row: "F", number: 5 }],
-        },
-      ],
-    },
     {
       groupId: "64f8d33654af4ca19dfc835d0fd88f23",
       groupName: "天之火",
