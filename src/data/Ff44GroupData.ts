@@ -22,6 +22,7 @@ import { FF44_GROUP_DATA_DAY_1_ROW_P } from "./ff44/day1/Ff44GroupDataDay1RowP";
 import { FF44_GROUP_DATA_DAY_1_ROW_Q } from "./ff44/day1/Ff44GroupDataDay1RowQ";
 import { FF44_GROUP_DATA_DAY_1_ROW_R } from "./ff44/day1/Ff44GroupDataDay1RowR";
 import { FF44_GROUP_DATA_DAY_1_ROW_S } from "./ff44/day1/Ff44GroupDataDay1RowS";
+import { FF44_GROUP_DATA_DAY_1_ROW_T } from "./ff44/day1/Ff44GroupDataDay1RowT";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -45,35 +46,8 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_1_ROW_Q,
   FF44_GROUP_DATA_DAY_1_ROW_R,
   FF44_GROUP_DATA_DAY_1_ROW_S,
+  FF44_GROUP_DATA_DAY_1_ROW_T,
   [
-    {
-      groupId: "c8c7be762d444bb8b8f3b14bedda760a",
-      groupName: "壞菇社",
-      groupLink: "https://www.facebook.com/MARK4why",
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day1,
-          boothNumberList: [
-            { row: "T", number: 25 },
-            { row: "T", number: 26 },
-          ],
-        },
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [
-            { row: "T", number: 25 },
-            { row: "T", number: 26 },
-          ],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [
-            { row: "T", number: 25 },
-            { row: "T", number: 26 },
-          ],
-        },
-      ],
-    },
     {
       groupId: "c89fa859a64243feadb66b23b8f79b57",
       groupName: "迷你翠",
