@@ -5,17 +5,27 @@ import { GroupData } from "../types/GroupData";
 import { BoothInfo } from "./BoothInfo";
 import { BoothActiveDay } from "../types/BoothActiveDay";
 import "./BoothModal.css";
+import { clamp } from "../utils/NumberUtils";
 
 type BoothModalProps = {
   groupData: GroupData;
   currentActiveDay: BoothActiveDay;
   point: Point;
+  maxPoint: Point;
   openDialog: boolean;
   closeDialog: () => void;
   setMarker: (marker: Marker) => void;
 };
 
 export function BoothModal(props: BoothModalProps): JSX.Element {
+  const modalWidth = 350;
+  const modalMaxHeight = 500;
+  const padding = 30;
+  const actualPoint: Point = {
+    x: clamp(props.point.x, 0, props.maxPoint.x - modalWidth - padding),
+    y: clamp(props.point.y, 0, props.maxPoint.y - modalMaxHeight - padding),
+  };
+
   return (
     <div
       class="modalBackground"
@@ -25,10 +35,10 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
         class="modal"
         style={{
           position: "absolute",
-          left: props.point.x,
-          top: props.point.y,
-          width: 350,
-          maxHeight: 500,
+          left: actualPoint.x,
+          top: actualPoint.y,
+          width: modalWidth,
+          maxHeight: modalMaxHeight,
         }}
       >
         <div class="modalContent">

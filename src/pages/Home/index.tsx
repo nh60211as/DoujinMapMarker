@@ -47,6 +47,7 @@ export function Home(props: HomeProps): JSX.Element {
   const imgRef = useRef<HTMLImageElement>(null);
   const [naturalWidth, setNaturalWidth] = useState(0);
   const [naturalHeight, setNaturalHeight] = useState(0);
+  const [imgMaxPoint, setImgMaxPoint] = useState<Point>({ x: 0, y: 0 });
   const [imgSrc, setImgSrc] = useState<string>(
     getImageSrcByActiveDay(props.activeDay),
   );
@@ -68,6 +69,7 @@ export function Home(props: HomeProps): JSX.Element {
     if (imgRef.current !== null) {
       setNaturalWidth(imgRef.current.naturalWidth);
       setNaturalHeight(imgRef.current.naturalHeight);
+      setImgMaxPoint({ x: imgRef.current.width, y: imgRef.current.height });
 
       const imageAbsoluteSize: ImageSize = {
         width: imgRef.current.naturalWidth,
@@ -160,6 +162,7 @@ export function Home(props: HomeProps): JSX.Element {
         groupData={activeGroupData}
         currentActiveDay={props.activeDay}
         point={boothDialogPoint}
+        maxPoint={imgMaxPoint}
         openDialog={openBoothDialog}
         closeDialog={() => setOpenBoothDialog(false)}
         setMarker={(marker: Marker) => {
