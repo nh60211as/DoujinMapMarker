@@ -221,7 +221,7 @@ function getColorByMarker(marker: Marker): string {
     case Marker.alreadyGone:
       return "#008000b3";
     case Marker.none:
-      return "transparent";
+      return "#808080b3";
   }
 }
 
