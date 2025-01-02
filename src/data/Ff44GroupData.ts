@@ -29,6 +29,7 @@ import { FF44_GROUP_DATA_DAY_2_ROW_A } from "./ff44/day2/Ff44GroupDataDay2RowA";
 import { FF44_GROUP_DATA_DAY_2_ROW_B } from "./ff44/day2/Ff44GroupDataDay2RowB";
 import { FF44_GROUP_DATA_DAY_2_ROW_C } from "./ff44/day2/Ff44GroupDataDay2RowC";
 import { FF44_GROUP_DATA_DAY_2_ROW_D } from "./ff44/day2/Ff44GroupDataDay2RowD";
+import { FF44_GROUP_DATA_DAY_2_ROW_E } from "./ff44/day2/Ff44GroupDataDay2RowE";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -59,22 +60,8 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_2_ROW_B,
   FF44_GROUP_DATA_DAY_2_ROW_C,
   FF44_GROUP_DATA_DAY_2_ROW_D,
+  FF44_GROUP_DATA_DAY_2_ROW_E,
   [
-    {
-      groupId: "c299c53ff49b4e81b3270b0fdd2b0bb0",
-      groupName: "茶の魔王",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "E", number: 26 }],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [{ row: "I", number: 7 }],
-        },
-      ],
-    },
     {
       groupId: "24778b054f2144ad8c41c975aea54809",
       groupName: "超大玉米力",
