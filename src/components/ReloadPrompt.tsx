@@ -17,11 +17,6 @@ function ReloadPrompt() {
     },
   });
 
-  const close = () => {
-    // setOfflineReady(false);
-    // setNeedRefresh(false);
-  };
-
   return (
     <div className="ReloadPrompt-container">
       {(offlineReady || needRefresh) && (
@@ -40,12 +35,9 @@ function ReloadPrompt() {
               className="ReloadPrompt-toast-button"
               onClick={() => updateServiceWorker(true)}
             >
-              Reload
+              偵測到新版本，點擊重新整理
             </button>
           )}
-          <button className="ReloadPrompt-toast-button" onClick={() => close()}>
-            Close
-          </button>
         </div>
       )}
     </div>
