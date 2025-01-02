@@ -55,6 +55,7 @@ import { FF44_GROUP_DATA_DAY_3_ROW_E } from "./ff44/day3/Ff44GroupDataDay3RowE";
 import { FF44_GROUP_DATA_DAY_3_ROW_F } from "./ff44/day3/Ff44GroupDataDay3RowF";
 import { FF44_GROUP_DATA_DAY_3_ROW_G } from "./ff44/day3/Ff44GroupDataDay3RowG";
 import { FF44_GROUP_DATA_DAY_3_ROW_H } from "./ff44/day3/Ff44GroupDataDay3RowH";
+import { FF44_GROUP_DATA_DAY_3_ROW_I } from "./ff44/day3/Ff44GroupDataDay3RowI";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -111,21 +112,8 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_3_ROW_F,
   FF44_GROUP_DATA_DAY_3_ROW_G,
   FF44_GROUP_DATA_DAY_3_ROW_H,
+  FF44_GROUP_DATA_DAY_3_ROW_I,
   [
-    {
-      groupId: "3a2aaafd0b7f410c88ddff6b9156b4ac",
-      groupName: "小撿存檔點",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [
-            { row: "I", number: 13 },
-            { row: "I", number: 14 },
-          ],
-        },
-      ],
-    },
     {
       groupId: "bf541c31178243a1ae4c12d779df2e65",
       groupName: "Glassturz",
