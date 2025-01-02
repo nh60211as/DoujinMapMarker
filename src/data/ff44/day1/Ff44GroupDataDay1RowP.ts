@@ -241,8 +241,8 @@ export const FF44_GROUP_DATA_DAY_1_ROW_P: Array<GroupData> = [
       {
         activeDay: BoothActiveDay.day2,
         boothNumberList: [
-          { row: "O", number: 9 },
-          { row: "O", number: 10 },
+          { row: "Q", number: 9 },
+          { row: "Q", number: 10 },
         ],
       },
     ],
