@@ -44,6 +44,7 @@ import { FF44_GROUP_DATA_DAY_2_ROW_P } from "./ff44/day2/Ff44GroupDataDay2RowP";
 import { FF44_GROUP_DATA_DAY_2_ROW_Q } from "./ff44/day2/Ff44GroupDataDay2RowQ";
 import { FF44_GROUP_DATA_DAY_2_ROW_R } from "./ff44/day2/Ff44GroupDataDay2RowR";
 import { FF44_GROUP_DATA_DAY_2_ROW_S } from "./ff44/day2/Ff44GroupDataDay2RowS";
+import { FF44_GROUP_DATA_DAY_2_ROW_T } from "./ff44/day2/Ff44GroupDataDay2RowT";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -89,58 +90,8 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_2_ROW_Q,
   FF44_GROUP_DATA_DAY_2_ROW_R,
   FF44_GROUP_DATA_DAY_2_ROW_S,
+  FF44_GROUP_DATA_DAY_2_ROW_T,
   [
-    {
-      groupId: "7fac37297b7e4d9d94034e99fcad9fdf",
-      groupName: "にゃんション-貓宅",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "T", number: 10 }],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [
-            { row: "T", number: 7 },
-            { row: "T", number: 8 },
-          ],
-        },
-      ],
-    },
-    {
-      groupId: "6d3d60c16fb64a469ac53b5ec482800a",
-      groupName: "芋煮坊",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "T", number: 17 }],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [{ row: "T", number: 17 }],
-        },
-      ],
-    },
-    {
-      groupId: "1ca0ace21d70479a9c665cfa6efcada2",
-      groupName: "AJ4N3",
-      groupLink: "https://x.com/aj4n3_a4",
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "T", number: 27 }],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [
-            { row: "T", number: 27 },
-            { row: "T", number: 28 },
-          ],
-        },
-      ],
-    },
     {
       groupId: "3a2aaafd0b7f410c88ddff6b9156b4ac",
       groupName: "小撿存檔點",
