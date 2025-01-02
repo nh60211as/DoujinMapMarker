@@ -409,7 +409,7 @@ export const FF44_GROUP_DATA_DAY_1_ROW_Q: Array<GroupData> = [
         boothNumberList: [{ row: "Q", number: 40 }],
       },
       {
-        activeDay: BoothActiveDay.day3,
+        activeDay: BoothActiveDay.day2,
         boothNumberList: [{ row: "Q", number: 40 }],
       },
     ],
