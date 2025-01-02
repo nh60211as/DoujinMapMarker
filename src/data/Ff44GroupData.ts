@@ -31,6 +31,7 @@ import { FF44_GROUP_DATA_DAY_2_ROW_C } from "./ff44/day2/Ff44GroupDataDay2RowC";
 import { FF44_GROUP_DATA_DAY_2_ROW_D } from "./ff44/day2/Ff44GroupDataDay2RowD";
 import { FF44_GROUP_DATA_DAY_2_ROW_E } from "./ff44/day2/Ff44GroupDataDay2RowE";
 import { FF44_GROUP_DATA_DAY_2_ROW_F } from "./ff44/day2/Ff44GroupDataDay2RowF";
+import { FF44_GROUP_DATA_DAY_2_ROW_G } from "./ff44/day2/Ff44GroupDataDay2RowG";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -63,6 +64,7 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_2_ROW_D,
   FF44_GROUP_DATA_DAY_2_ROW_E,
   FF44_GROUP_DATA_DAY_2_ROW_F,
+  FF44_GROUP_DATA_DAY_2_ROW_G,
   [
     {
       groupId: "64f8d33654af4ca19dfc835d0fd88f23",
