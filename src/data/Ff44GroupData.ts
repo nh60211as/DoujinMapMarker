@@ -32,6 +32,7 @@ import { FF44_GROUP_DATA_DAY_2_ROW_D } from "./ff44/day2/Ff44GroupDataDay2RowD";
 import { FF44_GROUP_DATA_DAY_2_ROW_E } from "./ff44/day2/Ff44GroupDataDay2RowE";
 import { FF44_GROUP_DATA_DAY_2_ROW_F } from "./ff44/day2/Ff44GroupDataDay2RowF";
 import { FF44_GROUP_DATA_DAY_2_ROW_G } from "./ff44/day2/Ff44GroupDataDay2RowG";
+import { FF44_GROUP_DATA_DAY_2_ROW_H } from "./ff44/day2/Ff44GroupDataDay2RowH";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -65,28 +66,8 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_2_ROW_E,
   FF44_GROUP_DATA_DAY_2_ROW_F,
   FF44_GROUP_DATA_DAY_2_ROW_G,
+  FF44_GROUP_DATA_DAY_2_ROW_H,
   [
-    {
-      groupId: "64f8d33654af4ca19dfc835d0fd88f23",
-      groupName: "天之火",
-      groupLink: "https://www.facebook.com/@nnnnoooo007",
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [
-            { row: "H", number: 1 },
-            { row: "H", number: 2 },
-          ],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [
-            { row: "H", number: 1 },
-            { row: "H", number: 2 },
-          ],
-        },
-      ],
-    },
     {
       groupId: "c21a35005f18474daa2b75396175dbb0",
       groupName: "Karen",
