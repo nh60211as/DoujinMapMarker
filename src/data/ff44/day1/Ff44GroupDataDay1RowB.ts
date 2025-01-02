@@ -175,6 +175,13 @@ export const FF44_GROUP_DATA_DAY_1_ROW_B: Array<GroupData> = [
           { row: "B", number: 16 },
         ],
       },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [
+          { row: "B", number: 31 },
+          { row: "B", number: 32 },
+        ],
+      },
     ],
   },
   {
