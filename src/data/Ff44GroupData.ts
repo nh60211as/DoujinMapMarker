@@ -42,6 +42,7 @@ import { FF44_GROUP_DATA_DAY_2_ROW_N } from "./ff44/day2/Ff44GroupDataDay2RowN";
 import { FF44_GROUP_DATA_DAY_2_ROW_O } from "./ff44/day2/Ff44GroupDataDay2RowO";
 import { FF44_GROUP_DATA_DAY_2_ROW_P } from "./ff44/day2/Ff44GroupDataDay2RowP";
 import { FF44_GROUP_DATA_DAY_2_ROW_Q } from "./ff44/day2/Ff44GroupDataDay2RowQ";
+import { FF44_GROUP_DATA_DAY_2_ROW_R } from "./ff44/day2/Ff44GroupDataDay2RowR";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -85,28 +86,8 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_2_ROW_O,
   FF44_GROUP_DATA_DAY_2_ROW_P,
   FF44_GROUP_DATA_DAY_2_ROW_Q,
+  FF44_GROUP_DATA_DAY_2_ROW_R,
   [
-    {
-      groupId: "50994776c8d0432f8f4f58b1ba6f0b71",
-      groupName: "non_nonsummerjack",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [
-            { row: "R", number: 45 },
-            { row: "R", number: 46 },
-          ],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [
-            { row: "R", number: 45 },
-            { row: "R", number: 46 },
-          ],
-        },
-      ],
-    },
     {
       groupId: "4f3d1cbccebe4134a04213ee759711f5",
       groupName: "龍龍的畫畫倉庫",
