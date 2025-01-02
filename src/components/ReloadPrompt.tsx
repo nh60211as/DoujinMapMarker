@@ -21,22 +21,15 @@ function ReloadPrompt() {
     <div className="ReloadPrompt-container">
       {(offlineReady || needRefresh) && (
         <div className="ReloadPrompt-toast">
-          <div className="ReloadPrompt-message">
+          <div className="ReloadPrompt-toast-message">
             {offlineReady ? (
-              <span>App ready to work offline</span>
+              <span>網頁進入離線模式</span>
             ) : (
-              <span>
-                New content available, click on reload button to update.
-              </span>
+              <span>偵測到新版本，點擊重新整理</span>
             )}
           </div>
           {needRefresh && (
-            <button
-              className="ReloadPrompt-toast-button"
-              onClick={() => updateServiceWorker(true)}
-            >
-              偵測到新版本，點擊重新整理
-            </button>
+            <button onClick={() => updateServiceWorker(true)}>重新整理</button>
           )}
         </div>
       )}

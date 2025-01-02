@@ -2,7 +2,6 @@ import { LocationProvider, Router, Route } from "preact-iso";
 
 import { Home } from "./pages/Home/index";
 import { Header } from "./components/Header";
-import "./index.css";
 import { render } from "preact";
 import { useState } from "preact/hooks";
 import * as mapRecordService from "./services/MapRecordService";

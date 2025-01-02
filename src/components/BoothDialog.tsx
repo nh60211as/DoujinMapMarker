@@ -5,6 +5,7 @@ import { Point } from "../types/Point";
 import { GroupData } from "../types/GroupData";
 import { BoothInfo } from "./BoothInfo";
 import { BoothActiveDay } from "../types/BoothActiveDay";
+import "./BoothDialog.css";
 
 type BoothDialogProps = {
   groupData: GroupData;
