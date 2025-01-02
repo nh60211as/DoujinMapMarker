@@ -43,6 +43,7 @@ import { FF44_GROUP_DATA_DAY_2_ROW_O } from "./ff44/day2/Ff44GroupDataDay2RowO";
 import { FF44_GROUP_DATA_DAY_2_ROW_P } from "./ff44/day2/Ff44GroupDataDay2RowP";
 import { FF44_GROUP_DATA_DAY_2_ROW_Q } from "./ff44/day2/Ff44GroupDataDay2RowQ";
 import { FF44_GROUP_DATA_DAY_2_ROW_R } from "./ff44/day2/Ff44GroupDataDay2RowR";
+import { FF44_GROUP_DATA_DAY_2_ROW_S } from "./ff44/day2/Ff44GroupDataDay2RowS";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -87,61 +88,8 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_2_ROW_P,
   FF44_GROUP_DATA_DAY_2_ROW_Q,
   FF44_GROUP_DATA_DAY_2_ROW_R,
+  FF44_GROUP_DATA_DAY_2_ROW_S,
   [
-    {
-      groupId: "4f3d1cbccebe4134a04213ee759711f5",
-      groupName: "龍龍的畫畫倉庫",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [
-            { row: "S", number: 25 },
-            { row: "S", number: 26 },
-          ],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [
-            { row: "S", number: 25 },
-            { row: "S", number: 26 },
-          ],
-        },
-      ],
-    },
-    {
-      groupId: "b5473828516b4af0b184418fe632d7c6",
-      groupName: "百合室內盆栽",
-      groupLink: "https://www.facebook.com/ZhongIN9611",
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "S", number: 27 }],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [{ row: "S", number: 27 }],
-        },
-      ],
-    },
-    {
-      groupId: "2bda417b01354a61ae4b55bfe52b9857",
-      groupName: "鴨子塗鴉",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "S", number: 31 }],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [
-            { row: "S", number: 31 },
-            { row: "S", number: 32 },
-          ],
-        },
-      ],
-    },
     {
       groupId: "7fac37297b7e4d9d94034e99fcad9fdf",
       groupName: "にゃんション-貓宅",
