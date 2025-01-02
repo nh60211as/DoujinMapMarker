@@ -37,6 +37,7 @@ import { FF44_GROUP_DATA_DAY_2_ROW_I } from "./ff44/day2/Ff44GroupDataDay2RowI";
 import { FF44_GROUP_DATA_DAY_2_ROW_J } from "./ff44/day2/Ff44GroupDataDay2RowJ";
 import { FF44_GROUP_DATA_DAY_2_ROW_K } from "./ff44/day2/Ff44GroupDataDay2RowK";
 import { FF44_GROUP_DATA_DAY_2_ROW_L } from "./ff44/day2/Ff44GroupDataDay2RowL";
+import { FF44_GROUP_DATA_DAY_2_ROW_M } from "./ff44/day2/Ff44GroupDataDay2RowM";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -75,37 +76,8 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_2_ROW_J,
   FF44_GROUP_DATA_DAY_2_ROW_K,
   FF44_GROUP_DATA_DAY_2_ROW_L,
+  FF44_GROUP_DATA_DAY_2_ROW_M,
   [
-    {
-      groupId: "f19c32e8b5f14f70aba1d5ae1c3946c7",
-      groupName: "我老婆今年8歲",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "M", number: 29 }],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [{ row: "A", number: 17 }],
-        },
-      ],
-    },
-    {
-      groupId: "a276d1b948e047d4b070762f030baea2",
-      groupName: "虛力中年",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "M", number: 37 }],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [{ row: "M", number: 37 }],
-        },
-      ],
-    },
     {
       groupId: "50994776c8d0432f8f4f58b1ba6f0b71",
       groupName: "non_nonsummerjack",
