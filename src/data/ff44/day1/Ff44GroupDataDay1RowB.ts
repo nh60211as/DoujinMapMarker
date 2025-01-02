@@ -71,6 +71,10 @@ export const FF44_GROUP_DATA_DAY_1_ROW_B: Array<GroupData> = [
         activeDay: BoothActiveDay.day1,
         boothNumberList: [{ row: "B", number: 6 }],
       },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "B", number: 10 }],
+      },
     ],
   },
   {
@@ -82,6 +86,10 @@ export const FF44_GROUP_DATA_DAY_1_ROW_B: Array<GroupData> = [
         activeDay: BoothActiveDay.day1,
         boothNumberList: [{ row: "B", number: 7 }],
       },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "B", number: 11 }],
+      },
     ],
   },
   {
@@ -92,6 +100,10 @@ export const FF44_GROUP_DATA_DAY_1_ROW_B: Array<GroupData> = [
       {
         activeDay: BoothActiveDay.day1,
         boothNumberList: [{ row: "B", number: 8 }],
+      },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "B", number: 12 }],
       },
     ],
   },
@@ -105,6 +117,13 @@ export const FF44_GROUP_DATA_DAY_1_ROW_B: Array<GroupData> = [
         boothNumberList: [
           { row: "B", number: 9 },
           { row: "B", number: 10 },
+        ],
+      },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [
+          { row: "B", number: 13 },
+          { row: "B", number: 14 },
         ],
       },
     ],
@@ -133,6 +152,13 @@ export const FF44_GROUP_DATA_DAY_1_ROW_B: Array<GroupData> = [
         boothNumberList: [
           { row: "B", number: 13 },
           { row: "B", number: 14 },
+        ],
+      },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [
+          { row: "B", number: 15 },
+          { row: "B", number: 16 },
         ],
       },
     ],
@@ -270,6 +296,13 @@ export const FF44_GROUP_DATA_DAY_1_ROW_B: Array<GroupData> = [
           { row: "B", number: 30 },
         ],
       },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [
+          { row: "B", number: 31 },
+          { row: "B", number: 32 },
+        ],
+      },
     ],
   },
   {
@@ -291,6 +324,10 @@ export const FF44_GROUP_DATA_DAY_1_ROW_B: Array<GroupData> = [
       {
         activeDay: BoothActiveDay.day1,
         boothNumberList: [{ row: "B", number: 32 }],
+      },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "B", number: 30 }],
       },
     ],
   },
@@ -323,6 +360,10 @@ export const FF44_GROUP_DATA_DAY_1_ROW_B: Array<GroupData> = [
       {
         activeDay: BoothActiveDay.day1,
         boothNumberList: [{ row: "B", number: 35 }],
+      },
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "B", number: 39 }],
       },
     ],
   },

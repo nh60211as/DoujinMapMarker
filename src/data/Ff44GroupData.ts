@@ -26,6 +26,7 @@ import { FF44_GROUP_DATA_DAY_1_ROW_T } from "./ff44/day1/Ff44GroupDataDay1RowT";
 import { FF44_GROUP_DATA_DAY_1_ROW_U } from "./ff44/day1/Ff44GroupDataDay1RowU";
 import { FF44_GROUP_DATA_DAY_1_ROW_W } from "./ff44/day1/Ff44GroupDataDay1RowW";
 import { FF44_GROUP_DATA_DAY_2_ROW_A } from "./ff44/day2/Ff44GroupDataDay2RowA";
+import { FF44_GROUP_DATA_DAY_2_ROW_B } from "./ff44/day2/Ff44GroupDataDay2RowB";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -53,43 +54,8 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_1_ROW_U,
   FF44_GROUP_DATA_DAY_1_ROW_W,
   FF44_GROUP_DATA_DAY_2_ROW_A,
+  FF44_GROUP_DATA_DAY_2_ROW_B,
   [
-    {
-      groupId: "a89caa6cd4f04caa92c671f99f6306a7",
-      groupName: "Hosto",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [
-            { row: "B", number: 5 },
-            { row: "B", number: 6 },
-          ],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [
-            { row: "B", number: 5 },
-            { row: "B", number: 6 },
-          ],
-        },
-      ],
-    },
-    {
-      groupId: "b0cd29b4b6f54fdb9364e9611b336bc2",
-      groupName: "Eroge Japan",
-      groupLink: null,
-      boothList: [
-        {
-          activeDay: BoothActiveDay.day2,
-          boothNumberList: [{ row: "B", number: 9 }],
-        },
-        {
-          activeDay: BoothActiveDay.day3,
-          boothNumberList: [{ row: "B", number: 10 }],
-        },
-      ],
-    },
     {
       groupId: "c299c53ff49b4e81b3270b0fdd2b0bb0",
       groupName: "茶の魔王",
