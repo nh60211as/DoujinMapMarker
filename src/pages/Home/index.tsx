@@ -13,7 +13,6 @@ import { BoothModal } from "../../components/BoothModal";
 import * as mapRecordService from "../../services/MapRecordService";
 import { Marker } from "../../types/Marker";
 import { CURRENT_EVENT_TYPE } from "../../types/EventType";
-import { Point } from "../../types/Point";
 import { BoothActiveDay } from "../../types/BoothActiveDay";
 import { BoothDataOnMap } from "../../types/BoothData";
 import {
@@ -40,16 +39,11 @@ export function Home(props: HomeProps): JSX.Element {
   const [openBoothDialog, setOpenBoothDialog] = useState<boolean>(false);
   const [activeGroupData, setActiveGroupData] =
     useState<GroupData>(DEFAULT_GROUP_DATA);
-  const [boothDialogPoint, setBoothDialogPoint] = useState<Point>({
-    x: 0,
-    y: 0,
-  });
 
   // map image related
   const imgRef = useRef<HTMLImageElement>(null);
   const [naturalWidth, setNaturalWidth] = useState(0);
   const [naturalHeight, setNaturalHeight] = useState(0);
-  const [imgMaxPoint, setImgMaxPoint] = useState<Point>({ x: 0, y: 0 });
   const [imgSrc, setImgSrc] = useState<string>(
     getImageSrcByActiveDay(props.activeDay),
   );
@@ -71,7 +65,6 @@ export function Home(props: HomeProps): JSX.Element {
     if (imgRef.current !== null) {
       setNaturalWidth(imgRef.current.naturalWidth);
       setNaturalHeight(imgRef.current.naturalHeight);
-      setImgMaxPoint({ x: imgRef.current.width, y: imgRef.current.height });
 
       const imageAbsoluteSize: ImageSize = {
         width: imgRef.current.naturalWidth,
@@ -156,10 +149,6 @@ export function Home(props: HomeProps): JSX.Element {
           }}
           onClick={() => {
             setActiveGroupData(getGroupDataByGroupId(boothDataOnMap.groupId));
-            setBoothDialogPoint({
-              x: targetingBoxDimensionWithId.x,
-              y: targetingBoxDimensionWithId.y,
-            });
             setOpenBoothDialog(true);
           }}
         />
@@ -171,8 +160,6 @@ export function Home(props: HomeProps): JSX.Element {
       <BoothModal
         groupData={activeGroupData}
         currentActiveDay={props.activeDay}
-        point={boothDialogPoint}
-        maxPoint={imgMaxPoint}
         openDialog={openBoothDialog}
         closeDialog={() => setOpenBoothDialog(false)}
         setMarker={(marker: Marker) => {

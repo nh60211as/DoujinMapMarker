@@ -1,43 +1,19 @@
 import { JSX } from "preact";
 import { Marker } from "../types/Marker";
-import { Point } from "../types/Point";
 import { GroupData } from "../types/GroupData";
 import { BoothInfo } from "./BoothInfo";
 import { BoothActiveDay } from "../types/BoothActiveDay";
 import "./BoothModal.css";
-import { clamp } from "../utils/NumberUtils";
 
 type BoothModalProps = {
   groupData: GroupData;
   currentActiveDay: BoothActiveDay;
-  point: Point;
-  maxPoint: Point;
   openDialog: boolean;
   closeDialog: () => void;
   setMarker: (marker: Marker) => void;
 };
 
 export function BoothModal(props: BoothModalProps): JSX.Element {
-  const modalWidth = 350;
-  const modalMaxHeight = 500;
-  const padding = 30;
-
-  const clampedPoint: Point = {
-    x: clamp(props.point.x, 0, props.maxPoint.x - modalWidth - padding),
-    y: clamp(props.point.y, 0, props.maxPoint.y - modalMaxHeight - padding),
-  };
-
-  const centerPoint: Point = getCenterPoint(
-    clampedPoint,
-    modalWidth,
-    modalMaxHeight,
-  );
-
-  const actualPoint: Point = {
-    x: clamp(centerPoint.x, 0, props.maxPoint.x - modalWidth - padding),
-    y: clamp(centerPoint.y, 0, props.maxPoint.y - modalMaxHeight - padding),
-  };
-
   return (
     <div
       class="modalBackground"
@@ -46,13 +22,6 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
     >
       <div
         class="modal"
-        style={{
-          position: "absolute",
-          left: actualPoint.x,
-          top: actualPoint.y,
-          width: modalWidth,
-          maxHeight: modalMaxHeight,
-        }}
         onClick={(e): void => {
           // stop click event to go to modalBackground and trigger its click event
           e.stopPropagation();
@@ -95,11 +64,4 @@ function getLink(boothLink: string | null): JSX.Element {
       {boothLink}
     </a>
   );
-}
-
-function getCenterPoint(point: Point, width: number, height: number): Point {
-  return {
-    x: point.x - width / 2,
-    y: point.y,
-  };
 }
