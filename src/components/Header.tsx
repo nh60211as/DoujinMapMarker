@@ -98,11 +98,11 @@ export function Header(props: HeaderProps): JSX.Element {
           />
         </div>
         <div class="gridItem">
-          <button onClick={exportSetting}>匯出設定➡️</button>
           <FileReaderComponent
             tipText="➡️匯入設定"
             onFileContentChange={importSetting}
           />
+          <button onClick={exportSetting}>匯出設定➡️</button>
         </div>
         <div class="gridItem">
           <span>調整大小：</span>
