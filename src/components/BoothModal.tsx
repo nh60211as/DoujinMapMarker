@@ -38,11 +38,17 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
           </p>
           <p>
             標記：
-            <button onClick={() => props.setMarker(Marker.plannedToGo)}>
+            <button
+              class="plannedToGoButton"
+              onClick={() => props.setMarker(Marker.plannedToGo)}
+            >
               還沒去過
             </button>
             <span>{"　|　"}</span>
-            <button onClick={() => props.setMarker(Marker.alreadyGone)}>
+            <button
+              class="alreadyGoneButton"
+              onClick={() => props.setMarker(Marker.alreadyGone)}
+            >
               已去過
             </button>
             <span>{"　|　"}</span>
