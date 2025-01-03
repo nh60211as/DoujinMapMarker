@@ -218,6 +218,21 @@ export const FF44_GROUP_DATA_DAY_2_ROW_E: Array<GroupData> = [
     ],
   },
   {
+    groupId: "06d92e777e764e359218e7fec69f267a",
+    groupName: "微光創造",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "E", number: 33 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [{ row: "F", number: 40 }],
+      },
+    ],
+  },
+  {
     groupId: "3d5ee5cc07654049b49c3edadf6e5333",
     groupName: "SEAN.C",
     groupLink: null,

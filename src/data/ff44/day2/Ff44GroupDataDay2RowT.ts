@@ -321,6 +321,21 @@ export const FF44_GROUP_DATA_DAY_2_ROW_T: Array<GroupData> = [
     ],
   },
   {
+    groupId: "368299538e3441e59eb036d5e7efe1bf",
+    groupName: "瞪白紙工房",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "T", number: 34 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [{ row: "T", number: 35 }],
+      },
+    ],
+  },
+  {
     groupId: "11891564291f4a22925ccdbf9cb13f5d",
     groupName: "愛玉子",
     groupLink: null,

@@ -171,6 +171,24 @@ export const FF44_GROUP_DATA_DAY_2_ROW_D: Array<GroupData> = [
     ],
   },
   {
+    groupId: "cf6babe484134117aac899106b57ced2",
+    groupName: "薛頭的塞",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "D", number: 35 }],
+      },
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [
+          { row: "D", number: 35 },
+          { row: "D", number: 36 },
+        ],
+      },
+    ],
+  },
+  {
     groupId: "04f7b2ee2c884154b1a1921c427a233c",
     groupName: "遇見幸福手創館 Met Happiness",
     groupLink: null,

@@ -99,6 +99,17 @@ export const FF44_GROUP_DATA_DAY_2_ROW_H: Array<GroupData> = [
     ],
   },
   {
+    groupId: "0cc93ef49149473795f69f6fad05e53f",
+    groupName: "sally : deja-vu",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day2,
+        boothNumberList: [{ row: "H", number: 32 }],
+      },
+    ],
+  },
+  {
     groupId: "7793e305e9064d98ad5a4c69958d8d7e",
     groupName: "旋鳥",
     groupLink: null,

@@ -79,15 +79,4 @@ export const FF44_GROUP_DATA_DAY_3_ROW_F: Array<GroupData> = [
       },
     ],
   },
-  {
-    groupId: "06d92e777e764e359218e7fec69f267a",
-    groupName: "微光創造",
-    groupLink: null,
-    boothList: [
-      {
-        activeDay: BoothActiveDay.day3,
-        boothNumberList: [{ row: "F", number: 40 }],
-      },
-    ],
-  },
 ];

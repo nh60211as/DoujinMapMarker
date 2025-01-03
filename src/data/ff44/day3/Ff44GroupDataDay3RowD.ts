@@ -152,20 +152,6 @@ export const FF44_GROUP_DATA_DAY_3_ROW_D: Array<GroupData> = [
     ],
   },
   {
-    groupId: "cf6babe484134117aac899106b57ced2",
-    groupName: "薛頭的塞",
-    groupLink: null,
-    boothList: [
-      {
-        activeDay: BoothActiveDay.day3,
-        boothNumberList: [
-          { row: "D", number: 35 },
-          { row: "D", number: 36 },
-        ],
-      },
-    ],
-  },
-  {
     groupId: "25e5b13278424cea82e5d05a7388b4f0",
     groupName: "手創館",
     groupLink: null,

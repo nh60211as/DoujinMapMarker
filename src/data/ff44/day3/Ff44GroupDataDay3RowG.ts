@@ -3,6 +3,17 @@ import { GroupData } from "../../../types/GroupData";
 
 export const FF44_GROUP_DATA_DAY_3_ROW_G: Array<GroupData> = [
   {
+    groupId: "bd280cff69ad4b0abfc1e005921b5160",
+    groupName: "ななしのはなし",
+    groupLink: null,
+    boothList: [
+      {
+        activeDay: BoothActiveDay.day3,
+        boothNumberList: [{ row: "G", number: 26 }],
+      },
+    ],
+  },
+  {
     groupId: "743ee31a38cf41e2a874ab6abb3a4cd6",
     groupName: "ZELITTO ARTWORK",
     groupLink: null,

@@ -36,17 +36,6 @@ export const FF44_GROUP_DATA_DAY_3_ROW_T: Array<GroupData> = [
     ],
   },
   {
-    groupId: "368299538e3441e59eb036d5e7efe1bf",
-    groupName: "瞪白紙工房",
-    groupLink: null,
-    boothList: [
-      {
-        activeDay: BoothActiveDay.day3,
-        boothNumberList: [{ row: "T", number: 35 }],
-      },
-    ],
-  },
-  {
     groupId: "9eb046c07c8c482692e8a5d651e5ca88",
     groupName: "高分子聚合奶茶",
     groupLink: null,
