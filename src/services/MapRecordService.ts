@@ -18,7 +18,15 @@ export function setMarker(
 ) {
   const localStorageKey = createMapMarkerKey(eventType, activeDay, id);
 
-  localStorage.setItem(localStorageKey, Marker[marker]);
+  switch (marker) {
+    case Marker.plannedToGo:
+    case Marker.alreadyGone:
+      localStorage.setItem(localStorageKey, Marker[marker]);
+      break;
+    case Marker.none:
+      localStorage.removeItem(localStorageKey);
+      break;
+  }
 }
 
 export function getMarker(
