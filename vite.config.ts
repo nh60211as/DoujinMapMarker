@@ -36,7 +36,8 @@ export default defineConfig(({ command, mode }) => {
             },
           ],
         },
-        workbox: { cleanupOutdatedCaches: true },
+        workbox: { cleanupOutdatedCaches: true, globPatterns: ["**/*"] },
+        includeAssets: ["**/*"],
       }),
     ],
     build: {
