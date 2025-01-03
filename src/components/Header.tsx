@@ -117,12 +117,14 @@ export function Header(props: HeaderProps): JSX.Element {
               props.onActiveDayChange(newActiveDayAsEnum);
             }}
           />
-          {getSourceLinkElement(
-            mapRecordService.getActiveDayOrDefault(
-              EventType.FF44,
-              BoothActiveDay.day1,
-            ),
-          )}
+          <div>
+            {getSourceLinkElement(
+              mapRecordService.getActiveDayOrDefault(
+                EventType.FF44,
+                BoothActiveDay.day1,
+              ),
+            )}
+          </div>
         </div>
         <div class="gridItem">
           {" "}
@@ -147,8 +149,14 @@ export function Header(props: HeaderProps): JSX.Element {
         <div class="gridItem">
           <span>調整大小：</span>
           <span class="fixedSizeSpan">{`x${zoomInValueList[zoomInIndex]}`}</span>
-          <button onClick={onZoomOut}>{"　--　"}</button>
-          <button onClick={onZoomIn}>{"　++　"}</button>
+          <div>
+            <button class="zoomButton" onClick={onZoomOut}>
+              -
+            </button>
+            <button class="zoomButton" onClick={onZoomIn}>
+              +
+            </button>
+          </div>
         </div>
       </div>
     );
