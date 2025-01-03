@@ -10,7 +10,7 @@ type BoothModalProps = {
   currentActiveDay: BoothActiveDay;
   openDialog: boolean;
   closeDialog: () => void;
-  setMarker: (marker: Marker) => void;
+  onMarkerSet: (activeDay: BoothActiveDay, marker: Marker) => void;
 };
 
 export function BoothModal(props: BoothModalProps): JSX.Element {
@@ -36,29 +36,10 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
             <span>攤位連結：</span>
             {getLink(props.groupData.groupLink)}
           </p>
-          <p>
-            標記：
-            <button
-              class="plannedToGoButton"
-              onClick={() => props.setMarker(Marker.plannedToGo)}
-            >
-              還沒去過
-            </button>
-            <span>{"　|　"}</span>
-            <button
-              class="alreadyGoneButton"
-              onClick={() => props.setMarker(Marker.alreadyGone)}
-            >
-              已去過
-            </button>
-            <span>{"　|　"}</span>
-            <button onClick={() => props.setMarker(Marker.none)}>
-              取消標記
-            </button>
-          </p>
           <BoothInfo
             boothList={props.groupData.boothList}
             currentActiveDay={props.currentActiveDay}
+            onMarkerSet={props.onMarkerSet}
           />
           {/* <button onClick={props.closeDialog}>關閉</button> */}
         </div>
