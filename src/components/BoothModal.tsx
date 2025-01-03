@@ -20,14 +20,14 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
       onClick={props.closeDialog}
       style={{ display: props.openDialog ? "block" : "none" }}
     >
-      <div
-        class="modal"
-      >
-        <div class="modalContent"
-        onClick={(e): void => {
-          // stop click event to go to modalBackground and trigger its click event
-          e.stopPropagation();
-        }}>
+      <div class="modal">
+        <div
+          class="modalContent"
+          onClick={(e): void => {
+            // stop click event to go to modalBackground and trigger its click event
+            e.stopPropagation();
+          }}
+        >
           <p>
             <span>攤位名稱：</span>
             {props.groupData.groupName}

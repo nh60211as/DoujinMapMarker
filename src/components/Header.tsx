@@ -30,6 +30,10 @@ export function Header(props: HeaderProps): JSX.Element {
     getZoomInIndexOrDefault(),
   );
 
+  const [headerVisible, setHeaderVisible] = useState<boolean>(true);
+  const openHeader = (): void => setHeaderVisible(true);
+  const closeHeader = (): void => setHeaderVisible(false);
+
   useEffect(() => {
     setZoomInIndex(getZoomInIndexOrDefault());
   }, [props.currentZoomInValue]);
@@ -76,8 +80,8 @@ export function Header(props: HeaderProps): JSX.Element {
     props.onZoomInValueChange(newZoomInValue);
   }
 
-  return (
-    <header>
+  function HeaderContent(): JSX.Element {
+    return (
       <div class="gridContainer">
         <div class="gridItem">
           <DropDownList
@@ -111,7 +115,27 @@ export function Header(props: HeaderProps): JSX.Element {
           <button onClick={onZoomIn}>{"　++　"}</button>
         </div>
       </div>
-    </header>
+    );
+  }
+
+  return (
+    <div class="customHeder">
+      <button
+        class="navButton"
+        onClick={openHeader}
+        style={{ display: headerVisible ? "none" : "block" }}
+      >
+        <img class="navIcon" />
+      </button>
+      <button
+        class="xButton"
+        onClick={closeHeader}
+        style={{ display: headerVisible ? "block" : "none" }}
+      >
+        <img class="xIcon" />
+      </button>
+      {headerVisible === true ? <HeaderContent /> : <></>}
+    </div>
   );
 }
 

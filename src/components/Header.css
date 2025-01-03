@@ -1,4 +1,4 @@
-header {
+.customHeder {
   background: black;
   position: fixed;
   top: 0; /* Ensure the header is at the top of the screen */
@@ -6,6 +6,7 @@ header {
   width: calc(100% - 40px); /* Adjust the width */
   z-index: 100; /* Ensure the header is above other content */
   padding: 10px 20px; /* Optional: Add some padding inside the header */
+  min-height: 60px;
 }
 
 /* Grid container */
@@ -31,4 +32,40 @@ header {
   display: inline-block; /* Makes it respect width */
   width: 45px; /* Set desired width */
   padding: 5px; /* Optional: To add some space around the text */
+}
+
+.navButton {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  width: 64px;
+  height: 64px;
+  padding: 8px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: unset;
+}
+
+.navIcon {
+  content: url(../assets/icons/hamburger.svg);
+  width: 48px;
+  height: 48px;
+}
+
+.xButton {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  width: 64px;
+  height: 64px;
+  padding: 8px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: unset;
+}
+
+.xIcon {
+  content: url(../assets/icons/cross-mark.svg);
+  width: 48px;
+  height: 48px;
 }
