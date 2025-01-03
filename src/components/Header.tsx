@@ -100,6 +100,12 @@ export function Header(props: HeaderProps): JSX.Element {
               props.onActiveDayChange(newActiveDayAsEnum);
             }}
           />
+          {getSourceLinkElement(
+            mapRecordService.getActiveDayOrDefault(
+              EventType.FF44,
+              BoothActiveDay.day1,
+            ),
+          )}
         </div>
         <div class="gridItem">
           <FileReaderComponent
@@ -204,4 +210,27 @@ function getZoomInIndexOrDefault(): number {
   return foundZoomInIndex === -1
     ? DEFAULT_ZOOM_IN_VALUE_INDEX
     : foundZoomInIndex;
+}
+
+function getSourceLink(activeDay: BoothActiveDay): string {
+  switch (activeDay) {
+    case BoothActiveDay.day1:
+      return "https://www.f-2.com.tw/index.php?q=ff/169824";
+    case BoothActiveDay.day2:
+      return "https://www.f-2.com.tw/index.php?q=ff/169825";
+    case BoothActiveDay.day3:
+      return "https://www.f-2.com.tw/index.php?q=ff/169826";
+  }
+}
+
+function getSourceLinkElement(activeDay: BoothActiveDay): JSX.Element {
+  return (
+    <a
+      href={getSourceLink(activeDay)}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      資料來源
+    </a>
+  );
 }
