@@ -68,6 +68,7 @@ import { FF44_GROUP_DATA_DAY_3_ROW_R } from "./ff44/day3/Ff44GroupDataDay3RowR";
 import { FF44_GROUP_DATA_DAY_3_ROW_S } from "./ff44/day3/Ff44GroupDataDay3RowS";
 import { FF44_GROUP_DATA_DAY_3_ROW_T } from "./ff44/day3/Ff44GroupDataDay3RowT";
 import { FF44_GROUP_DATA_DAY_3_ROW_U } from "./ff44/day3/Ff44GroupDataDay3RowU";
+import { FF44_GROUP_DATA_DAY_3_ROW_W } from "./ff44/day3/Ff44GroupDataDay3RowW";
 
 export const FF44_GROUP_DATA: Array<GroupData> = (
   [] as Array<GroupData>
@@ -137,6 +138,7 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_3_ROW_S,
   FF44_GROUP_DATA_DAY_3_ROW_T,
   FF44_GROUP_DATA_DAY_3_ROW_U,
+  FF44_GROUP_DATA_DAY_3_ROW_W,
 );
 
 function getFf44BoothDataByActiveDay(
