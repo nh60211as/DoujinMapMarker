@@ -2,6 +2,7 @@ import { JSX } from "preact";
 import { useRef } from "preact/hooks";
 
 type FileReaderComponentProps = {
+  tipText: string;
   onFileContentChange: (fileContent: string | null) => void;
 };
 
@@ -39,7 +40,7 @@ export function FileReaderComponent(
 
   return (
     <>
-      <button onClick={handleButtonClick}>選擇檔案</button>
+      <button onClick={handleButtonClick}>{props.tipText}</button>
       {/* Hidden file input */}
       <input
         type="file"

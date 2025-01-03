@@ -95,10 +95,12 @@ export function Header(props: HeaderProps): JSX.Element {
         }}
       />
       <span>{"　|　"}</span>
-      <button onClick={exportSetting}>匯出設定</button>
+      <button onClick={exportSetting}>匯出設定➡️</button>
       <span>{"　|　"}</span>
-      <span>匯入設定：</span>
-      <FileReaderComponent onFileContentChange={importSetting} />
+      <FileReaderComponent
+        tipText="➡️匯入設定"
+        onFileContentChange={importSetting}
+      />
       <span>{"　|　"}</span>
       <span>調整大小：</span>
       <span>{`　x${zoomInValueList[zoomInIndex]}　`}</span>
