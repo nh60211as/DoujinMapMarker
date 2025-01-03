@@ -23,6 +23,8 @@ import {
 import { ValidZoomInValue } from "../../types/ZoomInValue";
 import { DEFAULT_GROUP_DATA, GroupData } from "../../types/GroupData";
 
+const DEFAULT_IMAGE_SIZE: ImageSize = { width: 3508, height: 2431 };
+
 type HomeProps = {
   activeDay: BoothActiveDay;
   zoomInValue: ValidZoomInValue;
@@ -95,21 +97,29 @@ export function Home(props: HomeProps): JSX.Element {
       setTargetingBoxDimensionWithGroupIdList(
         TargetingBoxRelativeDimensionWithGroupIdList,
       );
+    } else {
     }
   }, [imgRef.current]);
 
   const FfImage = (): JSX.Element => {
     return (
-      <img
-        ref={imgRef}
-        src={imgSrc}
-        alt="Fancy Frontier Map"
+      <div
         style={{
-          width: `${naturalWidth * props.zoomInValue}px`,
-          height: `${naturalHeight * props.zoomInValue}px`, // Maintain aspect ratio
-          transition: "width 0.3s ease-in-out", // Smooth transition for zoom effect
+          width: DEFAULT_IMAGE_SIZE.width * props.zoomInValue,
+          height: DEFAULT_IMAGE_SIZE.height * props.zoomInValue,
         }}
-      ></img>
+      >
+        <img
+          ref={imgRef}
+          src={imgSrc}
+          alt="Fancy Frontier Map"
+          style={{
+            width: `${naturalWidth * props.zoomInValue}px`,
+            height: `${naturalHeight * props.zoomInValue}px`, // Maintain aspect ratio
+            transition: "width 0.3s ease-in-out", // Smooth transition for zoom effect
+          }}
+        ></img>
+      </div>
     );
   };
 
