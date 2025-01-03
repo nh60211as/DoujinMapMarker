@@ -14,11 +14,14 @@ import {
   ValidZoomInValue,
   zoomInValueList,
 } from "./types/ZoomInValue";
+import { Filter } from "./types/Filter";
 
 export function App() {
   const [activeDay, setActiveDay] = useState<BoothActiveDay>(
     mapRecordService.getActiveDayOrDefault(EventType.FF44, BoothActiveDay.day1),
   );
+
+  const [filter, setFilter] = useState<Filter>(Filter.noFilter);
 
   const [zoomInValue, setZoomInValue] = useState<ValidZoomInValue>(
     browserSettingService.getZoomInOrDefault(
@@ -34,14 +37,18 @@ export function App() {
         onActiveDayChange={setActiveDay}
         currentZoomInValue={zoomInValue}
         onZoomInValueChange={setZoomInValue}
+        onFilterChange={setFilter}
       />
       <main>
         <Router>
           <Route
             path={`/`}
-            component={() => Home({ activeDay, zoomInValue })}
+            component={() => Home({ activeDay, zoomInValue, filter })}
           />
-          <Route default component={() => Home({ activeDay, zoomInValue })} />
+          <Route
+            default
+            component={() => Home({ activeDay, zoomInValue, filter })}
+          />
         </Router>
       </main>
     </LocationProvider>

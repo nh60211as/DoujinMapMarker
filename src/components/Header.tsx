@@ -18,11 +18,13 @@ import {
   zoomInValueList,
 } from "../types/ZoomInValue";
 import { clamp } from "../utils/NumberUtils";
+import { Filter } from "../types/Filter";
 
 type HeaderProps = {
   onActiveDayChange: (activeDay: StateUpdater<BoothActiveDay>) => void;
   currentZoomInValue: ValidZoomInValue;
   onZoomInValueChange: (zoomInValue: ValidZoomInValue) => void;
+  onFilterChange: (filter: Filter) => void;
 };
 
 export function Header(props: HeaderProps): JSX.Element {
@@ -55,6 +57,21 @@ export function Header(props: HeaderProps): JSX.Element {
       value: BoothActiveDay.day3,
     },
   ];
+
+  const filterOptionValueList: Array<{
+    option: JSX.Element;
+    value: Filter;
+  }> = [
+    {
+      option: <>不篩選</>,
+      value: Filter.noFilter,
+    },
+    {
+      option: <>只擺一天</>,
+      value: Filter.onlyOneDay,
+    },
+  ];
+
   function onZoomOut() {
     const newZoomInIndex = clamp(
       zoomInIndex - 1,
@@ -106,6 +123,19 @@ export function Header(props: HeaderProps): JSX.Element {
               BoothActiveDay.day1,
             ),
           )}
+        </div>
+        <div class="gridItem">
+          {" "}
+          <DropDownList
+            tipText="選擇篩選："
+            value={Filter.noFilter}
+            optionValue={filterOptionValueList}
+            onChange={(filter: Filter) => {
+              // FIXME: newActiveDay should be of type BoothActiveDay but is actually string
+              const newFilterAsEnum = parseInt(filter as unknown as string);
+              props.onFilterChange(newFilterAsEnum);
+            }}
+          />
         </div>
         <div class="gridItem">
           <FileReaderComponent

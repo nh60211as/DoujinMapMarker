@@ -1,5 +1,6 @@
 import { BoothActiveDay } from "../types/BoothActiveDay";
 import { BoothData, BoothDataOnMap } from "../types/BoothData";
+import { Filter } from "../types/Filter";
 import { GroupData } from "../types/GroupData";
 import { boothNumberListToTargetingBoxDimension } from "../utils/BoothNumberUtils";
 import { defined } from "../utils/TypeUtils";
@@ -141,27 +142,54 @@ export const FF44_GROUP_DATA: Array<GroupData> = (
   FF44_GROUP_DATA_DAY_3_ROW_W,
 );
 
-function getFf44BoothDataByActiveDay(
+function getBoothDataListByActiveDay(
+  groupDataList: Array<GroupData>,
   boothActiveDay: BoothActiveDay,
 ): Array<BoothData> {
-  return FF44_GROUP_DATA.filter((groupData) =>
-    groupData.boothList.some((booth) => booth.activeDay === boothActiveDay),
-  ).map((groupData) => {
-    return {
-      groupId: groupData.groupId,
-      groupName: groupData.groupName,
-      groupLink: groupData.groupLink,
-      booth: defined(
-        groupData.boothList.find((booth) => booth.activeDay === boothActiveDay),
-      ),
-    };
-  });
+  return groupDataList
+    .filter((groupData) =>
+      groupData.boothList.some((booth) => booth.activeDay === boothActiveDay),
+    )
+    .map((groupData) => {
+      return {
+        groupId: groupData.groupId,
+        groupName: groupData.groupName,
+        groupLink: groupData.groupLink,
+        booth: defined(
+          groupData.boothList.find(
+            (booth) => booth.activeDay === boothActiveDay,
+          ),
+        ),
+      };
+    });
 }
 
-export function getFf44BoothDataOnMapByActiveDay(
+function getGroupDataListWithOnlyOneDay(
+  groupDataList: Array<GroupData>,
+): Array<GroupData> {
+  return groupDataList.filter((groupData) => groupData.boothList.length === 1);
+}
+
+function getFf44BoothData(
   boothActiveDay: BoothActiveDay,
+  filter: Filter,
+): Array<BoothData> {
+  switch (filter) {
+    case Filter.noFilter:
+      return getBoothDataListByActiveDay(FF44_GROUP_DATA, boothActiveDay);
+    case Filter.onlyOneDay:
+      return getBoothDataListByActiveDay(
+        getGroupDataListWithOnlyOneDay(FF44_GROUP_DATA),
+        boothActiveDay,
+      );
+  }
+}
+
+export function getFf44BoothDataOnMap(
+  boothActiveDay: BoothActiveDay,
+  filter: Filter,
 ): Array<BoothDataOnMap> {
-  return getFf44BoothDataByActiveDay(boothActiveDay).map((boothData) => {
+  return getFf44BoothData(boothActiveDay, filter).map((boothData) => {
     return {
       ...boothData,
       dimension: boothNumberListToTargetingBoxDimension(

@@ -16,24 +16,26 @@ import { CURRENT_EVENT_TYPE } from "../../types/EventType";
 import { BoothActiveDay } from "../../types/BoothActiveDay";
 import { BoothDataOnMap } from "../../types/BoothData";
 import {
-  getFf44BoothDataOnMapByActiveDay,
+  getFf44BoothDataOnMap,
   getGroupDataByGroupId,
 } from "../../data/Ff44GroupData";
 import { ValidZoomInValue } from "../../types/ZoomInValue";
 import { DEFAULT_GROUP_DATA, GroupData } from "../../types/GroupData";
+import { Filter } from "../../types/Filter";
 
 const DEFAULT_IMAGE_SIZE: ImageSize = { width: 3508, height: 2431 };
 
 type HomeProps = {
   activeDay: BoothActiveDay;
   zoomInValue: ValidZoomInValue;
+  filter: Filter;
 };
 
 export function Home(props: HomeProps): JSX.Element {
   // active day map data related
   const [activeBoothDataOnMapList, setActiveBoothDataOnMapList] = useState<
     Array<BoothDataOnMap>
-  >(getFf44BoothDataOnMapByActiveDay(props.activeDay));
+  >([]);
 
   // BoothDialog related
   const [openBoothDialog, setOpenBoothDialog] = useState<boolean>(false);
@@ -56,7 +58,7 @@ export function Home(props: HomeProps): JSX.Element {
   useEffect(() => {
     setImgSrc(getImageSrcByActiveDay(props.activeDay));
     setActiveBoothDataOnMapList(
-      getFf44BoothDataOnMapByActiveDay(props.activeDay),
+      getFf44BoothDataOnMap(props.activeDay, props.filter),
     );
   }, [props.activeDay]);
 

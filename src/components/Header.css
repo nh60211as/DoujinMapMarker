@@ -12,7 +12,7 @@
 /* Grid container */
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
   gap: 20px; /* Optional: space between grid items */
 }
 
