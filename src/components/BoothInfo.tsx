@@ -12,35 +12,59 @@ type BoothInfoProps = {
 };
 
 export function BoothInfo(props: BoothInfoProps): JSX.Element {
+  const isDay1Active: boolean =
+    props.boothList.findIndex((e) => e.activeDay === BoothActiveDay.day1) !==
+    -1;
+  const isDay2Active: boolean =
+    props.boothList.findIndex((e) => e.activeDay === BoothActiveDay.day2) !==
+    -1;
+  const isDay3Active: boolean =
+    props.boothList.findIndex((e) => e.activeDay === BoothActiveDay.day3) !==
+    -1;
+
   return (
     <>
-      <SingleDayBoothInfo
-        prefix="第一天(02/07)攤位："
-        activeDay={BoothActiveDay.day1}
-        boothList={props.boothList}
-        currentActiveDay={props.currentActiveDay}
-        onMarkerSet={(newMarker) =>
-          props.onMarkerSet(BoothActiveDay.day1, newMarker)
-        }
-      />
-      <SingleDayBoothInfo
-        prefix="第二天(02/08)攤位："
-        activeDay={BoothActiveDay.day2}
-        boothList={props.boothList}
-        currentActiveDay={props.currentActiveDay}
-        onMarkerSet={(newMarker) =>
-          props.onMarkerSet(BoothActiveDay.day2, newMarker)
-        }
-      />
-      <SingleDayBoothInfo
-        prefix="第三天(02/09)攤位："
-        activeDay={BoothActiveDay.day3}
-        boothList={props.boothList}
-        currentActiveDay={props.currentActiveDay}
-        onMarkerSet={(newMarker) =>
-          props.onMarkerSet(BoothActiveDay.day3, newMarker)
-        }
-      />
+      {isDay1Active === true ? (
+        <SingleDayBoothInfo
+          prefix="第一天(02/07)攤位："
+          activeDay={BoothActiveDay.day1}
+          boothList={props.boothList}
+          currentActiveDay={props.currentActiveDay}
+          onMarkerSet={(newMarker) =>
+            props.onMarkerSet(BoothActiveDay.day1, newMarker)
+          }
+        />
+      ) : (
+        <></>
+      )}
+
+      {isDay2Active === true ? (
+        <SingleDayBoothInfo
+          prefix="第二天(02/08)攤位："
+          activeDay={BoothActiveDay.day2}
+          boothList={props.boothList}
+          currentActiveDay={props.currentActiveDay}
+          onMarkerSet={(newMarker) =>
+            props.onMarkerSet(BoothActiveDay.day2, newMarker)
+          }
+        />
+      ) : (
+        <></>
+      )}
+
+      {isDay3Active === true ? (
+        <SingleDayBoothInfo
+          prefix="第三天(02/09)攤位："
+          activeDay={BoothActiveDay.day3}
+          boothList={props.boothList}
+          currentActiveDay={props.currentActiveDay}
+          onMarkerSet={(newMarker) =>
+            props.onMarkerSet(BoothActiveDay.day3, newMarker)
+          }
+        />
+      ) : (
+        <></>
+      )}
     </>
   );
 }
