@@ -32,7 +32,7 @@ export function Header(props: HeaderProps): JSX.Element {
     getZoomInIndexOrDefault(),
   );
 
-  const [filter, setFilter] = useState<Filter>(getZoomInIndexOrDefault());
+  const [filter, setFilter] = useState<Filter>(Filter.noFilter);
 
   const [headerVisible, setHeaderVisible] = useState<boolean>(true);
   const openHeader = (): void => setHeaderVisible(true);
@@ -131,7 +131,7 @@ export function Header(props: HeaderProps): JSX.Element {
         <div class="gridItem">
           {" "}
           <DropDownList
-            tipText="選擇篩選："
+            tipText="篩選："
             value={filter}
             optionValue={filterOptionValueList}
             onChange={(filter: Filter) => {
