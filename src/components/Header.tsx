@@ -103,7 +103,7 @@ export function Header(props: HeaderProps): JSX.Element {
       />
       <span>{"　|　"}</span>
       <span>調整大小：</span>
-      <span>{`　x${zoomInValueList[zoomInIndex]}　`}</span>
+      <span class="fixedSizeSpan">{`x${zoomInValueList[zoomInIndex]}`}</span>
       <button onClick={onZoomOut}>{"　--　"}</button>
       <button onClick={onZoomIn}>{"　++　"}</button>
     </header>
