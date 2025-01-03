@@ -32,6 +32,8 @@ export function Header(props: HeaderProps): JSX.Element {
     getZoomInIndexOrDefault(),
   );
 
+  const [filter, setFilter] = useState<Filter>(getZoomInIndexOrDefault());
+
   const [headerVisible, setHeaderVisible] = useState<boolean>(true);
   const openHeader = (): void => setHeaderVisible(true);
   const closeHeader = (): void => setHeaderVisible(false);
@@ -130,12 +132,13 @@ export function Header(props: HeaderProps): JSX.Element {
           {" "}
           <DropDownList
             tipText="選擇篩選："
-            value={Filter.noFilter}
+            value={filter}
             optionValue={filterOptionValueList}
             onChange={(filter: Filter) => {
               // FIXME: newActiveDay should be of type BoothActiveDay but is actually string
               const newFilterAsEnum = parseInt(filter as unknown as string);
               props.onFilterChange(newFilterAsEnum);
+              setFilter(filter);
             }}
           />
         </div>
