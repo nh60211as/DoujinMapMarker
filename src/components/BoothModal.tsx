@@ -28,8 +28,14 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
         }}
       >
         <div class="modalContent">
-          <p>攤位名稱：{props.groupData.groupName}</p>
-          <p>攤位連結：{getLink(props.groupData.groupLink)}</p>
+          <p>
+            <span>攤位名稱：</span>
+            {props.groupData.groupName}
+          </p>
+          <p>
+            <span>攤位連結：</span>
+            {getLink(props.groupData.groupLink)}
+          </p>
           <p>
             標記：
             <button onClick={() => props.setMarker(Marker.plannedToGo)}>
