@@ -78,34 +78,39 @@ export function Header(props: HeaderProps): JSX.Element {
 
   return (
     <header>
-      <DropDownList
-        tipText="選擇天數："
-        value={mapRecordService.getActiveDayOrDefault(
-          EventType.FF44,
-          BoothActiveDay.day1,
-        )}
-        optionValue={activeDayOptionValueList}
-        onChange={(newActiveDay: BoothActiveDay) => {
-          // FIXME: newActiveDay should be of type BoothActiveDay but is actually string
-          const newActiveDayAsEnum = parseInt(
-            newActiveDay as unknown as string,
-          );
-          mapRecordService.setActiveDay(EventType.FF44, newActiveDayAsEnum);
-          props.onActiveDayChange(newActiveDayAsEnum);
-        }}
-      />
-      <span>{"　|　"}</span>
-      <button onClick={exportSetting}>匯出設定➡️</button>
-      <span>{"　|　"}</span>
-      <FileReaderComponent
-        tipText="➡️匯入設定"
-        onFileContentChange={importSetting}
-      />
-      <span>{"　|　"}</span>
-      <span>調整大小：</span>
-      <span class="fixedSizeSpan">{`x${zoomInValueList[zoomInIndex]}`}</span>
-      <button onClick={onZoomOut}>{"　--　"}</button>
-      <button onClick={onZoomIn}>{"　++　"}</button>
+      <div class="gridContainer">
+        <div class="gridItem">
+          <DropDownList
+            tipText="選擇天數："
+            value={mapRecordService.getActiveDayOrDefault(
+              EventType.FF44,
+              BoothActiveDay.day1,
+            )}
+            optionValue={activeDayOptionValueList}
+            onChange={(newActiveDay: BoothActiveDay) => {
+              // FIXME: newActiveDay should be of type BoothActiveDay but is actually string
+              const newActiveDayAsEnum = parseInt(
+                newActiveDay as unknown as string,
+              );
+              mapRecordService.setActiveDay(EventType.FF44, newActiveDayAsEnum);
+              props.onActiveDayChange(newActiveDayAsEnum);
+            }}
+          />
+        </div>
+        <div class="gridItem">
+          <button onClick={exportSetting}>匯出設定➡️</button>
+          <FileReaderComponent
+            tipText="➡️匯入設定"
+            onFileContentChange={importSetting}
+          />
+        </div>
+        <div class="gridItem">
+          <span>調整大小：</span>
+          <span class="fixedSizeSpan">{`x${zoomInValueList[zoomInIndex]}`}</span>
+          <button onClick={onZoomOut}>{"　--　"}</button>
+          <button onClick={onZoomIn}>{"　++　"}</button>
+        </div>
+      </div>
     </header>
   );
 }

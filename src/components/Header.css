@@ -8,6 +8,25 @@ header {
   padding: 10px 20px; /* Optional: Add some padding inside the header */
 }
 
+/* Grid container */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 20px; /* Optional: space between grid items */
+}
+
+/* Grid items */
+.gridItem {
+  text-align: center;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
+
 .fixedSizeSpan {
   display: inline-block; /* Makes it respect width */
   width: 45px; /* Set desired width */
