@@ -21,8 +21,8 @@ header {
 }
 
 /* Media query for mobile devices */
-@media (max-width: 768px) {
-  .grid-container {
+@media screen and (max-width: 800px) {
+  .gridContainer {
     grid-template-columns: 1fr; /* 1 column on mobile */
   }
 }
