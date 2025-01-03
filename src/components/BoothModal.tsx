@@ -37,6 +37,7 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
             <span>{getLink(props.groupData.groupLink)}</span>
           </p>
           <BoothInfo
+            groupId={props.groupData.groupId}
             boothList={props.groupData.boothList}
             currentActiveDay={props.currentActiveDay}
             onMarkerSet={props.onMarkerSet}

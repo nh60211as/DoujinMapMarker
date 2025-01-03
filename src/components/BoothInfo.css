@@ -1,3 +1,19 @@
 .highlightText {
   color: gold;
 }
+
+.plannedToGoButton {
+  background-color: red;
+}
+
+.alreadyGoneButton {
+  background-color: green;
+}
+
+.unselectableSpan {
+  user-select: none;
+}
+
+.activeButton {
+  color: gold;
+}

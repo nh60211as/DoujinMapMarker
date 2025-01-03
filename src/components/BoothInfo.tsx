@@ -4,8 +4,11 @@ import { BoothActiveDay } from "../types/BoothActiveDay";
 import { BoothNumber } from "../types/BoothNumber";
 import "./BoothInfo.css";
 import { Marker } from "../types/Marker";
+import * as mapRecordService from "../services/MapRecordService";
+import { EventType } from "../types/EventType";
 
 type BoothInfoProps = {
+  groupId: string;
   boothList: Array<Booth>;
   currentActiveDay: BoothActiveDay;
   onMarkerSet: (activeDay: BoothActiveDay, marker: Marker) => void;
@@ -27,6 +30,7 @@ export function BoothInfo(props: BoothInfoProps): JSX.Element {
       {isDay1Active === true ? (
         <SingleDayBoothInfo
           prefix="第一天(02/07)攤位："
+          groupId={props.groupId}
           activeDay={BoothActiveDay.day1}
           boothList={props.boothList}
           currentActiveDay={props.currentActiveDay}
@@ -41,6 +45,7 @@ export function BoothInfo(props: BoothInfoProps): JSX.Element {
       {isDay2Active === true ? (
         <SingleDayBoothInfo
           prefix="第二天(02/08)攤位："
+          groupId={props.groupId}
           activeDay={BoothActiveDay.day2}
           boothList={props.boothList}
           currentActiveDay={props.currentActiveDay}
@@ -55,6 +60,7 @@ export function BoothInfo(props: BoothInfoProps): JSX.Element {
       {isDay3Active === true ? (
         <SingleDayBoothInfo
           prefix="第三天(02/09)攤位："
+          groupId={props.groupId}
           activeDay={BoothActiveDay.day3}
           boothList={props.boothList}
           currentActiveDay={props.currentActiveDay}
@@ -71,6 +77,7 @@ export function BoothInfo(props: BoothInfoProps): JSX.Element {
 
 function SingleDayBoothInfo(props: {
   prefix: string;
+  groupId: string;
   activeDay: BoothActiveDay;
   boothList: Array<Booth>;
   currentActiveDay: BoothActiveDay;
@@ -80,12 +87,19 @@ function SingleDayBoothInfo(props: {
 
   const isHighlight: boolean = props.activeDay === props.currentActiveDay;
 
+  const marker: Marker = mapRecordService.getMarker(
+    EventType.FF44,
+    props.activeDay,
+    props.groupId,
+  );
+
   return (
     <>
       <p class={getHighlightCssClass(isHighlight)}>{content}</p>
       <MarkerButtons
         onMarkerSet={props.onMarkerSet}
         isHighlight={isHighlight}
+        activeMarkerButton={marker}
       />
     </>
   );
@@ -98,19 +112,25 @@ function getHighlightCssClass(isHighlight: boolean): string {
 function MarkerButtons(props: {
   onMarkerSet: (marker: Marker) => void;
   isHighlight: boolean;
+  activeMarkerButton: Marker;
 }): JSX.Element {
+  const plannedToGoButtonCssClass =
+    props.activeMarkerButton === Marker.plannedToGo ? "activeButton" : "";
+  const alreadyGoneButtonCssClass =
+    props.activeMarkerButton === Marker.alreadyGone ? "activeButton" : "";
+
   return (
     <p class={getHighlightCssClass(props.isHighlight)}>
       標記：
       <button
-        class="plannedToGoButton"
+        class={`plannedToGoButton ${plannedToGoButtonCssClass}`}
         onClick={() => props.onMarkerSet(Marker.plannedToGo)}
       >
         還沒去過
       </button>
       <span>{"　|　"}</span>
       <button
-        class="alreadyGoneButton"
+        class={`alreadyGoneButton ${alreadyGoneButtonCssClass}`}
         onClick={() => props.onMarkerSet(Marker.alreadyGone)}
       >
         已去過
