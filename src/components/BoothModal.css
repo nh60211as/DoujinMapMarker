@@ -49,3 +49,7 @@ button:hover {
 .alreadyGoneButton {
   background-color: green;
 }
+
+.unselectableSpan {
+  user-select: none;
+}

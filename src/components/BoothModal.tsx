@@ -29,12 +29,12 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
           }}
         >
           <p>
-            <span>攤位名稱：</span>
-            {props.groupData.groupName}
+            <span class="unselectableSpan">攤位名稱：</span>
+            <span>{props.groupData.groupName}</span>
           </p>
           <p>
-            <span>攤位連結：</span>
-            {getLink(props.groupData.groupLink)}
+            <span class="unselectableSpan">攤位連結：</span>
+            <span>{getLink(props.groupData.groupLink)}</span>
           </p>
           <BoothInfo
             boothList={props.groupData.boothList}
