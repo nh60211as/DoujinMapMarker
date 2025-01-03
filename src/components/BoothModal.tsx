@@ -22,12 +22,12 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
     >
       <div
         class="modal"
+      >
+        <div class="modalContent"
         onClick={(e): void => {
           // stop click event to go to modalBackground and trigger its click event
           e.stopPropagation();
-        }}
-      >
-        <div class="modalContent">
+        }}>
           <p>
             <span>攤位名稱：</span>
             {props.groupData.groupName}
@@ -54,7 +54,7 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
             boothList={props.groupData.boothList}
             currentActiveDay={props.currentActiveDay}
           />
-          <button onClick={props.closeDialog}>關閉</button>
+          {/* <button onClick={props.closeDialog}>關閉</button> */}
         </div>
       </div>
     </div>
