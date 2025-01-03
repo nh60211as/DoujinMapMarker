@@ -1,6 +1,9 @@
 header {
   background: black;
   position: fixed;
-  width: calc(100% - 40px);
-  z-index: 100;
+  top: 0; /* Ensure the header is at the top of the screen */
+  left: 0; /* Ensure the header starts from the left edge */
+  width: calc(100% - 40px); /* Adjust the width */
+  z-index: 100; /* Ensure the header is above other content */
+  padding: 10px 20px; /* Optional: Add some padding inside the header */
 }
