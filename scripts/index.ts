@@ -1,8 +1,15 @@
 import { GroupData } from "../src/types/GroupData";
 import { csvToGroupDataList } from "./script";
+import * as fs from "fs";
 
 csvToGroupDataList("./data/FF44/group-list.csv", "./data/FF44/booth-list.csv")
   .then((groupDataList: Array<GroupData>) => {
-    console.log("groupDataList", groupDataList);
+    fs.writeFileSync(
+      "./generated-data/FF44/group-data.json",
+      JSON.stringify(groupDataList),
+      "utf-8",
+    );
   })
-  .catch((e) => console.error(e));
+  .catch((e) => {
+    console.error(e);
+  });

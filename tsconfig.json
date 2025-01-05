@@ -32,7 +32,7 @@
     // "moduleSuffixes": [],
     "noResolve": false,
     // "paths": {},
-    "resolveJsonModule": false,
+    "resolveJsonModule": true,
     "resolvePackageJsonExports": true,
     "resolvePackageJsonImports": true,
     // "rootDir": "",

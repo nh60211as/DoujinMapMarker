@@ -1,13 +1,28 @@
 import { assert, describe, test } from "vitest";
-import { FF44_GROUP_DATA } from "../src/data/Ff44GroupData";
+import rawFf44GroupData from "../generated-data/FF44/group-data.json";
 import { BoothNumber } from "../src/types/BoothNumber";
 import { BoothActiveDay } from "../src/types/BoothActiveDay";
+import { GroupDataArraySchema } from "./GroupDataSchema";
+import { GroupData } from "../src/types/GroupData";
+
+const VALIDATED_FF44_GROUP_DATA_LIST: Array<GroupData> =
+  getValidGroupDataList(rawFf44GroupData);
+
+function getValidGroupDataList(input: any): Array<GroupData> {
+  const { error: invalidError, value: validGroupDataList } =
+    GroupDataArraySchema.validate(input);
+  if (invalidError) {
+    throw new Error(`Failed to validate group data ${invalidError.cause}`);
+  } else {
+    return validGroupDataList;
+  }
+}
 
 describe("Validate FF 44 Group Data", () => {
   test("No Duplicate Group ID", () => {
     const groupIdList = new Set<string>();
 
-    for (const groupData of FF44_GROUP_DATA) {
+    for (const groupData of VALIDATED_FF44_GROUP_DATA_LIST) {
       if (groupIdList.has(groupData.groupId)) {
         assert.fail(`Duplicate group ID [${groupData.groupId}]`);
       }
@@ -17,7 +32,7 @@ describe("Validate FF 44 Group Data", () => {
   test("No Duplicate Group Name", () => {
     const groupNameList = new Set<string>();
 
-    for (const groupData of FF44_GROUP_DATA) {
+    for (const groupData of VALIDATED_FF44_GROUP_DATA_LIST) {
       if (groupNameList.has(groupData.groupName)) {
         assert.fail(`Duplicate group name [${groupData.groupName}]`);
       }
@@ -32,7 +47,7 @@ describe("Validate FF 44 Group Data", () => {
 
     const boothNumberOfTheDayStrList = new Set<string>();
 
-    for (const groupData of FF44_GROUP_DATA) {
+    for (const groupData of VALIDATED_FF44_GROUP_DATA_LIST) {
       for (const booth of groupData.boothList) {
         for (const boothNumber of booth.boothNumberList) {
           const boothNumberOfTheDay: BoothNumberOfTheDay = {
