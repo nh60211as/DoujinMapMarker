@@ -7,7 +7,7 @@ type Enumerate<
   : Enumerate<N, [...Acc, Acc["length"]]>;
 
 // Generate a range of value. Ex: IntRangeExclusive<1,4> = [1, 2, 3]
-type IntRangeExclusive<F extends number, T extends number> = Exclude<
+export type IntRangeExclusive<F extends number, T extends number> = Exclude<
   Enumerate<T>,
   Enumerate<F>
 >;

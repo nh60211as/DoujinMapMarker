@@ -1,3 +1,5 @@
+import { IntRangeExclusive } from "../utils/RangeUtils";
+
 export type BoothNumber =
   | {
       row: "A";
