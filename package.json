@@ -6,9 +6,9 @@
   "license": "BSD-3-Clause",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "gen-script": "tsc ./scripts/index.ts ./scripts/script.ts --outDir ./generated-script && cp ./scripts/package-for-script.json ./generated-script/package.json",
     "gen-data": "node ./generated-script/scripts/index.js",
+    "dev": "vite",
     "build": "vite build",
     "build:gh": "vite build",
     "serve": "http-server ./build --port 8080",
