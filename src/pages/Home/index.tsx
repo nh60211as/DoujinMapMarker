@@ -15,10 +15,7 @@ import { Marker } from "../../types/Marker";
 import { CURRENT_EVENT_TYPE } from "../../types/EventType";
 import { BoothActiveDay } from "../../types/BoothActiveDay";
 import { BoothDataOnMap } from "../../types/BoothData";
-import {
-  getFf44BoothDataOnMap,
-  getGroupDataByGroupId,
-} from "../../data/Ff44GroupData";
+import * as groupDataService from "../../services/GroupDataService";
 import { ValidZoomInValue } from "../../types/ZoomInValue";
 import { DEFAULT_GROUP_DATA, GroupData } from "../../types/GroupData";
 import { Filter } from "../../types/Filter";
@@ -58,7 +55,7 @@ export function Home(props: HomeProps): JSX.Element {
   useEffect(() => {
     setImgSrc(getImageSrcByActiveDay(props.activeDay));
     setActiveBoothDataOnMapList(
-      getFf44BoothDataOnMap(props.activeDay, props.filter),
+      groupDataService.getFf44BoothDataOnMap(props.activeDay, props.filter),
     );
   }, [props.activeDay]);
 
@@ -150,7 +147,9 @@ export function Home(props: HomeProps): JSX.Element {
             outlineColor: `gold`,
           }}
           onClick={() => {
-            setActiveGroupData(getGroupDataByGroupId(boothDataOnMap.groupId));
+            setActiveGroupData(
+              groupDataService.getGroupDataByGroupId(boothDataOnMap.groupId),
+            );
             setOpenBoothDialog(true);
           }}
         />
