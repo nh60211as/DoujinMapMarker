@@ -12,7 +12,7 @@
 /* Grid container */
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+  grid-template-columns: repeat(5, 1fr); /* 5 columns by default */
   gap: 20px; /* Optional: space between grid items */
 }
 
@@ -25,7 +25,7 @@
 /* Media query for mobile devices */
 @media screen and (max-width: 800px) {
   .gridContainer {
-    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-columns: repeat(2, 1fr); /* 5 columns by default */
   }
 }
 

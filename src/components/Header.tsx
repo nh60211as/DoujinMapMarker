@@ -103,6 +103,12 @@ export function Header(props: HeaderProps): JSX.Element {
     return (
       <div class="gridContainer">
         <div class="gridItem">
+          {getLinkElement(
+            "手機安裝教學",
+            "https://github.com/nh60211as/FfMapMarker/blob/master/docs/install_on_andriod.md",
+          )}
+        </div>
+        <div class="gridItem">
           <DropDownList
             tipText="選擇天數："
             value={mapRecordService.getActiveDayOrDefault(
@@ -265,13 +271,13 @@ function getSourceLink(activeDay: BoothActiveDay): string {
 }
 
 function getSourceLinkElement(activeDay: BoothActiveDay): JSX.Element {
+  return getLinkElement("資料來源", getSourceLink(activeDay));
+}
+
+function getLinkElement(displayText: string, link: string): JSX.Element {
   return (
-    <a
-      href={getSourceLink(activeDay)}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      資料來源
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      {displayText}
     </a>
   );
 }
