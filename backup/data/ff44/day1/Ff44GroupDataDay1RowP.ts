@@ -80,7 +80,7 @@ export const FF44_GROUP_DATA_DAY_1_ROW_P: Array<GroupData> = [
     ],
   },
   {
-    groupId: "EEE0ea718621545466da347dcf9fedb0cd8EE",
+    groupId: "0ea718621545466da347dcf9fedb0cd8",
     groupName: "Moon x Sona",
     groupLink: null,
     boothList: [
