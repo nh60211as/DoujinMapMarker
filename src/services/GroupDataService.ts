@@ -6,6 +6,7 @@ import { boothNumberListToTargetingBoxDimension } from "../utils/BoothNumberUtil
 import { defined } from "../utils/TypeUtils";
 import rawFf44GroupData from "../../generated-data/FF44/group-data.json";
 
+// The data should be validated in test (DO NOT use `as Array<GroupData>` in any other places)
 export const FF44_GROUP_DATA: Array<GroupData> =
   rawFf44GroupData as Array<GroupData>;
 
