@@ -8,15 +8,9 @@
 
 2. 安裝程式 (尋找安裝)
    通常會直接跳出安裝提示，或是開啟瀏覽器選單並且點擊`加到主畫面`
-   <div class-grid markdown>
-   
    ![install prompt](./assets/pwa-1.png)
-   
-   ![install prompt](./assets/pwa-2.png)
-
-   </div>
 
 1. 安裝程式 (新增置主螢幕)
    接著按下安裝後即可讓此程式以應用程式的形式執行，不需要隨時連上網路皆可使用
-   ![install prompt](./assets/pwa-3.png)
+   ![install prompt](./assets/pwa-2.png)
    
