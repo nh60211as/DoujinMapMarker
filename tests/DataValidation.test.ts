@@ -29,6 +29,13 @@ describe("Validate FF 44 Group Data", () => {
       groupIdList.add(groupData.groupId);
     }
   });
+  test("Group ID length is 32", () => {
+    for (const groupData of VALIDATED_FF44_GROUP_DATA_LIST) {
+      if (groupData.groupId.length !== 32) {
+        assert.fail(`Group ID [${groupData.groupId}] length is not 32.`);
+      }
+    }
+  });
   test("No Duplicate Group Name", () => {
     const groupNameList = new Set<string>();
 
@@ -62,6 +69,25 @@ describe("Validate FF 44 Group Data", () => {
             );
           }
           boothNumberOfTheDayStrList.add(boothNumberOfTheDayStr);
+        }
+      }
+    }
+  });
+  test("Group has no empty booth list", () => {
+    for (const groupData of VALIDATED_FF44_GROUP_DATA_LIST) {
+      if (groupData.boothList.length === 0) {
+        assert.fail(`Group [${groupData.groupName}] booth list is empty.`);
+      }
+    }
+  });
+
+  test("Group booth list has no empty booth number list", () => {
+    for (const groupData of VALIDATED_FF44_GROUP_DATA_LIST) {
+      for (const booth of groupData.boothList) {
+        if (booth.boothNumberList.length === 0) {
+          assert.fail(
+            `Group [${groupData.groupName}] booth list booth number list is empty`,
+          );
         }
       }
     }
