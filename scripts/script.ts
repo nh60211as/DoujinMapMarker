@@ -36,9 +36,9 @@ function csvToGroupDataListWithoutBoothList(
       )
       .on("data", (row) => {
         result.push({
-          groupId: row.GROUP_ID,
-          groupName: row.GROUP_NAME,
-          groupLink: row.GROUP_LINK || null,
+          groupId: anyToTrimmedString(row.GROUP_ID),
+          groupName: anyToTrimmedString(row.GROUP_NAME),
+          groupLink: anyToTrimmedStringOrNull(row.GROUP_LINK),
           boothList: [],
         });
       })
@@ -69,7 +69,7 @@ function fillGroupDataBoothListByCsv(
       .on("data", (row) => {
         result = addBoothToGroupDataByGroupId(
           result,
-          row.GROUP_NAME,
+          anyToTrimmedString(row.GROUP_NAME),
           convertToBooth(row.BOOTH_ACTIVE_DAY, row.BOOTH_LIST),
         );
       })
@@ -107,13 +107,15 @@ function convertToBoothActiveDay(boothActiveDayStr: string): BoothActiveDay {
 
 function convertToBoothNumberList(boothListStr: string): Array<BoothNumber> {
   return boothListStr.split(",").map((rawBoothNumber: string) => {
-    if (rawBoothNumber.length !== 3) {
+    const trimmedRawBoothNumber = rawBoothNumber.trim();
+
+    if (trimmedRawBoothNumber.length !== 3) {
       throw Error(`Invalid rawBoothNumber [${rawBoothNumber}].`);
     }
 
     // Example: rawBoothNumber [A01] => row [A], num [01]
-    const row: string = rawBoothNumber.substring(0, 1);
-    const num: string = rawBoothNumber.substring(1, 3);
+    const row: string = trimmedRawBoothNumber.substring(0, 1);
+    const num: string = trimmedRawBoothNumber.substring(1, 3);
 
     // TODO: use a more strict parsing strategy
     return { row: row, number: parseInt(num, 10) } as BoothNumber;
@@ -125,10 +127,24 @@ function addBoothToGroupDataByGroupId(
   groupName: string,
   newBooth: Booth,
 ): Array<GroupData> {
-  return groupData.map(
+  const newGroupData = groupData.map(
     (group) =>
       group.groupName === groupName
         ? { ...group, boothList: group.boothList.concat(newBooth) } // Add new Booth with existing GroupData
         : group, // Keep the other groups unchanged
   );
+
+  return newGroupData;
+}
+
+function anyToTrimmedString(input: any): string {
+  return input.toString().trim();
+}
+
+function anyToTrimmedStringOrNull(input: any): string | null {
+  if (input) {
+    return input.toString().trim();
+  } else {
+    return null;
+  }
 }
