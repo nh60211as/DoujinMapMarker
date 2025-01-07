@@ -13,7 +13,7 @@
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 columns by default */
-  gap: 20px; /* Optional: space between grid items */
+  gap: 10px; /* Optional: space between grid items */
 }
 
 /* Grid items */
@@ -27,6 +27,13 @@
   .gridContainer {
     grid-template-columns: repeat(2, 1fr); /* 5 columns by default */
   }
+}
+
+.flexContainer {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 .fixedSizeSpan {

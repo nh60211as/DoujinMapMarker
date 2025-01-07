@@ -143,30 +143,34 @@ export function Header(props: HeaderProps): JSX.Element {
           </div>
         </div>
         <div class="gridItem">
-          {" "}
-          <DropDownList
-            tipText="篩選："
-            value={filter}
-            optionValue={filterOptionValueList}
-            onChange={(filter: Filter) => {
-              // FIXME: newActiveDay should be of type BoothActiveDay but is actually string
-              const newFilterAsEnum = parseInt(filter as unknown as string);
-              props.onFilterChange(newFilterAsEnum);
-              setFilter(filter);
-            }}
-          />
+          <div class="flexContainer">
+            <DropDownList
+              tipText="篩選："
+              value={filter}
+              optionValue={filterOptionValueList}
+              onChange={(filter: Filter) => {
+                // FIXME: newActiveDay should be of type BoothActiveDay but is actually string
+                const newFilterAsEnum = parseInt(filter as unknown as string);
+                props.onFilterChange(newFilterAsEnum);
+                setFilter(filter);
+              }}
+            />
+            <button>搜尋</button>
+          </div>
         </div>
         <div class="gridItem">
-          <FileReaderComponent
-            tipText="➡️匯入設定"
-            onFileContentChange={importSetting}
-          />
-          <button onClick={exportSetting}>匯出設定➡️</button>
+          <div class="flexContainer">
+            <FileReaderComponent
+              tipText="➡️匯入設定"
+              onFileContentChange={importSetting}
+            />
+            <button onClick={exportSetting}>匯出設定➡️</button>
+          </div>
         </div>
         <div class="gridItem">
           <span>調整大小：</span>
           <span class="fixedSizeSpan">{`x${zoomInValueList[zoomInIndex]}`}</span>
-          <div>
+          <div class="flexContainer">
             <button class="zoomButton" onClick={onZoomOut}>
               -
             </button>
