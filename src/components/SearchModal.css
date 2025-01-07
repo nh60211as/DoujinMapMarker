@@ -12,11 +12,14 @@
 
 /* Modal */
 .modal {
-  display: flex; /* Use flexbox to align the content */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  width: 100%;
-  height: 100%;
+  position: absolute; /* Absolute position relative to the .modalBackground */
+  top: 50px; /* 50px from the top */
+  bottom: 50px; /* 50px from the bottom */
+  left: 0;
+  right: 0;
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align items from the top of the modal */
 }
 
 /* Modal Content */
@@ -28,6 +31,7 @@
   padding: 20px;
   border-radius: 8px; /* Optional: rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  overflow-y: scroll;
 }
 
 button {
