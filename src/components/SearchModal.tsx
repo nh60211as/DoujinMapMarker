@@ -31,7 +31,7 @@ export function SearchModal(props: SearchModalProps): JSX.Element {
     <div
       class="modalBackground"
       onClick={props.onModalClose}
-      style={{ display: props.openModal ? "block" : "block" }}
+      style={{ display: props.openModal ? "block" : "none" }}
     >
       <div class="modal">
         <div
