@@ -8,8 +8,8 @@ import "./BoothModal.css";
 type BoothModalProps = {
   groupData: GroupData;
   currentActiveDay: BoothActiveDay;
-  openDialog: boolean;
-  closeDialog: () => void;
+  openModal: boolean;
+  onModalClose: () => void;
   onMarkerSet: (activeDay: BoothActiveDay, marker: Marker) => void;
 };
 
@@ -17,8 +17,8 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
   return (
     <div
       class="modalBackground"
-      onClick={props.closeDialog}
-      style={{ display: props.openDialog ? "block" : "none" }}
+      onClick={props.onModalClose}
+      style={{ display: props.openModal ? "block" : "none" }}
     >
       <div class="modal">
         <div
@@ -42,7 +42,6 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
             currentActiveDay={props.currentActiveDay}
             onMarkerSet={props.onMarkerSet}
           />
-          {/* <button onClick={props.closeDialog}>關閉</button> */}
         </div>
       </div>
     </div>

@@ -161,8 +161,8 @@ export function Home(props: HomeProps): JSX.Element {
       <BoothModal
         groupData={activeGroupData}
         currentActiveDay={props.activeDay}
-        openDialog={openBoothDialog}
-        closeDialog={() => setOpenBoothDialog(false)}
+        openModal={openBoothDialog}
+        onModalClose={() => setOpenBoothDialog(false)}
         onMarkerSet={(activeDay: BoothActiveDay, marker: Marker) => {
           mapRecordService.setMarker(
             CURRENT_EVENT_TYPE,

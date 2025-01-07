@@ -15,6 +15,7 @@ import {
   zoomInValueList,
 } from "./types/ZoomInValue";
 import { Filter } from "./types/Filter";
+import { SearchModal } from "./components/SearchModal";
 
 export function App() {
   const [activeDay, setActiveDay] = useState<BoothActiveDay>(
@@ -30,14 +31,21 @@ export function App() {
     ),
   );
 
+  const [openSearchModal, setOpenSearchModal] = useState<boolean>(false);
+
   return (
     <LocationProvider>
       <ReloadPrompt />
+      <SearchModal
+        openModal={openSearchModal}
+        onModalClose={() => setOpenSearchModal(false)}
+      />
       <Header
         onActiveDayChange={setActiveDay}
         currentZoomInValue={zoomInValue}
         onZoomInValueChange={setZoomInValue}
         onFilterChange={setFilter}
+        onSearchButtonClicked={() => setOpenSearchModal(true)}
       />
       <main>
         <Router>

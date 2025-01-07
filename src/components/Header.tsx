@@ -25,6 +25,7 @@ type HeaderProps = {
   currentZoomInValue: ValidZoomInValue;
   onZoomInValueChange: (zoomInValue: ValidZoomInValue) => void;
   onFilterChange: (filter: Filter) => void;
+  onSearchButtonClicked: () => void;
 };
 
 export function Header(props: HeaderProps): JSX.Element {
@@ -155,7 +156,7 @@ export function Header(props: HeaderProps): JSX.Element {
                 setFilter(filter);
               }}
             />
-            <button>搜尋</button>
+            <button onClick={props.onSearchButtonClicked}>搜尋</button>
           </div>
         </div>
         <div class="gridItem">
