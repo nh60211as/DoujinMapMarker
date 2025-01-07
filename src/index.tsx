@@ -39,6 +39,7 @@ export function App() {
       <SearchModal
         openModal={openSearchModal}
         onModalClose={() => setOpenSearchModal(false)}
+        onSearchContentChange={(content: string) => {}}
       />
       <Header
         onActiveDayChange={setActiveDay}

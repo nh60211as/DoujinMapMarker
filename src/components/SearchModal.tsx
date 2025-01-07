@@ -1,9 +1,11 @@
 import { JSX } from "preact";
+import { DebounceInput } from "react-debounce-input";
 import "./SearchModal.css";
 
 type SearchModalProps = {
   openModal: boolean;
   onModalClose: () => void;
+  onSearchContentChange: (content: string) => void;
 };
 
 export function SearchModal(props: SearchModalProps): JSX.Element {
@@ -20,7 +22,15 @@ export function SearchModal(props: SearchModalProps): JSX.Element {
             // stop click event to go to modalBackground and trigger its click event
             e.stopPropagation();
           }}
-        ></div>
+        >
+          <DebounceInput
+            debounceTimeout={0}
+            placeholder={"輸入攤位名稱"}
+            onChange={(event: any) => {
+              props.onSearchContentChange(event.target.value);
+            }}
+          />
+        </div>
       </div>
     </div>
   );
