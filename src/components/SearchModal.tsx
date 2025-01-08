@@ -70,15 +70,28 @@ function GroupTable(props: { groupDataList: Array<GroupData> }): JSX.Element {
       <thead>
         <tr>
           <th>攤位名稱</th>
+          <th>攤位連結</th>
         </tr>
       </thead>
       <tbody>
         {props.groupDataList.map((e) => (
           <tr key={e.groupId}>
             <td>{e.groupName}</td>
+            <td>{getLink(e.groupLink)}</td>
           </tr>
         ))}
       </tbody>
     </table>
+  );
+}
+
+function getLink(boothLink: string | null): JSX.Element {
+  if (boothLink === null) {
+    return <></>;
+  }
+  return (
+    <a href={boothLink} target="_blank" rel="noopener noreferrer">
+      連結
+    </a>
   );
 }
