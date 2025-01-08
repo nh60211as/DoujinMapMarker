@@ -1,9 +1,9 @@
-import * as fs from "fs";
-import * as csv from "csv-parser";
-import { GroupData } from "../src/types/GroupData";
-import { Booth } from "../src/types/Booth";
-import { BoothActiveDay } from "../src/types/BoothActiveDay";
-import { BoothNumber } from "../src/types/BoothNumber";
+import { Booth } from '../src/types/Booth';
+import { BoothActiveDay } from '../src/types/BoothActiveDay';
+import { BoothNumber } from '../src/types/BoothNumber';
+import { GroupData } from '../src/types/GroupData';
+import * as csv from 'csv-parser';
+import * as fs from 'fs';
 
 export async function csvToGroupDataList(
   groupListFilePath: string,
@@ -30,11 +30,11 @@ function csvToGroupDataListWithoutBoothList(
         csv({
           // FIXME: when using headers property, the header itself will be used in row data
           // headers: ["GROUP_ID", "GROUP_NAME", "GROUP_LINK"],
-          separator: ",",
+          separator: ',',
           quote: '"',
         }),
       )
-      .on("data", (row) => {
+      .on('data', (row) => {
         result.push({
           groupId: anyToTrimmedString(row.GROUP_ID),
           groupName: anyToTrimmedString(row.GROUP_NAME),
@@ -42,10 +42,10 @@ function csvToGroupDataListWithoutBoothList(
           boothList: [],
         });
       })
-      .on("end", () => {
+      .on('end', () => {
         resolve(result); // Resolve with the array of GroupData
       })
-      .on("error", (err) => {
+      .on('error', (err) => {
         reject(err); // Reject on error
       });
   });
@@ -62,21 +62,21 @@ function fillGroupDataBoothListByCsv(
       .pipe(
         csv({
           // headers: ["BOOTH_ACTIVE_DAY", "BOOTH_LIST", "GROUP_NAME"],
-          separator: ",",
+          separator: ',',
           quote: '"',
         }),
       )
-      .on("data", (row) => {
+      .on('data', (row) => {
         result = addBoothToGroupDataByGroupId(
           result,
           anyToTrimmedString(row.GROUP_NAME),
           convertToBooth(row.BOOTH_ACTIVE_DAY, row.BOOTH_LIST),
         );
       })
-      .on("end", () => {
+      .on('end', () => {
         resolve(result); // Resolve with the array of GroupData
       })
-      .on("error", (err) => {
+      .on('error', (err) => {
         reject(err); // Reject on error
       });
   });
@@ -94,11 +94,11 @@ function convertToBooth(
 
 function convertToBoothActiveDay(boothActiveDayStr: string): BoothActiveDay {
   switch (boothActiveDayStr) {
-    case "1":
+    case '1':
       return BoothActiveDay.day1;
-    case "2":
+    case '2':
       return BoothActiveDay.day2;
-    case "3":
+    case '3':
       return BoothActiveDay.day3;
     default:
       throw Error(`Unexpected boothActiveDayStr [${boothActiveDayStr}].`);
@@ -106,7 +106,7 @@ function convertToBoothActiveDay(boothActiveDayStr: string): BoothActiveDay {
 }
 
 function convertToBoothNumberList(boothListStr: string): Array<BoothNumber> {
-  return boothListStr.split(",").map((rawBoothNumber: string) => {
+  return boothListStr.split(',').map((rawBoothNumber: string) => {
     const trimmedRawBoothNumber = rawBoothNumber.trim();
 
     if (trimmedRawBoothNumber.length !== 3) {

@@ -1,4 +1,4 @@
-import { Booth } from "./Booth";
+import { Booth } from './Booth';
 
 export type GroupData = {
   groupId: string;
@@ -8,8 +8,8 @@ export type GroupData = {
 };
 
 export const DEFAULT_GROUP_DATA: GroupData = {
-  groupId: "",
-  groupName: "",
+  groupId: '',
+  groupName: '',
   groupLink: null,
   boothList: [],
 };

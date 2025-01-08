@@ -1,6 +1,6 @@
 export type Setting = {
   eventType: string; // should be EventType
-  version: "1";
+  version: '1';
   mapMarker: Array<SettingMapMarker>;
 };
 

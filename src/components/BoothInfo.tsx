@@ -1,11 +1,11 @@
-import { JSX } from "preact";
-import { Booth } from "../types/Booth";
-import { BoothActiveDay } from "../types/BoothActiveDay";
-import { BoothNumber } from "../types/BoothNumber";
-import style from "./BoothInfo.module.css";
-import { Marker } from "../types/Marker";
-import * as mapRecordService from "../services/MapRecordService";
-import { EventType } from "../types/EventType";
+import * as mapRecordService from '../services/MapRecordService';
+import { Booth } from '../types/Booth';
+import { BoothActiveDay } from '../types/BoothActiveDay';
+import { BoothNumber } from '../types/BoothNumber';
+import { EventType } from '../types/EventType';
+import { Marker } from '../types/Marker';
+import style from './BoothInfo.module.css';
+import { JSX } from 'preact';
 
 type BoothInfoProps = {
   groupId: string;
@@ -106,7 +106,7 @@ function SingleDayBoothInfo(props: {
 }
 
 function getHighlightCssClass(isHighlight: boolean): string {
-  return isHighlight ? style.highlightText : "";
+  return isHighlight ? style.highlightText : '';
 }
 
 function MarkerButtons(props: {
@@ -115,9 +115,9 @@ function MarkerButtons(props: {
   activeMarkerButton: Marker;
 }): JSX.Element {
   const plannedToGoButtonCssClass =
-    props.activeMarkerButton === Marker.plannedToGo ? style.activeButton : "";
+    props.activeMarkerButton === Marker.plannedToGo ? style.activeButton : '';
   const alreadyGoneButtonCssClass =
-    props.activeMarkerButton === Marker.alreadyGone ? style.activeButton : "";
+    props.activeMarkerButton === Marker.alreadyGone ? style.activeButton : '';
 
   return (
     <p class={getHighlightCssClass(props.isHighlight)}>
@@ -128,14 +128,14 @@ function MarkerButtons(props: {
       >
         還沒去過
       </button>
-      <span>{"　|　"}</span>
+      <span>{'　|　'}</span>
       <button
         class={`${style.alreadyGoneButton} ${alreadyGoneButtonCssClass}`}
         onClick={() => props.onMarkerSet(Marker.alreadyGone)}
       >
         已去過
       </button>
-      <span>{"　|　"}</span>
+      <span>{'　|　'}</span>
       <button onClick={() => props.onMarkerSet(Marker.none)}>取消標記</button>
     </p>
   );
@@ -157,7 +157,7 @@ function findBoothNumberListByActiveDay(
 }
 
 function boothNumberToString(boothNumber: BoothNumber): string {
-  return boothNumber.row + boothNumber.number.toString().padStart(2, "0");
+  return boothNumber.row + boothNumber.number.toString().padStart(2, '0');
 }
 
 function getBoothNumberListAsString(
@@ -166,5 +166,5 @@ function getBoothNumberListAsString(
 ): string {
   return findBoothNumberListByActiveDay(boothList, activeDay)
     .map(boothNumberToString)
-    .join(", ");
+    .join(', ');
 }

@@ -1,8 +1,8 @@
-import Joi from "joi";
-import { BoothActiveDay } from "../src/types/BoothActiveDay";
-import { BoothNumber } from "../src/types/BoothNumber";
-import { Booth } from "../src/types/Booth";
-import { GroupData } from "../src/types/GroupData";
+import { Booth } from '../src/types/Booth';
+import { BoothActiveDay } from '../src/types/BoothActiveDay';
+import { BoothNumber } from '../src/types/BoothNumber';
+import { GroupData } from '../src/types/GroupData';
+import Joi from 'joi';
 
 const BoothActiveDaySchema = Joi.number()
   .valid(BoothActiveDay.day1, BoothActiveDay.day2, BoothActiveDay.day3)
@@ -12,28 +12,28 @@ const BoothActiveDaySchema = Joi.number()
 const BoothNumberSchema = Joi.object<BoothNumber, true>({
   row: Joi.string()
     .valid(
-      "A",
-      "B",
-      "C",
-      "D",
-      "E",
-      "F",
-      "G",
-      "H",
-      "I",
-      "J",
-      "K",
-      "L",
-      "M",
-      "N",
-      "O",
-      "P",
-      "Q",
-      "R",
-      "S",
-      "T",
-      "U",
-      "W",
+      'A',
+      'B',
+      'C',
+      'D',
+      'E',
+      'F',
+      'G',
+      'H',
+      'I',
+      'J',
+      'K',
+      'L',
+      'M',
+      'N',
+      'O',
+      'P',
+      'Q',
+      'R',
+      'S',
+      'T',
+      'U',
+      'W',
     )
     .required(),
   number: Joi.number()
@@ -41,35 +41,35 @@ const BoothNumberSchema = Joi.object<BoothNumber, true>({
       if (
         (value >= 1 &&
           value <= 22 &&
-          ["A"].includes(helpers.state.ancestors[0].row)) ||
+          ['A'].includes(helpers.state.ancestors[0].row)) ||
         (value >= 1 &&
           value <= 44 &&
           [
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
+            'B',
+            'C',
+            'D',
+            'E',
+            'F',
+            'G',
+            'H',
+            'I',
+            'J',
+            'K',
+            'L',
+            'M',
+            'N',
           ].includes(helpers.state.ancestors[0].row)) ||
         (value >= 1 &&
           value <= 48 &&
-          ["O", "P", "Q", "R", "S", "T"].includes(
+          ['O', 'P', 'Q', 'R', 'S', 'T'].includes(
             helpers.state.ancestors[0].row,
           )) ||
         (value >= 1 &&
           value <= 44 &&
-          ["U"].includes(helpers.state.ancestors[0].row)) ||
+          ['U'].includes(helpers.state.ancestors[0].row)) ||
         (value >= 1 &&
           value <= 42 &&
-          ["W"].includes(helpers.state.ancestors[0].row))
+          ['W'].includes(helpers.state.ancestors[0].row))
       ) {
         return value;
       }

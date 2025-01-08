@@ -1,5 +1,5 @@
-import { BoothNumber } from "../types/BoothNumber";
-import { TargetingBoxDimension } from "../types/TargetingBoxDimension";
+import { BoothNumber } from '../types/BoothNumber';
+import { TargetingBoxDimension } from '../types/TargetingBoxDimension';
 
 export function boothNumberListToTargetingBoxDimension(
   boothNumberList: Array<BoothNumber>,
@@ -36,24 +36,24 @@ function boothNumberToTargetingBoxDimension(
   const W_BOOTH_Y_SIZE = 41;
 
   switch (boothNumber.row) {
-    case "A":
+    case 'A':
       return {
         x: getAToU_X_Axis(boothNumber.row),
         y: A_TO_L_STARTING_Y_AXIS - (boothNumber.number - 1) * BOOTH_Y_SIZE,
         width: BOOTH_X_SIZE,
         height: BOOTH_Y_SIZE,
       };
-    case "B":
-    case "C":
-    case "D":
-    case "E":
-    case "F":
-    case "G":
-    case "H":
-    case "I":
-    case "J":
-    case "K":
-    case "L":
+    case 'B':
+    case 'C':
+    case 'D':
+    case 'E':
+    case 'F':
+    case 'G':
+    case 'H':
+    case 'I':
+    case 'J':
+    case 'K':
+    case 'L':
       if (1 <= boothNumber.number && boothNumber.number <= 22) {
         return {
           x: getAToU_X_Axis(boothNumber.row),
@@ -70,8 +70,8 @@ function boothNumberToTargetingBoxDimension(
           height: BOOTH_Y_SIZE,
         };
       }
-    case "M":
-    case "N":
+    case 'M':
+    case 'N':
       if (1 <= boothNumber.number && boothNumber.number <= 22) {
         return {
           x: getAToU_X_Axis(boothNumber.row),
@@ -88,12 +88,12 @@ function boothNumberToTargetingBoxDimension(
           height: BOOTH_Y_SIZE,
         };
       }
-    case "O":
-    case "P":
-    case "Q":
-    case "R":
-    case "S":
-    case "T":
+    case 'O':
+    case 'P':
+    case 'Q':
+    case 'R':
+    case 'S':
+    case 'T':
       if (1 <= boothNumber.number && boothNumber.number <= 24) {
         return {
           x: getAToU_X_Axis(boothNumber.row),
@@ -110,7 +110,7 @@ function boothNumberToTargetingBoxDimension(
           height: BOOTH_Y_SIZE,
         };
       }
-    case "U":
+    case 'U':
       if (1 <= boothNumber.number && boothNumber.number <= 22) {
         return {
           x: getAToU_X_Axis(boothNumber.row),
@@ -127,7 +127,7 @@ function boothNumberToTargetingBoxDimension(
           height: BOOTH_Y_SIZE,
         };
       }
-    case "W":
+    case 'W':
       switch (boothNumber.number) {
         case 1:
         case 2:
@@ -223,70 +223,70 @@ function boothNumberListOf2ToTargetingBoxDimension(
 
 function getAToU_X_Axis(
   row:
-    | "A"
-    | "B"
-    | "C"
-    | "D"
-    | "E"
-    | "F"
-    | "G"
-    | "H"
-    | "I"
-    | "J"
-    | "K"
-    | "L"
-    | "M"
-    | "N"
-    | "O"
-    | "P"
-    | "Q"
-    | "R"
-    | "S"
-    | "T"
-    | "U",
+    | 'A'
+    | 'B'
+    | 'C'
+    | 'D'
+    | 'E'
+    | 'F'
+    | 'G'
+    | 'H'
+    | 'I'
+    | 'J'
+    | 'K'
+    | 'L'
+    | 'M'
+    | 'N'
+    | 'O'
+    | 'P'
+    | 'Q'
+    | 'R'
+    | 'S'
+    | 'T'
+    | 'U',
 ): number {
   switch (row) {
-    case "A":
+    case 'A':
       return 3216;
-    case "B":
+    case 'B':
       return 3061;
-    case "C":
+    case 'C':
       return 2893;
-    case "D":
+    case 'D':
       return 2724;
-    case "E":
+    case 'E':
       return 2556;
-    case "F":
+    case 'F':
       return 2388;
-    case "G":
+    case 'G':
       return 2217;
-    case "H":
+    case 'H':
       return 1911;
-    case "I":
+    case 'I':
       return 1743;
-    case "J":
+    case 'J':
       return 1575;
-    case "K":
+    case 'K':
       return 1407;
-    case "L":
+    case 'L':
       return 1235;
-    case "M":
+    case 'M':
       return 2726;
-    case "N":
+    case 'N':
       return 2538;
-    case "O":
+    case 'O':
       return 2352;
-    case "P":
+    case 'P':
       return 2166;
-    case "Q":
+    case 'Q':
       return 1980;
-    case "R":
+    case 'R':
       return 1794;
-    case "S":
+    case 'S':
       return 1607;
-    case "T":
+    case 'T':
       return 1421;
-    case "U":
+    case 'U':
       return 1235;
   }
 }

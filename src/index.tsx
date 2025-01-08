@@ -1,21 +1,21 @@
-import { LocationProvider, Router, Route } from "preact-iso";
-import { Home } from "./pages/Home/index";
-import { Header } from "./components/Header";
-import { render } from "preact";
-import { useState } from "preact/hooks";
-import * as mapRecordService from "./services/MapRecordService";
-import * as browserSettingService from "./services/BrowserSettingService";
-import { EventType } from "./types/EventType";
-import ReloadPrompt from "./components/ReloadPrompt";
-import { BoothActiveDay } from "./types/BoothActiveDay";
+import { Header } from './components/Header';
+import ReloadPrompt from './components/ReloadPrompt';
+import { SearchModal } from './components/SearchModal';
+import './index.css';
+import { Home } from './pages/Home/index';
+import * as browserSettingService from './services/BrowserSettingService';
+import * as mapRecordService from './services/MapRecordService';
+import { BoothActiveDay } from './types/BoothActiveDay';
+import { EventType } from './types/EventType';
+import { Filter } from './types/Filter';
 import {
   DEFAULT_ZOOM_IN_VALUE,
   ValidZoomInValue,
   zoomInValueList,
-} from "./types/ZoomInValue";
-import { Filter } from "./types/Filter";
-import { SearchModal } from "./components/SearchModal";
-import "./index.css";
+} from './types/ZoomInValue';
+import { render } from 'preact';
+import { LocationProvider, Router, Route } from 'preact-iso';
+import { useState } from 'preact/hooks';
 
 export function App() {
   const [activeDay, setActiveDay] = useState<BoothActiveDay>(

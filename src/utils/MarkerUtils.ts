@@ -1,4 +1,4 @@
-import { Marker } from "../types/Marker";
+import { Marker } from '../types/Marker';
 
 export function parseMarker(rawMarker: string | null): Marker {
   switch (rawMarker) {

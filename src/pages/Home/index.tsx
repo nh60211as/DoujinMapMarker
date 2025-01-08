@@ -1,24 +1,24 @@
-import { JSX } from "preact";
-import FfMapDay1 from "../../assets/maps/2025_FF44_MAP_NEW_DAY1.jpg";
-import FfMapDay2 from "../../assets/maps/2025_FF44_MAP_NEW_DAY2.jpg";
-import FfMapDay3 from "../../assets/maps/2025_FF44_MAP_NEW_DAY3.jpg";
-import style from "./style.module.css";
-import { useEffect, useRef, useState } from "preact/hooks";
-import { ImageSize } from "../../types/ImageSize";
+import FfMapDay1 from '../../assets/maps/2025_FF44_MAP_NEW_DAY1.jpg';
+import FfMapDay2 from '../../assets/maps/2025_FF44_MAP_NEW_DAY2.jpg';
+import FfMapDay3 from '../../assets/maps/2025_FF44_MAP_NEW_DAY3.jpg';
+import { BoothModal } from '../../components/BoothModal';
+import * as groupDataService from '../../services/GroupDataService';
+import * as mapRecordService from '../../services/MapRecordService';
+import { BoothActiveDay } from '../../types/BoothActiveDay';
+import { BoothDataOnMap } from '../../types/BoothData';
+import { CURRENT_EVENT_TYPE } from '../../types/EventType';
+import { Filter } from '../../types/Filter';
+import { DEFAULT_GROUP_DATA, GroupData } from '../../types/GroupData';
+import { ImageSize } from '../../types/ImageSize';
+import { Marker } from '../../types/Marker';
 import {
   TargetingBoxDimension,
   TargetingBoxDimensionWithGroupId,
-} from "../../types/TargetingBoxDimension";
-import { BoothModal } from "../../components/BoothModal";
-import * as mapRecordService from "../../services/MapRecordService";
-import { Marker } from "../../types/Marker";
-import { CURRENT_EVENT_TYPE } from "../../types/EventType";
-import { BoothActiveDay } from "../../types/BoothActiveDay";
-import { BoothDataOnMap } from "../../types/BoothData";
-import * as groupDataService from "../../services/GroupDataService";
-import { ValidZoomInValue } from "../../types/ZoomInValue";
-import { DEFAULT_GROUP_DATA, GroupData } from "../../types/GroupData";
-import { Filter } from "../../types/Filter";
+} from '../../types/TargetingBoxDimension';
+import { ValidZoomInValue } from '../../types/ZoomInValue';
+import style from './style.module.css';
+import { JSX } from 'preact';
+import { useEffect, useRef, useState } from 'preact/hooks';
 
 const DEFAULT_IMAGE_SIZE: ImageSize = { width: 3508, height: 2431 };
 
@@ -108,7 +108,7 @@ export function Home(props: HomeProps): JSX.Element {
           style={{
             width: `${naturalWidth * props.zoomInValue}px`,
             height: `${naturalHeight * props.zoomInValue}px`, // Maintain aspect ratio
-            transition: "width 0.3s ease-in-out", // Smooth transition for zoom effect
+            transition: 'width 0.3s ease-in-out', // Smooth transition for zoom effect
           }}
         ></img>
       </div>
@@ -215,11 +215,11 @@ function getTargetingBoxRelativeDimension(
 function getColorByMarker(marker: Marker): string {
   switch (marker) {
     case Marker.plannedToGo:
-      return "#ff0000b3";
+      return '#ff0000b3';
     case Marker.alreadyGone:
-      return "#008000b3";
+      return '#008000b3';
     case Marker.none:
-      return "#808080b3";
+      return '#808080b3';
   }
 }
 

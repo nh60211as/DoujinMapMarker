@@ -1,5 +1,5 @@
-import { JSX } from "preact";
-import dropDownStyle from "./DropdownList.style.module.css";
+import dropDownStyle from './DropdownList.style.module.css';
+import { JSX } from 'preact';
 
 export interface DropDownListProps<ValueType> {
   tipText?: string;

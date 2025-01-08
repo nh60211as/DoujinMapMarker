@@ -1,4 +1,4 @@
-import { ValidZoomInValue } from "../types/ZoomInValue";
+import { ValidZoomInValue } from '../types/ZoomInValue';
 
 export function setZoomIn(zoomIn: ValidZoomInValue) {
   const localStorageKey = createZoomInKey();
@@ -29,13 +29,13 @@ export function getZoomInOrDefault(
 }
 
 function createZoomInKey(): string {
-  return "browser.setting.zoomIn";
+  return 'browser.setting.zoomIn';
 }
 
 function findClosestValue(array: Array<number>, target: number): number {
   // Ensure the array is not empty
   if (array.length === 0) {
-    throw new Error("Array cannot be empty");
+    throw new Error('Array cannot be empty');
   }
 
   // Initialize the closest value to the first element

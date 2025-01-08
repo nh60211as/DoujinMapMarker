@@ -1,9 +1,9 @@
-import { assert, describe, test } from "vitest";
-import rawFf44GroupData from "../generated-data/FF44/group-data.json";
-import { BoothNumber } from "../src/types/BoothNumber";
-import { BoothActiveDay } from "../src/types/BoothActiveDay";
-import { GroupDataArraySchema } from "./GroupDataSchema";
-import { GroupData } from "../src/types/GroupData";
+import rawFf44GroupData from '../generated-data/FF44/group-data.json';
+import { BoothActiveDay } from '../src/types/BoothActiveDay';
+import { BoothNumber } from '../src/types/BoothNumber';
+import { GroupData } from '../src/types/GroupData';
+import { GroupDataArraySchema } from './GroupDataSchema';
+import { assert, describe, test } from 'vitest';
 
 const VALIDATED_FF44_GROUP_DATA_LIST: Array<GroupData> =
   getValidGroupDataList(rawFf44GroupData);
@@ -18,8 +18,8 @@ function getValidGroupDataList(input: any): Array<GroupData> {
   }
 }
 
-describe("Validate FF 44 Group Data", () => {
-  test("No Duplicate Group ID", () => {
+describe('Validate FF 44 Group Data', () => {
+  test('No Duplicate Group ID', () => {
     const groupIdList = new Set<string>();
 
     for (const groupData of VALIDATED_FF44_GROUP_DATA_LIST) {
@@ -29,14 +29,14 @@ describe("Validate FF 44 Group Data", () => {
       groupIdList.add(groupData.groupId);
     }
   });
-  test("Group ID length is 32", () => {
+  test('Group ID length is 32', () => {
     for (const groupData of VALIDATED_FF44_GROUP_DATA_LIST) {
       if (groupData.groupId.length !== 32) {
         assert.fail(`Group ID [${groupData.groupId}] length is not 32.`);
       }
     }
   });
-  test("No Duplicate Group Name", () => {
+  test('No Duplicate Group Name', () => {
     const groupNameList = new Set<string>();
 
     for (const groupData of VALIDATED_FF44_GROUP_DATA_LIST) {
@@ -46,7 +46,7 @@ describe("Validate FF 44 Group Data", () => {
       groupNameList.add(groupData.groupName);
     }
   });
-  test("No Duplicate Booth Number Of The Same Day", () => {
+  test('No Duplicate Booth Number Of The Same Day', () => {
     type BoothNumberOfTheDay = {
       activeDay: string; // should be BoothActiveDay
       boothNumber: BoothNumber;
@@ -73,7 +73,7 @@ describe("Validate FF 44 Group Data", () => {
       }
     }
   });
-  test("Group has no empty booth list", () => {
+  test('Group has no empty booth list', () => {
     for (const groupData of VALIDATED_FF44_GROUP_DATA_LIST) {
       if (groupData.boothList.length === 0) {
         assert.fail(`Group [${groupData.groupName}] booth list is empty.`);
@@ -81,7 +81,7 @@ describe("Validate FF 44 Group Data", () => {
     }
   });
 
-  test("Group booth list has no empty booth number list", () => {
+  test('Group booth list has no empty booth number list', () => {
     for (const groupData of VALIDATED_FF44_GROUP_DATA_LIST) {
       for (const booth of groupData.boothList) {
         if (booth.boothNumberList.length === 0) {

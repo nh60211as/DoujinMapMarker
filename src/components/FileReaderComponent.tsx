@@ -1,5 +1,5 @@
-import { JSX } from "preact";
-import { useRef } from "preact/hooks";
+import { JSX } from 'preact';
+import { useRef } from 'preact/hooks';
 
 type FileReaderComponentProps = {
   tipText: string;
@@ -30,7 +30,7 @@ export function FileReaderComponent(
       };
 
       reader.onerror = () => {
-        console.error("Error reading file");
+        console.error('Error reading file');
       };
 
       // Read the file as text (or other formats depending on your needs)
@@ -45,7 +45,7 @@ export function FileReaderComponent(
       <input
         type="file"
         ref={fileInputRef}
-        style={{ display: "none" }}
+        style={{ display: 'none' }}
         onChange={handleFileChange}
       />
     </>

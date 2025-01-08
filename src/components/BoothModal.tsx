@@ -1,9 +1,9 @@
-import { JSX } from "preact";
-import { Marker } from "../types/Marker";
-import { GroupData } from "../types/GroupData";
-import { BoothInfo } from "./BoothInfo";
-import { BoothActiveDay } from "../types/BoothActiveDay";
-import style from "./BoothModal.module.css";
+import { BoothActiveDay } from '../types/BoothActiveDay';
+import { GroupData } from '../types/GroupData';
+import { Marker } from '../types/Marker';
+import { BoothInfo } from './BoothInfo';
+import style from './BoothModal.module.css';
+import { JSX } from 'preact';
 
 type BoothModalProps = {
   groupData: GroupData;
@@ -18,7 +18,7 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
     <div
       class={style.modalBackground}
       onClick={props.onModalClose}
-      style={{ display: props.openModal ? "block" : "none" }}
+      style={{ display: props.openModal ? 'block' : 'none' }}
     >
       <div class={style.modal}>
         <div

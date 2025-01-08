@@ -1,24 +1,24 @@
-import { JSX } from "preact";
-import * as mapRecordService from "../services/MapRecordService";
-import * as browserSettingService from "../services/BrowserSettingService";
-import { getIsoDateStringForFilename } from "../utils/DateTimeUtils";
-import { CURRENT_EVENT_TYPE, EventType } from "../types/EventType";
-import { Setting, SettingMapMarker } from "../types/Setting";
-import { FileReaderComponent } from "./FileReaderComponent";
-import { parseMarker } from "../utils/MarkerUtils";
-import { parseActiveDayOrNull } from "../utils/BoothActiveDayUtils";
-import { DropDownList } from "./DropdownList";
-import { StateUpdater, useEffect, useState } from "preact/hooks";
-import style from "./Header.module.css";
-import { BoothActiveDay } from "../types/BoothActiveDay";
+import * as browserSettingService from '../services/BrowserSettingService';
+import * as mapRecordService from '../services/MapRecordService';
+import { BoothActiveDay } from '../types/BoothActiveDay';
+import { CURRENT_EVENT_TYPE, EventType } from '../types/EventType';
+import { Filter } from '../types/Filter';
+import { Setting, SettingMapMarker } from '../types/Setting';
 import {
   DEFAULT_ZOOM_IN_VALUE,
   DEFAULT_ZOOM_IN_VALUE_INDEX,
   ValidZoomInValue,
   zoomInValueList,
-} from "../types/ZoomInValue";
-import { clamp } from "../utils/NumberUtils";
-import { Filter } from "../types/Filter";
+} from '../types/ZoomInValue';
+import { parseActiveDayOrNull } from '../utils/BoothActiveDayUtils';
+import { getIsoDateStringForFilename } from '../utils/DateTimeUtils';
+import { parseMarker } from '../utils/MarkerUtils';
+import { clamp } from '../utils/NumberUtils';
+import { DropDownList } from './DropdownList';
+import { FileReaderComponent } from './FileReaderComponent';
+import style from './Header.module.css';
+import { JSX } from 'preact';
+import { StateUpdater, useEffect, useState } from 'preact/hooks';
 
 type HeaderProps = {
   onActiveDayChange: (activeDay: StateUpdater<BoothActiveDay>) => void;
@@ -106,14 +106,14 @@ export function Header(props: HeaderProps): JSX.Element {
         <div class={style.gridItem}>
           <div>
             {getLinkElement(
-              "手機安裝教學",
-              "https://github.com/nh60211as/FfMapMarker/blob/master/docs/install_on_andriod.md",
+              '手機安裝教學',
+              'https://github.com/nh60211as/FfMapMarker/blob/master/docs/install_on_andriod.md',
             )}
           </div>
           <div>
             {getLinkElement(
-              "原始碼",
-              "https://github.com/nh60211as/FfMapMarker",
+              '原始碼',
+              'https://github.com/nh60211as/FfMapMarker',
             )}
           </div>
         </div>
@@ -191,14 +191,14 @@ export function Header(props: HeaderProps): JSX.Element {
       <button
         class={style.navButton}
         onClick={openHeader}
-        style={{ display: headerVisible ? "none" : "block" }}
+        style={{ display: headerVisible ? 'none' : 'block' }}
       >
         <img class={style.navIcon} />
       </button>
       <button
         class={style.xButton}
         onClick={closeHeader}
-        style={{ display: headerVisible ? "block" : "none" }}
+        style={{ display: headerVisible ? 'block' : 'none' }}
       >
         <img class={style.xIcon} />
       </button>
@@ -213,18 +213,18 @@ function exportSetting() {
 
   const setting: Setting = {
     eventType: EventType[EventType.FF44],
-    version: "1",
+    version: '1',
     mapMarker: settingMapMarkerList,
   };
 
   const payload: string = JSON.stringify(setting);
 
-  const blob = new Blob([payload], { type: "application/json" });
+  const blob = new Blob([payload], { type: 'application/json' });
 
   const url: string = URL.createObjectURL(blob);
 
   // Create a temporary link element
-  const link = document.createElement("a");
+  const link = document.createElement('a');
   link.href = url;
   link.download = `FF44-setting-${getIsoDateStringForFilename()}.json`;
 
@@ -277,16 +277,16 @@ function getZoomInIndexOrDefault(): number {
 function getSourceLink(activeDay: BoothActiveDay): string {
   switch (activeDay) {
     case BoothActiveDay.day1:
-      return "https://www.f-2.com.tw/index.php?q=ff/169824";
+      return 'https://www.f-2.com.tw/index.php?q=ff/169824';
     case BoothActiveDay.day2:
-      return "https://www.f-2.com.tw/index.php?q=ff/169825";
+      return 'https://www.f-2.com.tw/index.php?q=ff/169825';
     case BoothActiveDay.day3:
-      return "https://www.f-2.com.tw/index.php?q=ff/169826";
+      return 'https://www.f-2.com.tw/index.php?q=ff/169826';
   }
 }
 
 function getSourceLinkElement(activeDay: BoothActiveDay): JSX.Element {
-  return getLinkElement("資料來源", getSourceLink(activeDay));
+  return getLinkElement('資料來源', getSourceLink(activeDay));
 }
 
 function getLinkElement(displayText: string, link: string): JSX.Element {

@@ -1,6 +1,6 @@
-import { BoothActiveDay } from "./BoothActiveDay";
-import { Booth } from "./Booth";
-import { TargetingBoxDimension } from "./TargetingBoxDimension";
+import { Booth } from './Booth';
+import { BoothActiveDay } from './BoothActiveDay';
+import { TargetingBoxDimension } from './TargetingBoxDimension';
 
 export type BoothData = {
   groupId: string;
@@ -14,8 +14,8 @@ export interface BoothDataOnMap extends BoothData {
 }
 
 export const DEFAULT_BOOTH_DATA_ON_MAP: BoothDataOnMap = {
-  groupId: "",
-  groupName: "",
+  groupId: '',
+  groupName: '',
   groupLink: null,
   booth: {
     activeDay: BoothActiveDay.day1,

@@ -1,9 +1,9 @@
-import { BoothActiveDay } from "../types/BoothActiveDay";
-import { EventType } from "../types/EventType";
-import { Marker } from "../types/Marker";
-import { SettingMapMarker } from "../types/Setting";
-import { parseActiveDayOrNull } from "../utils/BoothActiveDayUtils";
-import { parseMarker } from "../utils/MarkerUtils";
+import { BoothActiveDay } from '../types/BoothActiveDay';
+import { EventType } from '../types/EventType';
+import { Marker } from '../types/Marker';
+import { SettingMapMarker } from '../types/Setting';
+import { parseActiveDayOrNull } from '../utils/BoothActiveDayUtils';
+import { parseMarker } from '../utils/MarkerUtils';
 
 // TODO: this will clear everything in localStorage.
 export function clear() {
@@ -53,12 +53,12 @@ export function getSettingMapMarkerList(
     }
 
     // key format: <eventType>.<boothActiveDay>.map.marker.<id>
-    const tokens: Array<string> = key.split(".");
+    const tokens: Array<string> = key.split('.');
     if (
       tokens.length === 5 &&
       tokens[0] === EventType[eventType] &&
-      tokens[2] === "map" &&
-      tokens[3] === "marker"
+      tokens[2] === 'map' &&
+      tokens[3] === 'marker'
     ) {
       const activeDay: BoothActiveDay | null = parseActiveDayOrNull(tokens[1]);
       if (activeDay === null) {

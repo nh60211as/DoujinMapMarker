@@ -1,9 +1,9 @@
-import { JSX } from "preact";
-import { DebounceInput } from "react-debounce-input";
-import * as groupDataService from "../services/GroupDataService";
-import style from "./SearchModal.module.css";
-import { GroupData } from "../types/GroupData";
-import { useEffect, useState } from "preact/hooks";
+import * as groupDataService from '../services/GroupDataService';
+import { GroupData } from '../types/GroupData';
+import style from './SearchModal.module.css';
+import { JSX } from 'preact';
+import { useEffect, useState } from 'preact/hooks';
+import { DebounceInput } from 'react-debounce-input';
 
 type SearchModalProps = {
   openModal: boolean;
@@ -31,7 +31,7 @@ export function SearchModal(props: SearchModalProps): JSX.Element {
     <div
       class={style.modalBackground}
       onClick={props.onModalClose}
-      style={{ display: props.openModal ? "block" : "none" }}
+      style={{ display: props.openModal ? 'block' : 'none' }}
     >
       <div class={style.modal}>
         <div
@@ -44,10 +44,10 @@ export function SearchModal(props: SearchModalProps): JSX.Element {
           <div>
             <DebounceInput
               debounceTimeout={1}
-              placeholder={"輸入攤位名稱"}
+              placeholder={'輸入攤位名稱'}
               onChange={(event: any) => {
                 const trimmedValue: string = event.target.value.trim();
-                if (trimmedValue === "") {
+                if (trimmedValue === '') {
                   setSearchContent(null);
                 } else {
                   setSearchContent(trimmedValue);

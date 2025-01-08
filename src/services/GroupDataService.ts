@@ -1,10 +1,10 @@
-import { BoothActiveDay } from "../types/BoothActiveDay";
-import { BoothData, BoothDataOnMap } from "../types/BoothData";
-import { Filter } from "../types/Filter";
-import { GroupData } from "../types/GroupData";
-import { boothNumberListToTargetingBoxDimension } from "../utils/BoothNumberUtils";
-import { defined } from "../utils/TypeUtils";
-import rawFf44GroupData from "../../generated-data/FF44/group-data.json";
+import rawFf44GroupData from '../../generated-data/FF44/group-data.json';
+import { BoothActiveDay } from '../types/BoothActiveDay';
+import { BoothData, BoothDataOnMap } from '../types/BoothData';
+import { Filter } from '../types/Filter';
+import { GroupData } from '../types/GroupData';
+import { boothNumberListToTargetingBoxDimension } from '../utils/BoothNumberUtils';
+import { defined } from '../utils/TypeUtils';
 
 // The data should be validated in test (DO NOT use `as Array<GroupData>` in any other places)
 export const FF44_GROUP_DATA: Array<GroupData> =
