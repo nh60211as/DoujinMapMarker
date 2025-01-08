@@ -6,6 +6,7 @@ import { EventType } from '../types/EventType';
 import { Marker } from '../types/Marker';
 import style from './BoothInfo.module.css';
 import { JSX } from 'preact';
+import { useState } from 'preact/hooks';
 
 type BoothInfoProps = {
   groupId: string;
@@ -83,21 +84,28 @@ function SingleDayBoothInfo(props: {
   currentActiveDay: BoothActiveDay;
   onMarkerSet: (marker: Marker) => void;
 }): JSX.Element {
+  const [marker, setMarker] = useState<Marker>(
+    mapRecordService.getMarker(EventType.FF44, props.activeDay, props.groupId),
+  );
+
   const content = `${props.prefix}${getBoothNumberListAsString(props.boothList, props.activeDay)}`;
 
   const isHighlight: boolean = props.activeDay === props.currentActiveDay;
 
-  const marker: Marker = mapRecordService.getMarker(
-    EventType.FF44,
-    props.activeDay,
-    props.groupId,
-  );
+  // const marker: Marker = mapRecordService.getMarker(
+  //   EventType.FF44,
+  //   props.activeDay,
+  //   props.groupId,
+  // );
 
   return (
     <>
       <p class={getHighlightCssClass(isHighlight)}>{content}</p>
       <MarkerButtons
-        onMarkerSet={props.onMarkerSet}
+        onMarkerSet={(marker: Marker) => {
+          setMarker(marker);
+          props.onMarkerSet(marker);
+        }}
         isHighlight={isHighlight}
         activeMarkerButton={marker}
       />
