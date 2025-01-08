@@ -24,10 +24,8 @@
 
 /* Modal Content */
 .modalContent {
-  width: fit-content;
-  min-width: 40%;
-  height: auto;
-  min-height: 80%;
+  max-width: 75%;
+  height: 100%;
   background-color: black;
   padding: 20px;
   border-radius: 8px; /* Optional: rounded corners */
