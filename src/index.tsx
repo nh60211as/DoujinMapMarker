@@ -58,9 +58,38 @@ export function App() {
     );
   }
 
+  function getModalComponents(): JSX.Element {
+    return (
+      <>
+        {isSearchModalOpen && (
+          <SearchModal
+            onClose={() => setIsSearchModalOpen(false)}
+            onBoothInfoClicked={onBoothInfoClicked}
+          />
+        )}
+        {isBoothModalOpen && (
+          <BoothModal
+            groupData={activeGroupData}
+            currentActiveDay={activeDay}
+            onClose={() => setIsBoothModalOpen(false)}
+            onMarkerSet={(activeDay: BoothActiveDay, marker: Marker) => {
+              mapRecordService.setMarker(
+                CURRENT_EVENT_TYPE,
+                activeDay,
+                activeGroupData.groupId,
+                marker,
+              );
+            }}
+          />
+        )}
+      </>
+    );
+  }
+
   return (
     <LocationProvider>
       <ReloadPrompt />
+      {getModalComponents()}
       <Header
         onActiveDayChange={setActiveDay}
         currentZoomInValue={zoomInValue}
@@ -74,27 +103,6 @@ export function App() {
           <Route default component={getHomeComponent} />
         </Router>
       </main>
-      {isSearchModalOpen && (
-        <SearchModal
-          onClose={() => setIsSearchModalOpen(false)}
-          onBoothInfoClicked={onBoothInfoClicked}
-        />
-      )}
-      {isBoothModalOpen && (
-        <BoothModal
-          groupData={activeGroupData}
-          currentActiveDay={activeDay}
-          onClose={() => setIsBoothModalOpen(false)}
-          onMarkerSet={(activeDay: BoothActiveDay, marker: Marker) => {
-            mapRecordService.setMarker(
-              CURRENT_EVENT_TYPE,
-              activeDay,
-              activeGroupData.groupId,
-              marker,
-            );
-          }}
-        />
-      )}
     </LocationProvider>
   );
 }
