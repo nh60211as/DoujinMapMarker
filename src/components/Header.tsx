@@ -9,7 +9,7 @@ import { parseMarker } from "../utils/MarkerUtils";
 import { parseActiveDayOrNull } from "../utils/BoothActiveDayUtils";
 import { DropDownList } from "./DropdownList";
 import { StateUpdater, useEffect, useState } from "preact/hooks";
-import "./Header.css";
+import style from "./Header.module.css";
 import { BoothActiveDay } from "../types/BoothActiveDay";
 import {
   DEFAULT_ZOOM_IN_VALUE,
@@ -102,8 +102,8 @@ export function Header(props: HeaderProps): JSX.Element {
 
   function HeaderContent(): JSX.Element {
     return (
-      <div class="gridContainer">
-        <div class="gridItem">
+      <div class={style.gridContainer}>
+        <div class={style.gridItem}>
           <div>
             {getLinkElement(
               "手機安裝教學",
@@ -117,7 +117,7 @@ export function Header(props: HeaderProps): JSX.Element {
             )}
           </div>
         </div>
-        <div class="gridItem">
+        <div class={style.gridItem}>
           <DropDownList
             tipText="選擇天數："
             value={mapRecordService.getActiveDayOrDefault(
@@ -143,8 +143,8 @@ export function Header(props: HeaderProps): JSX.Element {
             )}
           </div>
         </div>
-        <div class="gridItem">
-          <div class="flexContainer">
+        <div class={style.gridItem}>
+          <div class={style.flexContainer}>
             <DropDownList
               tipText="篩選："
               value={filter}
@@ -159,8 +159,8 @@ export function Header(props: HeaderProps): JSX.Element {
             <button onClick={props.onSearchButtonClicked}>搜尋</button>
           </div>
         </div>
-        <div class="gridItem">
-          <div class="flexContainer">
+        <div class={style.gridItem}>
+          <div class={style.flexContainer}>
             <FileReaderComponent
               tipText="➡️匯入設定"
               onFileContentChange={importSetting}
@@ -168,14 +168,16 @@ export function Header(props: HeaderProps): JSX.Element {
             <button onClick={exportSetting}>匯出設定➡️</button>
           </div>
         </div>
-        <div class="gridItem">
+        <div class={style.gridItem}>
           <span>調整大小：</span>
-          <span class="fixedSizeSpan">{`x${zoomInValueList[zoomInIndex]}`}</span>
-          <div class="flexContainer">
-            <button class="zoomButton" onClick={onZoomOut}>
+          <span
+            class={style.fixedSizeSpan}
+          >{`x${zoomInValueList[zoomInIndex]}`}</span>
+          <div class={style.flexContainer}>
+            <button class={style.zoomButton} onClick={onZoomOut}>
               -
             </button>
-            <button class="zoomButton" onClick={onZoomIn}>
+            <button class={style.zoomButton} onClick={onZoomIn}>
               +
             </button>
           </div>
@@ -185,20 +187,20 @@ export function Header(props: HeaderProps): JSX.Element {
   }
 
   return (
-    <div class="customHeder">
+    <div class={style.customHeder}>
       <button
-        class="navButton"
+        class={style.navButton}
         onClick={openHeader}
         style={{ display: headerVisible ? "none" : "block" }}
       >
-        <img class="navIcon" />
+        <img class={style.navIcon} />
       </button>
       <button
-        class="xButton"
+        class={style.xButton}
         onClick={closeHeader}
         style={{ display: headerVisible ? "block" : "none" }}
       >
-        <img class="xIcon" />
+        <img class={style.xIcon} />
       </button>
       {headerVisible === true ? <HeaderContent /> : <></>}
     </div>

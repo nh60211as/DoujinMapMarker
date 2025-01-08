@@ -1,7 +1,7 @@
 import { JSX } from "preact";
 import { DebounceInput } from "react-debounce-input";
 import * as groupDataService from "../services/GroupDataService";
-import "./SearchModal.css";
+import style from "./SearchModal.module.css";
 import { GroupData } from "../types/GroupData";
 import { useEffect, useState } from "preact/hooks";
 
@@ -29,13 +29,13 @@ export function SearchModal(props: SearchModalProps): JSX.Element {
 
   return (
     <div
-      class="modalBackground"
+      class={style.modalBackground}
       onClick={props.onModalClose}
       style={{ display: props.openModal ? "block" : "none" }}
     >
-      <div class="modal">
+      <div class={style.modal}>
         <div
-          class="modalContent"
+          class={style.modalContent}
           onClick={(e): void => {
             // stop click event to go to modalBackground and trigger its click event
             e.stopPropagation();

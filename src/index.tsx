@@ -1,5 +1,4 @@
 import { LocationProvider, Router, Route } from "preact-iso";
-
 import { Home } from "./pages/Home/index";
 import { Header } from "./components/Header";
 import { render } from "preact";
@@ -16,6 +15,7 @@ import {
 } from "./types/ZoomInValue";
 import { Filter } from "./types/Filter";
 import { SearchModal } from "./components/SearchModal";
+import "./index.css";
 
 export function App() {
   const [activeDay, setActiveDay] = useState<BoothActiveDay>(

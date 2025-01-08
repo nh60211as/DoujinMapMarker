@@ -10,10 +10,6 @@
   background-color: green;
 }
 
-.unselectableSpan {
-  user-select: none;
-}
-
 .activeButton {
   color: gold;
 }

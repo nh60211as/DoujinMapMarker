@@ -1,4 +1,4 @@
-import "./ReloadPrompt.css";
+import style from "./ReloadPrompt.module.css";
 
 import { useRegisterSW } from "virtual:pwa-register/preact";
 
@@ -18,10 +18,10 @@ function ReloadPrompt() {
   });
 
   return (
-    <div className="ReloadPrompt-container">
+    <div class={style.reloadPromptContainer}>
       {(offlineReady || needRefresh) && (
-        <div className="ReloadPrompt-toast">
-          <div className="ReloadPrompt-toast-message">
+        <div class={style.reloadPromptToast}>
+          <div class={style.reloadPromptToastMessage}>
             {offlineReady ? (
               <span>網頁進入離線模式</span>
             ) : (

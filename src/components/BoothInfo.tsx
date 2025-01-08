@@ -2,7 +2,7 @@ import { JSX } from "preact";
 import { Booth } from "../types/Booth";
 import { BoothActiveDay } from "../types/BoothActiveDay";
 import { BoothNumber } from "../types/BoothNumber";
-import "./BoothInfo.css";
+import style from "./BoothInfo.module.css";
 import { Marker } from "../types/Marker";
 import * as mapRecordService from "../services/MapRecordService";
 import { EventType } from "../types/EventType";
@@ -106,7 +106,7 @@ function SingleDayBoothInfo(props: {
 }
 
 function getHighlightCssClass(isHighlight: boolean): string {
-  return isHighlight ? "highlightText" : "";
+  return isHighlight ? style.highlightText : "";
 }
 
 function MarkerButtons(props: {
@@ -115,22 +115,22 @@ function MarkerButtons(props: {
   activeMarkerButton: Marker;
 }): JSX.Element {
   const plannedToGoButtonCssClass =
-    props.activeMarkerButton === Marker.plannedToGo ? "activeButton" : "";
+    props.activeMarkerButton === Marker.plannedToGo ? style.activeButton : "";
   const alreadyGoneButtonCssClass =
-    props.activeMarkerButton === Marker.alreadyGone ? "activeButton" : "";
+    props.activeMarkerButton === Marker.alreadyGone ? style.activeButton : "";
 
   return (
     <p class={getHighlightCssClass(props.isHighlight)}>
       標記：
       <button
-        class={`plannedToGoButton ${plannedToGoButtonCssClass}`}
+        class={`${style.plannedToGoButton} ${plannedToGoButtonCssClass}`}
         onClick={() => props.onMarkerSet(Marker.plannedToGo)}
       >
         還沒去過
       </button>
       <span>{"　|　"}</span>
       <button
-        class={`alreadyGoneButton ${alreadyGoneButtonCssClass}`}
+        class={`${style.alreadyGoneButton} ${alreadyGoneButtonCssClass}`}
         onClick={() => props.onMarkerSet(Marker.alreadyGone)}
       >
         已去過

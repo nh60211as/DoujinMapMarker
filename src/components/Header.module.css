@@ -16,17 +16,17 @@
   gap: 10px; /* Optional: space between grid items */
 }
 
-/* Grid items */
-.gridItem {
-  text-align: center;
-  align-self: center;
-}
-
 /* Media query for mobile devices */
 @media screen and (max-width: 800px) {
   .gridContainer {
     grid-template-columns: repeat(2, 1fr); /* 5 columns by default */
   }
+}
+
+/* Grid items */
+.gridItem {
+  text-align: center;
+  align-self: center;
 }
 
 .flexContainer {

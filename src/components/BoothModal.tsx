@@ -3,7 +3,7 @@ import { Marker } from "../types/Marker";
 import { GroupData } from "../types/GroupData";
 import { BoothInfo } from "./BoothInfo";
 import { BoothActiveDay } from "../types/BoothActiveDay";
-import "./BoothModal.css";
+import style from "./BoothModal.module.css";
 
 type BoothModalProps = {
   groupData: GroupData;
@@ -16,24 +16,24 @@ type BoothModalProps = {
 export function BoothModal(props: BoothModalProps): JSX.Element {
   return (
     <div
-      class="modalBackground"
+      class={style.modalBackground}
       onClick={props.onModalClose}
       style={{ display: props.openModal ? "block" : "none" }}
     >
-      <div class="modal">
+      <div class={style.modal}>
         <div
-          class="modalContent"
+          class={style.modalContent}
           onClick={(e): void => {
             // stop click event to go to modalBackground and trigger its click event
             e.stopPropagation();
           }}
         >
           <p>
-            <span class="unselectableSpan">攤位名稱：</span>
+            <span class={style.unselectableSpan}>攤位名稱：</span>
             <span>{props.groupData.groupName}</span>
           </p>
           <p>
-            <span class="unselectableSpan">攤位連結：</span>
+            <span class={style.unselectableSpan}>攤位連結：</span>
             <span>{getLink(props.groupData.groupLink)}</span>
           </p>
           <BoothInfo
