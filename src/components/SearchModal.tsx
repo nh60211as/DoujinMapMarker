@@ -4,6 +4,7 @@ import style from './SearchModal.module.css';
 import { JSX } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { DebounceInput } from 'react-debounce-input';
+import stringSimilarity from 'string-similarity-js';
 
 type SearchModalProps = {
   onClose: () => void;
@@ -21,7 +22,7 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
       setFilteredGroupDataList([]);
     } else {
       setFilteredGroupDataList(
-        groupDataService.searchByGroupName(searchContent),
+        searchByGroupNameAndRandBySimilarity(searchContent),
       );
     }
   }, [searchContent]);
@@ -38,7 +39,7 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
         >
           <div>
             <DebounceInput
-              debounceTimeout={1}
+              debounceTimeout={0}
               placeholder={'輸入攤位名稱'}
               onChange={(event: any) => {
                 const trimmedValue: string = event.target.value.trim();
@@ -61,6 +62,24 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
     </div>
   );
 };
+
+function searchByGroupNameAndRandBySimilarity(
+  searchContent: string,
+): Array<GroupData> {
+  interface GroupDataWithSimilarity extends GroupData {
+    similarity: number;
+  }
+
+  const searchResult: Array<GroupDataWithSimilarity> = groupDataService
+    .searchByGroupName(searchContent)
+    .map((e) => ({
+      ...e,
+      similarity: stringSimilarity(e.groupName, searchContent, 1),
+    }));
+
+  // sort similarity by descending order
+  return searchResult.sort((a, b) => b.similarity - a.similarity);
+}
 
 function GroupTable(props: {
   groupDataList: Array<GroupData>;
