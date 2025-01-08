@@ -1,7 +1,7 @@
 import BoothModal from './components/BoothModal';
 import { Header } from './components/Header';
 import ReloadPrompt from './components/ReloadPrompt';
-import { SearchModal } from './components/SearchModal';
+import SearchModal from './components/SearchModal';
 import './index.css';
 import { Home } from './pages/Home/index';
 import * as browserSettingService from './services/BrowserSettingService';
@@ -40,7 +40,7 @@ export function App() {
   );
 
   // SearchModal related
-  const [openSearchModal, setOpenSearchModal] = useState<boolean>(false);
+  const [isSearchModalOpen, setIsSearchModalOpen] = useState<boolean>(false);
 
   function onBoothInfoClicked(groupData: GroupData) {
     setActiveGroupData(groupData);
@@ -55,12 +55,7 @@ export function App() {
         currentZoomInValue={zoomInValue}
         onZoomInValueChange={setZoomInValue}
         onFilterChange={setFilter}
-        onSearchButtonClicked={() => setOpenSearchModal(true)}
-      />
-      <SearchModal
-        openModal={openSearchModal}
-        onModalClose={() => setOpenSearchModal(false)}
-        onBoothInfoClicked={onBoothInfoClicked}
+        onSearchButtonClicked={() => setIsSearchModalOpen(true)}
       />
       <main>
         <Router>
@@ -78,6 +73,12 @@ export function App() {
           />
         </Router>
       </main>
+      {isSearchModalOpen && (
+        <SearchModal
+          onClose={() => setIsSearchModalOpen(false)}
+          onBoothInfoClicked={onBoothInfoClicked}
+        />
+      )}
       {isBoothModalOpen && (
         <BoothModal
           groupData={activeGroupData}

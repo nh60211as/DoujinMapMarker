@@ -6,16 +6,11 @@ import { useEffect, useState } from 'preact/hooks';
 import { DebounceInput } from 'react-debounce-input';
 
 type SearchModalProps = {
-  openModal: boolean;
-  onModalClose: () => void;
+  onClose: () => void;
   onBoothInfoClicked: (groupData: GroupData) => void;
 };
 
-export function SearchModal(props: SearchModalProps): JSX.Element {
-  if (props.openModal === false) {
-    return <></>;
-  }
-
+const SearchModal = (props: SearchModalProps): JSX.Element => {
   const [searchContent, setSearchContent] = useState<string | null>(null);
   const [filteredGroupDataList, setFilteredGroupDataList] = useState<
     Array<GroupData>
@@ -32,7 +27,7 @@ export function SearchModal(props: SearchModalProps): JSX.Element {
   }, [searchContent]);
 
   return (
-    <div class={style.modalBackground} onClick={props.onModalClose}>
+    <div class={style.modalBackground} onClick={props.onClose}>
       <div class={style.modal}>
         <div
           class={`${style.modalContent} ${style.flexContainer}`}
@@ -65,7 +60,7 @@ export function SearchModal(props: SearchModalProps): JSX.Element {
       </div>
     </div>
   );
-}
+};
 
 function GroupTable(props: {
   groupDataList: Array<GroupData>;
@@ -107,3 +102,5 @@ function getLink(boothLink: string | null): JSX.Element {
     </a>
   );
 }
+
+export default SearchModal;
