@@ -1,14 +1,13 @@
 import FfMapDay1 from '../../assets/maps/2025_FF44_MAP_NEW_DAY1.jpg';
 import FfMapDay2 from '../../assets/maps/2025_FF44_MAP_NEW_DAY2.jpg';
 import FfMapDay3 from '../../assets/maps/2025_FF44_MAP_NEW_DAY3.jpg';
-import { BoothModal } from '../../components/BoothModal';
 import * as groupDataService from '../../services/GroupDataService';
 import * as mapRecordService from '../../services/MapRecordService';
 import { BoothActiveDay } from '../../types/BoothActiveDay';
 import { BoothDataOnMap } from '../../types/BoothData';
 import { CURRENT_EVENT_TYPE } from '../../types/EventType';
 import { Filter } from '../../types/Filter';
-import { DEFAULT_GROUP_DATA, GroupData } from '../../types/GroupData';
+import { GroupData } from '../../types/GroupData';
 import { ImageSize } from '../../types/ImageSize';
 import { Marker } from '../../types/Marker';
 import {
@@ -26,6 +25,7 @@ type HomeProps = {
   activeDay: BoothActiveDay;
   zoomInValue: ValidZoomInValue;
   filter: Filter;
+  onBoothInfoClicked: (groupData: GroupData) => void;
 };
 
 export function Home(props: HomeProps): JSX.Element {
@@ -33,11 +33,6 @@ export function Home(props: HomeProps): JSX.Element {
   const [activeBoothDataOnMapList, setActiveBoothDataOnMapList] = useState<
     Array<BoothDataOnMap>
   >([]);
-
-  // BoothDialog related
-  const [openBoothDialog, setOpenBoothDialog] = useState<boolean>(false);
-  const [activeGroupData, setActiveGroupData] =
-    useState<GroupData>(DEFAULT_GROUP_DATA);
 
   // map image related
   const imgRef = useRef<HTMLImageElement>(null);
@@ -147,10 +142,9 @@ export function Home(props: HomeProps): JSX.Element {
             outlineColor: `gold`,
           }}
           onClick={() => {
-            setActiveGroupData(
+            props.onBoothInfoClicked(
               groupDataService.getGroupDataByGroupId(boothDataOnMap.groupId),
             );
-            setOpenBoothDialog(true);
           }}
         />
       );
@@ -158,20 +152,6 @@ export function Home(props: HomeProps): JSX.Element {
 
   return (
     <div className={style.container}>
-      <BoothModal
-        groupData={activeGroupData}
-        currentActiveDay={props.activeDay}
-        openModal={openBoothDialog}
-        onModalClose={() => setOpenBoothDialog(false)}
-        onMarkerSet={(activeDay: BoothActiveDay, marker: Marker) => {
-          mapRecordService.setMarker(
-            CURRENT_EVENT_TYPE,
-            activeDay,
-            activeGroupData.groupId,
-            marker,
-          );
-        }}
-      />
       {TargetingBoxes()}
       <FfImage />
     </div>
