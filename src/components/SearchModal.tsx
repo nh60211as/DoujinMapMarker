@@ -1,3 +1,7 @@
+import {
+  closeSearchModal,
+  useSearchModalState,
+} from '../global/SearchModalState';
 import * as groupDataService from '../services/GroupDataService';
 import { GroupData } from '../types/GroupData';
 import style from './SearchModal.module.css';
@@ -7,11 +11,12 @@ import { DebounceInput } from 'react-debounce-input';
 import stringSimilarity from 'string-similarity-js';
 
 type SearchModalProps = {
-  onClose: () => void;
-  onBoothInfoClicked: (groupData: GroupData) => void;
+  onBoothInfoClicked: (groupId: string) => void;
 };
 
 const SearchModal = (props: SearchModalProps): JSX.Element => {
+  const modalState = useSearchModalState();
+
   const [searchContent, setSearchContent] = useState<string | null>(null);
   const [filteredGroupDataList, setFilteredGroupDataList] = useState<
     Array<GroupData>
@@ -28,7 +33,11 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
   }, [searchContent]);
 
   return (
-    <div class={style.modalBackground} onClick={props.onClose}>
+    <div
+      class={style.modalBackground}
+      onClick={closeSearchModal}
+      style={{ display: modalState.isOpen ? 'block' : 'none' }}
+    >
       <div class={style.modal}>
         <div
           class={`${style.modalContent} ${style.flexContainer}`}
@@ -83,7 +92,7 @@ function searchByGroupNameAndRandBySimilarity(
 
 function GroupTable(props: {
   groupDataList: Array<GroupData>;
-  onBoothInfoClicked: (groupData: GroupData) => void;
+  onBoothInfoClicked: (groupId: string) => void;
 }): JSX.Element {
   return (
     <table>
@@ -98,7 +107,7 @@ function GroupTable(props: {
         {props.groupDataList.map((e) => (
           <tr key={e.groupId}>
             <td>
-              <button onClick={() => props.onBoothInfoClicked(e)}>
+              <button onClick={() => props.onBoothInfoClicked(e.groupId)}>
                 攤位資訊
               </button>
             </td>

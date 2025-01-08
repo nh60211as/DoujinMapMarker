@@ -7,7 +7,6 @@ import { BoothActiveDay } from '../../types/BoothActiveDay';
 import { BoothDataOnMap } from '../../types/BoothData';
 import { CURRENT_EVENT_TYPE } from '../../types/EventType';
 import { Filter } from '../../types/Filter';
-import { GroupData } from '../../types/GroupData';
 import { ImageSize } from '../../types/ImageSize';
 import { Marker } from '../../types/Marker';
 import {
@@ -25,7 +24,7 @@ type HomeProps = {
   activeDay: BoothActiveDay;
   zoomInValue: ValidZoomInValue;
   filter: Filter;
-  onBoothInfoClicked: (groupData: GroupData) => void;
+  onBoothInfoClicked: (groupId: string) => void;
 };
 
 export function Home(props: HomeProps): JSX.Element {
@@ -142,9 +141,7 @@ export function Home(props: HomeProps): JSX.Element {
             outlineColor: `gold`,
           }}
           onClick={() => {
-            props.onBoothInfoClicked(
-              groupDataService.getGroupDataByGroupId(boothDataOnMap.groupId),
-            );
+            props.onBoothInfoClicked(boothDataOnMap.groupId);
           }}
         />
       );

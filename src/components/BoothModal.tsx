@@ -1,20 +1,69 @@
+import { closeBoothModal, useBoothModalState } from '../global/BoothModalState';
+import * as groupDataService from '../services/GroupDataService';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { GroupData } from '../types/GroupData';
 import { Marker } from '../types/Marker';
 import { BoothInfo } from './BoothInfo';
 import style from './BoothModal.module.css';
 import { JSX } from 'preact';
+import { useEffect, useState } from 'preact/hooks';
 
 type BoothModalProps = {
-  groupData: GroupData;
   currentActiveDay: BoothActiveDay;
-  onClose: () => void;
-  onMarkerSet: (activeDay: BoothActiveDay, marker: Marker) => void;
+  onMarkerSet: (
+    groupId: string,
+    activeDay: BoothActiveDay,
+    marker: Marker,
+  ) => void;
 };
 
 const BoothModal = (props: BoothModalProps): JSX.Element => {
+  const modalState = useBoothModalState();
+
+  const [groupData, setGroupData] = useState<GroupData | null>(null);
+
+  useEffect(() => {
+    if (modalState.groupId === null) {
+      setGroupData(null);
+      return;
+    }
+
+    setGroupData(groupDataService.getGroupDataByGroupId(modalState.groupId));
+  }, [modalState.groupId]);
+
+  function ModalContent(): JSX.Element {
+    if (groupData === null) {
+      return <></>;
+    }
+
+    return (
+      <>
+        <p>
+          <span class={style.unselectableSpan}>攤位名稱：</span>
+          <span>{groupData.groupName}</span>
+        </p>
+        <p>
+          <span class={style.unselectableSpan}>攤位連結：</span>
+          <span>{getLink(groupData.groupLink)}</span>
+        </p>
+        <BoothInfo
+          groupId={groupData.groupId}
+          boothList={groupData.boothList}
+          currentActiveDay={props.currentActiveDay}
+          onMarkerSet={(activeDay: BoothActiveDay, marker: Marker) =>
+            props.onMarkerSet(groupData.groupId, activeDay, marker)
+          }
+        />
+      </>
+    );
+  }
+
   return (
-    <div class={style.modalBackground} onClick={props.onClose}>
+    <div
+      class={style.modalBackground}
+      onClick={closeBoothModal}
+      style={{ display: modalState.isOpen ? 'block' : 'none' }}
+    >
       <div class={style.modal}>
         <div
           class={style.modalContent}
@@ -23,20 +72,7 @@ const BoothModal = (props: BoothModalProps): JSX.Element => {
             e.stopPropagation();
           }}
         >
-          <p>
-            <span class={style.unselectableSpan}>攤位名稱：</span>
-            <span>{props.groupData.groupName}</span>
-          </p>
-          <p>
-            <span class={style.unselectableSpan}>攤位連結：</span>
-            <span>{getLink(props.groupData.groupLink)}</span>
-          </p>
-          <BoothInfo
-            groupId={props.groupData.groupId}
-            boothList={props.groupData.boothList}
-            currentActiveDay={props.currentActiveDay}
-            onMarkerSet={props.onMarkerSet}
-          />
+          <ModalContent />
         </div>
       </div>
     </div>
