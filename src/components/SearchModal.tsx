@@ -35,7 +35,7 @@ export function SearchModal(props: SearchModalProps): JSX.Element {
     >
       <div class={style.modal}>
         <div
-          class={style.modalContent}
+          class={`${style.modalContent} ${style.flexContainer}`}
           onClick={(e): void => {
             // stop click event to go to modalBackground and trigger its click event
             e.stopPropagation();
@@ -65,9 +65,6 @@ export function SearchModal(props: SearchModalProps): JSX.Element {
 }
 
 function GroupTable(props: { groupDataList: Array<GroupData> }): JSX.Element {
-  if (props.groupDataList.length === 0) {
-    return <></>;
-  }
   return (
     <table>
       <thead>
