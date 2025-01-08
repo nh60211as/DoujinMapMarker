@@ -8,7 +8,7 @@ import { DebounceInput } from 'react-debounce-input';
 type SearchModalProps = {
   openModal: boolean;
   onModalClose: () => void;
-  groupData: Array<GroupData>;
+  onBoothInfoClicked: (groupData: GroupData) => void;
 };
 
 export function SearchModal(props: SearchModalProps): JSX.Element {
@@ -56,7 +56,10 @@ export function SearchModal(props: SearchModalProps): JSX.Element {
             />
           </div>
           <div>
-            <GroupTable groupDataList={filteredGroupDataList} />
+            <GroupTable
+              groupDataList={filteredGroupDataList}
+              onBoothInfoClicked={props.onBoothInfoClicked}
+            />
           </div>
         </div>
       </div>
@@ -64,11 +67,15 @@ export function SearchModal(props: SearchModalProps): JSX.Element {
   );
 }
 
-function GroupTable(props: { groupDataList: Array<GroupData> }): JSX.Element {
+function GroupTable(props: {
+  groupDataList: Array<GroupData>;
+  onBoothInfoClicked: (groupData: GroupData) => void;
+}): JSX.Element {
   return (
     <table>
       <thead>
         <tr>
+          <th>攤位資訊</th>
           <th>攤位名稱</th>
           <th>攤位連結</th>
         </tr>
@@ -76,6 +83,11 @@ function GroupTable(props: { groupDataList: Array<GroupData> }): JSX.Element {
       <tbody>
         {props.groupDataList.map((e) => (
           <tr key={e.groupId}>
+            <td>
+              <button onClick={() => props.onBoothInfoClicked(e)}>
+                攤位資訊
+              </button>
+            </td>
             <td>{e.groupName}</td>
             <td>{getLink(e.groupLink)}</td>
           </tr>

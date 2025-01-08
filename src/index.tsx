@@ -39,7 +39,7 @@ export function App() {
       <SearchModal
         openModal={openSearchModal}
         onModalClose={() => setOpenSearchModal(false)}
-        groupData={[]}
+        onBoothInfoClicked={() => {}}
       />
       <Header
         onActiveDayChange={setActiveDay}
