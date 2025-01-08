@@ -16,7 +16,7 @@ import {
   ValidZoomInValue,
   zoomInValueList,
 } from './types/ZoomInValue';
-import { render } from 'preact';
+import { JSX, render } from 'preact';
 import { LocationProvider, Router, Route } from 'preact-iso';
 import { useState } from 'preact/hooks';
 
@@ -47,6 +47,17 @@ export function App() {
     setIsBoothModalOpen(true);
   }
 
+  function getHomeComponent(): JSX.Element {
+    return (
+      <Home
+        activeDay={activeDay}
+        zoomInValue={zoomInValue}
+        filter={filter}
+        onBoothInfoClicked={onBoothInfoClicked}
+      />
+    );
+  }
+
   return (
     <LocationProvider>
       <ReloadPrompt />
@@ -59,18 +70,8 @@ export function App() {
       />
       <main>
         <Router>
-          <Route
-            path={`/`}
-            component={() =>
-              Home({ activeDay, zoomInValue, filter, onBoothInfoClicked })
-            }
-          />
-          <Route
-            default
-            component={() =>
-              Home({ activeDay, zoomInValue, filter, onBoothInfoClicked })
-            }
-          />
+          <Route path={`/`} component={getHomeComponent} />
+          <Route default component={getHomeComponent} />
         </Router>
       </main>
       {isSearchModalOpen && (
