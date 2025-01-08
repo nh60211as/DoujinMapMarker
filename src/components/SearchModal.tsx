@@ -12,6 +12,10 @@ type SearchModalProps = {
 };
 
 export function SearchModal(props: SearchModalProps): JSX.Element {
+  if (props.openModal === false) {
+    return <></>;
+  }
+
   const [searchContent, setSearchContent] = useState<string | null>(null);
   const [filteredGroupDataList, setFilteredGroupDataList] = useState<
     Array<GroupData>
@@ -28,11 +32,7 @@ export function SearchModal(props: SearchModalProps): JSX.Element {
   }, [searchContent]);
 
   return (
-    <div
-      class={style.modalBackground}
-      onClick={props.onModalClose}
-      style={{ display: props.openModal ? 'block' : 'none' }}
-    >
+    <div class={style.modalBackground} onClick={props.onModalClose}>
       <div class={style.modal}>
         <div
           class={`${style.modalContent} ${style.flexContainer}`}

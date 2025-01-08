@@ -1,4 +1,4 @@
-import { BoothModal } from './components/BoothModal';
+import BoothModal from './components/BoothModal';
 import { Header } from './components/Header';
 import ReloadPrompt from './components/ReloadPrompt';
 import { SearchModal } from './components/SearchModal';
@@ -25,8 +25,8 @@ export function App() {
     mapRecordService.getActiveDayOrDefault(EventType.FF44, BoothActiveDay.day1),
   );
 
-  // BoothDialog related
-  const [openBoothDialog, setOpenBoothDialog] = useState<boolean>(false);
+  // BoothModal related
+  const [isBoothModalOpen, setIsBoothModalOpen] = useState<boolean>(false);
   const [activeGroupData, setActiveGroupData] =
     useState<GroupData>(DEFAULT_GROUP_DATA);
 
@@ -39,41 +39,28 @@ export function App() {
     ),
   );
 
+  // SearchModal related
   const [openSearchModal, setOpenSearchModal] = useState<boolean>(false);
 
   function onBoothInfoClicked(groupData: GroupData) {
     setActiveGroupData(groupData);
-    setOpenBoothDialog(true);
+    setIsBoothModalOpen(true);
   }
 
   return (
     <LocationProvider>
       <ReloadPrompt />
-      <SearchModal
-        openModal={openSearchModal}
-        onModalClose={() => setOpenSearchModal(false)}
-        onBoothInfoClicked={onBoothInfoClicked}
-      />
-      <BoothModal
-        groupData={activeGroupData}
-        currentActiveDay={activeDay}
-        openModal={openBoothDialog}
-        onModalClose={() => setOpenBoothDialog(false)}
-        onMarkerSet={(activeDay: BoothActiveDay, marker: Marker) => {
-          mapRecordService.setMarker(
-            CURRENT_EVENT_TYPE,
-            activeDay,
-            activeGroupData.groupId,
-            marker,
-          );
-        }}
-      />
       <Header
         onActiveDayChange={setActiveDay}
         currentZoomInValue={zoomInValue}
         onZoomInValueChange={setZoomInValue}
         onFilterChange={setFilter}
         onSearchButtonClicked={() => setOpenSearchModal(true)}
+      />
+      <SearchModal
+        openModal={openSearchModal}
+        onModalClose={() => setOpenSearchModal(false)}
+        onBoothInfoClicked={onBoothInfoClicked}
       />
       <main>
         <Router>
@@ -91,6 +78,21 @@ export function App() {
           />
         </Router>
       </main>
+      {isBoothModalOpen && (
+        <BoothModal
+          groupData={activeGroupData}
+          currentActiveDay={activeDay}
+          onClose={() => setIsBoothModalOpen(false)}
+          onMarkerSet={(activeDay: BoothActiveDay, marker: Marker) => {
+            mapRecordService.setMarker(
+              CURRENT_EVENT_TYPE,
+              activeDay,
+              activeGroupData.groupId,
+              marker,
+            );
+          }}
+        />
+      )}
     </LocationProvider>
   );
 }

@@ -8,18 +8,13 @@ import { JSX } from 'preact';
 type BoothModalProps = {
   groupData: GroupData;
   currentActiveDay: BoothActiveDay;
-  openModal: boolean;
-  onModalClose: () => void;
+  onClose: () => void;
   onMarkerSet: (activeDay: BoothActiveDay, marker: Marker) => void;
 };
 
-export function BoothModal(props: BoothModalProps): JSX.Element {
+const BoothModal = (props: BoothModalProps): JSX.Element => {
   return (
-    <div
-      class={style.modalBackground}
-      onClick={props.onModalClose}
-      style={{ display: props.openModal ? 'block' : 'none' }}
-    >
+    <div class={style.modalBackground} onClick={props.onClose}>
       <div class={style.modal}>
         <div
           class={style.modalContent}
@@ -46,7 +41,7 @@ export function BoothModal(props: BoothModalProps): JSX.Element {
       </div>
     </div>
   );
-}
+};
 
 function getLink(boothLink: string | null): JSX.Element {
   if (boothLink === null) {
@@ -58,3 +53,5 @@ function getLink(boothLink: string | null): JSX.Element {
     </a>
   );
 }
+
+export default BoothModal;
