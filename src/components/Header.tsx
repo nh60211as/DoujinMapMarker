@@ -35,9 +35,17 @@ export function Header(props: HeaderProps): JSX.Element {
 
   const [filter, setFilter] = useState<Filter>(Filter.noFilter);
 
-  const [headerVisible, setHeaderVisible] = useState<boolean>(true);
-  const openHeader = (): void => setHeaderVisible(true);
-  const closeHeader = (): void => setHeaderVisible(false);
+  const [headerVisible, setHeaderVisible] = useState<boolean>(
+    browserSettingService.getHeaderOpen(true),
+  );
+  const openHeader = (): void => {
+    browserSettingService.setHeaderOpen(true);
+    setHeaderVisible(true);
+  };
+  const closeHeader = (): void => {
+    browserSettingService.setHeaderOpen(false);
+    setHeaderVisible(false);
+  };
 
   useEffect(() => {
     setZoomInIndex(getZoomInIndexOrDefault());

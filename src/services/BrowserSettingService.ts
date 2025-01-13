@@ -28,8 +28,32 @@ export function getZoomInOrDefault(
   return closestZoomIn;
 }
 
+export function setHeaderOpen(isOpen: boolean) {
+  const localStorageKey = createHeaderOpenKey();
+
+  localStorage.setItem(localStorageKey, isOpen.toString());
+}
+
+export function getHeaderOpen(defaultValue: boolean): boolean {
+  const localStorageKey = createHeaderOpenKey();
+
+  const rawIsCollapsed: string | null = localStorage.getItem(localStorageKey);
+
+  if (rawIsCollapsed === null) {
+    return defaultValue;
+  }
+
+  const isCollapsed: boolean = rawIsCollapsed === 'true';
+
+  return isCollapsed;
+}
+
 function createZoomInKey(): string {
   return 'browser.setting.zoomIn';
+}
+
+function createHeaderOpenKey(): string {
+  return 'browser.setting.headerOpen';
 }
 
 function findClosestValue(array: Array<number>, target: number): number {
