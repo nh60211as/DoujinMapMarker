@@ -123,8 +123,12 @@ function TagListToggle(props: {
 
   return (
     <>
-      {TAG_LIST.map((e) => (
-        <button id={e} onClick={handleClick}>
+      {TAG_LIST.map((e, index) => (
+        <button
+          id={e}
+          class={tagListToggleList[index] === true ? style.activeButton : ''}
+          onClick={handleClick}
+        >
           {e}
         </button>
       ))}
