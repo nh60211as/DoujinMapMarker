@@ -1,3 +1,4 @@
+import { TAG_LIST } from '../data/TagList';
 import {
   closeSearchModal,
   useSearchModalState,
@@ -9,8 +10,6 @@ import { JSX } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { DebounceInput } from 'react-debounce-input';
 import stringSimilarity from 'string-similarity-js';
-
-const TAG_LIST: Array<string> = ['MyGO!!!!!', '碧藍檔案', '絕區零', '原創'];
 
 type SearchModalProps = {
   onBoothInfoClicked: (groupId: string) => void;

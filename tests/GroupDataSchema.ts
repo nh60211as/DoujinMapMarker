@@ -92,7 +92,7 @@ const GroupDataSchema = Joi.object<GroupData, true>({
   groupName: Joi.string().required(),
   groupLink: Joi.string().allow(null),
   boothList: Joi.array().items(BoothSchema).required(),
-  tagList: Joi.array().items(Joi.string()).required()
+  tagList: Joi.array().items(Joi.string()).required(),
 });
 
 export const GroupDataArraySchema = Joi.array()
