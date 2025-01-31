@@ -10,6 +10,8 @@ import { useEffect, useState } from 'preact/hooks';
 import { DebounceInput } from 'react-debounce-input';
 import stringSimilarity from 'string-similarity-js';
 
+const TAG_LIST: Array<string> = ['MyGO!!!!!', '碧藍檔案', '絕區零', '原創'];
+
 type SearchModalProps = {
   onBoothInfoClicked: (groupId: string) => void;
 };
@@ -17,20 +19,34 @@ type SearchModalProps = {
 const SearchModal = (props: SearchModalProps): JSX.Element => {
   const modalState = useSearchModalState();
 
+  const [activeTagList, setActiveTagList] = useState<Array<string>>([]);
   const [searchContent, setSearchContent] = useState<string | null>(null);
   const [filteredGroupDataList, setFilteredGroupDataList] = useState<
     Array<GroupData>
   >([]);
 
   useEffect(() => {
+    let actualSearchContent = '';
     if (searchContent === null) {
-      setFilteredGroupDataList([]);
+      actualSearchContent = '';
     } else {
-      setFilteredGroupDataList(
-        searchByGroupNameAndRandBySimilarity(searchContent),
+      actualSearchContent = searchContent;
+    }
+
+    const searchResult: Array<GroupData> =
+      searchByGroupNameAndRandBySimilarity(actualSearchContent);
+
+    let searchResultFilteredByTag: Array<GroupData> = [];
+    if (activeTagList.length === 0) {
+      searchResultFilteredByTag = searchResult;
+    } else {
+      searchResultFilteredByTag = searchResult.filter((e) =>
+        e.tagList.some((tag) => activeTagList.includes(tag)),
       );
     }
-  }, [searchContent]);
+
+    setFilteredGroupDataList(searchResultFilteredByTag);
+  }, [activeTagList, searchContent]);
 
   return (
     <div
@@ -61,6 +77,9 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
             />
           </div>
           <div>
+            <TagListToggle onTagListChanged={setActiveTagList} />
+          </div>
+          <div>
             <GroupTable
               groupDataList={filteredGroupDataList}
               onBoothInfoClicked={props.onBoothInfoClicked}
@@ -71,6 +90,47 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
     </div>
   );
 };
+
+function TagListToggle(props: {
+  onTagListChanged: (newTagList: Array<string>) => void;
+}): JSX.Element {
+  const [tagListToggleList, setTagListToggleList] = useState<Array<boolean>>(
+    new Array(TAG_LIST.length).fill(false),
+  );
+
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const buttonId: string = event.currentTarget.id;
+
+    const tagListIndex: number = TAG_LIST.findIndex((e) => e === buttonId);
+    if (tagListIndex !== -1) {
+      const oldToggle: boolean = tagListToggleList[tagListIndex];
+      const newToggle: boolean = !oldToggle;
+      const newTagListToggleList: Array<boolean> = tagListToggleList;
+      newTagListToggleList[tagListIndex] = newToggle;
+
+      setTagListToggleList(newTagListToggleList);
+
+      if (newTagListToggleList.some((e) => e === true)) {
+        const newTagList = TAG_LIST.filter(
+          (value, index) => newTagListToggleList[index],
+        );
+        props.onTagListChanged(newTagList);
+      } else {
+        props.onTagListChanged([]);
+      }
+    }
+  };
+
+  return (
+    <>
+      {TAG_LIST.map((e) => (
+        <button id={e} onClick={handleClick}>
+          {e}
+        </button>
+      ))}
+    </>
+  );
+}
 
 function searchByGroupNameAndRandBySimilarity(
   searchContent: string,
