@@ -3,6 +3,7 @@ export const TAG_LIST: Array<string> = [
   'GBC',
   '世界計畫',
   '活俠傳',
+  '原神',
   '星穹鐵道',
   '絕區零',
   '妮姬',
