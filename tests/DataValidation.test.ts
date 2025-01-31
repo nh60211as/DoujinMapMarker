@@ -12,6 +12,7 @@ function getValidGroupDataList(input: any): Array<GroupData> {
   const { error: invalidError, value: validGroupDataList } =
     GroupDataArraySchema.validate(input);
   if (invalidError) {
+    console.error(invalidError);
     throw new Error(`Failed to validate group data ${invalidError.cause}`);
   } else {
     return validGroupDataList;

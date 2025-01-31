@@ -95,10 +95,16 @@ function convertToBooth(
 }
 
 function convertToTagList(tagListStr: string): Array<string> {
-  return tagListStr
+  const tagList = tagListStr
     .trim()
     .split(',')
     .map((e) => e.trim());
+
+  if (tagList.every((e) => e === '')) {
+    return [];
+  } else {
+    return tagList;
+  }
 }
 
 function convertToBoothActiveDay(boothActiveDayStr: string): BoothActiveDay {
