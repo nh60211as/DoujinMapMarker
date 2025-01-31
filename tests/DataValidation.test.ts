@@ -1,5 +1,5 @@
-import rawFf44GroupData from '../generated-data/FF44/group-data.json';
 import { TAG_LIST } from '../data/TagList';
+import rawFf44GroupData from '../generated-data/FF44/group-data.json';
 import { BoothActiveDay } from '../src/types/BoothActiveDay';
 import { BoothNumber } from '../src/types/BoothNumber';
 import { GroupData } from '../src/types/GroupData';

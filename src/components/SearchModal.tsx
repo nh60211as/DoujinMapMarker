@@ -161,9 +161,9 @@ function GroupTable(props: {
     <table>
       <thead>
         <tr>
-          <th>攤位資訊</th>
-          <th>攤位名稱</th>
-          <th>攤位連結</th>
+          <th>資訊</th>
+          <th>名稱</th>
+          <th>連結</th>
         </tr>
       </thead>
       <tbody>
@@ -171,7 +171,7 @@ function GroupTable(props: {
           <tr key={e.groupId}>
             <td>
               <button onClick={() => props.onBoothInfoClicked(e.groupId)}>
-                攤位資訊
+                開啟
               </button>
             </td>
             <td>{e.groupName}</td>
