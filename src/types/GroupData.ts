@@ -5,6 +5,7 @@ export type GroupData = {
   groupName: string;
   groupLink: string | null;
   boothList: Array<Booth>;
+  tagList: Array<string>;
 };
 
 export const DEFAULT_GROUP_DATA: GroupData = {
@@ -12,4 +13,5 @@ export const DEFAULT_GROUP_DATA: GroupData = {
   groupName: '',
   groupLink: null,
   boothList: [],
+  tagList: [],
 };

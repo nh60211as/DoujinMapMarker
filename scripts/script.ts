@@ -40,6 +40,7 @@ function csvToGroupDataListWithoutBoothList(
           groupName: anyToTrimmedString(row.GROUP_NAME),
           groupLink: anyToTrimmedStringOrNull(row.GROUP_LINK),
           boothList: [],
+          tagList: [],
         });
       })
       .on('end', () => {
@@ -61,7 +62,7 @@ function fillGroupDataBoothListByCsv(
     fs.createReadStream(boothListFilePath)
       .pipe(
         csv({
-          // headers: ["BOOTH_ACTIVE_DAY", "BOOTH_LIST", "GROUP_NAME"],
+          // headers: ["BOOTH_ACTIVE_DAY", "BOOTH_LIST", "GROUP_NAME", "TAG_LIST"],
           separator: ',',
           quote: '"',
         }),
@@ -71,6 +72,7 @@ function fillGroupDataBoothListByCsv(
           result,
           anyToTrimmedString(row.GROUP_NAME),
           convertToBooth(row.BOOTH_ACTIVE_DAY, row.BOOTH_LIST),
+          convertToTagList(row.TAG_LIST),
         );
       })
       .on('end', () => {
@@ -90,6 +92,13 @@ function convertToBooth(
     activeDay: convertToBoothActiveDay(boothActiveDayStr),
     boothNumberList: convertToBoothNumberList(boothListStr),
   };
+}
+
+function convertToTagList(tagListStr: string): Array<string> {
+  return tagListStr
+    .trim()
+    .split(',')
+    .map((e) => e.trim());
 }
 
 function convertToBoothActiveDay(boothActiveDayStr: string): BoothActiveDay {
@@ -126,11 +135,16 @@ function addBoothToGroupDataByGroupId(
   groupData: Array<GroupData>,
   groupName: string,
   newBooth: Booth,
+  newTagList: Array<string>,
 ): Array<GroupData> {
   const newGroupData = groupData.map(
     (group) =>
       group.groupName === groupName
-        ? { ...group, boothList: group.boothList.concat(newBooth) } // Add new Booth with existing GroupData
+        ? {
+            ...group,
+            boothList: group.boothList.concat(newBooth), // Add new Booth with existing GroupData
+            tagList: group.tagList.concat(newTagList), // Add new tag with existing GroupData
+          }
         : group, // Keep the other groups unchanged
   );
 
