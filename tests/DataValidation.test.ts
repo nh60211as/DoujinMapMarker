@@ -4,6 +4,7 @@ import { BoothNumber } from '../src/types/BoothNumber';
 import { GroupData } from '../src/types/GroupData';
 import { GroupDataArraySchema } from './GroupDataSchema';
 import { assert, describe, test } from 'vitest';
+import {TAG_LIST} from '../src/data/TagList'
 
 const VALIDATED_FF44_GROUP_DATA_LIST: Array<GroupData> =
   getValidGroupDataList(rawFf44GroupData);
@@ -87,7 +88,19 @@ describe('Validate FF 44 Group Data', () => {
       for (const booth of groupData.boothList) {
         if (booth.boothNumberList.length === 0) {
           assert.fail(
-            `Group [${groupData.groupName}] booth list booth number list is empty`,
+            `Group [${groupData.groupName}] booth list booth number list is empty.`,
+          );
+        }
+      }
+    }
+  });
+
+  test('Group tag list has no invalid tag', () => {
+    for (const groupData of VALIDATED_FF44_GROUP_DATA_LIST) {
+      for (const tag of groupData.tagList) {
+        if (TAG_LIST.includes(tag) === false) {
+          assert.fail(
+            `Group [${groupData.groupName}] tag [${tag}] does not exist in TAG_LIST.`,
           );
         }
       }
