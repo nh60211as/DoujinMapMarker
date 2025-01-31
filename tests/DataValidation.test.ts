@@ -1,10 +1,10 @@
 import rawFf44GroupData from '../generated-data/FF44/group-data.json';
+import { TAG_LIST } from '../src/data/TagList';
 import { BoothActiveDay } from '../src/types/BoothActiveDay';
 import { BoothNumber } from '../src/types/BoothNumber';
 import { GroupData } from '../src/types/GroupData';
 import { GroupDataArraySchema } from './GroupDataSchema';
 import { assert, describe, test } from 'vitest';
-import {TAG_LIST} from '../src/data/TagList'
 
 const VALIDATED_FF44_GROUP_DATA_LIST: Array<GroupData> =
   getValidGroupDataList(rawFf44GroupData);
