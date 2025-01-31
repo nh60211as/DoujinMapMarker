@@ -12,4 +12,5 @@ export const TAG_LIST: Array<string> = [
   '五等分的新娘',
   '原創',
   'Cosplay',
+  'VTuber',
 ];
