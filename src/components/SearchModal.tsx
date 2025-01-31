@@ -1,4 +1,4 @@
-import { TAG_LIST } from '../data/TagList';
+import { TAG_LIST } from '../../data/TagList';
 import {
   closeSearchModal,
   useSearchModalState,
