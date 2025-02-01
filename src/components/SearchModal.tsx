@@ -76,7 +76,10 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
             />
           </div>
           <div>
-            <TagListToggle onTagListChanged={setActiveTagList} />
+            <details>
+              <summary>標籤篩選</summary>
+              <TagListToggle onTagListChanged={setActiveTagList} />
+            </details>
           </div>
           <div>
             <GroupTable
