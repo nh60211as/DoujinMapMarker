@@ -1784,7 +1784,8 @@
       }
     ],
     "tagList": [
-      "FGO",
+      "Fate",
+      "原神",
       "蔚藍檔案",
       "東方"
     ]
@@ -6588,7 +6589,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創",
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "94c6753e4f564b5188de6f11447bf6e9",
@@ -8013,7 +8017,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "0365e35fbbbc4b3191a918cbc5ba7262",
@@ -8047,7 +8053,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "5fafe324f18a4cfebd27fe246f26e57e",
@@ -8661,7 +8669,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "10360ec4b1f14a628a216a150c7cbd93",
@@ -9541,7 +9551,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "艦隊收藏"
+    ]
   },
   {
     "groupId": "19aa66ce1c30491690876d9e4651ae73",
@@ -15543,7 +15555,7 @@
   {
     "groupId": "816932230f8240899c550697ccc29e3f",
     "groupName": "壞孤兒",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/profile.php?id=100003385395328",
     "boothList": [
       {
         "activeDay": 0,
@@ -15559,7 +15571,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "MyGO!!!!!"
+    ]
   },
   {
     "groupId": "80b427d2f1654a17a8d5b35d13cb211b",
@@ -18103,7 +18117,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原神",
+      "星穹鐵道"
+    ]
   },
   {
     "groupId": "8197da7757cd467593588f6a5cf83722",
@@ -18285,7 +18302,7 @@
   {
     "groupId": "a8685c69e04d4e499b6c1a619f741118",
     "groupName": "青雨閣",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/profile.php?id=100064627513744",
     "boothList": [
       {
         "activeDay": 1,
@@ -18306,7 +18323,15 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Valorant",
+      "Apex",
+      "絕區零",
+      "星穹鐵道",
+      "原神",
+      "Fate",
+      "排球少年"
+    ]
   },
   {
     "groupId": "0b17a0c896a440ae85a9022597d4227b",
@@ -18509,7 +18534,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Fate"
+    ]
   },
   {
     "groupId": "3bee94d202df4a44aafd8c727717d748",
@@ -18825,7 +18852,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "東方",
+      "世界計畫"
+    ]
   },
   {
     "groupId": "60db71c70af8403d9033b10efe29104f",
@@ -19761,7 +19791,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "艦隊收藏"
+    ]
   },
   {
     "groupId": "58e973bff8dd4393909e67e63694c4fe",
@@ -20764,7 +20796,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創",
+      "孤獨搖滾"
+    ]
   },
   {
     "groupId": "2e6290c79763432fb1f93e50ee8ad363",
@@ -21121,7 +21156,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "1e748f140b0d4237ba53790ab588dba4",
@@ -22050,7 +22087,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "028bfb3bcf1244dc9c86c1d6f6564d9e",
@@ -22136,7 +22175,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "25d4b54681294c2cb5fec6416fc4e41d",
@@ -22252,7 +22293,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "ec9434eb637d43878f7737b3c47fb26e",
@@ -22282,7 +22325,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "8da09d9921cb41b5be4584c3a44f8146",
@@ -22334,7 +22379,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "b97906a8c14e46738b31e7438adc62a8",
@@ -22351,7 +22398,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "ae5fbb3cb61f4c77aba4ff39a774a924",
@@ -22420,7 +22469,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "艦隊收藏"
+    ]
   },
   {
     "groupId": "83b0808a7ab3421e968b1386cabf7ca4",
@@ -22454,7 +22505,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "艦隊收藏"
+    ]
   },
   {
     "groupId": "f09fb31377de4417bd53479d628aab4c",
@@ -22572,7 +22625,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "賽馬娘"
+    ]
   },
   {
     "groupId": "a276d1b948e047d4b070762f030baea2",
@@ -22658,7 +22713,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "賽馬娘"
+    ]
   },
   {
     "groupId": "a95a79f5d4e64b618dc90f3c2d3f9493",
@@ -23264,7 +23321,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "a2da89963716421a814726e0f3806440",
@@ -23290,7 +23349,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "23a000a89bbb45b6a3288cf8628459c0",
@@ -23324,7 +23385,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "dff363b180994e849e7278cb7a666b7d",
@@ -23350,7 +23413,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "c78a726b6a104256843e2c7e734df4f3",
@@ -23376,7 +23441,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "4a8f8a625d07410296c5f57bdbf6a28b",
@@ -23402,7 +23469,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "badeddc2d5bb44328cc8f67223f65c7b",
@@ -23428,7 +23497,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "6c710f2211044d3a98a90d680b35df80",
@@ -23454,7 +23525,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "b073a70f16e54196b3b2285aec1d4646",
@@ -23471,7 +23544,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "2599c78b20584be1bd91ad51ff8b53ae",
@@ -23488,7 +23563,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "c1bf3f55ec8942ef8f71ce24de2e0091",
@@ -23522,7 +23599,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "6d6bde3058ea4c23baeb1951f50698bc",
@@ -23543,7 +23622,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "1c497cbce4ba431b9d4ab9f9dfca3139",
@@ -23560,7 +23641,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "aa55e6a2d5e64ae388cbf1e6c37c8441",
@@ -23586,7 +23669,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "ecc0d1840cbf4d16acfa9bad4d599d4e",
@@ -23620,7 +23705,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "bb53b17cfd3c4819a136a2ca4146fcd9",
@@ -23641,7 +23728,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "3cad31959ec2465fb6d7462f2774e2f0",
@@ -23743,7 +23832,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "7a0de164645644f69f1543faa194b570",
@@ -23773,7 +23864,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "ebf3ff762da6459c950a144dec6f9ac6",
@@ -23803,7 +23896,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "d970a016f9564c618650dd90cc3e3993",
@@ -23829,7 +23924,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "eb9233cf5618461f84e31a9d9a1e7513",
@@ -23863,7 +23960,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "7d4ed49103a443d08154babab6b555a9",
@@ -23889,7 +23988,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "156a729873b94e8f88f1a7954c9d5e39",
@@ -23915,7 +24016,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "e4be9da22e714223bad316161108e2f8",
@@ -23941,7 +24044,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "382b03ea5f46466bb5133b9e465669e0",
@@ -23975,7 +24080,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "f6671454b0524201b044c7a0fcc11abe",
@@ -24027,7 +24134,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "948e79c5c009489cbba7c2a17aa7afe2",
@@ -24048,7 +24157,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "de8828126a134306a3fe936284f6def7",
@@ -24074,7 +24185,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "51dd7b44019a4b399a3b68aef924f1c4",
@@ -24130,7 +24243,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "b4879519306d4e0784a24dfa255b7d0c",
@@ -24160,7 +24275,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "bcc08612f39d44239f16d90b7aae5242",
@@ -24181,7 +24298,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "fa4d3a320b1842efa9e253216d431365",
@@ -24207,7 +24326,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "373d8721bdb24bac9856c78163b0c569",
@@ -24269,7 +24390,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "214cc00eed83497d9804300b54c5c655",
@@ -24295,7 +24418,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "e147776bf7c7461b99bebacba260cbb9",
@@ -24321,7 +24446,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "c8a6ff6746224e809de3de0c022ea036",
@@ -24347,7 +24474,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "fbccb0bbd6744e099376b9bbc41a9e6d",
@@ -24373,7 +24502,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "f91cf6028ea74716a6e80282ca102942",
@@ -24425,7 +24556,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "a462e012c0e442dbbad60d21262bdd59",
@@ -24459,7 +24592,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "af7c302092c74b4ebb6bf1be2657a213",
@@ -24480,7 +24615,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "6fad09d643894bea884e5f2ff857522a",
@@ -24497,7 +24634,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "a6ace0ea6ef44d41990cf35310831b57",
@@ -24514,7 +24653,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay",
+      "絕區零"
+    ]
   },
   {
     "groupId": "12139bfd7fb94d429f5499addfb22482",
@@ -24548,7 +24690,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "dd7d12b3d3e44cfaa4edf028711c9f9f",
@@ -24565,7 +24709,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "2f15d41224534e7881b373447310e202",
@@ -24591,7 +24737,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "c4bc3773488245819ff98bf2f2c27207",
@@ -24617,7 +24765,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "e4b39cbe0d4149e1849809f241eb2817",
@@ -24643,7 +24793,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "e0d755a99d214e76851aa7da96970822",
@@ -24669,7 +24821,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "7dfd2c33cb8b4ebba2a7f3ffb24014ca",
@@ -24712,7 +24866,11 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay",
+      "Fate",
+      "妮姬"
+    ]
   },
   {
     "groupId": "65ae9453b53a43138876fd6bab86a5d3",
@@ -24738,7 +24896,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "6999d1954766485ab158d028b434eba9",
@@ -24764,7 +24924,11 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay",
+      "美少女戰士",
+      "絕區零"
+    ]
   },
   {
     "groupId": "ff7d95d0444b413a93797305791b9916",
@@ -24790,7 +24954,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "c4733f05c98f48808e884fb3831cddf1",
@@ -24816,7 +24982,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "1b56394c5a4a4633a89cf63cd61a9a0e",
@@ -24846,7 +25014,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "ca279355632a4eda8ef9d2a668b94e16",
@@ -24880,7 +25050,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "23cfe6695f36455a986dd27289b513d6",
@@ -24906,7 +25078,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "1592e9d8a9c54fccbc7952a6373f4d88",
@@ -24932,7 +25106,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "50994776c8d0432f8f4f58b1ba6f0b71",
@@ -24994,7 +25170,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "32bb4b34b612438db20c62344075891a",
@@ -25213,7 +25391,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "公主連結"
+    ]
   },
   {
     "groupId": "2dd8de51b82049ca925710e5cc3435b7",
@@ -25487,7 +25667,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "莉可麗絲",
+      "孤獨搖滾"
+    ]
   },
   {
     "groupId": "9e35a27809aa4b8d803cf35635ecb0cb",
@@ -25680,7 +25863,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "SPY×FAMILY",
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "cb4e143e024b405ea056dee9bf8f373e",
@@ -26392,7 +26578,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "12c33aa9daa54730b86eb34b8cad9bf8",
@@ -26968,7 +27156,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "dff3025e3d9b4d6592f3dda0fce2e353",
