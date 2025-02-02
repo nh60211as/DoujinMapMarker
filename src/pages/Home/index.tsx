@@ -1,12 +1,13 @@
 import FfMapDay1 from '../../assets/maps/2025_FF44_MAP_NEW_DAY1.jpg';
 import FfMapDay2 from '../../assets/maps/2025_FF44_MAP_NEW_DAY2.jpg';
 import FfMapDay3 from '../../assets/maps/2025_FF44_MAP_NEW_DAY3.jpg';
+import { useGroupDataList } from '../../global/GroupDataList';
 import * as groupDataService from '../../services/GroupDataService';
 import * as mapRecordService from '../../services/MapRecordService';
 import { BoothActiveDay } from '../../types/BoothActiveDay';
 import { BoothDataOnMap } from '../../types/BoothData';
 import { CURRENT_EVENT_TYPE } from '../../types/EventType';
-import { Filter } from '../../types/Filter';
+import { GroupData } from '../../types/GroupData';
 import { ImageSize } from '../../types/ImageSize';
 import { Marker } from '../../types/Marker';
 import {
@@ -23,11 +24,13 @@ const DEFAULT_IMAGE_SIZE: ImageSize = { width: 3508, height: 2431 };
 type HomeProps = {
   activeDay: BoothActiveDay;
   zoomInValue: ValidZoomInValue;
-  filter: Filter;
   onBoothInfoClicked: (groupId: string) => void;
 };
 
 export function Home(props: HomeProps): JSX.Element {
+  // group data related
+  const groupDataList: Array<GroupData> = useGroupDataList();
+
   // active day map data related
   const [activeBoothDataOnMapList, setActiveBoothDataOnMapList] = useState<
     Array<BoothDataOnMap>
@@ -49,9 +52,9 @@ export function Home(props: HomeProps): JSX.Element {
   useEffect(() => {
     setImgSrc(getImageSrcByActiveDay(props.activeDay));
     setActiveBoothDataOnMapList(
-      groupDataService.getFf44BoothDataOnMap(props.activeDay, props.filter),
+      groupDataService.getFf44BoothDataOnMap(groupDataList, props.activeDay),
     );
-  }, [props.activeDay]);
+  }, [props.activeDay, groupDataList]);
 
   // on image size change
   useEffect(() => {

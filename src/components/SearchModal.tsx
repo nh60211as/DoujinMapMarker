@@ -1,4 +1,5 @@
 import { TAG_LIST } from '../../data/TagList';
+import { setGroupDataList } from '../global/GroupDataList';
 import {
   closeSearchModal,
   useSearchModalState,
@@ -14,7 +15,6 @@ import { DebounceInput } from 'react-debounce-input';
 import stringSimilarity from 'string-similarity-js';
 
 type SearchModalProps = {
-  onFilterChange: (filter: Filter) => void;
   onBoothInfoClicked: (groupId: string) => void;
 };
 
@@ -101,8 +101,11 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
               onChange={(filter: Filter) => {
                 // FIXME: newActiveDay should be of type BoothActiveDay but is actually string
                 const newFilterAsEnum = parseInt(filter as unknown as string);
-                props.onFilterChange(newFilterAsEnum);
-                setFilter(filter);
+                setFilter(newFilterAsEnum);
+
+                const filteredGroupDataList: Array<GroupData> =
+                  groupDataService.getFf44GroupDataList(newFilterAsEnum);
+                setGroupDataList(filteredGroupDataList);
               }}
             />
           </div>

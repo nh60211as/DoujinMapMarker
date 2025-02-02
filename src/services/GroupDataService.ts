@@ -39,25 +39,17 @@ function getGroupDataListWithOnlyOneDay(
 }
 
 function getFf44BoothData(
+  groupDataList: Array<GroupData>,
   boothActiveDay: BoothActiveDay,
-  filter: Filter,
 ): Array<BoothData> {
-  switch (filter) {
-    case Filter.noFilter:
-      return getBoothDataListByActiveDay(FF44_GROUP_DATA, boothActiveDay);
-    case Filter.onlyOneDay:
-      return getBoothDataListByActiveDay(
-        getGroupDataListWithOnlyOneDay(FF44_GROUP_DATA),
-        boothActiveDay,
-      );
-  }
+  return getBoothDataListByActiveDay(groupDataList, boothActiveDay);
 }
 
 export function getFf44BoothDataOnMap(
+  groupDataList: Array<GroupData>,
   boothActiveDay: BoothActiveDay,
-  filter: Filter,
 ): Array<BoothDataOnMap> {
-  return getFf44BoothData(boothActiveDay, filter).map((boothData) => {
+  return getFf44BoothData(groupDataList, boothActiveDay).map((boothData) => {
     return {
       ...boothData,
       dimension: boothNumberListToTargetingBoxDimension(
@@ -76,4 +68,13 @@ export function searchByGroupName(searchGroupName: string): Array<GroupData> {
   return FF44_GROUP_DATA.filter((e) =>
     e.groupName.toLowerCase().includes(lowerCaseSearchGroupName),
   );
+}
+
+export function getFf44GroupDataList(filter: Filter): Array<GroupData> {
+  switch (filter) {
+    case Filter.noFilter:
+      return FF44_GROUP_DATA;
+    case Filter.onlyOneDay:
+      return getGroupDataListWithOnlyOneDay(FF44_GROUP_DATA);
+  }
 }

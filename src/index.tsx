@@ -10,7 +10,6 @@ import * as browserSettingService from './services/BrowserSettingService';
 import * as mapRecordService from './services/MapRecordService';
 import { BoothActiveDay } from './types/BoothActiveDay';
 import { CURRENT_EVENT_TYPE, EventType } from './types/EventType';
-import { Filter } from './types/Filter';
 import { Marker } from './types/Marker';
 import {
   DEFAULT_ZOOM_IN_VALUE,
@@ -25,8 +24,6 @@ export function App() {
   const [activeDay, setActiveDay] = useState<BoothActiveDay>(
     mapRecordService.getActiveDayOrDefault(EventType.FF44, BoothActiveDay.day1),
   );
-
-  const [filter, setFilter] = useState<Filter>(Filter.noFilter);
 
   const [zoomInValue, setZoomInValue] = useState<ValidZoomInValue>(
     browserSettingService.getZoomInOrDefault(
@@ -45,7 +42,6 @@ export function App() {
       <Home
         activeDay={activeDay}
         zoomInValue={zoomInValue}
-        filter={filter}
         onBoothInfoClicked={onBoothInfoClicked}
       />
     );
@@ -54,10 +50,7 @@ export function App() {
   function getModalComponents(): JSX.Element {
     return (
       <>
-        <SearchModal
-          onBoothInfoClicked={onBoothInfoClicked}
-          onFilterChange={setFilter}
-        />
+        <SearchModal onBoothInfoClicked={onBoothInfoClicked} />
         <BoothModal
           currentActiveDay={activeDay}
           onMarkerSet={(
