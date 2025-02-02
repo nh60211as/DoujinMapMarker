@@ -21,8 +21,8 @@ type SearchModalProps = {
 const SearchModal = (props: SearchModalProps): JSX.Element => {
   const modalState = useSearchModalState();
 
-  const [searchContent, setSearchContent] = useState<string | null>(null);
   const [filter, setFilter] = useState<Filter>(Filter.noFilter);
+  const [searchContent, setSearchContent] = useState<string | null>(null);
   const [activeTagList, setActiveTagList] = useState<Array<string>>([]);
   const [filteredGroupDataList, setFilteredGroupDataList] = useState<
     Array<GroupData>
@@ -43,6 +43,9 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
   ];
 
   useEffect(() => {
+    const filteredGroupDataList: Array<GroupData> =
+      groupDataService.getFf44GroupDataList(filter);
+
     let actualSearchContent = '';
     if (searchContent === null) {
       actualSearchContent = '';
@@ -50,8 +53,10 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
       actualSearchContent = searchContent;
     }
 
-    const searchResult: Array<GroupData> =
-      searchByGroupNameAndRandBySimilarity(actualSearchContent);
+    const searchResult: Array<GroupData> = searchByGroupNameAndRankBySimilarity(
+      filteredGroupDataList,
+      actualSearchContent,
+    );
 
     let searchResultFilteredByTag: Array<GroupData> = [];
     if (activeTagList.length === 0) {
@@ -63,7 +68,8 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
     }
 
     setFilteredGroupDataList(searchResultFilteredByTag);
-  }, [activeTagList, searchContent]);
+    setGroupDataList(searchResultFilteredByTag);
+  }, [filter, searchContent, activeTagList]);
 
   return (
     <div
@@ -102,10 +108,6 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
                 // FIXME: newActiveDay should be of type BoothActiveDay but is actually string
                 const newFilterAsEnum = parseInt(filter as unknown as string);
                 setFilter(newFilterAsEnum);
-
-                const filteredGroupDataList: Array<GroupData> =
-                  groupDataService.getFf44GroupDataList(newFilterAsEnum);
-                setGroupDataList(filteredGroupDataList);
               }}
             />
           </div>
@@ -172,15 +174,17 @@ function TagListToggle(props: {
   );
 }
 
-function searchByGroupNameAndRandBySimilarity(
+function searchByGroupNameAndRankBySimilarity(
+  groupDataList: Array<GroupData>,
   searchContent: string,
 ): Array<GroupData> {
   interface GroupDataWithSimilarity extends GroupData {
     similarity: number;
   }
 
-  const searchResult: Array<GroupDataWithSimilarity> = groupDataService
-    .searchByGroupName(searchContent)
+  const lowerCaseSearchGroupName = searchContent.toLowerCase();
+  const searchResult: Array<GroupDataWithSimilarity> = groupDataList
+    .filter((e) => e.groupName.toLowerCase().includes(lowerCaseSearchGroupName))
     .map((e) => ({
       ...e,
       similarity: stringSimilarity(e.groupName, searchContent, 1),

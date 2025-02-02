@@ -63,13 +63,6 @@ export function getGroupDataByGroupId(groupId: string): GroupData {
   return defined(FF44_GROUP_DATA.find((e) => e.groupId === groupId));
 }
 
-export function searchByGroupName(searchGroupName: string): Array<GroupData> {
-  const lowerCaseSearchGroupName = searchGroupName.toLowerCase();
-  return FF44_GROUP_DATA.filter((e) =>
-    e.groupName.toLowerCase().includes(lowerCaseSearchGroupName),
-  );
-}
-
 export function getFf44GroupDataList(filter: Filter): Array<GroupData> {
   switch (filter) {
     case Filter.noFilter:
