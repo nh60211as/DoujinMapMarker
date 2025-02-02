@@ -16,6 +16,7 @@ export const TAG_LIST: Array<string> = [
   '東方',
   '妮姬', 
   '俄語',
+  '餓殍',
   '點兔',
   '遊戲王',
   '蓮之空',
