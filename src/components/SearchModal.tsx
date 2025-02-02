@@ -4,7 +4,9 @@ import {
   useSearchModalState,
 } from '../global/SearchModalState';
 import * as groupDataService from '../services/GroupDataService';
+import { Filter } from '../types/Filter';
 import { GroupData } from '../types/GroupData';
+import { DropDownList } from './DropdownList';
 import style from './SearchModal.module.css';
 import { JSX } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
@@ -12,17 +14,33 @@ import { DebounceInput } from 'react-debounce-input';
 import stringSimilarity from 'string-similarity-js';
 
 type SearchModalProps = {
+  onFilterChange: (filter: Filter) => void;
   onBoothInfoClicked: (groupId: string) => void;
 };
 
 const SearchModal = (props: SearchModalProps): JSX.Element => {
   const modalState = useSearchModalState();
 
-  const [activeTagList, setActiveTagList] = useState<Array<string>>([]);
   const [searchContent, setSearchContent] = useState<string | null>(null);
+  const [filter, setFilter] = useState<Filter>(Filter.noFilter);
+  const [activeTagList, setActiveTagList] = useState<Array<string>>([]);
   const [filteredGroupDataList, setFilteredGroupDataList] = useState<
     Array<GroupData>
   >([]);
+
+  const filterOptionValueList: Array<{
+    option: JSX.Element;
+    value: Filter;
+  }> = [
+    {
+      option: <>不篩選</>,
+      value: Filter.noFilter,
+    },
+    {
+      option: <>只擺一天</>,
+      value: Filter.onlyOneDay,
+    },
+  ];
 
   useEffect(() => {
     let actualSearchContent = '';
@@ -72,6 +90,19 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
                 } else {
                   setSearchContent(trimmedValue);
                 }
+              }}
+            />
+          </div>
+          <div>
+            <DropDownList
+              tipText="天數篩選："
+              value={filter}
+              optionValue={filterOptionValueList}
+              onChange={(filter: Filter) => {
+                // FIXME: newActiveDay should be of type BoothActiveDay but is actually string
+                const newFilterAsEnum = parseInt(filter as unknown as string);
+                props.onFilterChange(newFilterAsEnum);
+                setFilter(filter);
               }}
             />
           </div>

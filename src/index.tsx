@@ -54,7 +54,10 @@ export function App() {
   function getModalComponents(): JSX.Element {
     return (
       <>
-        <SearchModal onBoothInfoClicked={onBoothInfoClicked} />
+        <SearchModal
+          onBoothInfoClicked={onBoothInfoClicked}
+          onFilterChange={setFilter}
+        />
         <BoothModal
           currentActiveDay={activeDay}
           onMarkerSet={(
@@ -82,7 +85,6 @@ export function App() {
         onActiveDayChange={setActiveDay}
         currentZoomInValue={zoomInValue}
         onZoomInValueChange={setZoomInValue}
-        onFilterChange={setFilter}
         onSearchButtonClicked={() => {
           openSearchModal();
         }}

@@ -2,7 +2,6 @@ import * as browserSettingService from '../services/BrowserSettingService';
 import * as mapRecordService from '../services/MapRecordService';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { CURRENT_EVENT_TYPE, EventType } from '../types/EventType';
-import { Filter } from '../types/Filter';
 import { Setting, SettingMapMarker } from '../types/Setting';
 import {
   DEFAULT_ZOOM_IN_VALUE,
@@ -24,7 +23,6 @@ type HeaderProps = {
   onActiveDayChange: (activeDay: StateUpdater<BoothActiveDay>) => void;
   currentZoomInValue: ValidZoomInValue;
   onZoomInValueChange: (zoomInValue: ValidZoomInValue) => void;
-  onFilterChange: (filter: Filter) => void;
   onSearchButtonClicked: () => void;
 };
 
@@ -32,8 +30,6 @@ export function Header(props: HeaderProps): JSX.Element {
   const [zoomInIndex, setZoomInIndex] = useState<number>(
     getZoomInIndexOrDefault(),
   );
-
-  const [filter, setFilter] = useState<Filter>(Filter.noFilter);
 
   const [headerVisible, setHeaderVisible] = useState<boolean>(
     browserSettingService.getHeaderOpen(true),
@@ -66,20 +62,6 @@ export function Header(props: HeaderProps): JSX.Element {
     {
       option: <>第三天</>,
       value: BoothActiveDay.day3,
-    },
-  ];
-
-  const filterOptionValueList: Array<{
-    option: JSX.Element;
-    value: Filter;
-  }> = [
-    {
-      option: <>不篩選</>,
-      value: Filter.noFilter,
-    },
-    {
-      option: <>只擺一天</>,
-      value: Filter.onlyOneDay,
     },
   ];
 
@@ -153,17 +135,7 @@ export function Header(props: HeaderProps): JSX.Element {
         </div>
         <div class={style.gridItem}>
           <div class={style.flexContainer}>
-            <DropDownList
-              tipText="篩選："
-              value={filter}
-              optionValue={filterOptionValueList}
-              onChange={(filter: Filter) => {
-                // FIXME: newActiveDay should be of type BoothActiveDay but is actually string
-                const newFilterAsEnum = parseInt(filter as unknown as string);
-                props.onFilterChange(newFilterAsEnum);
-                setFilter(filter);
-              }}
-            />
+            <span>篩選攤位：</span>
             <button onClick={props.onSearchButtonClicked}>搜尋</button>
           </div>
         </div>
