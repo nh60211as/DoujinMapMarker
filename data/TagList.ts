@@ -46,6 +46,7 @@ export const TAG_LIST: Array<string> = [
   '戀上換裝娃娃',
   '舞-乙HiME',
   '鋼彈 SEED',
+  '我內心的糟糕念頭',
   '原創',
   'Cosplay',
   'VTuber',
