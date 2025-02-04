@@ -30,3 +30,4 @@ dist-ssr
 /gh-pages.pub
 .env
 /generated-script
+.~lock.*
