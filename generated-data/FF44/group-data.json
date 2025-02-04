@@ -431,7 +431,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "ef0aa3ec4a36491c973fb1cda56cf825",
@@ -3498,7 +3500,7 @@
   {
     "groupId": "4d6197899cdc40a2929064665920a829",
     "groupName": "少搬三箱攤位容積獎勵增值委員會",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/auroraACP",
     "boothList": [
       {
         "activeDay": 0,
@@ -3514,7 +3516,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "400f02b6068248b4917add9ce8714e52",
@@ -6466,7 +6470,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "6174945183cf42bc9c98797632775417",
@@ -7427,7 +7433,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "e6579c702c1a43699cd98c191bfff218",
@@ -7664,7 +7672,7 @@
   {
     "groupId": "a8455af7640d46de8e717ddde421d332",
     "groupName": "FuwaFuwa軟趴趴",
-    "groupLink": null,
+    "groupLink": "https://x.com/fuwafuwa_35",
     "boothList": [
       {
         "activeDay": 0,
@@ -7680,7 +7688,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "c4727baa1cfb4ff3865abe55895dce0f",
@@ -8974,7 +8984,7 @@
   {
     "groupId": "3a89868ca5d845d28c15b8b8f199f065",
     "groupName": "雲際線工作室",
-    "groupLink": null,
+    "groupLink": "https://x.com/CloudhorizonSt",
     "boothList": [
       {
         "activeDay": 0,
@@ -9046,7 +9056,7 @@
   {
     "groupId": "93350fafa9b34c36af10e01607c514ee",
     "groupName": "芥川組",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/Akutagawa.Vtuber.Project",
     "boothList": [
       {
         "activeDay": 0,
@@ -9780,7 +9790,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "明日方舟"
+    ]
   },
   {
     "groupId": "ce34fb01c8c5483eb0f00678c337ca4f",
@@ -10900,7 +10912,7 @@
   {
     "groupId": "2f307110c61840ba9467aa1af5fca35f",
     "groupName": "Cilentz",
-    "groupLink": null,
+    "groupLink": "https://linktr.ee/ciza_illust",
     "boothList": [
       {
         "activeDay": 0,
@@ -10921,7 +10933,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "3238801e05764d619f767e473c5a9e13",
@@ -15197,7 +15211,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案",
+      "Vocaloid"
+    ]
   },
   {
     "groupId": "4875804dc1c3401ab584d2d324f4bf68",
@@ -16135,7 +16152,7 @@
   {
     "groupId": "d8f3fdcfa74e4c64b57880b10dd624ea",
     "groupName": "惡貓計畫",
-    "groupLink": null,
+    "groupLink": "https://lit.link/en/akucat",
     "boothList": [
       {
         "activeDay": 0,
@@ -16164,7 +16181,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "25017ecc2dc9458882af5ce160811c94",
@@ -16495,7 +16514,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "08959fd0dc944926944f77eab5af94d8",
@@ -16641,7 +16662,7 @@
   {
     "groupId": "f9344b3bc3504cd0b17ff08586864b9b",
     "groupName": "Mirolive",
-    "groupLink": null,
+    "groupLink": "https://x.com/MiroliveTw",
     "boothList": [
       {
         "activeDay": 0,
@@ -16841,7 +16862,7 @@
   {
     "groupId": "684befd1454741a89e12cbf8684a020a",
     "groupName": "貓祭NekoMatsuri",
-    "groupLink": null,
+    "groupLink": "https://x.com/nekomatsuri_25",
     "boothList": [
       {
         "activeDay": 0,
@@ -18760,7 +18781,7 @@
   {
     "groupId": "4e089337dda24a17bba7bb662682dfe7",
     "groupName": "萌夜茶会",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/moeyatw",
     "boothList": [
       {
         "activeDay": 1,
@@ -18786,7 +18807,8 @@
       }
     ],
     "tagList": [
-      "VTuber"
+      "VTuber",
+      "碧藍航線"
     ]
   },
   {
@@ -27212,7 +27234,7 @@
   {
     "groupId": "79f1e9ace42b46babaa06a420ff4befa",
     "groupName": "RE炸雞店",
-    "groupLink": null,
+    "groupLink": "https://x.com/fairywind5487",
     "boothList": [
       {
         "activeDay": 1,
@@ -27224,7 +27246,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "5f86bce6e1424d1db3bef6e43c191ba4",
@@ -27365,7 +27389,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "2756f8fc1fd341f19e6a55b2c40a4fde",
