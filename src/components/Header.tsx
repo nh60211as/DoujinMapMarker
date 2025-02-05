@@ -52,15 +52,15 @@ export function Header(props: HeaderProps): JSX.Element {
     value: BoothActiveDay;
   }> = [
     {
-      option: <>第一天</>,
+      option: <>第一天(02/07)</>,
       value: BoothActiveDay.day1,
     },
     {
-      option: <>第二天</>,
+      option: <>第二天(02/08)</>,
       value: BoothActiveDay.day2,
     },
     {
-      option: <>第三天</>,
+      option: <>第三天(02/09)</>,
       value: BoothActiveDay.day3,
     },
   ];
