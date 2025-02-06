@@ -20,7 +20,7 @@ export default defineConfig(({ command, mode }) => {
           short_name: 'FF Map Marker',
           start_url: '/FfMapMarker/',
           display: 'standalone',
-          orientation: 'portrait',
+          // orientation: 'portrait',
           background_color: '#000000',
           theme_color: '#000000',
           icons: [
