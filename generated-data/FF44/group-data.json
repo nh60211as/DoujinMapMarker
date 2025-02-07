@@ -5874,7 +5874,7 @@
   {
     "groupId": "87aa515d713e4f44836404c38a5ef91e",
     "groupName": "蘿蔔農學院",
-    "groupLink": null,
+    "groupLink": "https://lit.link/en/robosquat",
     "boothList": [
       {
         "activeDay": 0,
@@ -5931,7 +5931,7 @@
   {
     "groupId": "fa8ad90eed45463797d0ba00b23f7613",
     "groupName": "山羊怕怕沒有股份還沒成立公司",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/ppy117v",
     "boothList": [
       {
         "activeDay": 0,
@@ -5947,7 +5947,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "7654a3bce34e4765ad8a31dc8542fde4",
@@ -7812,7 +7814,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "c99a628e70954ee48e6e260b874dddab",
@@ -19223,7 +19227,7 @@
   {
     "groupId": "c21f61ca116e47f4a7a49665c319d8da",
     "groupName": "ZAP製造所",
-    "groupLink": null,
+    "groupLink": "https://x.com/ZapWorkshop",
     "boothList": [
       {
         "activeDay": 1,
@@ -19252,7 +19256,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "50627b55cdc049808512a2d4d62d2335",
@@ -28127,7 +28133,7 @@
   {
     "groupId": "8513d37d2944437fb094038b1ac9a251",
     "groupName": "MAkoriii",
-    "groupLink": null,
+    "groupLink": "https://x.com/MAkoriii3677",
     "boothList": [
       {
         "activeDay": 2,
@@ -28139,7 +28145,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "GBC",
+      "VTuber"
+    ]
   },
   {
     "groupId": "d819c77f9f8e45a2b682f8e88d07c93b",
