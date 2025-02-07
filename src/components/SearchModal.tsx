@@ -5,6 +5,9 @@ import {
   useSearchModalState,
 } from '../global/SearchModalState';
 import { CURRENT_GROUP_DATA } from '../services/GroupDataService';
+import * as mapRecordService from '../services/MapRecordService';
+import { BoothActiveDay } from '../types/BoothActiveDay';
+import { EventType } from '../types/EventType';
 import { Filter } from '../types/Filter';
 import { GroupData } from '../types/GroupData';
 import { DropDownList } from './DropdownList';
@@ -39,6 +42,10 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
     {
       option: <>只擺一天</>,
       value: Filter.onlyOneDay,
+    },
+    {
+      option: <>只顯示已標記</>,
+      value: Filter.onlyMarked,
     },
   ];
 
@@ -181,6 +188,26 @@ function getCurrentGroupDataList(filter: Filter): Array<GroupData> {
     case Filter.onlyOneDay:
       return CURRENT_GROUP_DATA.filter(
         (groupData) => groupData.boothList.length === 1,
+      );
+    case Filter.onlyMarked:
+      // TODO: extract function
+      return CURRENT_GROUP_DATA.filter(
+        (groupData) =>
+          mapRecordService.isGroupIdMarked(
+            EventType.FF44,
+            BoothActiveDay.day1,
+            groupData.groupId,
+          ) ||
+          mapRecordService.isGroupIdMarked(
+            EventType.FF44,
+            BoothActiveDay.day2,
+            groupData.groupId,
+          ) ||
+          mapRecordService.isGroupIdMarked(
+            EventType.FF44,
+            BoothActiveDay.day3,
+            groupData.groupId,
+          ),
       );
   }
 }
