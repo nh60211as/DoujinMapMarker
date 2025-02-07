@@ -52,7 +52,7 @@ export function Home(props: HomeProps): JSX.Element {
   useEffect(() => {
     setImgSrc(getImageSrcByActiveDay(props.activeDay));
     setActiveBoothDataOnMapList(
-      groupDataService.getFf44BoothDataOnMap(groupDataList, props.activeDay),
+      groupDataService.getBoothDataListOnMap(groupDataList, props.activeDay),
     );
   }, [props.activeDay, groupDataList]);
 

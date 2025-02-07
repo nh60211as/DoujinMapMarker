@@ -4,7 +4,7 @@ import {
   closeSearchModal,
   useSearchModalState,
 } from '../global/SearchModalState';
-import * as groupDataService from '../services/GroupDataService';
+import { CURRENT_GROUP_DATA } from '../services/GroupDataService';
 import { Filter } from '../types/Filter';
 import { GroupData } from '../types/GroupData';
 import { DropDownList } from './DropdownList';
@@ -44,7 +44,7 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
 
   useEffect(() => {
     const filteredGroupDataList: Array<GroupData> =
-      groupDataService.getFf44GroupDataList(filter);
+      getCurrentGroupDataList(filter);
 
     let actualSearchContent = '';
     if (searchContent === null) {
@@ -172,6 +172,17 @@ function TagListToggle(props: {
       ))}
     </>
   );
+}
+
+function getCurrentGroupDataList(filter: Filter): Array<GroupData> {
+  switch (filter) {
+    case Filter.noFilter:
+      return CURRENT_GROUP_DATA;
+    case Filter.onlyOneDay:
+      return CURRENT_GROUP_DATA.filter(
+        (groupData) => groupData.boothList.length === 1,
+      );
+  }
 }
 
 function searchByGroupNameAndRankBySimilarity(
