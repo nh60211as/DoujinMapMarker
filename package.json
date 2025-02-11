@@ -2,7 +2,7 @@
   "homepage": "https://nh60211as.github.io/FfMapMarker/",
   "private": true,
   "name": "fancy-frontier-map-marker",
-  "version": "0.0.1",
+  "version": "FF44.0",
   "license": "BSD-3-Clause",
   "type": "module",
   "scripts": {
