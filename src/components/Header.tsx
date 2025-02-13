@@ -1,7 +1,7 @@
 import * as browserSettingService from '../services/BrowserSettingService';
 import * as mapRecordService from '../services/MapRecordService';
 import { BoothActiveDay } from '../types/BoothActiveDay';
-import { CURRENT_EVENT_TYPE, EventType } from '../types/EventType';
+import { CURRENT_EVENT_TYPE } from '../types/EventType';
 import { Setting, SettingMapMarker } from '../types/Setting';
 import {
   DEFAULT_ZOOM_IN_VALUE,
@@ -188,7 +188,7 @@ function exportSetting() {
     mapRecordService.getSettingMapMarkerList(CURRENT_EVENT_TYPE);
 
   const setting: Setting = {
-    eventType: EventType[CURRENT_EVENT_TYPE],
+    eventType: CURRENT_EVENT_TYPE,
     version: '1',
     mapMarker: settingMapMarkerList,
   };
@@ -202,7 +202,7 @@ function exportSetting() {
   // Create a temporary link element
   const link = document.createElement('a');
   link.href = url;
-  link.download = `FF44-setting-${getIsoDateStringForFilename()}.json`;
+  link.download = `${CURRENT_EVENT_TYPE}-setting-${getIsoDateStringForFilename()}.json`;
 
   // Programmatically trigger a click event on the link to initiate the download
   link.click();
@@ -250,6 +250,7 @@ function getZoomInIndexOrDefault(): number {
     : foundZoomInIndex;
 }
 
+// NOTE: The implementation should be changed with each event
 function getSourceLink(activeDay: BoothActiveDay): string {
   switch (activeDay) {
     case 'day1':

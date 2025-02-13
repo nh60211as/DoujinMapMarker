@@ -1,6 +1,7 @@
 import { BoothNumber } from '../types/BoothNumber';
 import { TargetingBoxDimension } from '../types/TargetingBoxDimension';
 
+// NOTE: The implementation should be changed with each event
 export function boothNumberListToTargetingBoxDimension(
   boothNumberList: Array<BoothNumber>,
 ): TargetingBoxDimension {

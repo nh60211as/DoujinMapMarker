@@ -72,7 +72,7 @@ export function getSettingMapMarkerList(
     const tokens: Array<string> = key.split('.');
     if (
       tokens.length === 5 &&
-      tokens[0] === EventType[eventType] &&
+      tokens[0] === eventType &&
       tokens[2] === 'map' &&
       tokens[3] === 'marker'
     ) {
@@ -133,9 +133,9 @@ function createMapMarkerKey(
   activeDay: BoothActiveDay,
   groupId: string,
 ): string {
-  return `${EventType[eventType]}.${activeDay}.map.marker.${groupId}`;
+  return `${eventType}.${activeDay}.map.marker.${groupId}`;
 }
 
 function createMapActiveDayKeyByEventType(eventType: EventType): string {
-  return `${EventType[eventType]}.map.activeDay`;
+  return `${eventType}.map.activeDay`;
 }

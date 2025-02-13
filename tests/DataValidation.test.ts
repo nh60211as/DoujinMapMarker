@@ -1,6 +1,5 @@
 import { TAG_LIST } from '../data/TagList';
 import rawFf44GroupData from '../generated-data/FF44/group-data.json';
-import { BoothActiveDay } from '../src/types/BoothActiveDay';
 import { BoothNumber } from '../src/types/BoothNumber';
 import { GroupData } from '../src/types/GroupData';
 import { GroupDataArraySchema } from './GroupDataSchema';
@@ -60,7 +59,7 @@ describe('Validate FF 44 Group Data', () => {
       for (const booth of groupData.boothList) {
         for (const boothNumber of booth.boothNumberList) {
           const boothNumberOfTheDay: BoothNumberOfTheDay = {
-            activeDay: BoothActiveDay[booth.activeDay],
+            activeDay: booth.activeDay,
             boothNumber: boothNumber,
           };
           const boothNumberOfTheDayStr = JSON.stringify(boothNumberOfTheDay);

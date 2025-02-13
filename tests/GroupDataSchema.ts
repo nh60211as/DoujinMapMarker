@@ -1,11 +1,11 @@
 import { Booth } from '../src/types/Booth';
-import { BoothActiveDay } from '../src/types/BoothActiveDay';
 import { BoothNumber } from '../src/types/BoothNumber';
 import { GroupData } from '../src/types/GroupData';
 import Joi from 'joi';
 
-const BoothActiveDaySchema = Joi.number()
-  .valid(BoothActiveDay.day1, BoothActiveDay.day2, BoothActiveDay.day3)
+// NOTE: The implementation should be changed with each event
+const BoothActiveDaySchema = Joi.string()
+  .valid('day1', 'day2', 'day3')
   .required();
 
 // Joi schema for BoothNumber (with row-specific range validation)

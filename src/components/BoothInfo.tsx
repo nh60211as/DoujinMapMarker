@@ -15,6 +15,7 @@ type BoothInfoProps = {
   onMarkerSet: (activeDay: BoothActiveDay, marker: Marker) => void;
 };
 
+// NOTE: The implementation should be changed with each event
 export function BoothInfo(props: BoothInfoProps): JSX.Element {
   const isDay1Active: boolean =
     props.boothList.findIndex((e) => e.activeDay === 'day1') !== -1;

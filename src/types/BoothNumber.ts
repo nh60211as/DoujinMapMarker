@@ -1,5 +1,6 @@
 import { IntRangeExclusive } from '../utils/RangeUtils';
 
+// NOTE: The implementation should be changed with each event
 export type BoothNumber =
   | {
       row: 'A';
