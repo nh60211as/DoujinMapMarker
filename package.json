@@ -2,7 +2,7 @@
   "homepage": "https://nh60211as.github.io/FfMapMarker/",
   "private": true,
   "name": "fancy-frontier-map-marker",
-  "version": "FF44.0",
+  "version": "FF44.1",
   "license": "BSD-3-Clause",
   "type": "module",
   "scripts": {
@@ -16,29 +16,29 @@
     "format": "prettier --config prettier.config.js  \"{scripts,src,tests}/**/*.{ts,tsx,js,jsx,css,json}\" package.json prettier.config.js tsconfig.json vite.config.ts --write"
   },
   "dependencies": {
-    "preact": "^10.25.3",
-    "preact-iso": "^2.8.1",
-    "preact-render-to-string": "^6.5.12",
+    "preact": "^10.25.4",
+    "preact-iso": "^2.9.0",
+    "preact-render-to-string": "^6.5.13",
     "react-debounce-input": "^3.3.0",
     "react-superstore": "^0.1.4",
     "string-similarity-js": "^2.1.4"
   },
   "devDependencies": {
-    "@preact/preset-vite": "^2.9.3",
-    "@types/node": "^22.10.2",
-    "@vitest/coverage-v8": "^2.1.8",
+    "@preact/preset-vite": "^2.10.1",
+    "@types/node": "^22.13.1",
+    "@vitest/coverage-v8": "^2.1.9",
     "csv-parser": "^3.1.0",
     "eslint": "^8.57.1",
     "eslint-config-preact": "^1.5.0",
     "http-server": "^14.1.1",
     "joi": "^17.13.3",
-    "prettier": "^3.3.3",
+    "prettier": "^3.5.0",
     "prettier-plugin-sort-imports": "^1.8.6",
-    "typescript": "^5.7.2",
+    "typescript": "^5.7.3",
     "vite": "^6.0.11",
     "vite-plugin-checker": "^0.8.0",
     "vite-plugin-pwa": "^0.21.1",
-    "vitest": "^2.1.8",
+    "vitest": "^2.1.9",
     "workbox-window": "^7.3.0"
   },
   "eslintConfig": {
