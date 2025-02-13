@@ -109,11 +109,11 @@ function convertToTagList(tagListStr: string): Array<string> {
 function convertToBoothActiveDay(boothActiveDayStr: string): BoothActiveDay {
   switch (boothActiveDayStr) {
     case '1':
-      return BoothActiveDay.day1;
+      return 'day1';
     case '2':
-      return BoothActiveDay.day2;
+      return 'day2';
     case '3':
-      return BoothActiveDay.day3;
+      return 'day3';
     default:
       throw Error(`Unexpected boothActiveDayStr [${boothActiveDayStr}].`);
   }

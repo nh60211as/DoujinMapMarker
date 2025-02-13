@@ -53,15 +53,15 @@ export function Header(props: HeaderProps): JSX.Element {
   }> = [
     {
       option: <>第一天(02/07)</>,
-      value: BoothActiveDay.day1,
+      value: 'day1',
     },
     {
       option: <>第二天(02/08)</>,
-      value: BoothActiveDay.day2,
+      value: 'day2',
     },
     {
       option: <>第三天(02/09)</>,
-      value: BoothActiveDay.day3,
+      value: 'day3',
     },
   ];
 
@@ -112,26 +112,19 @@ export function Header(props: HeaderProps): JSX.Element {
             tipText="選擇天數："
             value={mapRecordService.getActiveDayOrDefault(
               CURRENT_EVENT_TYPE,
-              BoothActiveDay.day1,
+              'day1',
             )}
             optionValue={activeDayOptionValueList}
             onChange={(newActiveDay: BoothActiveDay) => {
-              // FIXME: newActiveDay should be of type BoothActiveDay but is actually string
-              const newActiveDayAsEnum = parseInt(
-                newActiveDay as unknown as string,
-              );
-              mapRecordService.setActiveDay(
-                CURRENT_EVENT_TYPE,
-                newActiveDayAsEnum,
-              );
-              props.onActiveDayChange(newActiveDayAsEnum);
+              mapRecordService.setActiveDay(CURRENT_EVENT_TYPE, newActiveDay);
+              props.onActiveDayChange(newActiveDay);
             }}
           />
           <div>
             {getSourceLinkElement(
               mapRecordService.getActiveDayOrDefault(
                 CURRENT_EVENT_TYPE,
-                BoothActiveDay.day1,
+                'day1',
               ),
             )}
           </div>
@@ -259,11 +252,11 @@ function getZoomInIndexOrDefault(): number {
 
 function getSourceLink(activeDay: BoothActiveDay): string {
   switch (activeDay) {
-    case BoothActiveDay.day1:
+    case 'day1':
       return 'https://www.f-2.com.tw/index.php?q=ff/169824';
-    case BoothActiveDay.day2:
+    case 'day2':
       return 'https://www.f-2.com.tw/index.php?q=ff/169825';
-    case BoothActiveDay.day3:
+    case 'day3':
       return 'https://www.f-2.com.tw/index.php?q=ff/169826';
   }
 }

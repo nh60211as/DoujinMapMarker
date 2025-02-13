@@ -84,7 +84,7 @@ export function getSettingMapMarkerList(
       const id = tokens[4];
       settingMapMarkerList.push({
         id: id,
-        activeDay: BoothActiveDay[activeDay],
+        activeDay: activeDay,
         marker: Marker[getMarker(eventType, activeDay, id)],
       });
     }
@@ -96,7 +96,7 @@ export function getSettingMapMarkerList(
 export function setActiveDay(eventType: EventType, activeDay: BoothActiveDay) {
   const localStorageKey = createMapActiveDayKeyByEventType(eventType);
 
-  localStorage.setItem(localStorageKey, BoothActiveDay[activeDay]);
+  localStorage.setItem(localStorageKey, activeDay);
 }
 
 export function getActiveDayOrNull(
@@ -133,7 +133,7 @@ function createMapMarkerKey(
   activeDay: BoothActiveDay,
   groupId: string,
 ): string {
-  return `${EventType[eventType]}.${BoothActiveDay[activeDay]}.map.marker.${groupId}`;
+  return `${EventType[eventType]}.${activeDay}.map.marker.${groupId}`;
 }
 
 function createMapActiveDayKeyByEventType(eventType: EventType): string {

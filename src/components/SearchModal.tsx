@@ -6,7 +6,7 @@ import {
 } from '../global/SearchModalState';
 import { CURRENT_GROUP_DATA } from '../services/GroupDataService';
 import * as mapRecordService from '../services/MapRecordService';
-import { BoothActiveDay } from '../types/BoothActiveDay';
+import { boothActiveDayArray } from '../types/BoothActiveDay';
 import { CURRENT_EVENT_TYPE } from '../types/EventType';
 import { Filter } from '../types/Filter';
 import { GroupData } from '../types/GroupData';
@@ -191,23 +191,8 @@ function getCurrentGroupDataList(filter: Filter): Array<GroupData> {
       );
     case Filter.onlyMarked:
       // TODO: extract function
-      return CURRENT_GROUP_DATA.filter(
-        (groupData) =>
-          mapRecordService.isGroupIdMarked(
-            CURRENT_EVENT_TYPE,
-            BoothActiveDay.day1,
-            groupData.groupId,
-          ) ||
-          mapRecordService.isGroupIdMarked(
-            CURRENT_EVENT_TYPE,
-            BoothActiveDay.day2,
-            groupData.groupId,
-          ) ||
-          mapRecordService.isGroupIdMarked(
-            CURRENT_EVENT_TYPE,
-            BoothActiveDay.day3,
-            groupData.groupId,
-          ),
+      return CURRENT_GROUP_DATA.filter((groupData) =>
+        isGroupIdMarked(groupData.groupId),
       );
   }
 }
@@ -230,6 +215,21 @@ function searchByGroupNameAndRankBySimilarity(
 
   // sort similarity by descending order
   return searchResult.sort((a, b) => b.similarity - a.similarity);
+}
+
+function isGroupIdMarked(groupId: string): boolean {
+  let result: boolean = false;
+  boothActiveDayArray.forEach(
+    (activeDay) =>
+      (result =
+        result ||
+        mapRecordService.isGroupIdMarked(
+          CURRENT_EVENT_TYPE,
+          activeDay,
+          groupId,
+        )),
+  );
+  return result;
 }
 
 function GroupTable(props: {

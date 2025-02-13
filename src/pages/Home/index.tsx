@@ -208,12 +208,12 @@ function getOutlineEmByZoomInValue(zoomInValue: number): number {
 }
 
 function getImageSrcByActiveDay(activeDay: BoothActiveDay): string {
-  switch (activeDay as BoothActiveDay) {
-    case BoothActiveDay.day1:
+  switch (activeDay) {
+    case 'day1':
       return FfMapDay1;
-    case BoothActiveDay.day2:
+    case 'day2':
       return FfMapDay2;
-    case BoothActiveDay.day3:
+    case 'day3':
       return FfMapDay3;
   }
 }

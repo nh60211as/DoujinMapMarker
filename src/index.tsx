@@ -22,10 +22,7 @@ import { useState } from 'preact/hooks';
 
 export function App() {
   const [activeDay, setActiveDay] = useState<BoothActiveDay>(
-    mapRecordService.getActiveDayOrDefault(
-      CURRENT_EVENT_TYPE,
-      BoothActiveDay.day1,
-    ),
+    mapRecordService.getActiveDayOrDefault(CURRENT_EVENT_TYPE, 'day1'),
   );
 
   const [zoomInValue, setZoomInValue] = useState<ValidZoomInValue>(
