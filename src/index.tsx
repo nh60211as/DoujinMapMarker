@@ -9,7 +9,7 @@ import { Home } from './pages/Home/index';
 import * as browserSettingService from './services/BrowserSettingService';
 import * as mapRecordService from './services/MapRecordService';
 import { BoothActiveDay } from './types/BoothActiveDay';
-import { CURRENT_EVENT_TYPE, EventType } from './types/EventType';
+import { CURRENT_EVENT_TYPE } from './types/EventType';
 import { Marker } from './types/Marker';
 import {
   DEFAULT_ZOOM_IN_VALUE,
@@ -22,7 +22,10 @@ import { useState } from 'preact/hooks';
 
 export function App() {
   const [activeDay, setActiveDay] = useState<BoothActiveDay>(
-    mapRecordService.getActiveDayOrDefault(EventType.FF44, BoothActiveDay.day1),
+    mapRecordService.getActiveDayOrDefault(
+      CURRENT_EVENT_TYPE,
+      BoothActiveDay.day1,
+    ),
   );
 
   const [zoomInValue, setZoomInValue] = useState<ValidZoomInValue>(

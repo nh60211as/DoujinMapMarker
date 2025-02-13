@@ -7,7 +7,7 @@ import {
 import { CURRENT_GROUP_DATA } from '../services/GroupDataService';
 import * as mapRecordService from '../services/MapRecordService';
 import { BoothActiveDay } from '../types/BoothActiveDay';
-import { EventType } from '../types/EventType';
+import { CURRENT_EVENT_TYPE } from '../types/EventType';
 import { Filter } from '../types/Filter';
 import { GroupData } from '../types/GroupData';
 import { DropDownList } from './DropdownList';
@@ -194,17 +194,17 @@ function getCurrentGroupDataList(filter: Filter): Array<GroupData> {
       return CURRENT_GROUP_DATA.filter(
         (groupData) =>
           mapRecordService.isGroupIdMarked(
-            EventType.FF44,
+            CURRENT_EVENT_TYPE,
             BoothActiveDay.day1,
             groupData.groupId,
           ) ||
           mapRecordService.isGroupIdMarked(
-            EventType.FF44,
+            CURRENT_EVENT_TYPE,
             BoothActiveDay.day2,
             groupData.groupId,
           ) ||
           mapRecordService.isGroupIdMarked(
-            EventType.FF44,
+            CURRENT_EVENT_TYPE,
             BoothActiveDay.day3,
             groupData.groupId,
           ),
