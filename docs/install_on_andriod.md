@@ -4,7 +4,7 @@
 
 1. 使用 Chrome 開啟網頁
 
-   網頁：https://nh60211as.github.io/FfMapMarker/
+   網頁：https://nh60211as.github.io/DoujinMapMarker/
 
 2. 安裝程式 (尋找安裝)
    通常會直接跳出安裝提示，或是開啟瀏覽器選單並且點擊`加到主畫面`

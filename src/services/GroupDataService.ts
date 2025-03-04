@@ -1,4 +1,4 @@
-import rawFf44GroupData from '../../generated-data/FF44/group-data.json';
+import rawGroupData from '../../generated-data/CWTxACCF/group-data.json';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { BoothData, BoothDataOnMap } from '../types/BoothData';
 import { GroupData } from '../types/GroupData';
@@ -7,7 +7,7 @@ import { defined } from '../utils/TypeUtils';
 
 // The data should be validated in test (DO NOT use `as Array<GroupData>` in any other places)
 export const CURRENT_GROUP_DATA: Array<GroupData> =
-  rawFf44GroupData as Array<GroupData>;
+  rawGroupData as Array<GroupData>;
 
 function getBoothDataListByActiveDay(
   groupDataList: Array<GroupData>,
