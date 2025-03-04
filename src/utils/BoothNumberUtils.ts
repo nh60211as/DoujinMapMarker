@@ -23,29 +23,26 @@ export function boothNumberListToTargetingBoxDimension(
 function boothNumberToTargetingBoxDimension(
   boothNumber: BoothNumber,
 ): TargetingBoxDimension {
-  const A_TO_L_STARTING_Y_AXIS = 1968;
-  const BOOTH_X_SIZE = 41.5;
-  const BOOTH_Y_SIZE = 26.59090909090909;
+  const BOOTH_X_SIZE = 85;
+  const BOOTH_Y_SIZE = 68.5;
 
   switch (boothNumber.row) {
     case 'E':
+      return {
+        x: getE_X_Axis(boothNumber.number),
+        y:
+          getF_Y_Axis(boothNumber.number) +
+          ((boothNumber.number - 1) % 8) * BOOTH_Y_SIZE,
+        width: BOOTH_X_SIZE,
+        height: BOOTH_Y_SIZE,
+      };
     case 'F':
-      if (1 <= boothNumber.number && boothNumber.number <= 22) {
-        return {
-          x: getAToU_X_Axis(boothNumber.row),
-          y: A_TO_L_STARTING_Y_AXIS - (boothNumber.number - 1) * BOOTH_Y_SIZE,
-          width: BOOTH_X_SIZE,
-          height: BOOTH_Y_SIZE,
-        };
-      } else {
-        // 23 ~
-        return {
-          x: getAToU_X_Axis(boothNumber.row) - BOOTH_X_SIZE,
-          y: A_TO_L_STARTING_Y_AXIS - (44 - boothNumber.number) * BOOTH_Y_SIZE,
-          width: BOOTH_X_SIZE,
-          height: BOOTH_Y_SIZE,
-        };
-      }
+      return {
+        x: 1519,
+        y: 829,
+        width: BOOTH_X_SIZE,
+        height: BOOTH_Y_SIZE,
+      };
   }
 }
 
@@ -65,72 +62,49 @@ function boothNumberListOf2ToTargetingBoxDimension(
   return { x, y, width, height };
 }
 
-function getAToU_X_Axis(
-  row:
-    | 'A'
-    | 'B'
-    | 'C'
-    | 'D'
-    | 'E'
-    | 'F'
-    | 'G'
-    | 'H'
-    | 'I'
-    | 'J'
-    | 'K'
-    | 'L'
-    | 'M'
-    | 'N'
-    | 'O'
-    | 'P'
-    | 'Q'
-    | 'R'
-    | 'S'
-    | 'T'
-    | 'U',
-): number {
-  switch (row) {
-    case 'A':
-      return 3216;
-    case 'B':
-      return 3061;
-    case 'C':
-      return 2893;
-    case 'D':
-      return 2724;
-    case 'E':
-      return 2556;
-    case 'F':
-      return 2388;
-    case 'G':
-      return 2217;
-    case 'H':
-      return 1911;
-    case 'I':
-      return 1743;
-    case 'J':
-      return 1575;
-    case 'K':
-      return 1407;
-    case 'L':
-      return 1235;
-    case 'M':
-      return 2726;
-    case 'N':
-      return 2538;
-    case 'O':
-      return 2352;
-    case 'P':
-      return 2166;
-    case 'Q':
-      return 1980;
-    case 'R':
-      return 1794;
-    case 'S':
-      return 1607;
-    case 'T':
-      return 1421;
-    case 'U':
-      return 1235;
+function getE_X_Axis(num: number): number {
+  const numDivided = Math.floor((num - 1) / 8);
+  switch (numDivided) {
+    case 0:
+    case 4:
+    case 8:
+      return 1519;
+    case 1:
+    case 5:
+    case 9:
+      return 1353;
+    case 2:
+    case 6:
+    case 10:
+      return 1114;
+    case 3:
+    case 7:
+    case 11:
+      return 945;
+    default:
+      throw Error(`Impossible value ${numDivided} in function get1To32_X_Axis`);
+  }
+}
+
+function getF_Y_Axis(num: number): number {
+  const numDivided = Math.floor((num - 1) / 8);
+  switch (numDivided) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+      return 829;
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+      return 1578;
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+      return 2312;
+    default:
+      throw Error(`Impossible value ${numDivided} in function get1To32_X_Axis`);
   }
 }
