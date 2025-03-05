@@ -31,15 +31,15 @@ function boothNumberToTargetingBoxDimension(
       return {
         x: getE_X_Axis(boothNumber.number),
         y:
-          getF_Y_Axis(boothNumber.number) +
+          getE_Y_Axis(boothNumber.number) +
           ((boothNumber.number - 1) % 8) * BOOTH_Y_SIZE,
         width: BOOTH_X_SIZE,
         height: BOOTH_Y_SIZE,
       };
     case 'F':
       return {
-        x: 1519,
-        y: 829,
+        x: getF_X_Axis(boothNumber.number),
+        y: getF_Y_Axis(boothNumber.number, BOOTH_Y_SIZE),
         width: BOOTH_X_SIZE,
         height: BOOTH_Y_SIZE,
       };
@@ -82,11 +82,11 @@ function getE_X_Axis(num: number): number {
     case 11:
       return 945;
     default:
-      throw Error(`Impossible value ${numDivided} in function get1To32_X_Axis`);
+      throw Error(`Impossible value ${numDivided} in function getE_X_Axis`);
   }
 }
 
-function getF_Y_Axis(num: number): number {
+function getE_Y_Axis(num: number): number {
   const numDivided = Math.floor((num - 1) / 8);
   switch (numDivided) {
     case 0:
@@ -105,6 +105,56 @@ function getF_Y_Axis(num: number): number {
     case 11:
       return 2312;
     default:
-      throw Error(`Impossible value ${numDivided} in function get1To32_X_Axis`);
+      throw Error(`Impossible value ${numDivided} in function getF_Y_Axis`);
   }
+}
+
+function getF_X_Axis(num: number): number {
+  if (isBetween(num, 1, 6)) {
+    return 1519;
+  }
+  if (isBetween(num, 7, 12)) {
+    return 1353;
+  }
+  if (isBetween(num, 13, 18)) {
+    return 1114;
+  }
+  if (isBetween(num, 19, 24)) {
+    return 945;
+  }
+  if (isBetween(num, 25, 32)) {
+    return 710;
+  }
+  if (isBetween(num, 33, 40)) {
+    return 539;
+  }
+
+  throw Error(`Impossible value ${num} in function getF_X_Axis`);
+}
+
+function getF_Y_Axis(num: number, boothYSize): number {
+  if (isBetween(num, 1, 6)) {
+    return 3133 + ((num - 1) % 6) * boothYSize;
+  }
+  if (isBetween(num, 7, 12)) {
+    return 3133 + ((num - 1) % 6) * boothYSize;
+  }
+  if (isBetween(num, 13, 18)) {
+    return 3133 + ((num - 1) % 6) * boothYSize;
+  }
+  if (isBetween(num, 19, 24)) {
+    return 3133 + ((num - 1) % 6) * boothYSize;
+  }
+  if (isBetween(num, 25, 32)) {
+    return 3133 + ((num - 1) % 8) * boothYSize;
+  }
+  if (isBetween(num, 33, 40)) {
+    return 3133 + ((num - 1) % 8) * boothYSize;
+  }
+
+  throw Error(`Impossible value ${num} in function getF_Y_Axis`);
+}
+
+function isBetween(num: number, low: number, high: number): boolean {
+  return low <= num && num <= high;
 }
