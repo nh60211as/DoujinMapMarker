@@ -1,10 +1,12 @@
-import { TAG_LIST } from '../../data/TagList';
 import { setGroupDataList } from '../global/GroupDataList';
 import {
   closeSearchModal,
   useSearchModalState,
 } from '../global/SearchModalState';
-import { CURRENT_GROUP_DATA } from '../services/GroupDataService';
+import {
+  CURRENT_GROUP_DATA,
+  CURRENT_TAG_LIST,
+} from '../services/GroupDataService';
 import * as mapRecordService from '../services/MapRecordService';
 import { boothActiveDayArray } from '../types/BoothActiveDay';
 import { CURRENT_EVENT_TYPE } from '../types/EventType';
@@ -140,13 +142,15 @@ function TagListToggle(props: {
   onTagListChanged: (newTagList: Array<string>) => void;
 }): JSX.Element {
   const [tagListToggleList, setTagListToggleList] = useState<Array<boolean>>(
-    new Array(TAG_LIST.length).fill(false),
+    new Array(CURRENT_TAG_LIST.length).fill(false),
   );
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     const buttonId: string = event.currentTarget.id;
 
-    const tagListIndex: number = TAG_LIST.findIndex((e) => e === buttonId);
+    const tagListIndex: number = CURRENT_TAG_LIST.findIndex(
+      (e) => e === buttonId,
+    );
     if (tagListIndex !== -1) {
       const oldToggle: boolean = tagListToggleList[tagListIndex];
       const newToggle: boolean = !oldToggle;
@@ -156,7 +160,7 @@ function TagListToggle(props: {
       setTagListToggleList(newTagListToggleList);
 
       if (newTagListToggleList.some((e) => e === true)) {
-        const newTagList = TAG_LIST.filter(
+        const newTagList = CURRENT_TAG_LIST.filter(
           (value, index) => newTagListToggleList[index],
         );
         props.onTagListChanged(newTagList);
@@ -168,7 +172,7 @@ function TagListToggle(props: {
 
   return (
     <>
-      {TAG_LIST.map((e, index) => (
+      {CURRENT_TAG_LIST.map((e, index) => (
         <button
           id={e}
           class={tagListToggleList[index] === true ? style.activeButton : ''}

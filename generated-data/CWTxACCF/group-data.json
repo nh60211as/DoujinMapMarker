@@ -37,7 +37,7 @@
   {
     "groupId": "9d59ab7bc7ad4bf2bc04c2578608ecdd",
     "groupName": "反式實驗劇場",
-    "groupLink": null,
+    "groupLink": "https://portaly.cc/lightoffill",
     "boothList": [
       {
         "activeDay": "CWTxACCF_DAY_1",
@@ -67,7 +67,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "10f3959edc824bcda3787cf6d9b5ca00",

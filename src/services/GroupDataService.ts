@@ -9,6 +9,17 @@ import { defined } from '../utils/TypeUtils';
 export const CURRENT_GROUP_DATA: Array<GroupData> =
   rawGroupData as Array<GroupData>;
 
+function getFullTagList(): Array<string> {
+  const set: Set<string> = CURRENT_GROUP_DATA.reduce(
+    (accumulator, value) => new Set([...accumulator, ...value.tagList]),
+    new Set<string>(),
+  );
+
+  return Array.from(set);
+}
+
+export const CURRENT_TAG_LIST: Array<string> = getFullTagList();
+
 function getBoothDataListByActiveDay(
   groupDataList: Array<GroupData>,
   boothActiveDay: BoothActiveDay,
