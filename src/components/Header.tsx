@@ -98,13 +98,13 @@ export function Header(props: HeaderProps): JSX.Element {
           <div>
             {getLinkElement(
               '手機安裝教學',
-              'https://github.com/nh60211as/FfMapMarker/blob/master/docs/install_on_andriod.md',
+              'https://github.com/nh60211as/DoujinMapMarker/blob/master/docs/install_on_andriod.md',
             )}
           </div>
           <div>
             {getLinkElement(
               '原始碼',
-              'https://github.com/nh60211as/FfMapMarker',
+              'https://github.com/nh60211as/DoujinMapMarker',
             )}
           </div>
         </div>
