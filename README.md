@@ -1,4 +1,4 @@
-# Fancy Frontier Map Marker
+# Doujin Map Marker
 
 ## CLI Commands
 

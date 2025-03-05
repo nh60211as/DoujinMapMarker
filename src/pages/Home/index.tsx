@@ -99,7 +99,7 @@ export function Home(props: HomeProps): JSX.Element {
         <img
           ref={imgRef}
           src={imgSrc}
-          alt="Fancy Frontier Map"
+          alt="Doujin Map"
           style={{
             width: `${naturalWidth * props.zoomInValue}px`,
             height: `${naturalHeight * props.zoomInValue}px`, // Maintain aspect ratio
