@@ -47,21 +47,22 @@ export function Header(props: HeaderProps): JSX.Element {
     setZoomInIndex(getZoomInIndexOrDefault());
   }, [props.currentZoomInValue]);
 
+  // NOTE: The implementation should be changed with each event
   const activeDayOptionValueList: Array<{
     option: JSX.Element;
     value: BoothActiveDay;
   }> = [
     {
-      option: <>第一天(02/07)</>,
-      value: 'day1',
+      option: <>第一天(03/14)</>,
+      value: 'CWTxACCF_DAY_1',
     },
     {
-      option: <>第二天(02/08)</>,
-      value: 'day2',
+      option: <>第二天(03/15)</>,
+      value: 'CWTxACCF_DAY_2',
     },
     {
-      option: <>第三天(02/09)</>,
-      value: 'day3',
+      option: <>第三天(03/16)</>,
+      value: 'CWTxACCF_DAY_3',
     },
   ];
 
@@ -110,10 +111,7 @@ export function Header(props: HeaderProps): JSX.Element {
         <div class={style.gridItem}>
           <DropDownList
             tipText="選擇天數："
-            value={mapRecordService.getActiveDayOrDefault(
-              CURRENT_EVENT_TYPE,
-              'day1',
-            )}
+            value={mapRecordService.getActiveDayOrDefault(CURRENT_EVENT_TYPE)}
             optionValue={activeDayOptionValueList}
             onChange={(newActiveDay: BoothActiveDay) => {
               mapRecordService.setActiveDay(CURRENT_EVENT_TYPE, newActiveDay);
@@ -122,10 +120,7 @@ export function Header(props: HeaderProps): JSX.Element {
           />
           <div>
             {getSourceLinkElement(
-              mapRecordService.getActiveDayOrDefault(
-                CURRENT_EVENT_TYPE,
-                'day1',
-              ),
+              mapRecordService.getActiveDayOrDefault(CURRENT_EVENT_TYPE),
             )}
           </div>
         </div>
@@ -253,12 +248,12 @@ function getZoomInIndexOrDefault(): number {
 // NOTE: The implementation should be changed with each event
 function getSourceLink(activeDay: BoothActiveDay): string {
   switch (activeDay) {
-    case 'day1':
-      return 'https://www.f-2.com.tw/index.php?q=ff/169824';
-    case 'day2':
-      return 'https://www.f-2.com.tw/index.php?q=ff/169825';
-    case 'day3':
-      return 'https://www.f-2.com.tw/index.php?q=ff/169826';
+    case 'CWTxACCF_DAY_1':
+      return 'https://www.comicworld.com.tw/Act4/158';
+    case 'CWTxACCF_DAY_2':
+      return 'https://www.comicworld.com.tw/Act4/158';
+    case 'CWTxACCF_DAY_3':
+      return 'https://www.comicworld.com.tw/Act4/158';
   }
 }
 

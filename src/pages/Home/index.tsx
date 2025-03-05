@@ -207,11 +207,11 @@ function getOutlineEmByZoomInValue(zoomInValue: number): number {
 
 function getImageSrcByActiveDay(activeDay: BoothActiveDay): string {
   switch (activeDay) {
-    case 'day1':
+    case 'CWTxACCF_DAY_1':
       return MAP;
-    case 'day2':
+    case 'CWTxACCF_DAY_2':
       return MAP;
-    case 'day3':
+    case 'CWTxACCF_DAY_3':
       return MAP;
   }
 }

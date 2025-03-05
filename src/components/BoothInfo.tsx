@@ -18,22 +18,24 @@ type BoothInfoProps = {
 // NOTE: The implementation should be changed with each event
 export function BoothInfo(props: BoothInfoProps): JSX.Element {
   const isDay1Active: boolean =
-    props.boothList.findIndex((e) => e.activeDay === 'day1') !== -1;
+    props.boothList.findIndex((e) => e.activeDay === 'CWTxACCF_DAY_1') !== -1;
   const isDay2Active: boolean =
-    props.boothList.findIndex((e) => e.activeDay === 'day2') !== -1;
+    props.boothList.findIndex((e) => e.activeDay === 'CWTxACCF_DAY_2') !== -1;
   const isDay3Active: boolean =
-    props.boothList.findIndex((e) => e.activeDay === 'day3') !== -1;
+    props.boothList.findIndex((e) => e.activeDay === 'CWTxACCF_DAY_3') !== -1;
 
   return (
     <>
       {isDay1Active === true ? (
         <SingleDayBoothInfo
-          prefix="第一天(02/07)攤位："
+          prefix="第一天(03/14)攤位："
           groupId={props.groupId}
-          activeDay={'day1'}
+          activeDay={'CWTxACCF_DAY_1'}
           boothList={props.boothList}
           currentActiveDay={props.currentActiveDay}
-          onMarkerSet={(newMarker) => props.onMarkerSet('day1', newMarker)}
+          onMarkerSet={(newMarker) =>
+            props.onMarkerSet('CWTxACCF_DAY_1', newMarker)
+          }
         />
       ) : (
         <></>
@@ -41,12 +43,14 @@ export function BoothInfo(props: BoothInfoProps): JSX.Element {
 
       {isDay2Active === true ? (
         <SingleDayBoothInfo
-          prefix="第二天(02/08)攤位："
+          prefix="第二天(03/15)攤位："
           groupId={props.groupId}
-          activeDay={'day2'}
+          activeDay={'CWTxACCF_DAY_2'}
           boothList={props.boothList}
           currentActiveDay={props.currentActiveDay}
-          onMarkerSet={(newMarker) => props.onMarkerSet('day2', newMarker)}
+          onMarkerSet={(newMarker) =>
+            props.onMarkerSet('CWTxACCF_DAY_2', newMarker)
+          }
         />
       ) : (
         <></>
@@ -54,12 +58,14 @@ export function BoothInfo(props: BoothInfoProps): JSX.Element {
 
       {isDay3Active === true ? (
         <SingleDayBoothInfo
-          prefix="第三天(02/09)攤位："
+          prefix="第三天(03/16)攤位："
           groupId={props.groupId}
-          activeDay={'day3'}
+          activeDay={'CWTxACCF_DAY_3'}
           boothList={props.boothList}
           currentActiveDay={props.currentActiveDay}
-          onMarkerSet={(newMarker) => props.onMarkerSet('day3', newMarker)}
+          onMarkerSet={(newMarker) =>
+            props.onMarkerSet('CWTxACCF_DAY_3', newMarker)
+          }
         />
       ) : (
         <></>

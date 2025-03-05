@@ -5,7 +5,7 @@ import Joi from 'joi';
 
 // NOTE: The implementation should be changed with each event
 const BoothActiveDaySchema = Joi.string()
-  .valid('day1', 'day2', 'day3')
+  .valid('CWTxACCF_DAY_1', 'CWTxACCF_DAY_2', 'CWTxACCF_DAY_3')
   .required();
 
 // Joi schema for BoothNumber (with row-specific range validation)
