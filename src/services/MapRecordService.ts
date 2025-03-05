@@ -1,4 +1,7 @@
-import { BoothActiveDay } from '../types/BoothActiveDay';
+import {
+  BoothActiveDay,
+  DEFAULT_BOOTH_ACTIVE_DAY,
+} from '../types/BoothActiveDay';
 import { EventType } from '../types/EventType';
 import { Marker } from '../types/Marker';
 import { SettingMapMarker } from '../types/Setting';
@@ -108,10 +111,7 @@ export function getActiveDayOrNull(
   return parseActiveDayOrNull(rawActiveDay);
 }
 
-export function getActiveDayOrDefault(
-  eventType: EventType,
-  defaultValue: BoothActiveDay,
-): BoothActiveDay {
+export function getActiveDayOrDefault(eventType: EventType): BoothActiveDay {
   const localStorageKey = createMapActiveDayKeyByEventType(eventType);
 
   const rawActiveDay: string | null = localStorage.getItem(localStorageKey);
@@ -120,7 +120,7 @@ export function getActiveDayOrDefault(
     parseActiveDayOrNull(rawActiveDay);
 
   if (parsedActiveDay === null) {
-    return defaultValue;
+    return DEFAULT_BOOTH_ACTIVE_DAY;
   }
 
   parseActiveDayOrNull(rawActiveDay);

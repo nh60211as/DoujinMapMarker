@@ -1,4 +1,5 @@
 import { Booth } from './Booth';
+import { DEFAULT_BOOTH_ACTIVE_DAY } from './BoothActiveDay';
 import { TargetingBoxDimension } from './TargetingBoxDimension';
 
 export type BoothData = {
@@ -17,7 +18,7 @@ export const DEFAULT_BOOTH_DATA_ON_MAP: BoothDataOnMap = {
   groupName: '',
   groupLink: null,
   booth: {
-    activeDay: 'day1',
+    activeDay: DEFAULT_BOOTH_ACTIVE_DAY,
     boothNumberList: [],
   },
   dimension: { x: 0, y: 0, width: 0, height: 0 },

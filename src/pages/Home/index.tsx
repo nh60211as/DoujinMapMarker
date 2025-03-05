@@ -1,6 +1,4 @@
-import FfMapDay1 from '../../assets/maps/2025_FF44_MAP_NEW_DAY1.jpg';
-import FfMapDay2 from '../../assets/maps/2025_FF44_MAP_NEW_DAY2.jpg';
-import FfMapDay3 from '../../assets/maps/2025_FF44_MAP_NEW_DAY3.jpg';
+import MAP from '../../assets/maps/2025_CWTxACCF.jpg';
 import { useGroupDataList } from '../../global/GroupDataList';
 import * as groupDataService from '../../services/GroupDataService';
 import * as mapRecordService from '../../services/MapRecordService';
@@ -101,7 +99,7 @@ export function Home(props: HomeProps): JSX.Element {
         <img
           ref={imgRef}
           src={imgSrc}
-          alt="Fancy Frontier Map"
+          alt="Doujin Map"
           style={{
             width: `${naturalWidth * props.zoomInValue}px`,
             height: `${naturalHeight * props.zoomInValue}px`, // Maintain aspect ratio
@@ -209,11 +207,11 @@ function getOutlineEmByZoomInValue(zoomInValue: number): number {
 
 function getImageSrcByActiveDay(activeDay: BoothActiveDay): string {
   switch (activeDay) {
-    case 'day1':
-      return FfMapDay1;
-    case 'day2':
-      return FfMapDay2;
-    case 'day3':
-      return FfMapDay3;
+    case 'CWTxACCF_DAY_1':
+      return MAP;
+    case 'CWTxACCF_DAY_2':
+      return MAP;
+    case 'CWTxACCF_DAY_3':
+      return MAP;
   }
 }

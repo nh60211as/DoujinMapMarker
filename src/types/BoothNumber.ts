@@ -3,35 +3,10 @@ import { IntRangeExclusive } from '../utils/RangeUtils';
 // NOTE: The implementation should be changed with each event
 export type BoothNumber =
   | {
-      row: 'A';
-      number: IntRangeExclusive<1, 23>;
+      row: 'E';
+      number: IntRangeExclusive<1, 97>;
     }
   | {
-      row:
-        | 'B'
-        | 'C'
-        | 'D'
-        | 'E'
-        | 'F'
-        | 'G'
-        | 'H'
-        | 'I'
-        | 'J'
-        | 'K'
-        | 'L'
-        | 'M'
-        | 'N';
-      number: IntRangeExclusive<1, 45>;
-    }
-  | {
-      row: 'O' | 'P' | 'Q' | 'R' | 'S' | 'T';
-      number: IntRangeExclusive<1, 49>;
-    }
-  | {
-      row: 'U';
-      number: IntRangeExclusive<1, 45>;
-    }
-  | {
-      row: 'W';
-      number: IntRangeExclusive<1, 43>;
+      row: 'F';
+      number: IntRangeExclusive<1, 41>;
     };

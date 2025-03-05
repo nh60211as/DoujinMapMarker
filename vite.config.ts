@@ -8,7 +8,7 @@ export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
-    base: '/FfMapMarker/',
+    base: '/DoujinMapMarker/',
     plugins: [
       preact(),
       checker({
@@ -16,9 +16,9 @@ export default defineConfig(({ command, mode }) => {
       }),
       VitePWA({
         manifest: {
-          name: 'Fancy Frontier Map Marker',
-          short_name: 'FF Map Marker',
-          start_url: '/FfMapMarker/',
+          name: 'Doujin Map Marker',
+          short_name: 'Doujin Map Marker',
+          start_url: '/DoujinMapMarker/',
           display: 'standalone',
           orientation: 'portrait',
           background_color: '#000000',
