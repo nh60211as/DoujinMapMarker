@@ -111,17 +111,15 @@ export function Header(props: HeaderProps): JSX.Element {
         <div class={style.gridItem}>
           <DropDownList
             tipText="選擇天數："
-            value={mapRecordService.getActiveDayOrDefault(CURRENT_EVENT_TYPE)}
+            value={mapRecordService.getActiveDayOrDefault()}
             optionValue={activeDayOptionValueList}
             onChange={(newActiveDay: BoothActiveDay) => {
-              mapRecordService.setActiveDay(CURRENT_EVENT_TYPE, newActiveDay);
+              mapRecordService.setActiveDay(newActiveDay);
               props.onActiveDayChange(newActiveDay);
             }}
           />
           <div>
-            {getSourceLinkElement(
-              mapRecordService.getActiveDayOrDefault(CURRENT_EVENT_TYPE),
-            )}
+            {getSourceLinkElement(mapRecordService.getActiveDayOrDefault())}
           </div>
         </div>
         <div class={style.gridItem}>
@@ -180,10 +178,9 @@ export function Header(props: HeaderProps): JSX.Element {
 
 function exportSetting() {
   const settingMapMarkerList: Array<SettingMapMarker> =
-    mapRecordService.getSettingMapMarkerList(CURRENT_EVENT_TYPE);
+    mapRecordService.getSettingMapMarkerList();
 
   const setting: Setting = {
-    eventType: CURRENT_EVENT_TYPE,
     version: '1',
     mapMarker: settingMapMarkerList,
   };
@@ -221,7 +218,6 @@ function importSetting(fileContent: string | null) {
     );
     if (activeDay !== null) {
       mapRecordService.setMarker(
-        CURRENT_EVENT_TYPE,
         activeDay,
         settingMapMarker.id,
         parseMarker(settingMapMarker.marker),

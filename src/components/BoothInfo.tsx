@@ -2,7 +2,6 @@ import * as mapRecordService from '../services/MapRecordService';
 import { Booth } from '../types/Booth';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { BoothNumber } from '../types/BoothNumber';
-import { CURRENT_EVENT_TYPE } from '../types/EventType';
 import { Marker } from '../types/Marker';
 import style from './BoothInfo.module.css';
 import { JSX } from 'preact';
@@ -83,11 +82,7 @@ function SingleDayBoothInfo(props: {
   onMarkerSet: (marker: Marker) => void;
 }): JSX.Element {
   const [marker, setMarker] = useState<Marker>(
-    mapRecordService.getMarker(
-      CURRENT_EVENT_TYPE,
-      props.activeDay,
-      props.groupId,
-    ),
+    mapRecordService.getMarker(props.activeDay, props.groupId),
   );
 
   const content = `${props.prefix}${getBoothNumberListAsString(props.boothList, props.activeDay)}`;

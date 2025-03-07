@@ -4,7 +4,6 @@ import * as groupDataService from '../../services/GroupDataService';
 import * as mapRecordService from '../../services/MapRecordService';
 import { BoothActiveDay } from '../../types/BoothActiveDay';
 import { BoothDataOnMap } from '../../types/BoothData';
-import { CURRENT_EVENT_TYPE } from '../../types/EventType';
 import { GroupData } from '../../types/GroupData';
 import { ImageSize } from '../../types/ImageSize';
 import { Marker } from '../../types/Marker';
@@ -124,7 +123,6 @@ export function Home(props: HomeProps): JSX.Element {
       }
 
       const marker: Marker = mapRecordService.getMarker(
-        CURRENT_EVENT_TYPE,
         props.activeDay,
         boothDataOnMap.groupId,
       );

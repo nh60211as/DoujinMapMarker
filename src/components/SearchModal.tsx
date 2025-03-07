@@ -9,7 +9,6 @@ import {
 } from '../services/GroupDataService';
 import * as mapRecordService from '../services/MapRecordService';
 import { boothActiveDayArray } from '../types/BoothActiveDay';
-import { CURRENT_EVENT_TYPE } from '../types/EventType';
 import { Filter } from '../types/Filter';
 import { GroupData } from '../types/GroupData';
 import { DropDownList } from './DropdownList';
@@ -225,13 +224,7 @@ function isGroupIdMarked(groupId: string): boolean {
   let result: boolean = false;
   boothActiveDayArray.forEach(
     (activeDay) =>
-      (result =
-        result ||
-        mapRecordService.isGroupIdMarked(
-          CURRENT_EVENT_TYPE,
-          activeDay,
-          groupId,
-        )),
+      (result = result || mapRecordService.isGroupIdMarked(activeDay, groupId)),
   );
   return result;
 }
