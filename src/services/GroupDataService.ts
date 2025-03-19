@@ -1,4 +1,5 @@
-import rawGroupData from '../../generated-data/CWTxACCF/group-data.json';
+// NOTE: The implementation should be changed with each event
+import rawGroupData from '../../generated-data/PF42/group-data.json';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { BoothData, BoothDataOnMap } from '../types/BoothData';
 import { GroupData } from '../types/GroupData';
