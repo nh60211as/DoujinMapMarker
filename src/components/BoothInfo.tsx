@@ -17,23 +17,21 @@ type BoothInfoProps = {
 // NOTE: The implementation should be changed with each event
 export function BoothInfo(props: BoothInfoProps): JSX.Element {
   const isDay1Active: boolean =
-    props.boothList.findIndex((e) => e.activeDay === 'CWTxACCF_DAY_1') !== -1;
+    props.boothList.findIndex((e) => e.activeDay === 'PF42_DAY_1') !== -1;
   const isDay2Active: boolean =
-    props.boothList.findIndex((e) => e.activeDay === 'CWTxACCF_DAY_2') !== -1;
-  const isDay3Active: boolean =
-    props.boothList.findIndex((e) => e.activeDay === 'CWTxACCF_DAY_3') !== -1;
+    props.boothList.findIndex((e) => e.activeDay === 'PF42_DAY_2') !== -1;
 
   return (
     <>
       {isDay1Active === true ? (
         <SingleDayBoothInfo
-          prefix="第一天(03/14)攤位："
+          prefix="第一天(05/03)攤位："
           groupId={props.groupId}
-          activeDay={'CWTxACCF_DAY_1'}
+          activeDay={'PF42_DAY_1'}
           boothList={props.boothList}
           currentActiveDay={props.currentActiveDay}
           onMarkerSet={(newMarker) =>
-            props.onMarkerSet('CWTxACCF_DAY_1', newMarker)
+            props.onMarkerSet('PF42_DAY_1', newMarker)
           }
         />
       ) : (
@@ -42,28 +40,13 @@ export function BoothInfo(props: BoothInfoProps): JSX.Element {
 
       {isDay2Active === true ? (
         <SingleDayBoothInfo
-          prefix="第二天(03/15)攤位："
+          prefix="第二天(05/04)攤位："
           groupId={props.groupId}
-          activeDay={'CWTxACCF_DAY_2'}
+          activeDay={'PF42_DAY_2'}
           boothList={props.boothList}
           currentActiveDay={props.currentActiveDay}
           onMarkerSet={(newMarker) =>
-            props.onMarkerSet('CWTxACCF_DAY_2', newMarker)
-          }
-        />
-      ) : (
-        <></>
-      )}
-
-      {isDay3Active === true ? (
-        <SingleDayBoothInfo
-          prefix="第三天(03/16)攤位："
-          groupId={props.groupId}
-          activeDay={'CWTxACCF_DAY_3'}
-          boothList={props.boothList}
-          currentActiveDay={props.currentActiveDay}
-          onMarkerSet={(newMarker) =>
-            props.onMarkerSet('CWTxACCF_DAY_3', newMarker)
+            props.onMarkerSet('PF42_DAY_2', newMarker)
           }
         />
       ) : (

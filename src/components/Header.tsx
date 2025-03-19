@@ -53,16 +53,12 @@ export function Header(props: HeaderProps): JSX.Element {
     value: BoothActiveDay;
   }> = [
     {
-      option: <>第一天(03/14)</>,
-      value: 'CWTxACCF_DAY_1',
+      option: <>第一天(05/03)</>,
+      value: 'PF42_DAY_1',
     },
     {
-      option: <>第二天(03/15)</>,
-      value: 'CWTxACCF_DAY_2',
-    },
-    {
-      option: <>第三天(03/16)</>,
-      value: 'CWTxACCF_DAY_3',
+      option: <>第二天(05/04)</>,
+      value: 'PF42_DAY_2',
     },
   ];
 
@@ -244,12 +240,10 @@ function getZoomInIndexOrDefault(): number {
 // NOTE: The implementation should be changed with each event
 function getSourceLink(activeDay: BoothActiveDay): string {
   switch (activeDay) {
-    case 'CWTxACCF_DAY_1':
-      return 'https://www.comicworld.com.tw/Act4/158';
-    case 'CWTxACCF_DAY_2':
-      return 'https://www.comicworld.com.tw/Act4/158';
-    case 'CWTxACCF_DAY_3':
-      return 'https://www.comicworld.com.tw/Act4/158';
+    case 'PF42_DAY_1':
+      return 'https://www.f-2.com.tw/index.php?q=ff/169854';
+    case 'PF42_DAY_2':
+      return 'https://www.f-2.com.tw/index.php?q=ff/169855';
   }
 }
 

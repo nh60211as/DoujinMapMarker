@@ -1,4 +1,4 @@
-import MAP from '../../assets/maps/2025_CWTxACCF.jpg';
+import MAP from '../../assets/maps/PF42_circle_map.jpg';
 import { useGroupDataList } from '../../global/GroupDataList';
 import * as groupDataService from '../../services/GroupDataService';
 import * as mapRecordService from '../../services/MapRecordService';
@@ -203,13 +203,12 @@ function getOutlineEmByZoomInValue(zoomInValue: number): number {
   return zoomInValue * 0.2;
 }
 
+// NOTE: The implementation should be changed with each event
 function getImageSrcByActiveDay(activeDay: BoothActiveDay): string {
   switch (activeDay) {
-    case 'CWTxACCF_DAY_1':
+    case 'PF42_DAY_1':
       return MAP;
-    case 'CWTxACCF_DAY_2':
-      return MAP;
-    case 'CWTxACCF_DAY_3':
+    case 'PF42_DAY_2':
       return MAP;
   }
 }
