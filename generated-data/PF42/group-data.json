@@ -5293,62 +5293,6 @@
     "tagList": []
   },
   {
-    "groupId": "b0cffd1099de422bb3466896e3871646",
-    "groupName": "籌備委員會預留空間",
-    "groupLink": null,
-    "boothList": [
-      {
-        "activeDay": "PF42_DAY_1",
-        "boothNumberList": [
-          {
-            "row": "O",
-            "number": 16
-          }
-        ]
-      },
-      {
-        "activeDay": "PF42_DAY_2",
-        "boothNumberList": [
-          {
-            "row": "M",
-            "number": 41
-          }
-        ]
-      },
-      {
-        "activeDay": "PF42_DAY_2",
-        "boothNumberList": [
-          {
-            "row": "N",
-            "number": 14
-          },
-          {
-            "row": "N",
-            "number": 38
-          },
-          {
-            "row": "O",
-            "number": 6
-          }
-        ]
-      },
-      {
-        "activeDay": "PF42_DAY_2",
-        "boothNumberList": [
-          {
-            "row": "R",
-            "number": 5
-          },
-          {
-            "row": "S",
-            "number": 35
-          }
-        ]
-      }
-    ],
-    "tagList": []
-  },
-  {
     "groupId": "819fc8d0085b4c3d946fdce811ef8e35",
     "groupName": "迷路貓領貓領域",
     "groupLink": null,
