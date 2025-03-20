@@ -16,7 +16,7 @@ function getFullTagList(): Array<string> {
     new Set<string>(),
   );
 
-  return Array.from(set);
+  return Array.from(set).sort();
 }
 
 export const CURRENT_TAG_LIST: Array<string> = getFullTagList();
