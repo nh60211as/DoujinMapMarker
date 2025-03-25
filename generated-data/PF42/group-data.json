@@ -2705,8 +2705,8 @@
       }
     ],
     "tagList": [
-      "VTuber",
-      "碧藍航線"
+      "敗北女角",
+      "蔚藍檔案"
     ]
   },
   {
@@ -7107,7 +7107,7 @@
   {
     "groupId": "f40a3d962f654fe597491b4360f073d9",
     "groupName": "玄子株式會社",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/genkosama",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -7136,7 +7136,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay",
+      "妮姬"
+    ]
   },
   {
     "groupId": "dfb1bf25d3f1401e8ef56303a498e85b",
@@ -9430,7 +9433,7 @@
   {
     "groupId": "c1b4056756174023b0b039cffd6380ba",
     "groupName": "常夜茶會",
-    "groupLink": null,
+    "groupLink": "https://x.com/FriendsGoudou",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -9446,7 +9449,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "動物朋友"
+    ]
   },
   {
     "groupId": "3b11748cc2314c21ad2df6ced174b4c1",
