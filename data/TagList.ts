@@ -1,5 +1,5 @@
 export const TAG_LIST: Array<string> = [
-  'MyGO!!!!!',
+  'MyGO!!!!!/Ave Mujica',
   'GBC',
   '世界計畫',
   '活俠傳',
