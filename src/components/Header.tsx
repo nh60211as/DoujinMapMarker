@@ -1,3 +1,5 @@
+import { setBoothActiveDay } from '../global/BoothActiveDay';
+import { setZoomInValue, useZoomInValue } from '../global/ZoomInValue';
 import * as browserSettingService from '../services/BrowserSettingService';
 import * as mapRecordService from '../services/MapRecordService';
 import { BoothActiveDay } from '../types/BoothActiveDay';
@@ -17,16 +19,15 @@ import { DropDownList } from './DropdownList';
 import { FileReaderComponent } from './FileReaderComponent';
 import style from './Header.module.css';
 import { JSX } from 'preact';
-import { StateUpdater, useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
 
 type HeaderProps = {
-  onActiveDayChange: (activeDay: StateUpdater<BoothActiveDay>) => void;
-  currentZoomInValue: ValidZoomInValue;
-  onZoomInValueChange: (zoomInValue: ValidZoomInValue) => void;
   onSearchButtonClicked: () => void;
 };
 
 export function Header(props: HeaderProps): JSX.Element {
+  const zoomInValue: ValidZoomInValue = useZoomInValue();
+
   const [zoomInIndex, setZoomInIndex] = useState<number>(
     getZoomInIndexOrDefault(),
   );
@@ -45,7 +46,7 @@ export function Header(props: HeaderProps): JSX.Element {
 
   useEffect(() => {
     setZoomInIndex(getZoomInIndexOrDefault());
-  }, [props.currentZoomInValue]);
+  }, [zoomInValue]);
 
   // NOTE: The implementation should be changed with each event
   const activeDayOptionValueList: Array<{
@@ -72,7 +73,7 @@ export function Header(props: HeaderProps): JSX.Element {
 
     const newZoomInValue = zoomInValueList[newZoomInIndex];
     browserSettingService.setZoomIn(newZoomInValue);
-    props.onZoomInValueChange(newZoomInValue);
+    setZoomInValue(newZoomInValue);
   }
 
   function onZoomIn() {
@@ -84,7 +85,7 @@ export function Header(props: HeaderProps): JSX.Element {
 
     const newZoomInValue = zoomInValueList[newZoomInIndex];
     browserSettingService.setZoomIn(newZoomInValue);
-    props.onZoomInValueChange(newZoomInValue);
+    setZoomInValue(newZoomInValue);
   }
 
   function HeaderContent(): JSX.Element {
@@ -111,7 +112,7 @@ export function Header(props: HeaderProps): JSX.Element {
             optionValue={activeDayOptionValueList}
             onChange={(newActiveDay: BoothActiveDay) => {
               mapRecordService.setActiveDay(newActiveDay);
-              props.onActiveDayChange(newActiveDay);
+              setBoothActiveDay(newActiveDay);
             }}
           />
           <div>

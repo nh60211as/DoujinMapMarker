@@ -6,44 +6,20 @@ import { openBoothModal } from './global/BoothModalState';
 import { openSearchModal } from './global/SearchModalState';
 import './index.css';
 import { Home } from './pages/Home/index';
-import * as browserSettingService from './services/BrowserSettingService';
 import * as mapRecordService from './services/MapRecordService';
 import { BoothActiveDay } from './types/BoothActiveDay';
 import { Marker } from './types/Marker';
-import {
-  DEFAULT_ZOOM_IN_VALUE,
-  ValidZoomInValue,
-  zoomInValueList,
-} from './types/ZoomInValue';
 import { JSX, render } from 'preact';
 import { LocationProvider, Router, Route } from 'preact-iso';
-import { useState } from 'preact/hooks';
 
 export function App() {
-  const [activeDay, setActiveDay] = useState<BoothActiveDay>(
-    mapRecordService.getActiveDayOrDefault(),
-  );
-
-  const [zoomInValue, setZoomInValue] = useState<ValidZoomInValue>(
-    browserSettingService.getZoomInOrDefault(
-      zoomInValueList,
-      DEFAULT_ZOOM_IN_VALUE,
-    ),
-  );
-
   // SearchModal related
   function onBoothInfoClicked(groupId: string) {
     openBoothModal(groupId);
   }
 
   function getHomeComponent(): JSX.Element {
-    return (
-      <Home
-        activeDay={activeDay}
-        zoomInValue={zoomInValue}
-        onBoothInfoClicked={onBoothInfoClicked}
-      />
-    );
+    return <Home onBoothInfoClicked={onBoothInfoClicked} />;
   }
 
   function getModalComponents(): JSX.Element {
@@ -51,7 +27,6 @@ export function App() {
       <>
         <SearchModal onBoothInfoClicked={onBoothInfoClicked} />
         <BoothModal
-          currentActiveDay={activeDay}
           onMarkerSet={(
             groupId: string,
             activeDay: BoothActiveDay,
@@ -69,9 +44,6 @@ export function App() {
       <ReloadPrompt />
       {getModalComponents()}
       <Header
-        onActiveDayChange={setActiveDay}
-        currentZoomInValue={zoomInValue}
-        onZoomInValueChange={setZoomInValue}
         onSearchButtonClicked={() => {
           openSearchModal();
         }}

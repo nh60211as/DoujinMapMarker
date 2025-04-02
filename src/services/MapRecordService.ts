@@ -107,8 +107,6 @@ export function getActiveDayOrDefault(): BoothActiveDay {
     return DEFAULT_BOOTH_ACTIVE_DAY;
   }
 
-  parseActiveDayOrNull(rawActiveDay);
-
   return parsedActiveDay;
 }
 

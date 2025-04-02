@@ -1,5 +1,7 @@
 import MAP from '../../assets/maps/2025_PF42_MAP_NEW.jpg';
+import { useBoothActiveDay } from '../../global/BoothActiveDay';
 import { useGroupDataList } from '../../global/GroupDataList';
+import { useZoomInValue } from '../../global/ZoomInValue';
 import * as groupDataService from '../../services/GroupDataService';
 import * as mapRecordService from '../../services/MapRecordService';
 import { BoothActiveDay } from '../../types/BoothActiveDay';
@@ -19,14 +21,13 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 const DEFAULT_IMAGE_SIZE: ImageSize = { width: 3508, height: 2431 };
 
 type HomeProps = {
-  activeDay: BoothActiveDay;
-  zoomInValue: ValidZoomInValue;
   onBoothInfoClicked: (groupId: string) => void;
 };
 
 export function Home(props: HomeProps): JSX.Element {
-  // group data related
+  const boothActiveDay: BoothActiveDay = useBoothActiveDay();
   const groupDataList: Array<GroupData> = useGroupDataList();
+  const zoomInValue: ValidZoomInValue = useZoomInValue();
 
   // active day map data related
   const [activeBoothDataOnMapList, setActiveBoothDataOnMapList] = useState<
@@ -38,7 +39,7 @@ export function Home(props: HomeProps): JSX.Element {
   const [naturalWidth, setNaturalWidth] = useState(0);
   const [naturalHeight, setNaturalHeight] = useState(0);
   const [imgSrc, setImgSrc] = useState<string>(
-    getImageSrcByActiveDay(props.activeDay),
+    getImageSrcByActiveDay(boothActiveDay),
   );
   const [
     targetingBoxDimensionWithGroupIdList,
@@ -47,11 +48,11 @@ export function Home(props: HomeProps): JSX.Element {
 
   // on active day change
   useEffect(() => {
-    setImgSrc(getImageSrcByActiveDay(props.activeDay));
+    setImgSrc(getImageSrcByActiveDay(boothActiveDay));
     setActiveBoothDataOnMapList(
-      groupDataService.getBoothDataListOnMap(groupDataList, props.activeDay),
+      groupDataService.getBoothDataListOnMap(groupDataList, boothActiveDay),
     );
-  }, [props.activeDay, groupDataList]);
+  }, [boothActiveDay, groupDataList]);
 
   // on image size change
   useEffect(() => {
@@ -91,8 +92,8 @@ export function Home(props: HomeProps): JSX.Element {
     return (
       <div
         style={{
-          width: DEFAULT_IMAGE_SIZE.width * props.zoomInValue,
-          height: DEFAULT_IMAGE_SIZE.height * props.zoomInValue,
+          width: DEFAULT_IMAGE_SIZE.width * zoomInValue,
+          height: DEFAULT_IMAGE_SIZE.height * zoomInValue,
         }}
       >
         <img
@@ -100,8 +101,8 @@ export function Home(props: HomeProps): JSX.Element {
           src={imgSrc}
           alt="Doujin Map"
           style={{
-            width: `${naturalWidth * props.zoomInValue}px`,
-            height: `${naturalHeight * props.zoomInValue}px`, // Maintain aspect ratio
+            width: `${naturalWidth * zoomInValue}px`,
+            height: `${naturalHeight * zoomInValue}px`, // Maintain aspect ratio
             transition: 'width 0.3s ease-in-out', // Smooth transition for zoom effect
           }}
         ></img>
@@ -123,7 +124,7 @@ export function Home(props: HomeProps): JSX.Element {
       }
 
       const marker: Marker = mapRecordService.getMarker(
-        props.activeDay,
+        boothActiveDay,
         boothDataOnMap.groupId,
       );
 
@@ -136,8 +137,7 @@ export function Home(props: HomeProps): JSX.Element {
             top: targetingBoxDimensionWithId.y,
             width: targetingBoxDimensionWithId.width,
             height: targetingBoxDimensionWithId.height,
-            outline: `${getOutlineEmByZoomInValue(props.zoomInValue * 1)}em solid`,
-            outlineColor: `gold`,
+            outline: `gold ${getOutlineEmByZoomInValue(zoomInValue * 1)}em solid`,
           }}
           onClick={() => {
             props.onBoothInfoClicked(boothDataOnMap.groupId);

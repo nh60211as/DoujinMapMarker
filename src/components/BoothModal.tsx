@@ -1,3 +1,4 @@
+import { useBoothActiveDay } from '../global/BoothActiveDay';
 import { closeBoothModal, useBoothModalState } from '../global/BoothModalState';
 import * as groupDataService from '../services/GroupDataService';
 import { BoothActiveDay } from '../types/BoothActiveDay';
@@ -9,7 +10,6 @@ import { JSX } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 
 type BoothModalProps = {
-  currentActiveDay: BoothActiveDay;
   onMarkerSet: (
     groupId: string,
     activeDay: BoothActiveDay,
@@ -18,6 +18,7 @@ type BoothModalProps = {
 };
 
 const BoothModal = (props: BoothModalProps): JSX.Element => {
+  const boothActiveDay: BoothActiveDay = useBoothActiveDay();
   const modalState = useBoothModalState();
 
   const [groupData, setGroupData] = useState<GroupData | null>(null);
@@ -53,7 +54,7 @@ const BoothModal = (props: BoothModalProps): JSX.Element => {
         <BoothInfo
           groupId={groupData.groupId}
           boothList={groupData.boothList}
-          currentActiveDay={props.currentActiveDay}
+          currentActiveDay={boothActiveDay}
           onMarkerSet={(activeDay: BoothActiveDay, marker: Marker) =>
             props.onMarkerSet(groupData.groupId, activeDay, marker)
           }
