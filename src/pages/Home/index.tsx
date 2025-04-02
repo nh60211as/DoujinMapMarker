@@ -1,4 +1,4 @@
-import MAP from '../../assets/maps/PF42_circle_map.jpg';
+import MAP from '../../assets/maps/2025_PF42_MAP_NEW.jpg';
 import { useGroupDataList } from '../../global/GroupDataList';
 import * as groupDataService from '../../services/GroupDataService';
 import * as mapRecordService from '../../services/MapRecordService';

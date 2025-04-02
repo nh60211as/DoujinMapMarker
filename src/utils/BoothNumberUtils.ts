@@ -179,11 +179,11 @@ function getAToS_X_Axis(
 ): number {
   switch (row) {
     case 'A':
-      return 1746;
+      return 1726;
     case 'B':
-      return 1632;
+      return 1612;
     case 'C':
-      return 1514;
+      return 1494;
     case 'L':
       return 1872;
     case 'M':
