@@ -18,7 +18,8 @@ import style from './style.module.css';
 import { JSX } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 
-const DEFAULT_IMAGE_SIZE: ImageSize = { width: 3508, height: 2431 };
+// NOTE: The implementation should be changed with each event
+const DEFAULT_IMAGE_SIZE: ImageSize = { width: 2400, height: 1696 };
 
 type HomeProps = {
   onBoothInfoClicked: (groupId: string) => void;
