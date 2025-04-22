@@ -4900,7 +4900,7 @@
   {
     "groupId": "fb1d806e094244b5b31c357399c7319f",
     "groupName": "米克斯MIX",
-    "groupLink": "https://www.facebook.com/teacat0403",
+    "groupLink": null,
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -4930,6 +4930,7 @@
       }
     ],
     "tagList": [
+      "VTuber",
       "Cosplay"
     ]
   },
@@ -5064,7 +5065,7 @@
   {
     "groupId": "1aa8516274e44a34a8ffee023ad639ee",
     "groupName": "Limnos",
-    "groupLink": null,
+    "groupLink": "https://lit.link/en/limnos",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -7049,7 +7050,7 @@
   {
     "groupId": "713a8038babe496d86b36d671b2987da",
     "groupName": "容子",
-    "groupLink": null,
+    "groupLink": "https://linktr.ee/zonezicos",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -7216,7 +7217,9 @@
     ],
     "tagList": [
       "Cosplay",
-      "鳴潮"
+      "妮姬",
+      "鳴潮",
+      "我獨自升級"
     ]
   },
   {
@@ -7258,7 +7261,7 @@
   {
     "groupId": "713c986f04a644638ca95668d553a691",
     "groupName": "小律Ritsu與大鵝的產地",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/Ritsu.OuO",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -7287,7 +7290,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay",
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "563db3f9f91d46ac98f2e02a941c9b03",
@@ -10949,7 +10955,8 @@
       }
     ],
     "tagList": [
-      "原創"
+      "Cosplay",
+      "碧藍航線"
     ]
   },
   {
