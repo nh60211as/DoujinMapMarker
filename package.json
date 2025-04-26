@@ -13,7 +13,7 @@
     "build:gh": "vite build",
     "serve": "http-server ./build --port 8080",
     "test": "vitest ./tests --run --coverage",
-    "format": "prettier --config prettier.config.js  \"{scripts,src,tests}/**/*.{ts,tsx,js,jsx,css,json}\" package.json prettier.config.js tsconfig.json vite.config.ts --write"
+    "format": "prettier --config prettier.config.js  \"{scripts,src,tests}/**/*.{ts,tsx,js,jsx,css,json}\" data/TagList.ts package.json prettier.config.js tsconfig.json vite.config.ts --write"
   },
   "dependencies": {
     "preact": "^10.26.5",
