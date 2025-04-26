@@ -1,6 +1,6 @@
 import { TAG_LIST } from '../data/TagList';
 // NOTE: The implementation should be changed with each event
-import rawGroupData from '../generated-data/PF42/group-data.json';
+import rawGroupData from '../generated-data/IF6/group-data.json';
 import { BoothNumber } from '../src/types/BoothNumber';
 import { GroupData } from '../src/types/GroupData';
 import { GroupDataArraySchema } from './GroupDataSchema';

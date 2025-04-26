@@ -54,12 +54,8 @@ export function Header(props: HeaderProps): JSX.Element {
     value: BoothActiveDay;
   }> = [
     {
-      option: <>第一天(05/03)</>,
-      value: 'PF42_DAY_1',
-    },
-    {
-      option: <>第二天(05/04)</>,
-      value: 'PF42_DAY_2',
+      option: <>05/10</>,
+      value: 'IF6_DAY_1',
     },
   ];
 
@@ -241,10 +237,8 @@ function getZoomInIndexOrDefault(): number {
 // NOTE: The implementation should be changed with each event
 function getSourceLink(activeDay: BoothActiveDay): string {
   switch (activeDay) {
-    case 'PF42_DAY_1':
-      return 'https://www.f-2.com.tw/index.php?q=ff/169854';
-    case 'PF42_DAY_2':
-      return 'https://www.f-2.com.tw/index.php?q=ff/169855';
+    case 'IF6_DAY_1':
+      return 'https://if.gjs.tw/circle-list.html';
   }
 }
 

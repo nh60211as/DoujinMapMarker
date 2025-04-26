@@ -17,37 +17,18 @@ type BoothInfoProps = {
 // NOTE: The implementation should be changed with each event
 export function BoothInfo(props: BoothInfoProps): JSX.Element {
   const isDay1Active: boolean =
-    props.boothList.findIndex((e) => e.activeDay === 'PF42_DAY_1') !== -1;
-  const isDay2Active: boolean =
-    props.boothList.findIndex((e) => e.activeDay === 'PF42_DAY_2') !== -1;
+    props.boothList.findIndex((e) => e.activeDay === 'IF6_DAY_1') !== -1;
 
   return (
     <>
       {isDay1Active === true ? (
         <SingleDayBoothInfo
-          prefix="第一天(05/03)攤位："
+          prefix="05/10 攤位："
           groupId={props.groupId}
-          activeDay={'PF42_DAY_1'}
+          activeDay={'IF6_DAY_1'}
           boothList={props.boothList}
           currentActiveDay={props.currentActiveDay}
-          onMarkerSet={(newMarker) =>
-            props.onMarkerSet('PF42_DAY_1', newMarker)
-          }
-        />
-      ) : (
-        <></>
-      )}
-
-      {isDay2Active === true ? (
-        <SingleDayBoothInfo
-          prefix="第二天(05/04)攤位："
-          groupId={props.groupId}
-          activeDay={'PF42_DAY_2'}
-          boothList={props.boothList}
-          currentActiveDay={props.currentActiveDay}
-          onMarkerSet={(newMarker) =>
-            props.onMarkerSet('PF42_DAY_2', newMarker)
-          }
+          onMarkerSet={(newMarker) => props.onMarkerSet('IF6_DAY_1', newMarker)}
         />
       ) : (
         <></>
