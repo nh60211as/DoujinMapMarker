@@ -140,6 +140,7 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
 function TagListToggle(props: {
   onTagListChanged: (newTagList: Array<string>) => void;
 }): JSX.Element {
+  const [searchTag, setSearchTag] = useState<string | null>(null);
   const [tagListToggleList, setTagListToggleList] = useState<Array<boolean>>(
     new Array(CURRENT_TAG_LIST.length).fill(false),
   );
@@ -171,15 +172,48 @@ function TagListToggle(props: {
 
   return (
     <>
-      {CURRENT_TAG_LIST.map((e, index) => (
-        <button
-          id={e}
-          class={tagListToggleList[index] === true ? style.activeButton : ''}
-          onClick={handleClick}
-        >
-          {e}
-        </button>
-      ))}
+      <div>
+        <DebounceInput
+          debounceTimeout={0}
+          placeholder={'輸入標籤名稱'}
+          onChange={(event: any) => {
+            const trimmedValue: string = event.target.value.trim();
+            if (trimmedValue === '') {
+              setSearchTag(null);
+            } else {
+              setSearchTag(trimmedValue);
+            }
+          }}
+        />
+      </div>
+      {CURRENT_TAG_LIST.map((e, index) => {
+        // TODO: extract the logic here
+        let actualSearchTag = '';
+        if (searchTag === null) {
+          actualSearchTag = '9999999999999999999999999999999'; // impossible tag
+        } else {
+          actualSearchTag = searchTag.toLowerCase();
+        }
+
+        if (
+          tagListToggleList[index] === true ||
+          e.toLowerCase().includes(actualSearchTag)
+        ) {
+          return (
+            <button
+              id={e}
+              class={
+                tagListToggleList[index] === true ? style.activeButton : ''
+              }
+              onClick={handleClick}
+            >
+              {e}
+            </button>
+          );
+        } else {
+          return <></>;
+        }
+      })}
     </>
   );
 }
