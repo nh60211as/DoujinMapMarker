@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "gen-script": "tsc ./scripts/index.ts ./scripts/script.ts --outDir ./generated-script && cp ./scripts/package-for-script.json ./generated-script/package.json",
-    "gen-data": "node ./generated-script/scripts/index.js",
+    "gen-data": "node ./generated-script/scripts/index.js IF6",
     "dev": "vite",
     "build": "vite build",
     "build:gh": "vite build",
