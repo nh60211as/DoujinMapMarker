@@ -520,6 +520,7 @@
       }
     ],
     "tagList": [
+      "VTuber",
       "少女前線"
     ]
   },
@@ -2370,7 +2371,11 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案",
+      "VTuber",
+      "原創"
+    ]
   },
   {
     "groupId": "1863e5696fc249dd84df8dc73b73527c",
@@ -3581,7 +3586,7 @@
   {
     "groupId": "b6a48d9f20f44fd68de0f7545c3ff9e4",
     "groupName": "古比Gubi",
-    "groupLink": null,
+    "groupLink": "https://lit.link/en/gubiTW",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -3594,7 +3599,8 @@
       }
     ],
     "tagList": [
-      "星穹鐵道"
+      "星穹鐵道",
+      "明日方舟"
     ]
   },
   {
@@ -3826,7 +3832,8 @@
       }
     ],
     "tagList": [
-      "原創"
+      "原創",
+      "魔物獵人"
     ]
   },
   {
@@ -5593,7 +5600,7 @@
   {
     "groupId": "4595337f389c46d9b8e4eed0ec5d0d7d",
     "groupName": "T.A.K.O.水族館",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/profile.php?id=61553864348427",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -5622,7 +5629,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "3b60651fd968424fae6cc777c539888b",
@@ -6157,7 +6166,7 @@
   {
     "groupId": "2ccd82c31e934bc197bbfb49c82205a1",
     "groupName": "牛牛Niu",
-    "groupLink": null,
+    "groupLink": "https://lit.link/en/milkybird",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -6600,7 +6609,7 @@
   {
     "groupId": "5e30733b842f4876b1a710816351db86",
     "groupName": "醉宮Yomiya",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/yomiya.cos",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -6630,7 +6639,8 @@
       }
     ],
     "tagList": [
-      "Cosplay"
+      "Cosplay",
+      "遊戲王"
     ]
   },
   {
@@ -8867,7 +8877,8 @@
       }
     ],
     "tagList": [
-      "Cosplay"
+      "Cosplay",
+      "四月是你的謊言"
     ]
   },
   {
@@ -9519,7 +9530,8 @@
     "tagList": [
       "Vocaloid",
       "世界計畫",
-      "VTuber"
+      "VTuber",
+      "MyGO!!!!!/Ave Mujica"
     ]
   },
   {
@@ -11522,7 +11534,7 @@
   {
     "groupId": "90d5f4b724094832bda5d1f8a9527886",
     "groupName": "Yumi小魚兒",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/Yumi.TWcosplay",
     "boothList": [
       {
         "activeDay": "PF42_DAY_2",
@@ -11535,7 +11547,8 @@
       }
     ],
     "tagList": [
-      "Cosplay"
+      "Cosplay",
+      "妮姬"
     ]
   },
   {
