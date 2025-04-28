@@ -190,7 +190,7 @@ function TagListToggle(props: {
         // TODO: extract the logic here
         let actualSearchTag = '';
         if (searchTag === null) {
-          actualSearchTag = '9999999999999999999999999999999'; // impossible tag
+          actualSearchTag = '';
         } else {
           actualSearchTag = searchTag.toLowerCase();
         }
