@@ -76,4 +76,6 @@ export const TAG_LIST: Array<string> = [
   'Cosplay',
   'VTuber',
   '四月是你的謊言',
+  '鎌倉殿的13人',
+  '東京卍復仇者',
 ];
