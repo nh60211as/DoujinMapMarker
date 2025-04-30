@@ -14,8 +14,8 @@ export function boothNumberListToTargetingBoxDimension(
         boothNumberList[1],
       );
     default:
-      throw Error(
-        `Unsupported boothNumberList size: [${boothNumberList.length}]`,
+      return boothNumberListGreaterThan2ToTargetingBoxDimension(
+        boothNumberList,
       );
   }
 }
@@ -34,6 +34,19 @@ function boothNumberListOf2ToTargetingBoxDimension(
   const height = Math.max(box1.y + box1.height, box2.y + box2.height) - y;
 
   return { x, y, width, height };
+}
+
+function boothNumberListGreaterThan2ToTargetingBoxDimension(
+  boothNumberList: Array<BoothNumber>,
+): TargetingBoxDimension {
+  const smallestBooth: BoothNumber = boothNumberList.reduce((min, booth) =>
+    booth.number < min.number ? booth : min,
+  );
+  const largestBooth: BoothNumber = boothNumberList.reduce((max, booth) =>
+    booth.number > max.number ? booth : max,
+  );
+
+  return boothNumberListOf2ToTargetingBoxDimension(smallestBooth, largestBooth);
 }
 
 function boothNumberToTargetingBoxDimension(
