@@ -78,4 +78,5 @@ export const TAG_LIST: Array<string> = [
   '四月是你的謊言',
   '鎌倉殿的13人',
   '東京卍復仇者',
+  '地。-關於地球的運動-',
 ];
