@@ -5466,6 +5466,32 @@
     "tagList": []
   },
   {
+    "groupId": "fe5e9662099f462f8b94f38e5cc00651",
+    "groupName": "G.A.S.",
+    "groupLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "O",
+            "number": 16
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "N",
+            "number": 38
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
     "groupId": "819fc8d0085b4c3d946fdce811ef8e35",
     "groupName": "迷路貓領貓領域",
     "groupLink": null,
