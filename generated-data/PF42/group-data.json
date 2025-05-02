@@ -2729,8 +2729,8 @@
       }
     ],
     "tagList": [
-      "敗北女角",
-      "蔚藍檔案"
+      "VTuber",
+      "賽馬娘"
     ]
   },
   {
@@ -3248,7 +3248,7 @@
   {
     "groupId": "5fc5f094bf8d430cb8a18094b1fd39a2",
     "groupName": "Hanasawa花澤",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/hanasawa062",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -3260,7 +3260,11 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "鳴潮",
+      "絕區零",
+      "星穹鐵道"
+    ]
   },
   {
     "groupId": "b6ef0032bf3c4d4286412336a221eeb1",
@@ -4868,7 +4872,7 @@
   {
     "groupId": "6b370daa604c46f0985ad7cc06278e53",
     "groupName": "小雪Yukichan",
-    "groupLink": null,
+    "groupLink": "https://lit.link/en/yukichan11025200",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -4897,7 +4901,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "67c7018f04664fda9e3a9ddef349489d",
@@ -5680,7 +5686,7 @@
   {
     "groupId": "3b60651fd968424fae6cc777c539888b",
     "groupName": "SophieK極品菲宅",
-    "groupLink": null,
+    "groupLink": "https://x.com/sophiek9865",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -5701,7 +5707,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "a5ca5321125b4640a9fb6f7de80a4606",
@@ -9893,7 +9901,7 @@
   {
     "groupId": "a3da389b4dd34540b4c86174b375f901",
     "groupName": "北星圖書",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/nsbooks",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -10336,7 +10344,7 @@
   {
     "groupId": "8b52f2252b0249358dd1d7f9a5059a1a",
     "groupName": "三色坊",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/san.se.fang",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -10365,12 +10373,14 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "d29da82141a742ac8ff52f735315936a",
     "groupName": "助客勃",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/zhukebo",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -10399,7 +10409,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "92a5068f14fb4eb58673b8858d886cf1",
@@ -11323,7 +11335,7 @@
   {
     "groupId": "195e520fca6d488686740881f38b490b",
     "groupName": "任務了解",
-    "groupLink": null,
+    "groupLink": "https://x.com/sefiloms",
     "boothList": [
       {
         "activeDay": "PF42_DAY_2",
@@ -11339,7 +11351,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "碧藍航線"
+    ]
   },
   {
     "groupId": "dad6fa9a3c54460c9641c7d22d7b6311",
