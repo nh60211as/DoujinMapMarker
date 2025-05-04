@@ -3,21 +3,9 @@ import { GroupData } from '../src/types/GroupData';
 import { csvToGroupDataList } from './script';
 import * as fs from 'fs';
 
-// FIXME: actual find the event type
-// current command `node ./generated-script/scripts/index.js IF6`
-const eventTypeNullableString: string | undefined = process.argv[2];
-
-if (eventTypeNullableString === undefined) {
-  console.error(`Expected input argument.`);
-}
-
-if (eventTypeArray.includes(eventTypeNullableString as EventType) === false) {
-  console.error(`Invalid input event type [${eventTypeNullableString}].`);
-}
-
-const eventType: EventType = eventTypeNullableString as EventType;
-
 // NOTE: The implementation should be changed with each event
+const eventType: EventType = 'IF6';
+
 csvToGroupDataList(
   `./data/${eventType}/group-list.csv`,
   `./data/${eventType}/booth-list.csv`,
