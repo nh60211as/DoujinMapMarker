@@ -1,4 +1,4 @@
-import { setBoothActiveDay } from '../global/BoothActiveDay';
+import { setBoothActiveDay, useBoothActiveDay } from '../global/BoothActiveDay';
 import { setZoomInValue, useZoomInValue } from '../global/ZoomInValue';
 import * as browserSettingService from '../services/BrowserSettingService';
 import * as mapRecordService from '../services/MapRecordService';
@@ -111,9 +111,7 @@ export function Header(props: HeaderProps): JSX.Element {
               setBoothActiveDay(newActiveDay);
             }}
           />
-          <div>
-            {getSourceLinkElement(mapRecordService.getActiveDayOrDefault())}
-          </div>
+          <div>{getSourceLinkElement(useBoothActiveDay())}</div>
         </div>
         <div class={style.gridItem}>
           <div class={style.flexContainer}>

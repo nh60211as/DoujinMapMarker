@@ -1055,7 +1055,7 @@
   {
     "groupId": "f04d25638aeb43dda8b56ee1f93119a8",
     "groupName": "南方山竹筍",
-    "groupLink": "https://www.plurk.com/bambooboo",
+    "groupLink": "https://www.facebook.com/smbamboo",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -1063,6 +1063,15 @@
           {
             "row": "B",
             "number": 32
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 16
           }
         ]
       }
@@ -1235,7 +1244,7 @@
   {
     "groupId": "9a3cac85bc954c62832263d4052764a3",
     "groupName": "雙夏",
-    "groupLink": null,
+    "groupLink": "https://x.com/PatonaNatsu_Jr",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -1264,7 +1273,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "7f58d83cafeb4015b846711e7b47720f",
@@ -1303,7 +1314,7 @@
   {
     "groupId": "8e982d7672404814b7b7178644307d17",
     "groupName": "雪之饗",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/ekis2018",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -1332,7 +1343,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "72c7b9bbb9a9408aa1a545b6a27d972b",
@@ -1525,9 +1538,8 @@
       }
     ],
     "tagList": [
-      "原創",
-      "VTuber",
-      "孤獨搖滾"
+      "MyGO!!!!!/Ave Mujica",
+      "原創"
     ]
   },
   {
@@ -2716,8 +2728,8 @@
       }
     ],
     "tagList": [
-      "敗北女角",
-      "蔚藍檔案"
+      "VTuber",
+      "賽馬娘"
     ]
   },
   {
@@ -2926,7 +2938,7 @@
   {
     "groupId": "0a680ec2826e49b3bf23583e8c04afdb",
     "groupName": "月面基地",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/eman.nep.5",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -2947,7 +2959,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "賽馬娘"
+    ]
   },
   {
     "groupId": "4803dba6282943fbb3af4ff2f587bcd3",
@@ -3233,7 +3247,7 @@
   {
     "groupId": "5fc5f094bf8d430cb8a18094b1fd39a2",
     "groupName": "Hanasawa花澤",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/hanasawa062",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -3245,7 +3259,11 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "鳴潮",
+      "絕區零",
+      "星穹鐵道"
+    ]
   },
   {
     "groupId": "b6ef0032bf3c4d4286412336a221eeb1",
@@ -3600,7 +3618,8 @@
     ],
     "tagList": [
       "星穹鐵道",
-      "明日方舟"
+      "明日方舟",
+      "賽馬娘"
     ]
   },
   {
@@ -4429,7 +4448,7 @@
   {
     "groupId": "eb3e42a271f343449c05d60eae6ba3e8",
     "groupName": "緣流",
-    "groupLink": null,
+    "groupLink": "https://x.com/enruzero",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -4450,7 +4469,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "da5899b720634bfea4d05d70f148c07e",
@@ -4850,7 +4871,7 @@
   {
     "groupId": "6b370daa604c46f0985ad7cc06278e53",
     "groupName": "小雪Yukichan",
-    "groupLink": null,
+    "groupLink": "https://lit.link/en/yukichan11025200",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -4879,7 +4900,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "67c7018f04664fda9e3a9ddef349489d",
@@ -5454,6 +5477,32 @@
     "tagList": []
   },
   {
+    "groupId": "fe5e9662099f462f8b94f38e5cc00651",
+    "groupName": "G.A.S.",
+    "groupLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "O",
+            "number": 16
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "N",
+            "number": 38
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
     "groupId": "819fc8d0085b4c3d946fdce811ef8e35",
     "groupName": "迷路貓領貓領域",
     "groupLink": null,
@@ -5636,7 +5685,7 @@
   {
     "groupId": "3b60651fd968424fae6cc777c539888b",
     "groupName": "SophieK極品菲宅",
-    "groupLink": null,
+    "groupLink": "https://x.com/sophiek9865",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -5657,7 +5706,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "a5ca5321125b4640a9fb6f7de80a4606",
@@ -5937,7 +5988,7 @@
   {
     "groupId": "1c54b8c9e6d441cb8f86099f381dcf2e",
     "groupName": "禿頭貓基地",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/profile.php?id=61557875583240",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -5966,12 +6017,14 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "18b0f417c114448eb0b67bb4d37c46d1",
     "groupName": "Hua華兔",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/profile.php?id=100011900293458",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -6000,7 +6053,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "195c367a920c44c89fca123d6365f606",
@@ -6371,7 +6426,12 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay",
+      "星穹鐵道",
+      "絕區零",
+      "原神"
+    ]
   },
   {
     "groupId": "d422cbab6beb4d95ad08d9fafb0c22b3",
@@ -8147,7 +8207,7 @@
   {
     "groupId": "c7dddf7d98964f6ea0cea20bf4045557",
     "groupName": "Tiffany小豬舍",
-    "groupLink": null,
+    "groupLink": "https://linktr.ee/t.tiffany.y",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -8177,7 +8237,8 @@
       }
     ],
     "tagList": [
-      "Cosplay"
+      "Cosplay",
+      "VTuber"
     ]
   },
   {
@@ -9421,7 +9482,7 @@
   {
     "groupId": "4184a2fd17f04b05bbe68a37460b4c18",
     "groupName": "清酒路上",
-    "groupLink": null,
+    "groupLink": "https://x.com/wei40442612",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -9433,7 +9494,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "東京卍復仇者"
+    ]
   },
   {
     "groupId": "53091629a6a64a1ba4f5ba0d555236ed",
@@ -9774,7 +9837,12 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "俄語",
+      "為美好的世界獻上祝福！",
+      "葬送的芙莉蓮",
+      "孤獨搖滾"
+    ]
   },
   {
     "groupId": "49a4aa53f9ab4732bde8daa5e4366baa",
@@ -9837,7 +9905,7 @@
   {
     "groupId": "a3da389b4dd34540b4c86174b375f901",
     "groupName": "北星圖書",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/nsbooks",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -10043,7 +10111,8 @@
     ],
     "tagList": [
       "JoJo",
-      "傳奇系列"
+      "傳奇系列",
+      "鎌倉殿的13人"
     ]
   },
   {
@@ -10279,7 +10348,7 @@
   {
     "groupId": "8b52f2252b0249358dd1d7f9a5059a1a",
     "groupName": "三色坊",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/san.se.fang",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -10308,12 +10377,14 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "d29da82141a742ac8ff52f735315936a",
     "groupName": "助客勃",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/zhukebo",
     "boothList": [
       {
         "activeDay": "PF42_DAY_1",
@@ -10342,7 +10413,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "92a5068f14fb4eb58673b8858d886cf1",
@@ -11266,7 +11339,7 @@
   {
     "groupId": "195e520fca6d488686740881f38b490b",
     "groupName": "任務了解",
-    "groupLink": null,
+    "groupLink": "https://x.com/sefiloms",
     "boothList": [
       {
         "activeDay": "PF42_DAY_2",
@@ -11282,7 +11355,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "碧藍航線"
+    ]
   },
   {
     "groupId": "dad6fa9a3c54460c9641c7d22d7b6311",
@@ -11613,7 +11688,7 @@
   {
     "groupId": "bbf2661e580844d5be63e474faaf7738",
     "groupName": "要石重工",
-    "groupLink": null,
+    "groupLink": "https://x.com/XoKanameoX",
     "boothList": [
       {
         "activeDay": "PF42_DAY_2",
@@ -11647,7 +11722,7 @@
   {
     "groupId": "f16ac95828324945abb8b7ca733f5f1a",
     "groupName": "絕讚發情中",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/tentaclespet",
     "boothList": [
       {
         "activeDay": "PF42_DAY_2",
@@ -11757,5 +11832,537 @@
     "tagList": [
       "Cosplay"
     ]
+  },
+  {
+    "groupId": "df6c04039ebc49a9a66e498aef7851a8",
+    "groupName": "空罐王",
+    "groupLink": "https://www.facebook.com/canking",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 1
+          },
+          {
+            "row": "B",
+            "number": 2
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 1
+          },
+          {
+            "row": "B",
+            "number": 2
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "9f94d7886ce0473ba2a3e07af7f8bea4",
+    "groupName": "羊馬它與胖雞們",
+    "groupLink": "https://www.instagram.com/alpaca_ywy",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 3
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "dc298e367f1b424d989234bb18adf11d",
+    "groupName": "抽子雜貨屋",
+    "groupLink": "https://www.facebook.com/DannyCHUCHI",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 4
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 4
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "52c5ebf5701e4c00b2f875220b5cb7c6",
+    "groupName": "長腿綿羊",
+    "groupLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 5
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "8c2214a77fab4496887dbbf9aa8b5701",
+    "groupName": "KARAS押形",
+    "groupLink": "https://www.facebook.com/KARASoshigata",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 6
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "MyGO!!!!!/Ave Mujica"
+    ]
+  },
+  {
+    "groupId": "d7914104ff0049b0acf7d9f7b5078b8e",
+    "groupName": "毛毛貓貓",
+    "groupLink": "https://www.facebook.com/neko.katabami",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 7
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 7
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "62426c9a55294716a0a3ada0570b423e",
+    "groupName": "IewNa阿呦娜,漁島製作",
+    "groupLink": "https://www.instagram.com/iew_cv",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 8
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 8
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "9a492e71fb324264a1698977bd7c830d",
+    "groupName": "是α 不是a",
+    "groupLink": "https://www.facebook.com/alpha.area",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 9
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "99b0c62cfbde404cad65aef2accc0b94",
+    "groupName": "本土英雄-寶島轟雷",
+    "groupLink": "https://www.facebook.com/titw.thunder",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 10
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 10
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "0cd9170892734626a9670e94ba87d6e6",
+    "groupName": "極彩色茶屋",
+    "groupLink": "https://www.instagram.com/sih_fei_jhai.sketching",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 11
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 11
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "fd33a248dfe541ac9e70d788dbc1fcdf",
+    "groupName": "動物大學U-nya-versity",
+    "groupLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 12
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 12
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "ad594c6edc724594b5b16d644d05b5e6",
+    "groupName": "靈魂褓姆阿嚕",
+    "groupLink": "https://www.instagram.com/bobacat.nana",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 13
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 13
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "3e9ca94a44a54bb99cdbdeb42d5c97e3",
+    "groupName": "微光糖片研究所",
+    "groupLink": "https://www.facebook.com/su.mi.923724",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 14
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 14
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "138a7e5cf19048f6b40e3cdc27d6ecf1",
+    "groupName": "酒池肉林.AKA.新鮮的肝",
+    "groupLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 15
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 15
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "5baab8d46bae468e828c859fc2fda95a",
+    "groupName": "咖啡因工坊",
+    "groupLink": "https://www.facebook.com/coffeeinkcomic",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 16
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "66efc02dd3f94ae482d476dc5c3654a1",
+    "groupName": "客家兄貴的骯髒漫畫部屋",
+    "groupLink": "https://www.facebook.com/chancebishonen",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 17
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 17
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創",
+      "VTuber",
+      "地。-關於地球的運動-"
+    ]
+  },
+  {
+    "groupId": "0744524dad514700b9e4b9258710a497",
+    "groupName": "大槻 O2TSUKI",
+    "groupLink": "https://www.facebook.com/O2TSUKI",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 18
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "19dfb5188d914a689718ee32f2cd5500",
+    "groupName": "羽利老師與她的漫研社小夥伴們",
+    "groupLink": "https://linktr.ee/millymilly.tw",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 19
+          },
+          {
+            "row": "B",
+            "number": 20
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 18
+          },
+          {
+            "row": "B",
+            "number": 19
+          },
+          {
+            "row": "B",
+            "number": 20
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "907f5a78eef040bf85d02a3cc23a2e28",
+    "groupName": "コババ尼在看什麼？",
+    "groupLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 21
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 21
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "a258be3fd3fa4a919faf8f487c3c0748",
+    "groupName": "吉良綺形館",
+    "groupLink": "https://testing.plurk.com/Kira101516",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 22
+          }
+        ]
+      },
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 22
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "f413e8c1313a493193fdc430a73dd8dd",
+    "groupName": "靈魂劇場 Soul Theater",
+    "groupLink": "https://www.facebook.com/soultheater1117",
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 3
+          }
+        ]
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "28bca8b7cfd64b919e1dd00afa51c6cc",
+    "groupName": "魔女與蛇-Beibeinside",
+    "groupLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF42_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "B",
+            "number": 6
+          }
+        ]
+      }
+    ],
+    "tagList": []
   }
 ]
