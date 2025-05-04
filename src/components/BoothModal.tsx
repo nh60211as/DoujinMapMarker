@@ -39,15 +39,15 @@ const BoothModal = (props: BoothModalProps): JSX.Element => {
 
     return (
       <>
-        <p>
+        <p class={style.wrappedP}>
           <span class={style.unselectableSpan}>攤位名稱：</span>
           <span>{groupData.groupName}</span>
         </p>
-        <p>
+        <p class={style.wrappedP}>
           <span class={style.unselectableSpan}>標籤：</span>
           <span>{groupData.tagList.join(', ')}</span>
         </p>
-        <p>
+        <p class={style.wrappedP}>
           <span class={style.unselectableSpan}>攤位連結：</span>
           <span>{getLink(groupData.groupLink)}</span>
         </p>
