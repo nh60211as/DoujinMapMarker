@@ -1,4 +1,5 @@
-import MAP from '../../assets/maps/2025_PF42_MAP_NEW.jpg';
+// NOTE: The implementation should be changed with each event
+import MAP from '../../assets/maps/map2025.png';
 import { useBoothActiveDay } from '../../global/BoothActiveDay';
 import { useGroupDataList } from '../../global/GroupDataList';
 import { useZoomInValue } from '../../global/ZoomInValue';
@@ -19,7 +20,7 @@ import { JSX } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 
 // NOTE: The implementation should be changed with each event
-const DEFAULT_IMAGE_SIZE: ImageSize = { width: 2400, height: 1696 };
+const DEFAULT_IMAGE_SIZE: ImageSize = { width: 1360, height: 1359 };
 
 type HomeProps = {
   onBoothInfoClicked: (groupId: string) => void;
@@ -201,15 +202,13 @@ function getColorByMarker(marker: Marker): string {
 }
 
 function getOutlineEmByZoomInValue(zoomInValue: number): number {
-  return zoomInValue * 0.2;
+  return zoomInValue * 0.1;
 }
 
 // NOTE: The implementation should be changed with each event
 function getImageSrcByActiveDay(activeDay: BoothActiveDay): string {
   switch (activeDay) {
-    case 'PF42_DAY_1':
-      return MAP;
-    case 'PF42_DAY_2':
+    case 'IF6_DAY_1':
       return MAP;
   }
 }

@@ -1,5 +1,5 @@
 // NOTE: The implementation should be changed with each event
-import rawGroupData from '../../generated-data/PF42/group-data.json';
+import rawGroupData from '../../generated-data/IF6/group-data.json';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { BoothData, BoothDataOnMap } from '../types/BoothData';
 import { GroupData } from '../types/GroupData';
