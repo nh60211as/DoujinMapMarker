@@ -44,7 +44,7 @@
 
 .navButton {
   position: absolute;
-  bottom: 8px;
+  top: 8px;
   left: 8px;
   width: 64px;
   height: 64px;
@@ -62,7 +62,7 @@
 
 .xButton {
   position: absolute;
-  bottom: 8px;
+  top: 8px;
   left: 8px;
   width: 64px;
   height: 64px;
