@@ -1,5 +1,4 @@
-// NOTE: The implementation should be changed with each event
-import MAP from '../../assets/maps/map2025.png';
+import { EVENT_CONFIG } from '../../config/EventConfig';
 import { useBoothActiveDay } from '../../global/BoothActiveDay';
 import { useGroupDataList } from '../../global/GroupDataList';
 import { useZoomInValue } from '../../global/ZoomInValue';
@@ -18,9 +17,6 @@ import { ValidZoomInValue } from '../../types/ZoomInValue';
 import style from './style.module.css';
 import { JSX } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
-
-// NOTE: The implementation should be changed with each event
-const DEFAULT_IMAGE_SIZE: ImageSize = { width: 1360, height: 1359 };
 
 type HomeProps = {
   onBoothInfoClicked: (groupId: string) => void;
@@ -41,7 +37,7 @@ export function Home(props: HomeProps): JSX.Element {
   const [naturalWidth, setNaturalWidth] = useState(0);
   const [naturalHeight, setNaturalHeight] = useState(0);
   const [imgSrc, setImgSrc] = useState<string>(
-    getImageSrcByActiveDay(boothActiveDay),
+    EVENT_CONFIG.map.getImageSrcByActiveDay(boothActiveDay),
   );
   const [
     targetingBoxDimensionWithGroupIdList,
@@ -50,7 +46,7 @@ export function Home(props: HomeProps): JSX.Element {
 
   // on active day change
   useEffect(() => {
-    setImgSrc(getImageSrcByActiveDay(boothActiveDay));
+    setImgSrc(EVENT_CONFIG.map.getImageSrcByActiveDay(boothActiveDay));
     setActiveBoothDataOnMapList(
       groupDataService.getBoothDataListOnMap(groupDataList, boothActiveDay),
     );
@@ -94,8 +90,8 @@ export function Home(props: HomeProps): JSX.Element {
     return (
       <div
         style={{
-          width: DEFAULT_IMAGE_SIZE.width * zoomInValue,
-          height: DEFAULT_IMAGE_SIZE.height * zoomInValue,
+          width: EVENT_CONFIG.map.DEFAULT_MAP_IMAGE_SIZE.width * zoomInValue,
+          height: EVENT_CONFIG.map.DEFAULT_MAP_IMAGE_SIZE.height * zoomInValue,
         }}
       >
         <img
@@ -203,12 +199,4 @@ function getColorByMarker(marker: Marker): string {
 
 function getOutlineEmByZoomInValue(zoomInValue: number): number {
   return zoomInValue * 0.1;
-}
-
-// NOTE: The implementation should be changed with each event
-function getImageSrcByActiveDay(activeDay: BoothActiveDay): string {
-  switch (activeDay) {
-    case 'IF6_DAY_1':
-      return MAP;
-  }
 }

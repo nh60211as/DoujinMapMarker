@@ -2,7 +2,6 @@ import { BoothNumber } from '../types/BoothNumber';
 import { TargetingBoxDimension } from '../types/TargetingBoxDimension';
 import { isBetween } from './NumberUtils';
 
-// NOTE: The implementation should be changed with each event
 export function boothNumberListToTargetingBoxDimension(
   boothNumberList: Array<BoothNumber>,
 ): TargetingBoxDimension {
@@ -50,6 +49,7 @@ function boothNumberListGreaterThan2ToTargetingBoxDimension(
   return boothNumberListOf2ToTargetingBoxDimension(smallestBooth, largestBooth);
 }
 
+// NOTE: The implementation should be changed with each event
 function boothNumberToTargetingBoxDimension(
   boothNumber: BoothNumber,
 ): TargetingBoxDimension {

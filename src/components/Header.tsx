@@ -1,9 +1,9 @@
+import { EVENT_CONFIG } from '../config/EventConfig';
 import { setBoothActiveDay, useBoothActiveDay } from '../global/BoothActiveDay';
 import { setZoomInValue, useZoomInValue } from '../global/ZoomInValue';
 import * as browserSettingService from '../services/BrowserSettingService';
 import * as mapRecordService from '../services/MapRecordService';
 import { BoothActiveDay } from '../types/BoothActiveDay';
-import { CURRENT_EVENT_TYPE } from '../types/EventType';
 import { Setting, SettingMapMarker } from '../types/Setting';
 import {
   DEFAULT_ZOOM_IN_VALUE,
@@ -48,16 +48,17 @@ export function Header(props: HeaderProps): JSX.Element {
     setZoomInIndex(getZoomInIndexOrDefault());
   }, [zoomInValue]);
 
-  // NOTE: The implementation should be changed with each event
   const activeDayOptionValueList: Array<{
     option: JSX.Element;
     value: BoothActiveDay;
-  }> = [
-    {
-      option: <>05/10</>,
-      value: 'IF6_DAY_1',
+  }> = EVENT_CONFIG.header.BOOTH_ACTIVE_DAY_OPTION_LIST.map(
+    (boothActiveDayOption) => {
+      return {
+        option: <>{boothActiveDayOption.displayText}</>,
+        value: boothActiveDayOption.boothActiveDay,
+      };
     },
-  ];
+  );
 
   function onZoomOut() {
     const newZoomInIndex = clamp(
@@ -185,7 +186,7 @@ function exportSetting() {
   // Create a temporary link element
   const link = document.createElement('a');
   link.href = url;
-  link.download = `${CURRENT_EVENT_TYPE}-setting-${getIsoDateStringForFilename()}.json`;
+  link.download = `${EVENT_CONFIG.general.CURRENT_EVENT_TYPE}-setting-${getIsoDateStringForFilename()}.json`;
 
   // Programmatically trigger a click event on the link to initiate the download
   link.click();
@@ -232,16 +233,11 @@ function getZoomInIndexOrDefault(): number {
     : foundZoomInIndex;
 }
 
-// NOTE: The implementation should be changed with each event
-function getSourceLink(activeDay: BoothActiveDay): string {
-  switch (activeDay) {
-    case 'IF6_DAY_1':
-      return 'https://if.gjs.tw/circle-list.html';
-  }
-}
-
 function getSourceLinkElement(activeDay: BoothActiveDay): JSX.Element {
-  return getLinkElement('資料來源', getSourceLink(activeDay));
+  return getLinkElement(
+    '資料來源',
+    EVENT_CONFIG.header.getSourceLink(activeDay),
+  );
 }
 
 function getLinkElement(displayText: string, link: string): JSX.Element {

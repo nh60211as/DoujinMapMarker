@@ -1,3 +1,4 @@
+import { EVENT_CONFIG } from '../config/EventConfig';
 import * as mapRecordService from '../services/MapRecordService';
 import { Booth } from '../types/Booth';
 import { BoothActiveDay } from '../types/BoothActiveDay';
@@ -14,27 +15,38 @@ type BoothInfoProps = {
   onMarkerSet: (activeDay: BoothActiveDay, marker: Marker) => void;
 };
 
-// NOTE: The implementation should be changed with each event
 export function BoothInfo(props: BoothInfoProps): JSX.Element {
-  const isDay1Active: boolean =
-    props.boothList.findIndex((e) => e.activeDay === 'IF6_DAY_1') !== -1;
+  const boothInfoList: Array<JSX.Element> =
+    EVENT_CONFIG.booth.BOOTH_ACTIVE_DAY_DISPLAY_INFO_LIST.map(
+      (boothActiveDayDisplayInfo) => {
+        const isActive: boolean =
+          props.boothList.findIndex(
+            (e) => e.activeDay === boothActiveDayDisplayInfo.boothActiveDay,
+          ) !== -1;
 
-  return (
-    <>
-      {isDay1Active === true ? (
-        <SingleDayBoothInfo
-          prefix="05/10 攤位："
-          groupId={props.groupId}
-          activeDay={'IF6_DAY_1'}
-          boothList={props.boothList}
-          currentActiveDay={props.currentActiveDay}
-          onMarkerSet={(newMarker) => props.onMarkerSet('IF6_DAY_1', newMarker)}
-        />
-      ) : (
-        <></>
-      )}
-    </>
-  );
+        if (isActive) {
+          return (
+            <SingleDayBoothInfo
+              prefix={boothActiveDayDisplayInfo.singleDayBoothInfoPrefixText}
+              groupId={props.groupId}
+              activeDay={boothActiveDayDisplayInfo.boothActiveDay}
+              boothList={props.boothList}
+              currentActiveDay={props.currentActiveDay}
+              onMarkerSet={(newMarker) =>
+                props.onMarkerSet(
+                  boothActiveDayDisplayInfo.boothActiveDay,
+                  newMarker,
+                )
+              }
+            />
+          );
+        } else {
+          return <></>;
+        }
+      },
+    );
+
+  return <>{boothInfoList}</>;
 }
 
 function SingleDayBoothInfo(props: {

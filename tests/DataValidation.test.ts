@@ -1,13 +1,13 @@
 import { TAG_LIST } from '../data/TagList';
-// NOTE: The implementation should be changed with each event
-import rawGroupData from '../generated-data/IF6/group-data.json';
+import { EVENT_CONFIG } from '../src/config/EventConfig';
 import { BoothNumber } from '../src/types/BoothNumber';
 import { GroupData } from '../src/types/GroupData';
 import { GroupDataArraySchema } from './GroupDataSchema';
 import { assert, describe, test } from 'vitest';
 
-const VALIDATED_GROUP_DATA_LIST: Array<GroupData> =
-  getValidGroupDataList(rawGroupData);
+const VALIDATED_GROUP_DATA_LIST: Array<GroupData> = getValidGroupDataList(
+  EVENT_CONFIG.general.RAW_GROUP_DATA,
+);
 
 function getValidGroupDataList(input: any): Array<GroupData> {
   const { error: invalidError, value: validGroupDataList } =

@@ -1,5 +1,4 @@
-// NOTE: The implementation should be changed with each event
-import rawGroupData from '../../generated-data/IF6/group-data.json';
+import { EVENT_CONFIG } from '../config/EventConfig';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { BoothData, BoothDataOnMap } from '../types/BoothData';
 import { GroupData } from '../types/GroupData';
@@ -7,8 +6,8 @@ import { boothNumberListToTargetingBoxDimension } from '../utils/BoothNumberUtil
 import { defined } from '../utils/TypeUtils';
 
 // The data should be validated in test (DO NOT use `as Array<GroupData>` in any other places)
-export const CURRENT_GROUP_DATA: Array<GroupData> =
-  rawGroupData as Array<GroupData>;
+export const CURRENT_GROUP_DATA: Array<GroupData> = EVENT_CONFIG.general
+  .RAW_GROUP_DATA as Array<GroupData>;
 
 function getFullTagList(): Array<string> {
   const set: Set<string> = CURRENT_GROUP_DATA.reduce(
