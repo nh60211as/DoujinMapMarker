@@ -1,4 +1,4 @@
-import { EventType, eventTypeArray } from '../src/types/EventType';
+import { EventType } from '../src/types/EventType';
 import { GroupData } from '../src/types/GroupData';
 import { csvToGroupDataList } from './script';
 import * as fs from 'fs';
