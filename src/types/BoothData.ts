@@ -5,7 +5,6 @@ import { TargetingBoxDimension } from './TargetingBoxDimension';
 export type BoothData = {
   groupId: string;
   groupName: string;
-  groupLink: string | null;
   booth: Booth;
 };
 
@@ -16,7 +15,6 @@ export interface BoothDataOnMap extends BoothData {
 export const DEFAULT_BOOTH_DATA_ON_MAP: BoothDataOnMap = {
   groupId: '',
   groupName: '',
-  groupLink: null,
   booth: {
     activeDay: DEFAULT_BOOTH_ACTIVE_DAY,
     boothNumberList: [],

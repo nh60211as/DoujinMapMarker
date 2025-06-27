@@ -29,7 +29,7 @@ function csvToGroupDataListWithoutBoothList(
       .pipe(
         csv({
           // FIXME: when using headers property, the header itself will be used in row data
-          // headers: ["GROUP_ID", "GROUP_NAME", "GROUP_LINK", "TAG_LIST"],
+          // headers: ["GROUP_ID", "GROUP_NAME", "GROUP_LINK", "MENU_LINK", "TAG_LIST"],
           separator: ',',
           quote: '"',
         }),
@@ -39,9 +39,10 @@ function csvToGroupDataListWithoutBoothList(
           groupId: anyToTrimmedString(row.GROUP_ID),
           groupName: anyToTrimmedString(row.GROUP_NAME),
           groupLink: anyToTrimmedStringOrNull(row.GROUP_LINK),
+          menuLink: anyToTrimmedStringOrNull(row.MENU_LINK),
           boothList: [],
           tagList: convertToTagList(row.TAG_LIST),
-        });
+        } satisfies GroupData);
       })
       .on('end', () => {
         resolve(result); // Resolve with the array of GroupData

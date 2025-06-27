@@ -273,7 +273,8 @@ function GroupTable(props: {
         <tr>
           <th>資訊</th>
           <th>名稱</th>
-          <th>連結</th>
+          <th>攤位</th>
+          <th>品書</th>
         </tr>
       </thead>
       <tbody>
@@ -286,6 +287,7 @@ function GroupTable(props: {
             </td>
             <td>{e.groupName}</td>
             <td>{getLink(e.groupLink)}</td>
+            <td>{getLink(e.menuLink)}</td>
           </tr>
         ))}
       </tbody>

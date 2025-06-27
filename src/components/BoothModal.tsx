@@ -51,6 +51,10 @@ const BoothModal = (props: BoothModalProps): JSX.Element => {
           <span class={style.unselectableSpan}>攤位連結：</span>
           <span>{getLink(groupData.groupLink)}</span>
         </p>
+        <p class={style.wrappedP}>
+          <span class={style.unselectableSpan}>品書連結：</span>
+          <span>{getLink(groupData.menuLink)}</span>
+        </p>
         <BoothInfo
           groupId={groupData.groupId}
           boothList={groupData.boothList}
