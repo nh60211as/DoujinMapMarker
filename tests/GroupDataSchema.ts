@@ -5,7 +5,9 @@ import { isBetween } from '../src/utils/NumberUtils';
 import Joi from 'joi';
 
 // NOTE: The implementation should be changed with each event
-const BoothActiveDaySchema = Joi.string().valid('IF6_DAY_1').required();
+const BoothActiveDaySchema = Joi.string()
+  .valid('CWT70_DAY_1', 'CWT70_DAY_2')
+  .required();
 
 // Joi schema for BoothNumber (with row-specific range validation)
 const BoothNumberSchema = Joi.object<BoothNumber, true>({

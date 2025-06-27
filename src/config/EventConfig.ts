@@ -1,5 +1,5 @@
 // NOTE: The implementation should be changed with each event
-import rawGroupData from '../../generated-data/IF6/group-data.json';
+import rawGroupData from '../../generated-data/CWT70/group-data.json';
 import MAP from '../assets/maps/DAY_2_MAP.png';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { EventType } from '../types/EventType';

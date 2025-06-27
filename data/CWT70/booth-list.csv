@@ -187,7 +187,7 @@ BOOTH_ACTIVE_DAY,BOOTH_LIST,GROUP_NAME
 1,D12,冰玫
 1,D13,酒桃桃桃桃
 1,D14,果醬販賣所
-1,"D15,1D6",Aminww阿明明
+1,"D15,D16",Aminww阿明明
 1,"D17,D18",未成形工作室
 1,"D19,D20",坑一直開
 1,D21,芥草子
@@ -316,7 +316,7 @@ BOOTH_ACTIVE_DAY,BOOTH_LIST,GROUP_NAME
 1,E79,黑貓館
 1,E80,烯醇enol
 1,"F01,F02",我妻洛醬
-1,"F03,0F4",HuHome
+1,"F03,F04",HuHome
 1,F05,藍貓樹屋
 1,F06,TaishoAge大正時代
 1,F07,忒喵的
@@ -1350,7 +1350,7 @@ BOOTH_ACTIVE_DAY,BOOTH_LIST,GROUP_NAME
 2,E79,黑貓館
 2,E80,烯醇enol
 2,"F01,F02",我妻洛醬
-2,"F03,0F4",HuHome
+2,"F03,F04",HuHome
 2,F05,藍貓樹屋
 2,F06,TaishoAge大正時代
 2,F07,忒喵的
@@ -2030,7 +2030,7 @@ BOOTH_ACTIVE_DAY,BOOTH_LIST,GROUP_NAME
 2,T14,汀漉工作室
 2,T15,貳貨製聊間
 2,T16,芙 芙 浮
-2,"T17,1T8",微塵事務所
+2,"T17,T18",微塵事務所
 2,"T19,T20",琉璃茉莉∣原創設計
 2,"T21,T22",Achrishouse原創痛包
 2,"T23,T24",信作坊
