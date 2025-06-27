@@ -73,7 +73,7 @@ export const EVENT_CONFIG: EventConfigInterface = {
     },
   },
   map: {
-    DEFAULT_MAP_IMAGE_SIZE: { width: 1360, height: 1359 },
+    DEFAULT_MAP_IMAGE_SIZE: { width: 6440, height: 2895 },
     getImageSrcByActiveDay: (activeDay: BoothActiveDay): string => {
       switch (activeDay) {
         case 'CWT70_DAY_1':
