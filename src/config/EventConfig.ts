@@ -1,6 +1,6 @@
 // NOTE: The implementation should be changed with each event
-import rawGroupData from '../../generated-data/IF6/group-data.json';
-import MAP from '../assets/maps/map2025.png';
+import rawGroupData from '../../generated-data/CWT70/group-data.json';
+import MAP from '../assets/maps/DAY_2_MAP.png';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { EventType } from '../types/EventType';
 import { ImageSize } from '../types/ImageSize';
@@ -14,7 +14,7 @@ type EventConfigInterface = {
     stringToBoothActiveDay: (boothActiveDayStr: string) => BoothActiveDay;
   };
   header: {
-    // Note: every BoothActiveDay should be present
+    // NOTE: every BoothActiveDay should be present
     BOOTH_ACTIVE_DAY_OPTION_LIST: Array<{
       boothActiveDay: BoothActiveDay;
       displayText: string;
@@ -26,7 +26,7 @@ type EventConfigInterface = {
     getImageSrcByActiveDay: (activeDay: BoothActiveDay) => string;
   };
   booth: {
-    // Note: every BoothActiveDay should be present
+    // NOTE: every BoothActiveDay should be present
     BOOTH_ACTIVE_DAY_DISPLAY_INFO_LIST: Array<{
       boothActiveDay: BoothActiveDay;
       singleDayBoothInfoPrefixText: string;
@@ -37,14 +37,16 @@ type EventConfigInterface = {
 // NOTE: The implementation should be changed with each event
 export const EVENT_CONFIG: EventConfigInterface = {
   general: {
-    CURRENT_EVENT_TYPE: 'IF6',
+    CURRENT_EVENT_TYPE: 'CWT70',
     RAW_GROUP_DATA: rawGroupData,
   },
   data: {
     stringToBoothActiveDay: (boothActiveDayStr: string): BoothActiveDay => {
       switch (boothActiveDayStr) {
         case '1':
-          return 'IF6_DAY_1';
+          return 'CWT70_DAY_1';
+        case '2':
+          return 'CWT70_DAY_2';
         default:
           throw Error(`Unexpected boothActiveDayStr [${boothActiveDayStr}].`);
       }
@@ -53,22 +55,30 @@ export const EVENT_CONFIG: EventConfigInterface = {
   header: {
     BOOTH_ACTIVE_DAY_OPTION_LIST: [
       {
-        boothActiveDay: 'IF6_DAY_1',
-        displayText: '05/10',
+        boothActiveDay: 'CWT70_DAY_1',
+        displayText: '08/16 (六)',
+      },
+      {
+        boothActiveDay: 'CWT70_DAY_2',
+        displayText: '08/17 (日)',
       },
     ],
     getSourceLink: (activeDay: BoothActiveDay): string => {
       switch (activeDay) {
-        case 'IF6_DAY_1':
-          return 'https://if.gjs.tw/circle-list.html';
+        case 'CWT70_DAY_1':
+          return 'https://www.comicworld.com.tw/Act4/160';
+        case 'CWT70_DAY_2':
+          return 'https://www.comicworld.com.tw/Act4/160';
       }
     },
   },
   map: {
-    DEFAULT_MAP_IMAGE_SIZE: { width: 1360, height: 1359 },
+    DEFAULT_MAP_IMAGE_SIZE: { width: 6440, height: 2895 },
     getImageSrcByActiveDay: (activeDay: BoothActiveDay): string => {
       switch (activeDay) {
-        case 'IF6_DAY_1':
+        case 'CWT70_DAY_1':
+          return MAP;
+        case 'CWT70_DAY_2':
           return MAP;
       }
     },
@@ -76,8 +86,12 @@ export const EVENT_CONFIG: EventConfigInterface = {
   booth: {
     BOOTH_ACTIVE_DAY_DISPLAY_INFO_LIST: [
       {
-        boothActiveDay: 'IF6_DAY_1',
-        singleDayBoothInfoPrefixText: '05/10 攤位：',
+        boothActiveDay: 'CWT70_DAY_1',
+        singleDayBoothInfoPrefixText: '08/16 (六) 攤位：',
+      },
+      {
+        boothActiveDay: 'CWT70_DAY_2',
+        singleDayBoothInfoPrefixText: '08/17 (日) 攤位：',
       },
     ],
   },

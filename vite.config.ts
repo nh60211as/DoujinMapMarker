@@ -39,6 +39,7 @@ export default defineConfig(({ command, mode }) => {
         workbox: {
           cleanupOutdatedCaches: true,
           globPatterns: ['**/*'],
+          maximumFileSizeToCacheInBytes: 5 * 1024 ** 2, // NOTE: 5MB, delete after CWT70
         },
         includeAssets: ['**/*'],
       }),
