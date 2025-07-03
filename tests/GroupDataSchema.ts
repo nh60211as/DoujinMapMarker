@@ -6,7 +6,7 @@ import Joi from 'joi';
 
 // NOTE: The implementation should be changed with each event
 const BoothActiveDaySchema = Joi.string()
-  .valid('CWT70_DAY_1', 'CWT70_DAY_2')
+  .valid('FF45_DAY_1', 'FF45_DAY_2', 'FF45_DAY_3')
   .required();
 
 // Joi schema for BoothNumber (with row-specific range validation)
@@ -33,67 +33,50 @@ const BoothNumberSchema = Joi.object<BoothNumber, true>({
       'R',
       'S',
       'T',
+      'U',
+      'V',
+      'W',
     )
     .required(),
   number: Joi.number()
     .custom((value, helpers) => {
       if (
-        isBetween(value, 1, 40) &&
+        isBetween(value, 1, 22) &&
         ['A'].includes(helpers.state.ancestors[0].row)
       ) {
         return value;
       }
       if (
-        isBetween(value, 1, 80) &&
-        ['B', 'C', 'D', 'E', 'F'].includes(helpers.state.ancestors[0].row)
+        isBetween(value, 1, 44) &&
+        [
+          'B',
+          'C',
+          'D',
+          'E',
+          'F',
+          'G',
+          'H',
+          'I',
+          'J',
+          'K',
+          'L',
+          'M',
+          'N',
+          'O',
+          'P',
+          'Q',
+          'R',
+          'S',
+          'T',
+          'U',
+          'V',
+        ].includes(helpers.state.ancestors[0].row)
       ) {
         return value;
       }
       if (
-        isBetween(value, 1, 40) &&
-        ['G'].includes(helpers.state.ancestors[0].row)
-      ) {
-        return value;
-      }
-      if (
-        isBetween(value, 1, 36) &&
-        ['H', 'I'].includes(helpers.state.ancestors[0].row)
-      ) {
-        return value;
-      }
-      if (
-        isBetween(value, 1, 40) &&
-        ['J'].includes(helpers.state.ancestors[0].row)
-      ) {
-        return value;
-      }
-      if (
-        isBetween(value, 1, 80) &&
-        ['K', 'L', 'M', 'N', 'O'].includes(helpers.state.ancestors[0].row)
-      ) {
-        return value;
-      }
-      if (
-        isBetween(value, 1, 40) &&
-        ['P'].includes(helpers.state.ancestors[0].row)
-      ) {
-        return value;
-      }
-      if (
-        isBetween(value, 1, 33) &&
-        ['Q'].includes(helpers.state.ancestors[0].row)
-      ) {
-        return value;
-      }
-      if (
-        isBetween(value, 1, 32) &&
-        ['R'].includes(helpers.state.ancestors[0].row)
-      ) {
-        return value;
-      }
-      if (
-        isBetween(value, 1, 72) &&
-        ['S', 'T'].includes(helpers.state.ancestors[0].row)
+        isBetween(value, 1, 4240) &&
+        ['W'].includes(helpers.state.ancestors[0].row)
       ) {
         return value;
       }
