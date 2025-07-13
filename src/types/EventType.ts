@@ -1,6 +1,7 @@
 // NOTE: The implementation should be changed with each event
 export const eventTypeArray = [
   'FF44',
+  'FF45',
   'CWTxACCF',
   'PF42',
   'IF6',
