@@ -25,6 +25,7 @@ export const TAG_LIST: Array<string> = [
   'Arcaea',
   'BOYNEXTDOOR',
   'Ben 10',
+  'Cyberpunk: Edgerunners',
   'D4DJ',
   'DC漫畫',
   'DOL',
