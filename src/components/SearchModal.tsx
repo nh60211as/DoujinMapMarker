@@ -45,6 +45,10 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
       value: Filter.onlyOneDay,
     },
     {
+      option: <>只顯示有品書</>,
+      value: Filter.onlyWithMenuLink,
+    },
+    {
       option: <>只顯示已標記</>,
       value: Filter.onlyMarked,
     },
@@ -225,6 +229,10 @@ function getCurrentGroupDataList(filter: Filter): Array<GroupData> {
     case Filter.onlyOneDay:
       return CURRENT_GROUP_DATA.filter(
         (groupData) => groupData.boothList.length === 1,
+      );
+    case Filter.onlyWithMenuLink:
+      return CURRENT_GROUP_DATA.filter(
+        (groupData) => groupData.menuLink !== null,
       );
     case Filter.onlyMarked:
       // TODO: extract function
