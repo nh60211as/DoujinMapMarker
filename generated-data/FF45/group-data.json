@@ -647,8 +647,8 @@
   {
     "groupId": "dd5eb8b750bc444fa13d80f85feaf7fe",
     "groupName": "電梯上樓",
-    "groupLink": null,
-    "menuLink": null,
+    "groupLink": "https://linkby.tw/discogood2020",
+    "menuLink": "https://www.facebook.com/quarterlift/posts/pfbid0QSjLmJhmA7TX8KeGUu3ZQfoY9vCAeuRvokdsNGc6ZpSH9REj7hccRoq9hCVfDL5fl",
     "boothList": [
       {
         "activeDay": "FF45_DAY_1",
@@ -664,7 +664,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "學園偶像大師"
+    ]
   },
   {
     "groupId": "c2c82eb740774fbeac8bfe60e1098f4a",
@@ -759,7 +761,7 @@
   {
     "groupId": "0f34182a5b7f4debb41f53570ccbc6e9",
     "groupName": "LyNeva",
-    "groupLink": null,
+    "groupLink": "https://x.com/LyNeva_art",
     "menuLink": null,
     "boothList": [
       {
@@ -834,7 +836,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "妮姬"
+    ]
   },
   {
     "groupId": "1c24b7354dbc4562ae5cd815cd3ca711",
@@ -940,7 +944,7 @@
   {
     "groupId": "932e74786ed345cf953e24f9edbbe12b",
     "groupName": "千仞蘭庭",
-    "groupLink": null,
+    "groupLink": "https://x.com/shenyan69",
     "menuLink": null,
     "boothList": [
       {
@@ -953,7 +957,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "鳴潮"
+    ]
   },
   {
     "groupId": "28cfd67ae7714e9e9c1384078fb5adc3",
@@ -1068,7 +1074,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "活俠傳"
+    ]
   },
   {
     "groupId": "2bdbb6f85bc941938532879926df1654",
@@ -1128,7 +1136,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "學園偶像大師"
+    ]
   },
   {
     "groupId": "73de657c91b34e5fadd9225b89250c70",
@@ -1386,7 +1396,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "明日方舟"
+    ]
   },
   {
     "groupId": "ccc48f9a516f4a99b3fec001a0875949",
@@ -1572,7 +1584,7 @@
   {
     "groupId": "8c39f5becb99444394979537c3fb3c33",
     "groupName": "Yuki Azuma Imomuya – Singleton",
-    "groupLink": null,
+    "groupLink": "https://www.instagram.com/yuki_azuma_illustration",
     "menuLink": null,
     "boothList": [
       {
@@ -1602,7 +1614,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原神",
+      "絕區零"
+    ]
   },
   {
     "groupId": "ecd065547d6247af9b7c1de560382e9b",
@@ -1820,7 +1835,7 @@
     "groupId": "6517254597684683a802634f58b69dbd",
     "groupName": "Kouchiku卡卡",
     "groupLink": "https://linktr.ee/kouchiku",
-    "menuLink": null,
+    "menuLink": "https://x.com/ArtKouchiku/status/1951608834449109184",
     "boothList": [
       {
         "activeDay": "FF45_DAY_1",
@@ -1837,7 +1852,7 @@
       }
     ],
     "tagList": [
-      "VTuber"
+      "星穹鐵道"
     ]
   },
   {
@@ -1856,7 +1871,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "絕區零"
+    ]
   },
   {
     "groupId": "13fc9cdfdf324c78a81472ec2af950d5",
@@ -1910,7 +1927,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "絕區零"
+    ]
   },
   {
     "groupId": "f356a1082ade4c50acf1b2894121a7f5",
@@ -2046,7 +2065,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "艦隊收藏"
+    ]
   },
   {
     "groupId": "225a2eecaf514186830a10fbf58ae64c",
@@ -2303,13 +2324,14 @@
       }
     ],
     "tagList": [
+      "星穹鐵道",
       "原神"
     ]
   },
   {
     "groupId": "a9dfaa3b4c034beebe441616647ecf33",
     "groupName": "箱庭交響曲",
-    "groupLink": "https://www.facebook.com/hknwsymphony/",
+    "groupLink": "https://www.facebook.com/hknwsymphony",
     "menuLink": null,
     "boothList": [
       {
@@ -2368,7 +2390,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "崩壞3rd"
+    ]
   },
   {
     "groupId": "228d1db08f9d402582ccc89b01245728",
@@ -2387,8 +2411,7 @@
       }
     ],
     "tagList": [
-      "公主連結",
-      "蔚藍檔案"
+      "公主連結"
     ]
   },
   {
@@ -2516,7 +2539,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "星穹鐵道"
+    ]
   },
   {
     "groupId": "bbf1157871e748e185e7ff12f2b41fe2",
@@ -2631,7 +2656,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "賽馬娘"
+    ]
   },
   {
     "groupId": "bb29a940043b442f9ecdd149f240a508",
@@ -4088,8 +4115,8 @@
   {
     "groupId": "5fe89fefdad8454ab290b7e6b75c5bdb",
     "groupName": "雪倫來睏",
-    "groupLink": null,
-    "menuLink": null,
+    "groupLink": "https://www.facebook.com/people/%E9%9B%AA%E5%80%AB%E4%BE%86%E7%9D%8F/61557624734060",
+    "menuLink": "https://www.facebook.com/permalink.php?story_fbid=pfbid02KvjZwtCGZsLBCQyDeNC5FC81EKbNh8shyFDFcYku4Zp6tAzzU6RidA2ypyv94xQgl&id=61557624734060",
     "boothList": [
       {
         "activeDay": "FF45_DAY_1",
@@ -4110,12 +4137,14 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "27468134863f4e6283ed68330bcf1a00",
     "groupName": "StarryNight",
-    "groupLink": null,
+    "groupLink": "https://x.com/Katew021",
     "menuLink": null,
     "boothList": [
       {
@@ -4325,7 +4354,7 @@
   {
     "groupId": "aa6c25b5f4ba4a09a8061f811ecf3a57",
     "groupName": "Shirakawako",
-    "groupLink": null,
+    "groupLink": "https://x.com/JunYuriJP",
     "menuLink": null,
     "boothList": [
       {
@@ -4342,7 +4371,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "4f4af7b113eb4f87ad10e574f50b0e75",
@@ -4378,8 +4409,7 @@
       }
     ],
     "tagList": [
-      "原創",
-      "VTuber"
+      "原創"
     ]
   },
   {
@@ -4556,7 +4586,8 @@
       }
     ],
     "tagList": [
-      "蔚藍檔案"
+      "蔚藍檔案",
+      "MyGO!!!!!/Ave Mujica"
     ]
   },
   {
@@ -4708,7 +4739,7 @@
     "groupId": "07015c2a34df46ce9a685143b35dd8a1",
     "groupName": "捕食少女",
     "groupLink": "https://www.facebook.com/profile.php?id=100009275320341",
-    "menuLink": null,
+    "menuLink": "https://www.facebook.com/permalink.php?story_fbid=pfbid02qS4GVgtg7igdzGzFMQ9T4eFib3w7E4AYrQhWwfdzKJXgG88NxKoTnhM1G3H86Guql&id=100009275320341",
     "boothList": [
       {
         "activeDay": "FF45_DAY_1",
@@ -4770,7 +4801,7 @@
     "groupId": "ea4c0677abd94abdab2220f17787702f",
     "groupName": "桃桃吃桃桃",
     "groupLink": "https://www.facebook.com/mimi.yu.12177",
-    "menuLink": null,
+    "menuLink": "https://www.facebook.com/mimi.yu.12177/posts/pfbid02CyXkddiM2TnwHm9Wvkk3e5N5ZU974hZR6rE3KHMmFquHrwMJ7jVbJW6eksmyrJ36l",
     "boothList": [
       {
         "activeDay": "FF45_DAY_1",
@@ -4800,8 +4831,9 @@
       }
     ],
     "tagList": [
+      "原創",
       "VTuber",
-      "原創"
+      "MyGO!!!!!/Ave Mujica"
     ]
   },
   {
@@ -5095,7 +5127,7 @@
   {
     "groupId": "30df0df71bba479baeb9f2d842e6907d",
     "groupName": "ハチゴ＆ねこどーなつ",
-    "groupLink": null,
+    "groupLink": "https://x.com/ayamy_garubinu",
     "menuLink": null,
     "boothList": [
       {
@@ -5125,7 +5157,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "13a947d3616a409297190b4be67835fb",
@@ -5187,12 +5221,14 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "九龍城寨之圍城"
+    ]
   },
   {
     "groupId": "60bf108d791f490fa5b41323e3421ce1",
     "groupName": "白夜綺想曲",
-    "groupLink": null,
+    "groupLink": "https://x.com/AyaseMio",
     "menuLink": null,
     "boothList": [
       {
@@ -5205,12 +5241,14 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "46f83e0df4bf4e92b67a7ab05c1f63dc",
     "groupName": "Mibry’s World",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/MIBRYsWorld",
     "menuLink": null,
     "boothList": [
       {
@@ -5405,7 +5443,7 @@
   {
     "groupId": "d1aed2e8b0964631afbb5f1fabecfb4b",
     "groupName": "F.W.ZHolic",
-    "groupLink": "https://www.facebook.com/fwzholic",
+    "groupLink": "https://linktr.ee/alex30818",
     "menuLink": null,
     "boothList": [
       {
@@ -5927,7 +5965,7 @@
       }
     ],
     "tagList": [
-      "公主連結"
+      "原創"
     ]
   },
   {
@@ -6347,7 +6385,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "ea7a7590a9394904b360eea244252b3f",
@@ -6510,7 +6550,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "艦隊收藏"
+    ]
   },
   {
     "groupId": "bfb345fd0a034611abe741c055e7ca04",
@@ -6967,7 +7009,7 @@
   {
     "groupId": "66717229751940b89f4c4792416a40ae",
     "groupName": "芙子煉的藝想室and小黃瓜口味冰泡芙",
-    "groupLink": "https://www.facebook.com/fosusd.lina.graffiti.art/",
+    "groupLink": "https://www.facebook.com/fosusd.lina.graffiti.art",
     "menuLink": null,
     "boothList": [
       {
@@ -7002,7 +7044,7 @@
   {
     "groupId": "c0a277ad303f4ea98fa29433d9539b74",
     "groupName": "嗨!我是孟達",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/jacjoraaaa",
     "menuLink": null,
     "boothList": [
       {
@@ -7019,7 +7061,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "94c8fa65b03a42a69b63f6f8debfa474",
@@ -7251,7 +7295,7 @@
   {
     "groupId": "b01eb007599b45b4809ff92ae1acdf18",
     "groupName": "FemdomAtelier",
-    "groupLink": null,
+    "groupLink": "https://x.com/femdom_atelier",
     "menuLink": null,
     "boothList": [
       {
@@ -7264,7 +7308,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "90f604a61a0743ab97f01ebd812f77e0",
@@ -7503,7 +7549,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創",
+      "活俠傳"
+    ]
   },
   {
     "groupId": "08995852cda1420ba5ddfe4aad06a1ed",
@@ -7913,7 +7962,7 @@
   {
     "groupId": "7163fecc66ae49538e7d3c0edce8f8e1",
     "groupName": "A-One",
-    "groupLink": null,
+    "groupLink": "https://x.com/A_One_JP",
     "menuLink": null,
     "boothList": [
       {
@@ -8987,7 +9036,7 @@
     "groupId": "5aa958bbf584456f872e9d07abc9c3f1",
     "groupName": "六樓忍者村 aka.DCPSy",
     "groupLink": "https://www.facebook.com/profile.php?id=100095094920235",
-    "menuLink": null,
+    "menuLink": "https://www.facebook.com/permalink.php?story_fbid=pfbid04dBhN2N38xJN68ucQVM3uG7EvUqq8ifZo6ifwDCpfdFbBpTFj9smcY4gqbYEie1Bl&id=100095094920235",
     "boothList": [
       {
         "activeDay": "FF45_DAY_1",
@@ -9492,7 +9541,7 @@
   {
     "groupId": "93029d513fba4fcab631d45a49321106",
     "groupName": "P.S.2",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/aokihoshi",
     "menuLink": null,
     "boothList": [
       {
@@ -9701,7 +9750,7 @@
   {
     "groupId": "23b904bfa40843a0973731ea35fb5daa",
     "groupName": "大概是…夭謬?",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/cosmosmumu",
     "menuLink": null,
     "boothList": [
       {
@@ -9728,7 +9777,7 @@
   {
     "groupId": "3369d5bf8188419094934daa28cae7ff",
     "groupName": "大波斯菊花園",
-    "groupLink": "https://www.doujin.com.tw/authors/info/cosmos24",
+    "groupLink": "https://www.facebook.com/cosmosmumu",
     "menuLink": null,
     "boothList": [
       {
@@ -9780,7 +9829,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "5cafde2d07974ae1a90c93efe9024c47",
@@ -9809,7 +9860,6 @@
     ],
     "tagList": [
       "VTuber",
-      "蔚藍檔案",
       "原創",
       "活俠傳"
     ]
@@ -9933,7 +9983,7 @@
   {
     "groupId": "7ba80228f9dc4cda9b7ffdaf197b8cdd",
     "groupName": "イレブンナイン",
-    "groupLink": null,
+    "groupLink": "https://x.com/ENST9",
     "menuLink": null,
     "boothList": [
       {
@@ -10574,7 +10624,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "fd4dbaa688f24e7098e29bbd9dfe52a8",
@@ -10800,7 +10852,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "097c12f4d6a4446a89e303608a324ade",
@@ -10823,7 +10877,7 @@
   {
     "groupId": "fbba8ca1a4144a8c92c9e59eee3eb283",
     "groupName": "スラップダッシュ(粗線條工房)",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/profile.php?id=100068021243803",
     "menuLink": null,
     "boothList": [
       {
@@ -11438,7 +11492,7 @@
   {
     "groupId": "520a41bc9b7f4d11a05e22cbb88786b1",
     "groupName": "喵燐堂TOHOORIN",
-    "groupLink": "http://tohoorin.blogspot.tw/",
+    "groupLink": "https://linktr.ee/TOHOORIN",
     "menuLink": null,
     "boothList": [
       {
@@ -11470,13 +11524,14 @@
     ],
     "tagList": [
       "蔚藍檔案",
+      "妮姬",
       "VTuber"
     ]
   },
   {
     "groupId": "9a208b8e0c284dcb8bf80bd83ef66643",
     "groupName": "TOHOORIN",
-    "groupLink": null,
+    "groupLink": "https://linktr.ee/TOHOORIN",
     "menuLink": null,
     "boothList": [
       {
@@ -11490,8 +11545,7 @@
       }
     ],
     "tagList": [
-      "蔚藍檔案",
-      "VTuber"
+      "蔚藍檔案"
     ]
   },
   {
@@ -11524,7 +11578,7 @@
   {
     "groupId": "d05adb59bb02439782960488cad79bed",
     "groupName": "隨意坊",
-    "groupLink": "http://wind7626.blogspot.tw/",
+    "groupLink": "https://www.facebook.com/fred04142",
     "menuLink": null,
     "boothList": [
       {
@@ -11557,8 +11611,8 @@
   {
     "groupId": "4dfc654c87df43a3b9fdc80683f75a8c",
     "groupName": "迪達迪達達",
-    "groupLink": null,
-    "menuLink": null,
+    "groupLink": "https://lit.link/zh-tw/diudada",
+    "menuLink": "https://www.facebook.com/DiuDaNa/posts/pfbid02HdwCTSSKfhmtgaKho5fyVaSW2Q5g6EAdCxFWve6qjcUwRdqf3H2uPr1TFdYgLpNyl",
     "boothList": [
       {
         "activeDay": "FF45_DAY_1",
@@ -11579,7 +11633,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "MyGO!!!!!/Ave Mujica",
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "b1fdcb214ac7483fb3deb6c3464e8757",
@@ -11727,7 +11784,7 @@
   {
     "groupId": "c9aa5e1a942a4d5e8098998502c7db5b",
     "groupName": "貝雷貓 – ベレー猫",
-    "groupLink": null,
+    "groupLink": "https://x.com/BeretNeko",
     "menuLink": null,
     "boothList": [
       {
@@ -11754,7 +11811,7 @@
   {
     "groupId": "163348af230742c796b6814f7766880f",
     "groupName": "弾KAIOU",
-    "groupLink": null,
+    "groupLink": "https://x.com/DKO66",
     "menuLink": null,
     "boothList": [
       {
@@ -11776,7 +11833,7 @@
   {
     "groupId": "85ab1fe3aacf4261a38f7509d6e7555f",
     "groupName": "蛞蝓.菠菜丼",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/SLUGTT666",
     "menuLink": null,
     "boothList": [
       {
@@ -12284,7 +12341,7 @@
       }
     ],
     "tagList": [
-      "蔚藍檔案"
+      "原創"
     ]
   },
   {
@@ -12334,8 +12391,7 @@
       }
     ],
     "tagList": [
-      "蔚藍檔案",
-      "舞-乙HiME"
+      "蔚藍檔案"
     ]
   },
   {
@@ -12691,7 +12747,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "6963385a9ba9489aa939c14915f5d612",
@@ -12748,7 +12806,7 @@
       }
     ],
     "tagList": [
-      "活俠傳"
+      "蔚藍檔案"
     ]
   },
   {
@@ -12909,7 +12967,7 @@
   {
     "groupId": "f44d34080efe460aa944c2ac608b86d5",
     "groupName": "じるふぁん",
-    "groupLink": null,
+    "groupLink": "https://linktr.ee/jirusux",
     "menuLink": null,
     "boothList": [
       {
@@ -12931,7 +12989,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "92cebf288e864e03bdcb00fdceb159ab",
@@ -13189,7 +13249,7 @@
     "groupId": "ee45876bf1034f478b07091e48f5126d",
     "groupName": "東泉重工",
     "groupLink": "https://x.com/fata_aaa",
-    "menuLink": null,
+    "menuLink": "https://www.facebook.com/fataaahsu/posts/pfbid016CRqcj4b3VpyyCx76exkbTwpndymNoTZaZLdSoVc6NzyZQ23snsjRpydG2GiLwml",
     "boothList": [
       {
         "activeDay": "FF45_DAY_1",
@@ -13219,7 +13279,7 @@
       }
     ],
     "tagList": [
-      "MyGO!!!!!/Ave Mujica"
+      "蔚藍檔案"
     ]
   },
   {
@@ -13262,7 +13322,7 @@
   {
     "groupId": "e93fe42aa1a04e0f8eaa3f0e56dc4d6b",
     "groupName": "きのこむ神",
-    "groupLink": null,
+    "groupLink": "https://x.com/kinokomusin",
     "menuLink": null,
     "boothList": [
       {
@@ -13406,7 +13466,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "c279e0ffb20a41129fa1f5a48a8606f0",
@@ -13663,7 +13725,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "737fac963a074a628330f686069217e7",
@@ -13690,7 +13754,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "b0157f227c214de483b4c977c01be9da",
@@ -13741,7 +13807,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "742d6e1df31e4d299b189412c3a3b5cb",
@@ -13776,7 +13844,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "e6e6ee5350e54f2c92278e471532b749",
@@ -13823,7 +13893,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "be1f53e3dd714cd3a45ad141f6353d18",
@@ -13850,7 +13922,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "e4ce2316cff241a99709ba122140b1da",
@@ -13868,7 +13942,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "3b8fc0cbe0934f97aa3a987e88d989af",
@@ -13895,7 +13971,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "c68864be722f469c967a03b6698e0eca",
@@ -13922,7 +14000,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "9057b14330f34cd8b7a806ca30766a32",
@@ -13957,7 +14037,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "9857dd792182477a80be4f63c24ccf18",
@@ -14053,7 +14135,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "f42dd2a113834874a5e2496143a14bb4",
@@ -14071,7 +14155,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "1f758b9da5a44296b63df3ceb962b4ff",
@@ -14241,7 +14327,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "65da05aa6ccf4cdfab62a1b6b09eb583",
@@ -14349,8 +14437,7 @@
       }
     ],
     "tagList": [
-      "Cosplay",
-      "妮姬"
+      "Cosplay"
     ]
   },
   {
@@ -14462,7 +14549,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "45b818bf21a54a918b71ece396070bab",
@@ -14497,7 +14586,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "555242a936b9476cad44d3b9de77991a",
@@ -14554,7 +14645,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "7d27c4f8adc34e368cd4cf8a9ec6b983",
@@ -14576,7 +14669,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "37834c400fce4d0ea0b38882aa689615",
@@ -14656,7 +14751,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "a0c7b977fcfd4f50ad149198c9bff49c",
@@ -14715,7 +14812,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "64fb9aec10c64882ad89c737d4a49740",
@@ -14737,7 +14836,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "bb3a929c41df47f58adad8c24d46a2d9",
@@ -14833,7 +14934,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "dc581f380178400799d7b819243cd612",
@@ -14884,7 +14987,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "f80301666b074fe2acd49d70aa8d4f4e",
@@ -14911,7 +15016,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "ebf44e1618374df5869defdb9810dff5",
@@ -14947,8 +15054,7 @@
       }
     ],
     "tagList": [
-      "Cosplay",
-      "VTuber"
+      "Cosplay"
     ]
   },
   {
@@ -14976,7 +15082,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "8b35fb81e3224e97b2905119b8de3655",
@@ -14994,7 +15102,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "e282a33d90334ad791de4d3228bded57",
@@ -15016,7 +15126,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "3f885edbc3654f7895b96ebb4cb10317",
@@ -15047,7 +15159,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "990d3a7331114e85b5a20dcced6fa35d",
@@ -15082,7 +15196,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "28fb417b5b1b42399af862d2c70f2f7e",
@@ -15146,7 +15262,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "881227e2ca804bf2a4da1db01d394c85",
@@ -15341,7 +15459,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "ec7462cd5be54c85a7fb68da5ea5da57",
@@ -15368,7 +15488,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "935fd40456bc4041b743a011950e86a5",
@@ -15395,7 +15517,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "02e0ca232f414bd1944b0a7d125673e3",
@@ -15503,7 +15627,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "5361fbdedf694a27aa735fac7852ee61",
@@ -15668,8 +15794,7 @@
       }
     ],
     "tagList": [
-      "Cosplay",
-      "鳴潮"
+      "Cosplay"
     ]
   },
   {
@@ -15817,7 +15942,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "2e532cc1cea0447a8f7baa2dbfbd72f1",
@@ -15877,7 +16004,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "572050905f2744868b6eb79fbeb10087",
@@ -15945,7 +16074,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "423872db44ad4e8695f3ed2e0779adf3",
@@ -16076,7 +16207,7 @@
   {
     "groupId": "71e16e24240c467b808d14389e6b131a",
     "groupName": "hwulusummer 葫蘆夏天",
-    "groupLink": null,
+    "groupLink": "https://hwulu.com",
     "menuLink": null,
     "boothList": [
       {
@@ -16240,7 +16371,7 @@
   {
     "groupId": "41ddd76645d843f9a1dc3f3dae974e6f",
     "groupName": "大阪風男",
-    "groupLink": "https://www.facebook.com/profile.php?id=100095148571755",
+    "groupLink": "https://www.facebook.com/oosaka.kazao",
     "menuLink": null,
     "boothList": [
       {
@@ -16815,7 +16946,7 @@
     "groupId": "677792d5605a4f3e9adc888b44f501d1",
     "groupName": "壞菇社",
     "groupLink": "https://www.facebook.com/MARK4why",
-    "menuLink": null,
+    "menuLink": "https://www.facebook.com/MARK4why/posts/pfbid02CQsqB33jSbLCNJVzDQKtT3dxmD3WwrUN7an9eRyALpqnDJBrpVMkwU23edCVaVd7l",
     "boothList": [
       {
         "activeDay": "FF45_DAY_1",
@@ -16920,12 +17051,14 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "MyGO!!!!!/Ave Mujica"
+    ]
   },
   {
     "groupId": "9ffb1306e2354ea09ad44e513925235b",
     "groupName": "virophilia",
-    "groupLink": null,
+    "groupLink": "https://x.com/orihi_",
     "menuLink": null,
     "boothList": [
       {
@@ -17009,7 +17142,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "MyGO!!!!!/Ave Mujica"
+    ]
   },
   {
     "groupId": "acaf622d5de74eeab9eec3be635446ca",
@@ -17037,7 +17172,6 @@
       }
     ],
     "tagList": [
-      "Girls Band Cry",
       "MyGO!!!!!/Ave Mujica"
     ]
   },
@@ -17075,7 +17209,7 @@
   {
     "groupId": "fe58ba8661be40168f93663f8e2d1e77",
     "groupName": "六太日日人",
-    "groupLink": null,
+    "groupLink": "https://www.instagram.com/6days.hk",
     "menuLink": null,
     "boothList": [
       {
@@ -17436,7 +17570,7 @@
   {
     "groupId": "2902b1e63eb340c9b5c5d4bbf2b03d04",
     "groupName": "MWKK",
-    "groupLink": null,
+    "groupLink": "https://x.com/miwakokumwkk",
     "menuLink": null,
     "boothList": [
       {
@@ -17512,7 +17646,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "MyGO!!!!!/Ave Mujica"
+    ]
   },
   {
     "groupId": "7e338efa7ffa4968ab0009a513329970",
@@ -17874,7 +18010,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "52c5ccc5e06a47b28451350dc289fe93",
@@ -17928,7 +18066,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "df79d2094c9d4e99aa5613069ae4d36f",
@@ -17994,7 +18134,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "95418cdad2004c808a1f8669635b7068",
@@ -18029,7 +18171,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "56d83fd5c9074f7194f5a2e1fbebd84c",
@@ -18264,7 +18408,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "24227161a98b43f3a746f81d7e17f5d1",
@@ -18282,7 +18428,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "18ad09f0860b4e039c7b1f4a3bd83227",
@@ -18392,8 +18540,7 @@
       }
     ],
     "tagList": [
-      "VTuber",
-      "Cosplay"
+      "VTuber"
     ]
   },
   {
@@ -18552,7 +18699,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "5da40fc1256641febca7f9cd3119456a",
@@ -18717,7 +18866,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "601b4006da164d2cbe9e0981fbe4f099",
@@ -18765,9 +18916,7 @@
         ]
       }
     ],
-    "tagList": [
-      "妮姬"
-    ]
+    "tagList": []
   },
   {
     "groupId": "29cef07675a64ad6a8210c779f4b5c3b",
@@ -18863,7 +19012,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "3f4387f2f1f54285bb14fa68964d8d58",
@@ -18898,7 +19049,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "b85429d321ea400a890ff41be4faea40",
@@ -19062,7 +19215,7 @@
   {
     "groupId": "069e22b70f134802b0bdb1d8db629e32",
     "groupName": "REI’s ROOM",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/reisroom711",
     "menuLink": null,
     "boothList": [
       {
@@ -19312,7 +19465,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "751c17b655ce4174bda7aa2bf7721b11",
@@ -19361,8 +19516,7 @@
       }
     ],
     "tagList": [
-      "Cosplay",
-      "妮姬"
+      "Cosplay"
     ]
   },
   {
@@ -19536,7 +19690,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "6be1c6b7a64c46c0bc304b740981cfa5",

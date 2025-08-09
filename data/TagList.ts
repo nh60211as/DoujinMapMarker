@@ -120,6 +120,7 @@ export const TAG_LIST: Array<string> = [
   '少女與戰車',
   '少女革命',
   '尼爾',
+  '崩壞3rd',
   '布袋戲',
   '幼稚園WARS',
   '幽靈偵探',
