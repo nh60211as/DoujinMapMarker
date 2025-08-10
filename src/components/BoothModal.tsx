@@ -53,7 +53,7 @@ const BoothModal = (props: BoothModalProps): JSX.Element => {
         </p>
         <p class={style.wrappedP}>
           <span class={style.unselectableSpan}>品書連結：</span>
-          <span>{getLink(groupData.menuLink)}</span>
+          <span>{getLinkElement('連結', groupData.menuLink)}</span>
         </p>
         <BoothInfo
           groupId={groupData.groupId}
@@ -95,6 +95,18 @@ function getLink(boothLink: string | null): JSX.Element {
   return (
     <a href={boothLink} target="_blank" rel="noopener noreferrer">
       {boothLink}
+    </a>
+  );
+}
+
+function getLinkElement(displayText: string, link: string | null): JSX.Element {
+  if (link === null) {
+    return <></>;
+  }
+
+  return (
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      {displayText}
     </a>
   );
 }
