@@ -20,7 +20,7 @@ function getValidGroupDataList(input: any): Array<GroupData> {
   }
 }
 
-describe('Validate FF 44 Group Data', () => {
+describe('Validate Group Data', () => {
   test('No Duplicate Group ID', () => {
     const groupIdList = new Set<string>();
 
