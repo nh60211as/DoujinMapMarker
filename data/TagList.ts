@@ -20,6 +20,7 @@ export const TAG_LIST: Array<string> = [
   'Almost Human',
   'Apex Legends',
   'Arcaea',
+  'BLACK★ROCK SHOOTER',
   'BOYNEXTDOOR',
   'Ben 10',
   'CITY',
