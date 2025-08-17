@@ -63,6 +63,7 @@ export const TAG_LIST: Array<string> = [
   'Unlight',
   'Valorant',
   'Vocaloid',
+  'WACCA',
   '不可能的任務',
   '世界樹的迷宮',
   '九日',
