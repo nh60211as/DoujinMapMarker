@@ -36,6 +36,7 @@ export const TAG_LIST: Array<string> = [
   "Five Nights at Freddy's",
   'GACHIAKUTA',
   'GANGSTA.',
+  'GQuuuuuuX',
   'HUNTER×HUNTER',
   'Helluva Boss/Hazbin Hotel',
   'House of the Dragon',
