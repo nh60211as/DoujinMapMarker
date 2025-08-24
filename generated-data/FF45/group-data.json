@@ -35780,8 +35780,8 @@
   {
     "groupId": "28131f12f7d64a1f9db958710c4ae170",
     "groupName": "DOS",
-    "groupLink": null,
-    "menuLink": null,
+    "groupLink": "https://home.gamer.com.tw/creation.php?owner=james30226",
+    "menuLink": "https://home.gamer.com.tw/creationDetail.php?sn=6192797",
     "boothList": [
       {
         "activeDay": "FF45_DAY_3",
@@ -35793,7 +35793,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "MyGO!!!!!/Ave Mujica"
+    ]
   },
   {
     "groupId": "41ae52e49ebe480ebc0a9d80d0249ac8",
