@@ -97,7 +97,7 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
             e.stopPropagation();
           }}
         >
-          <div>
+          <div class={style.searchContainer}>
             <DebounceInput
               debounceTimeout={0}
               placeholder={'輸入攤位名稱'}
@@ -110,6 +110,15 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
                 }
               }}
             />
+            <button
+              type="button"
+              class={style.button}
+              onClick={() => {
+                setSearchContent(null);
+              }}
+            >
+              X
+            </button>
           </div>
           <div>
             <DropDownList
@@ -176,10 +185,11 @@ function TagListToggle(props: {
 
   return (
     <>
-      <div>
+      <div class={style.searchContainer}>
         <DebounceInput
           debounceTimeout={0}
           placeholder={'輸入標籤名稱'}
+          value={searchTag ?? ''}
           onChange={(event: any) => {
             const trimmedValue: string = event.target.value.trim();
             if (trimmedValue === '') {
@@ -189,6 +199,15 @@ function TagListToggle(props: {
             }
           }}
         />
+        <button
+          type="button"
+          class={style.button}
+          onClick={() => {
+            setSearchTag(null);
+          }}
+        >
+          X
+        </button>
       </div>
       {CURRENT_TAG_LIST.map((e, index) => {
         // TODO: extract the logic here
