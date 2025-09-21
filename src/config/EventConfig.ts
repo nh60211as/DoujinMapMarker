@@ -74,7 +74,7 @@ export const EVENT_CONFIG: EventConfigInterface = {
     },
   },
   map: {
-    DEFAULT_MAP_IMAGE_SIZE: { width: 3508, height: 2480 },
+    DEFAULT_MAP_IMAGE_SIZE: { width: 1684, height: 1190 },
     getImageSrcByActiveDay: (activeDay: BoothActiveDay): string => {
       switch (activeDay) {
         case 'PF43_DAY_1':
