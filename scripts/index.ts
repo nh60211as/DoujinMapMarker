@@ -4,7 +4,7 @@ import { csvToGroupDataList } from './script';
 import * as fs from 'fs';
 
 // NOTE: The implementation should be changed with each event
-const eventType: EventType = 'FF45';
+const eventType: EventType = 'PF43';
 
 csvToGroupDataList(
   `./data/${eventType}/group-list.csv`,

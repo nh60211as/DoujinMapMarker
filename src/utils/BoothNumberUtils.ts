@@ -53,42 +53,24 @@ function boothNumberListGreaterThan2ToTargetingBoxDimension(
 function boothNumberToTargetingBoxDimension(
   boothNumber: BoothNumber,
 ): TargetingBoxDimension {
-  const A_TO_M_STARTING_Y_AXIS = 1968;
-  const N_TO_V_STARTING_Y_AXIS = 1158;
-  const A_TO_V_BOOTH_X_SIZE = 41.5;
-  const A_TO_V_BOOTH_Y_SIZE = 26.59090909090909;
+  const A_TO_C_STARTING_Y_AXIS = 947;
+  const M_TO_V_STARTING_Y_AXIS = 556;
+  const A_TO_V_BOOTH_X_SIZE = 20.5;
+  const A_TO_V_BOOTH_Y_SIZE = 12.77272727272727;
 
-  const W_Y_AXIS = 399;
-  const W_BOOTH_X_SIZE = 26.625;
-  const W_BOOTH_Y_SIZE = 41;
+  const W_Y_AXIS = 192;
+  const W_BOOTH_X_SIZE = 12.66666666666667;
+  const W_BOOTH_Y_SIZE = 20.5;
 
   switch (boothNumber.row) {
     case 'A':
-      return {
-        x: get_A_to_V_starting_X(boothNumber.row),
-        y:
-          A_TO_M_STARTING_Y_AXIS -
-          (boothNumber.number - 1) * A_TO_V_BOOTH_Y_SIZE,
-        width: A_TO_V_BOOTH_X_SIZE,
-        height: A_TO_V_BOOTH_Y_SIZE,
-      };
     case 'B':
     case 'C':
-    case 'D':
-    case 'E':
-    case 'F':
-    case 'G':
-    case 'H':
-    case 'I':
-    case 'J':
-    case 'K':
-    case 'L':
-    case 'M':
       if (isBetween(boothNumber.number, 1, 22)) {
         return {
           x: get_A_to_V_starting_X(boothNumber.row),
           y:
-            A_TO_M_STARTING_Y_AXIS -
+            A_TO_C_STARTING_Y_AXIS -
             (boothNumber.number - 1) * A_TO_V_BOOTH_Y_SIZE,
           width: A_TO_V_BOOTH_X_SIZE,
           height: A_TO_V_BOOTH_Y_SIZE,
@@ -97,12 +79,13 @@ function boothNumberToTargetingBoxDimension(
         return {
           x: get_A_to_V_starting_X(boothNumber.row) - A_TO_V_BOOTH_X_SIZE,
           y:
-            A_TO_M_STARTING_Y_AXIS -
+            A_TO_C_STARTING_Y_AXIS -
             (44 - boothNumber.number) * A_TO_V_BOOTH_Y_SIZE,
           width: A_TO_V_BOOTH_X_SIZE,
           height: A_TO_V_BOOTH_Y_SIZE,
         };
       }
+    case 'M':
     case 'N':
     case 'O':
     case 'P':
@@ -112,11 +95,11 @@ function boothNumberToTargetingBoxDimension(
     case 'T':
     case 'U':
     case 'V':
-      if (isBetween(boothNumber.number, 1, 22)) {
+      if (isBetween(boothNumber.number, 1, 24)) {
         return {
           x: get_A_to_V_starting_X(boothNumber.row),
           y:
-            N_TO_V_STARTING_Y_AXIS -
+            M_TO_V_STARTING_Y_AXIS -
             (boothNumber.number - 1) * A_TO_V_BOOTH_Y_SIZE,
           width: A_TO_V_BOOTH_X_SIZE,
           height: A_TO_V_BOOTH_Y_SIZE,
@@ -125,8 +108,8 @@ function boothNumberToTargetingBoxDimension(
         return {
           x: get_A_to_V_starting_X(boothNumber.row) - A_TO_V_BOOTH_X_SIZE,
           y:
-            N_TO_V_STARTING_Y_AXIS -
-            (44 - boothNumber.number) * A_TO_V_BOOTH_Y_SIZE,
+            M_TO_V_STARTING_Y_AXIS -
+            (48 - boothNumber.number) * A_TO_V_BOOTH_Y_SIZE,
           width: A_TO_V_BOOTH_X_SIZE,
           height: A_TO_V_BOOTH_Y_SIZE,
         };
@@ -135,28 +118,28 @@ function boothNumberToTargetingBoxDimension(
     case 'W':
       if (isBetween(boothNumber.number, 1, 6)) {
         return {
-          x: 2898 - (boothNumber.number - 1) * W_BOOTH_X_SIZE,
+          x: 1391 - (boothNumber.number - 1) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
         };
-      } else if (isBetween(boothNumber.number, 7, 14)) {
+      } else if (isBetween(boothNumber.number, 7, 18)) {
         return {
-          x: 2526 - (boothNumber.number - 7) * W_BOOTH_X_SIZE,
+          x: 1213 - (boothNumber.number - 7) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
         };
-      } else if (isBetween(boothNumber.number, 15, 24)) {
+      } else if (isBetween(boothNumber.number, 19, 24)) {
         return {
-          x: 2278 - (boothNumber.number - 15) * W_BOOTH_X_SIZE,
+          x: 1045 - (boothNumber.number - 19) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
         };
       } else if (isBetween(boothNumber.number, 25, 34)) {
         return {
-          x: 1784 - (boothNumber.number - 25) * W_BOOTH_X_SIZE,
+          x: 855 - (boothNumber.number - 25) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
@@ -165,7 +148,7 @@ function boothNumberToTargetingBoxDimension(
       // 35 ~ 42
       else {
         return {
-          x: 1476 - (boothNumber.number - 35) * W_BOOTH_X_SIZE,
+          x: 709 - (boothNumber.number - 35) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
@@ -177,49 +160,31 @@ function boothNumberToTargetingBoxDimension(
 function get_A_to_V_starting_X(row: string): number {
   switch (row) {
     case 'A':
-      return 3216;
+      return 1455;
     case 'B':
-      return 3087;
+      return 1379;
     case 'C':
-      return 2926;
-    case 'D':
-      return 2765;
-    case 'E':
-      return 2604;
-    case 'F':
-      return 2443;
-    case 'G':
-      return 2282;
-    case 'H':
-      return 2121;
-    case 'I':
-      return 1835;
-    case 'J':
-      return 1675;
-    case 'K':
-      return 1516;
-    case 'L':
-      return 1356;
+      return 1220;
     case 'M':
-      return 1196;
+      return 1461;
     case 'N':
-      return 2726;
+      return 1382;
     case 'O':
-      return 2539;
+      return 1307;
     case 'P':
-      return 2353;
+      return 1228;
     case 'Q':
-      return 2165;
+      return 1149;
     case 'R':
-      return 1978;
+      return 1069;
     case 'S':
-      return 1791;
+      return 989;
     case 'T':
-      return 1603;
+      return 911;
     case 'U':
-      return 1422;
+      return 831;
     case 'V':
-      return 1235;
+      return 751;
     default:
       return 0;
   }
