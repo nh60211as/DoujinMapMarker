@@ -1,6 +1,7 @@
 // NOTE: The implementation should be changed with each event
-import rawGroupData from '../../generated-data/FF45/group-data.json';
-import MAP from '../assets/maps/2025_FF45_MAP.jpg';
+import rawGroupData from '../../generated-data/PF43/group-data.json';
+import MAP1 from '../assets/maps/PF43社團攤位配置圖_未完整2_D1.jpg';
+import MAP2 from '../assets/maps/PF43社團攤位配置圖_未完整2_D2.jpg';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { EventType } from '../types/EventType';
 import { ImageSize } from '../types/ImageSize';
@@ -37,18 +38,16 @@ type EventConfigInterface = {
 // NOTE: The implementation should be changed with each event
 export const EVENT_CONFIG: EventConfigInterface = {
   general: {
-    CURRENT_EVENT_TYPE: 'FF45',
+    CURRENT_EVENT_TYPE: 'PF43',
     RAW_GROUP_DATA: rawGroupData,
   },
   data: {
     stringToBoothActiveDay: (boothActiveDayStr: string): BoothActiveDay => {
       switch (boothActiveDayStr) {
         case '1':
-          return 'FF45_DAY_1';
+          return 'PF43_DAY_1';
         case '2':
-          return 'FF45_DAY_2';
-        case '3':
-          return 'FF45_DAY_3';
+          return 'PF43_DAY_2';
         default:
           throw Error(`Unexpected boothActiveDayStr [${boothActiveDayStr}].`);
       }
@@ -57,26 +56,20 @@ export const EVENT_CONFIG: EventConfigInterface = {
   header: {
     BOOTH_ACTIVE_DAY_OPTION_LIST: [
       {
-        boothActiveDay: 'FF45_DAY_1',
-        displayText: '08/22 (五)',
+        boothActiveDay: 'PF43_DAY_1',
+        displayText: '11/01 (六)',
       },
       {
-        boothActiveDay: 'FF45_DAY_2',
-        displayText: '08/23 (六)',
-      },
-      {
-        boothActiveDay: 'FF45_DAY_3',
-        displayText: '08/24 (日)',
+        boothActiveDay: 'PF43_DAY_2',
+        displayText: '11/02 (日)',
       },
     ],
     getSourceLink: (activeDay: BoothActiveDay): string => {
       switch (activeDay) {
-        case 'FF45_DAY_1':
-          return 'https://www.f-2.com.tw/?p=1746';
-        case 'FF45_DAY_2':
-          return 'https://www.f-2.com.tw/?p=1748';
-        case 'FF45_DAY_3':
-          return 'https://www.f-2.com.tw/?p=1750';
+        case 'PF43_DAY_1':
+          return 'https://www.f-2.com.tw/pf43-x-rf13-%e9%a6%96%e6%97%a5%e6%94%a4%e4%bd%8d%e7%b7%a8%e8%99%9f/';
+        case 'PF43_DAY_2':
+          return 'https://www.f-2.com.tw/pf43-x-rf13-%e6%ac%a1%e6%97%a5%e6%94%a4%e4%bd%8d%e7%b7%a8%e8%99%9f/';
       }
     },
   },
@@ -84,28 +77,22 @@ export const EVENT_CONFIG: EventConfigInterface = {
     DEFAULT_MAP_IMAGE_SIZE: { width: 3508, height: 2480 },
     getImageSrcByActiveDay: (activeDay: BoothActiveDay): string => {
       switch (activeDay) {
-        case 'FF45_DAY_1':
-          return MAP;
-        case 'FF45_DAY_2':
-          return MAP;
-        case 'FF45_DAY_3':
-          return MAP;
+        case 'PF43_DAY_1':
+          return MAP1;
+        case 'PF43_DAY_2':
+          return MAP2;
       }
     },
   },
   booth: {
     BOOTH_ACTIVE_DAY_DISPLAY_INFO_LIST: [
       {
-        boothActiveDay: 'FF45_DAY_1',
-        singleDayBoothInfoPrefixText: '08/22 (五) 攤位：',
+        boothActiveDay: 'PF43_DAY_1',
+        singleDayBoothInfoPrefixText: '11/01 (六) 攤位：',
       },
       {
-        boothActiveDay: 'FF45_DAY_2',
-        singleDayBoothInfoPrefixText: '08/23 (六) 攤位：',
-      },
-      {
-        boothActiveDay: 'FF45_DAY_3',
-        singleDayBoothInfoPrefixText: '08/24 (日) 攤位：',
+        boothActiveDay: 'PF43_DAY_2',
+        singleDayBoothInfoPrefixText: '11/02 (日) 攤位：',
       },
     ],
   },
