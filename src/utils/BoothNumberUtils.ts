@@ -53,14 +53,14 @@ function boothNumberListGreaterThan2ToTargetingBoxDimension(
 function boothNumberToTargetingBoxDimension(
   boothNumber: BoothNumber,
 ): TargetingBoxDimension {
-  const A_TO_C_STARTING_Y_AXIS = 561;
-  const M_TO_V_STARTING_Y_AXIS = 329;
-  const A_TO_V_BOOTH_X_SIZE = 11.5;
-  const A_TO_V_BOOTH_Y_SIZE = 7.590909090909091;
+  const A_TO_C_STARTING_Y_AXIS = 710;
+  const M_TO_V_STARTING_Y_AXIS = 417;
+  const A_TO_V_BOOTH_X_SIZE = 14.5;
+  const A_TO_V_BOOTH_Y_SIZE = 9.590909090909091;
 
-  const W_Y_AXIS = 113;
-  const W_BOOTH_X_SIZE = 7.583333333333333;
-  const W_BOOTH_Y_SIZE = 12;
+  const W_Y_AXIS = 143;
+  const W_BOOTH_X_SIZE = 9.583333333333333;
+  const W_BOOTH_Y_SIZE = 15;
 
   switch (boothNumber.row) {
     case 'A':
@@ -118,28 +118,28 @@ function boothNumberToTargetingBoxDimension(
     case 'W':
       if (isBetween(boothNumber.number, 1, 6)) {
         return {
-          x: 825 - (boothNumber.number - 1) * W_BOOTH_X_SIZE,
+          x: 1043 - (boothNumber.number - 1) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
         };
       } else if (isBetween(boothNumber.number, 7, 18)) {
         return {
-          x: 720 - (boothNumber.number - 7) * W_BOOTH_X_SIZE,
+          x: 909 - (boothNumber.number - 7) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
         };
       } else if (isBetween(boothNumber.number, 19, 24)) {
         return {
-          x: 621 - (boothNumber.number - 19) * W_BOOTH_X_SIZE,
+          x: 784 - (boothNumber.number - 19) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
         };
       } else if (isBetween(boothNumber.number, 25, 34)) {
         return {
-          x: 508 - (boothNumber.number - 25) * W_BOOTH_X_SIZE,
+          x: 642 - (boothNumber.number - 25) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
@@ -148,7 +148,7 @@ function boothNumberToTargetingBoxDimension(
       // 35 ~ 42
       else {
         return {
-          x: 420 - (boothNumber.number - 35) * W_BOOTH_X_SIZE,
+          x: 531 - (boothNumber.number - 35) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
@@ -160,31 +160,31 @@ function boothNumberToTargetingBoxDimension(
 function get_A_to_V_starting_X(row: string): number {
   switch (row) {
     case 'A':
-      return 864;
+      return 1092;
     case 'B':
-      return 819;
+      return 1035;
     case 'C':
-      return 724;
+      return 915;
     case 'M':
-      return 867;
+      return 1096;
     case 'N':
-      return 820;
+      return 1036;
     case 'O':
-      return 776;
+      return 980;
     case 'P':
-      return 729;
+      return 921;
     case 'Q':
-      return 682;
+      return 861;
     case 'R':
-      return 634;
+      return 802;
     case 'S':
-      return 587;
+      return 742;
     case 'T':
-      return 540;
+      return 683;
     case 'U':
-      return 493;
+      return 623;
     case 'V':
-      return 446;
+      return 564;
     default:
       return 0;
   }
