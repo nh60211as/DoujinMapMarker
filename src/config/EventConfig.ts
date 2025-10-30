@@ -1,7 +1,7 @@
 // NOTE: The implementation should be changed with each event
 import rawGroupData from '../../generated-data/PF43/group-data.json';
-import MAP2 from '../assets/maps/PF43社團攤位配置圖.jpg';
-import MAP1 from '../assets/maps/PF43社團攤位配置圖0.jpg';
+import MAP2 from '../assets/maps/PF43社團攤位配置圖-1-2048x1447.jpg';
+import MAP1 from '../assets/maps/PF43社團攤位配置圖-2-2048x1447.jpg';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { EventType } from '../types/EventType';
 import { ImageSize } from '../types/ImageSize';
@@ -74,7 +74,7 @@ export const EVENT_CONFIG: EventConfigInterface = {
     },
   },
   map: {
-    DEFAULT_MAP_IMAGE_SIZE: { width: 1000, height: 706 },
+    DEFAULT_MAP_IMAGE_SIZE: { width: 2048, height: 1447 },
     getImageSrcByActiveDay: (activeDay: BoothActiveDay): string => {
       switch (activeDay) {
         case 'PF43_DAY_1':
