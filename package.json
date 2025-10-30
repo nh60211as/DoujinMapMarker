@@ -35,7 +35,7 @@
     "prettier": "^3.6.2",
     "prettier-plugin-sort-imports": "^1.8.8",
     "typescript": "^5.9.2",
-    "vite": "^7.1.6",
+    "vite": "^7.1.12",
     "vite-plugin-checker": "^0.10.3",
     "vite-plugin-pwa": "^1.0.3",
     "vitest": "^3.2.4",
