@@ -5,7 +5,6 @@ export type TargetingBoxDimension = {
   height: number;
 };
 
-export interface TargetingBoxDimensionWithGroupId
-  extends TargetingBoxDimension {
+export interface TargetingBoxDimensionWithGroupId extends TargetingBoxDimension {
   groupId: string;
 }
