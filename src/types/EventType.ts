@@ -7,6 +7,7 @@ export const eventTypeArray = [
   'PF43',
   'IF6',
   'CWT70',
+  'CWT71',
 ] as const;
 
 export type EventType = (typeof eventTypeArray)[number];
