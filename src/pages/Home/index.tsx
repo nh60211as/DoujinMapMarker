@@ -86,7 +86,7 @@ export function Home(props: HomeProps): JSX.Element {
     }
   }, [imgRef.current]);
 
-  const FfImage = (): JSX.Element => {
+  const EventMapImage = (): JSX.Element => {
     return (
       <div
         style={{
@@ -147,7 +147,7 @@ export function Home(props: HomeProps): JSX.Element {
   return (
     <div className={style.container}>
       {TargetingBoxes()}
-      <FfImage />
+      <EventMapImage />
     </div>
   );
 }
