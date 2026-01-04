@@ -44,7 +44,7 @@ export function Home(props: HomeProps): JSX.Element {
     setTargetingBoxDimensionWithGroupIdList,
   ] = useState<Array<TargetingBoxDimensionWithGroupId>>([]);
 
-  // on active day change
+  // on active day or group data change
   useEffect(() => {
     setImgSrc(EVENT_CONFIG.map.getImageSrcByActiveDay(boothActiveDay));
     setActiveBoothDataOnMapList(
