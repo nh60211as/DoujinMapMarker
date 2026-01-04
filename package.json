@@ -16,7 +16,7 @@
     "format": "prettier --config prettier.config.js  \"{scripts,src,tests}/**/*.{ts,tsx,js,jsx,css,json}\" data/TagList.ts package.json prettier.config.js tsconfig.json vite.config.ts --write"
   },
   "dependencies": {
-    "preact": "^10.28.0",
+    "preact": "^10.28.1",
     "preact-iso": "^2.10.0",
     "preact-render-to-string": "^6.6.4",
     "react-debounce-input": "^3.3.0",
