@@ -13889,7 +13889,7 @@
   },
   {
     "groupId": "8e0ef48150ed44369388d0439a2dc9c7",
-    "groupName": "尼吉拍拍團",
+    "groupName": "尼吉拍拍團 (1)",
     "groupLink": null,
     "menuLink": null,
     "boothList": [
@@ -13905,7 +13905,16 @@
             "number": 34
           }
         ]
-      },
+      }
+    ],
+    "tagList": []
+  },
+  {
+    "groupId": "276bdc4637fd427bbbb94912150bd324",
+    "groupName": "尼吉拍拍團 (2)",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
       {
         "activeDay": "FF46_DAY_1",
         "boothNumberList": [
@@ -22111,19 +22120,6 @@
           {
             "row": "H",
             "number": 14
-          }
-        ]
-      },
-      {
-        "activeDay": "FF46_DAY_3",
-        "boothNumberList": [
-          {
-            "row": "I",
-            "number": 39
-          },
-          {
-            "row": "I",
-            "number": 40
           }
         ]
       }
