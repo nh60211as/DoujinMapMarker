@@ -101,6 +101,7 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
             <DebounceInput
               debounceTimeout={0}
               placeholder={'輸入攤位名稱'}
+              value={searchContent ?? ''}
               onChange={(event: any) => {
                 const trimmedValue: string = event.target.value.trim();
                 if (trimmedValue === '') {
