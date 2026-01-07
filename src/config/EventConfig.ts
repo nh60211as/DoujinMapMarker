@@ -1,6 +1,6 @@
 // NOTE: The implementation should be changed with each event
 import rawGroupData from '../../generated-data/FF46/group-data.json';
-import MAP from '../assets/maps/FF46社團攤位配置圖_s-1024x724.jpg';
+import MAP from '../assets/maps/FF46社團攤位配置圖.jpg';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { EventType } from '../types/EventType';
 import { ImageSize } from '../types/ImageSize';
