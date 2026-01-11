@@ -267,7 +267,7 @@
   {
     "groupId": "f4deac0b2e5d462d8f8e9a79859cb6bd",
     "groupName": "curry and rice(咖哩飯)",
-    "groupLink": null,
+    "groupLink": "https://x.com/curry_and_rice4",
     "menuLink": null,
     "boothList": [
       {
@@ -612,7 +612,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "鳴潮"
+    ]
   },
   {
     "groupId": "7b9640c00b344f72914bdaa77f92b952",
@@ -808,7 +810,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "妮姬"
+    ]
   },
   {
     "groupId": "8e4abea8cd104e42b2706aa0736004a0",
@@ -1256,6 +1260,7 @@
       }
     ],
     "tagList": [
+      "學園偶像大師",
       "超元氣3姊妹"
     ]
   },
@@ -1659,7 +1664,7 @@
   {
     "groupId": "535e7c4ae90a45158924da34e4dca82a",
     "groupName": "HIGH RISK REVOLUTION",
-    "groupLink": null,
+    "groupLink": "http://www.highriskrevolution.com",
     "menuLink": null,
     "boothList": [
       {
@@ -1800,8 +1805,8 @@
       }
     ],
     "tagList": [
-      "原神",
-      "絕區零"
+      "絕區零",
+      "原創"
     ]
   },
   {
@@ -2136,7 +2141,7 @@
   {
     "groupId": "7c6a57ba0a424cb6ab37253122087919",
     "groupName": "黑星白星BsWs",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/Reina.BsWs",
     "menuLink": null,
     "boothList": [
       {
@@ -2158,7 +2163,11 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "絕區零",
+      "VTuber",
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "5c0a5dbffcf145d2ae59cd66e932ee81",
@@ -2239,7 +2248,7 @@
   {
     "groupId": "bdd164379efc497c8873f0b4371f9ae8",
     "groupName": "箱庭交響曲",
-    "groupLink": "https://www.facebook.com/hknwsymphony/",
+    "groupLink": "https://www.facebook.com/hknwsymphony",
     "menuLink": null,
     "boothList": [
       {
@@ -2657,7 +2666,7 @@
       }
     ],
     "tagList": [
-      "原創"
+      "星穹鐵道"
     ]
   },
   {
@@ -3046,7 +3055,7 @@
   {
     "groupId": "9e7e54f5a44d4ff8b6a67f40577d7ecc",
     "groupName": "本本貓牽絲麻糬",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/minehonn",
     "menuLink": null,
     "boothList": [
       {
@@ -3063,7 +3072,11 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "星穹鐵道",
+      "絕區零",
+      "VTuber"
+    ]
   },
   {
     "groupId": "47a84b255c7847b18700dea19762b092",
@@ -3236,7 +3249,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "音樂"
+    ]
   },
   {
     "groupId": "fbaff933e2cf48609af89ed7a21c1938",
@@ -3279,7 +3294,7 @@
   {
     "groupId": "f93e3cdc3f914bef948a8fe8899f1edd",
     "groupName": "彩音 〜xi-on〜",
-    "groupLink": null,
+    "groupLink": "https://xion-music.com",
     "menuLink": null,
     "boothList": [
       {
@@ -3356,7 +3371,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "東方"
+    ]
   },
   {
     "groupId": "b9fec9e6d5124db89358da11b7ed0ea1",
@@ -3552,7 +3569,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "賽馬娘"
+    ]
   },
   {
     "groupId": "4bff69f9de434624bf6a0e0aaa400c44",
@@ -3788,7 +3807,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "東方"
+    ]
   },
   {
     "groupId": "5ff54970d2184dd1b0cf748828f3462b",
@@ -3943,7 +3964,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "艦隊收藏"
+    ]
   },
   {
     "groupId": "837417cb40d0448e801ee7e89a63ba5b",
@@ -3970,7 +3993,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案",
+      "艦隊收藏"
+    ]
   },
   {
     "groupId": "38bd86f87be4422b921a69acf92a7d9c",
@@ -4402,7 +4428,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創",
+      "世界計畫"
+    ]
   },
   {
     "groupId": "d7ca69b36fb243629c872285a64804a6",
@@ -5135,7 +5164,7 @@
   {
     "groupId": "e87030300b3b43a3a3ed356aac1930c2",
     "groupName": "Walkzun",
-    "groupLink": null,
+    "groupLink": "https://lit.link/zh-tw/walkzun",
     "menuLink": null,
     "boothList": [
       {
@@ -5185,9 +5214,7 @@
       }
     ],
     "tagList": [
-      "蔚藍檔案",
-      "孤獨搖滾",
-      "Girls Band Cry"
+      "原創"
     ]
   },
   {
@@ -5248,7 +5275,7 @@
   {
     "groupId": "dda0b263ada647bf9105997b87a8f63e",
     "groupName": "kuma-puro",
-    "groupLink": null,
+    "groupLink": "https://kuma-puro.sakura.ne.jp",
     "menuLink": null,
     "boothList": [
       {
@@ -5275,7 +5302,7 @@
   {
     "groupId": "9143750d28db4622b88ddb01d9c5c439",
     "groupName": "ハチゴ&ねこどーなつ",
-    "groupLink": null,
+    "groupLink": "https://x.com/ayamy_garubinu",
     "menuLink": null,
     "boothList": [
       {
@@ -5305,7 +5332,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "a0cad18f583041f6a9536e82cad293ab",
@@ -5656,9 +5685,7 @@
       }
     ],
     "tagList": [
-      "原創",
-      "VTuber",
-      "孤獨搖滾"
+      "鏈鋸人"
     ]
   },
   {
@@ -5686,7 +5713,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "868cc04ad6484ceba3461aca3515552d",
@@ -5871,7 +5900,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "ec75b831afcd444daad48454e2da5a3a",
@@ -6025,7 +6056,7 @@
   {
     "groupId": "d77e92005839404bbde4c6a7b13f927b",
     "groupName": "馬賽克 Mosaics",
-    "groupLink": null,
+    "groupLink": "https://x.com/ReonMosaics",
     "menuLink": null,
     "boothList": [
       {
@@ -6546,7 +6577,7 @@
   {
     "groupId": "1d431919062e47a8a1311ff0341e8cc6",
     "groupName": "伊登登得冷登",
-    "groupLink": null,
+    "groupLink": "https://lit.link/en/edenfox",
     "menuLink": null,
     "boothList": [
       {
@@ -7223,7 +7254,7 @@
   {
     "groupId": "503b3ba80c874baea587eec7f9be4fef",
     "groupName": "失去明天(あしたをなくす)",
-    "groupLink": null,
+    "groupLink": "https://lit.link/zh-tw/psy_soda",
     "menuLink": null,
     "boothList": [
       {
@@ -7246,8 +7277,7 @@
       }
     ],
     "tagList": [
-      "原創",
-      "蔚藍檔案"
+      "原創"
     ]
   },
   {
@@ -7448,7 +7478,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "889bd85166c945a498f04a18ee5986b3",
@@ -7503,7 +7535,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "8d844888f7be4e948dfb6c711bf7b2bb",
@@ -8036,7 +8070,7 @@
   {
     "groupId": "0e6a4329a47045d788a4dbb8890ba641",
     "groupName": "LunaBerry",
-    "groupLink": null,
+    "groupLink": "https://lit.link/zh-tw/nannanananaunau",
     "menuLink": null,
     "boothList": [
       {
@@ -8233,7 +8267,7 @@
   {
     "groupId": "88ed5f94d0074b93a6058e0926017025",
     "groupName": "雪白薄紗",
-    "groupLink": null,
+    "groupLink": "https://purelysilkvoice.com",
     "menuLink": null,
     "boothList": [
       {
@@ -8891,7 +8925,6 @@
     ],
     "tagList": [
       "VTuber",
-      "原創",
       "活俠傳"
     ]
   },
@@ -9114,7 +9147,7 @@
   {
     "groupId": "03b9c9aa4d2f4ad5b214e4986330c7cf",
     "groupName": "SI",
-    "groupLink": null,
+    "groupLink": "https://x.com/sdrl_sidereal",
     "menuLink": null,
     "boothList": [
       {
@@ -10155,7 +10188,7 @@
   {
     "groupId": "602a70c302874d60bd816e385259ac70",
     "groupName": "蝦子的腦內劇場",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/Lobsterdrawings",
     "menuLink": null,
     "boothList": [
       {
@@ -10185,7 +10218,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber",
+      "魔法少女的魔女審判"
+    ]
   },
   {
     "groupId": "28d0dcaabf62498d8c10edaae7fc80b6",
@@ -10279,7 +10315,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "e1a621c4f2c941eba4252652291bc513",
@@ -10404,7 +10442,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "387e114edc5c440baa4f650d0193d5b7",
@@ -10634,7 +10674,7 @@
   {
     "groupId": "31a58d31c11d41a0b6932c26e6d60332",
     "groupName": "紙皮盒paper @BOX",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/hkpoorguy",
     "menuLink": null,
     "boothList": [
       {
@@ -10669,7 +10709,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "3d85e992a6ed4b55b7d685f7658396e4",
@@ -10688,6 +10730,7 @@
       }
     ],
     "tagList": [
+      "VTuber",
       "Vocaloid",
       "世界計畫"
     ]
@@ -11459,7 +11502,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創",
+      "VTuber"
+    ]
   },
   {
     "groupId": "d4b868adb642436ca94cd913a02a3498",
@@ -11708,7 +11754,7 @@
       }
     ],
     "tagList": [
-      "原創"
+      "蔚藍檔案"
     ]
   },
   {
@@ -12001,8 +12047,8 @@
       }
     ],
     "tagList": [
-      "蔚藍檔案",
-      "原創"
+      "原創",
+      "蔚藍檔案"
     ]
   },
   {
@@ -12470,7 +12516,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "c3c7e667f5984280ab0fbc3df55e8169",
@@ -12839,7 +12887,7 @@
   {
     "groupId": "f3a4aa5e66164f4e877f96fdd53c6df3",
     "groupName": "奈櫻工坊",
-    "groupLink": "https://anenin.weebly.com/2516325622212053005927231.html",
+    "groupLink": "https://anenin.weebly.com",
     "menuLink": null,
     "boothList": [
       {
@@ -13752,7 +13800,8 @@
     ],
     "tagList": [
       "VTuber",
-      "蔚藍檔案"
+      "蔚藍檔案",
+      "東方"
     ]
   },
   {
@@ -13960,7 +14009,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "05116d27eca347459af0373fd4b23e19",
@@ -13982,7 +14033,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "c775586c49fe4b3b9087be8dfd57562f",
@@ -14027,7 +14080,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "a571b99d635e4b21a7e013e8893271b3",
@@ -14080,7 +14135,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "b7dc99fcbe40416c8f99397df3d1a0f6",
@@ -14275,7 +14332,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "0d21e38cb38d48868739ae092769869f",
@@ -14412,7 +14471,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "276bdc4637fd427bbbb94912150bd324",
@@ -14430,7 +14491,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "62f068d789ef4f11b76ea0e31fb08f0d",
@@ -14452,7 +14515,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "9229cfac038a4bc39d52706ead8751bb",
@@ -14470,7 +14535,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "d86d44e8c51542a68a3af33e533c0a92",
@@ -14497,7 +14564,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "30b1b00e83554e80b7a8a703a5bfcd69",
@@ -14519,7 +14588,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "29fcf037d7f74a69b8b4b2fee10b5521",
@@ -14598,7 +14669,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "a49503c97acc4769923d3aa15e52d16c",
@@ -14629,7 +14702,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "0cf77260a02d4e92ad2f52c59780c2ff",
@@ -14656,7 +14731,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "e022583fca214822ba3198daac17d130",
@@ -14734,7 +14811,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "265d460b72584228b3c7398e6360a785",
@@ -14761,7 +14840,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "8f1afe3baf484cfaa868e7e47acf2f77",
@@ -14907,7 +14988,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "c4feabe70cc64124b039b820a6833b81",
@@ -14966,7 +15049,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "4d794b1876d14daca4a9dd181384e37f",
@@ -15193,7 +15278,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "b6349a66e8274996a351152c0583fc60",
@@ -15220,7 +15307,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "d8774acbbd6b44ba8ab0b0493daebd70",
@@ -15324,7 +15413,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "23f2ca80bca34c48bc844e17c2a1688f",
@@ -15394,7 +15485,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "4fb1c7ee96d54416b76f2fea6f7cff37",
@@ -15422,9 +15515,7 @@
       }
     ],
     "tagList": [
-      "Cosplay",
-      "妮姬",
-      "原神"
+      "Cosplay"
     ]
   },
   {
@@ -15443,7 +15534,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "b9faf557480c45d8a686a9dc2ff6659d",
@@ -15478,7 +15571,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "d31f4fc0e5114eb0902621c6684d5091",
@@ -15525,7 +15620,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "c9d5f369af9c41fd8593e1eee3312b29",
@@ -15547,7 +15644,11 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay",
+      "碧藍幻想",
+      "妮姬"
+    ]
   },
   {
     "groupId": "cb10d54ca7294a049fdbc1b4f5432607",
@@ -15738,8 +15839,7 @@
       }
     ],
     "tagList": [
-      "Cosplay",
-      "蔚藍檔案"
+      "Cosplay"
     ]
   },
   {
@@ -15846,7 +15946,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "fd04aac50b9a45efad8171d56d8c7b08",
@@ -15914,7 +16016,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "d06f1e55cf96464680f29ba38622b8dd",
@@ -15945,7 +16049,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "d5f44cb90bda4dc2a03db6a36d231ce6",
@@ -16005,7 +16111,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "020aa72224404b13bf5a946db72f8575",
@@ -16064,12 +16172,14 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "d6bf45787802430ead66cfe8c5ff8c28",
     "groupName": "シスル Genesith",
-    "groupLink": null,
+    "groupLink": "https://x.com/Sithle011",
     "menuLink": null,
     "boothList": [
       {
@@ -16086,7 +16196,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "1ef01484aa214291bfd83e0e23c920b7",
@@ -16258,7 +16370,6 @@
     ],
     "tagList": [
       "MyGO!!!!!/Ave Mujica",
-      "GQuuuuuuX",
       "Girls Band Cry"
     ]
   },
@@ -16437,7 +16548,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "孤獨搖滾",
+      "VTuber"
+    ]
   },
   {
     "groupId": "c88f0ac2e8354fd0a2a2a36aceedb666",
@@ -16505,7 +16619,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "MyGO!!!!!/Ave Mujica"
+    ]
   },
   {
     "groupId": "c186678c9927432ba01b4e5cac628fde",
@@ -17784,7 +17900,7 @@
       }
     ],
     "tagList": [
-      "在地下城尋求邂逅是否搞錯了什麼"
+      "葬送的芙莉蓮"
     ]
   },
   {
@@ -18336,7 +18452,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "20cc79c7aa3947dca33e4a4c5cc44e74",
@@ -18437,7 +18555,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "2ecb70b4dee744faa1797fa78fea4356",
@@ -18627,7 +18747,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "8e9b4501a1564bb4baf730ca6f8b2b5a",
@@ -18810,7 +18932,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "20ed46eeaf0a4cafb6cf1594f42a4e3a",
@@ -18833,16 +18957,13 @@
       }
     ],
     "tagList": [
-      "Cosplay",
-      "星穹鐵道",
-      "絕區零",
-      "原神"
+      "Cosplay"
     ]
   },
   {
     "groupId": "c09ffc11d10a4c85af461eed7e296257",
     "groupName": "就是諾亞亞Noyaya",
-    "groupLink": null,
+    "groupLink": "https://www.twitch.tv/noyayaya520",
     "menuLink": null,
     "boothList": [
       {
@@ -18944,7 +19065,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "學園偶像大師",
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "1703c86389cb4851b7a8ae6980ebb593",
@@ -18993,7 +19117,8 @@
       }
     ],
     "tagList": [
-      "學園偶像大師"
+      "學園偶像大師",
+      "蔚藍檔案"
     ]
   },
   {
@@ -19226,13 +19351,15 @@
       }
     ],
     "tagList": [
-      "Cosplay"
+      "Cosplay",
+      "妮姬",
+      "原創"
     ]
   },
   {
     "groupId": "bd880401e4794a3c94b6e2aae6e20a98",
     "groupName": "TSA studio",
-    "groupLink": "https://www.tsastudio.com/",
+    "groupLink": "https://www.tsastudio.com",
     "menuLink": null,
     "boothList": [
       {
@@ -19299,7 +19426,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "6ba641fc360045dabd434f95023485ef",
@@ -19405,7 +19534,7 @@
   {
     "groupId": "952e68cf4d9e42cfa1c1bb0fb3896be0",
     "groupName": "Catity cosplay",
-    "groupLink": null,
+    "groupLink": "https://www.facebook.com/catachi77",
     "menuLink": null,
     "boothList": [
       {
