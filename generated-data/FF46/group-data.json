@@ -4746,7 +4746,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "a2398ddeda164b06b8295e8097bf7f87",
@@ -5159,7 +5161,7 @@
   },
   {
     "groupId": "05efa5c0ff8144f08f473bea903e47f2",
-    "groupName": "13",
+    "groupName": "013",
     "groupLink": "https://www.facebook.com/profile.php?id=61577018775369",
     "menuLink": null,
     "boothList": [
@@ -22894,6 +22896,19 @@
           {
             "row": "H",
             "number": 14
+          }
+        ]
+      },
+      {
+        "activeDay": "FF46_DAY_3",
+        "boothNumberList": [
+          {
+            "row": "G",
+            "number": 39
+          },
+          {
+            "row": "G",
+            "number": 40
           }
         ]
       }

@@ -174,7 +174,7 @@ BOOTH_ACTIVE_DAY,BOOTH_LIST,GROUP_NAME
 1,"G13,G14",超大玉米力
 1,"G15,G16",仙界大濕快樂攤
 1,G17,Walkzun
-1,G18,13
+1,G18,013
 1,"G19,G20",鳥籠事務所
 1,G21,白夜綺想曲
 1,G22,kuma-puro
@@ -863,7 +863,7 @@ BOOTH_ACTIVE_DAY,BOOTH_LIST,GROUP_NAME
 2,G14,JH科学
 2,"G15,G16",嘎唄唄
 2,"G17,G18",RongChuhan榮初涵
-2,G19,13
+2,G19,013
 2,G20,双子亭
 2,"G21,G22",TwinBox
 2,"G23,G24",ハチゴ&ねこどーなつ
@@ -1630,6 +1630,7 @@ BOOTH_ACTIVE_DAY,BOOTH_LIST,GROUP_NAME
 3,"G35,G36",MR.J.W
 3,G37,白夜綺想曲
 3,G38,雪歌草’Art
+3,"G39,G40",下空社
 3,"G41,G42",女巫之骰
 3,G43,獣人人外
 3,G44,fu富
