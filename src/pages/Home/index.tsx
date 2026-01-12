@@ -198,5 +198,5 @@ function getColorByMarker(marker: Marker): string {
 }
 
 function getOutlineEmByZoomInValue(zoomInValue: number): number {
-  return zoomInValue * 0.1;
+  return zoomInValue * 0.05;
 }
