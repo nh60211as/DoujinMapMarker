@@ -599,7 +599,7 @@
   {
     "groupId": "ffc2be02457045ccb40726304e4e8561",
     "groupName": "Cabbage 白菜滷",
-    "groupLink": null,
+    "groupLink": "https://portaly.cc/cabbage_ex",
     "menuLink": null,
     "boothList": [
       {
@@ -733,7 +733,7 @@
   {
     "groupId": "4f4e3a8de1d04122a82013c19ef8ee55",
     "groupName": "仿機誌MechaJin",
-    "groupLink": null,
+    "groupLink": "https://lit.link/zh-tw/mechajin",
     "menuLink": null,
     "boothList": [
       {
@@ -1896,8 +1896,8 @@
   {
     "groupId": "35210b8dac894b0e837b3aaad81a4dc4",
     "groupName": "草莓電波",
-    "groupLink": null,
-    "menuLink": null,
+    "groupLink": "https://www.facebook.com/Jamamastrawberry",
+    "menuLink": "https://www.facebook.com/Jamamastrawberry/posts/pfbid02Mhoq11BM1WVWnkwJU2p81UZa1RYhjLv5jN84P37HcM2D4Ks4duqm44NQc2wnxwZ4l",
     "boothList": [
       {
         "activeDay": "FF46_DAY_1",
@@ -1922,7 +1922,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "絕區零"
+    ]
   },
   {
     "groupId": "6be3627676cf4cf3ba2f5af27f0a269f",
