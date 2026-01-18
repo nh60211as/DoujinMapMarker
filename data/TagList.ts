@@ -62,6 +62,7 @@ export const TAG_LIST: Array<string> = [
   'Star vs. the Forces of Evil',
   'TENET天能',
   'The Owl House',
+  'TIGER×DRAGON！',
   'Unlight',
   'Valorant',
   'Vocaloid',
