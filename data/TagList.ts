@@ -53,6 +53,7 @@ export const TAG_LIST: Array<string> = [
   'PLAVE',
   'PSYCHO-PASS',
   'Poppy Playtime',
+  'Project KV',
   'Re:Zero',
   'SK8',
   'SPY×FAMILY',
