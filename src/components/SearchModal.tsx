@@ -9,8 +9,11 @@ import {
 } from '../services/GroupDataService';
 import * as mapRecordService from '../services/MapRecordService';
 import { boothActiveDayArray } from '../types/BoothActiveDay';
+import { BoothNumber } from '../types/BoothNumber';
 import { Filter } from '../types/Filter';
 import { GroupData } from '../types/GroupData';
+import { toBoothNumberOrNull } from '../utils/BoothNumberUtils';
+import { shallowEqual } from '../utils/TypeUtils';
 import { DropDownList } from './DropdownList';
 import style from './SearchModal.module.css';
 import { JSX } from 'preact';
@@ -65,16 +68,29 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
       actualSearchContent = searchContent;
     }
 
-    const searchResult: Array<GroupData> = searchByGroupNameAndRankBySimilarity(
+    const searchByBoothNumberResult: Array<GroupData> = searchByBoothNumber(
       filteredGroupDataList,
       actualSearchContent,
     );
 
+    const searchByGroupNameResult: Array<GroupData> =
+      searchByGroupNameAndRankBySimilarity(
+        filteredGroupDataList,
+        actualSearchContent,
+      );
+
+    const finalSearchResult: Array<GroupData> = searchByBoothNumberResult
+      .concat(searchByGroupNameResult)
+      .filter(
+        (obj, index, self) =>
+          index === self.findIndex((item) => item.groupId === obj.groupId),
+      );
+
     let searchResultFilteredByTag: Array<GroupData> = [];
     if (activeTagList.length === 0) {
-      searchResultFilteredByTag = searchResult;
+      searchResultFilteredByTag = finalSearchResult;
     } else {
-      searchResultFilteredByTag = searchResult.filter((e) =>
+      searchResultFilteredByTag = finalSearchResult.filter((e) =>
         e.tagList.some((tag) => activeTagList.includes(tag)),
       );
     }
@@ -100,7 +116,7 @@ const SearchModal = (props: SearchModalProps): JSX.Element => {
           <div class={style.searchContainer}>
             <DebounceInput
               debounceTimeout={0}
-              placeholder={'輸入攤位名稱'}
+              placeholder={'輸入攤位名稱或攤位編號'}
               value={searchContent ?? ''}
               onChange={(event: any) => {
                 const trimmedValue: string = event.target.value.trim();
@@ -260,6 +276,29 @@ function getCurrentGroupDataList(filter: Filter): Array<GroupData> {
         isGroupIdMarked(groupData.groupId),
       );
   }
+}
+
+function searchByBoothNumber(
+  groupDataList: Array<GroupData>,
+  searchContent: string,
+): Array<GroupData> {
+  const trimmedRawBoothNumber = searchContent.trim().toUpperCase();
+
+  const boothNumberOrNull: BoothNumber | null = toBoothNumberOrNull(
+    trimmedRawBoothNumber,
+  );
+
+  if (boothNumberOrNull === null) {
+    return [];
+  }
+
+  return groupDataList.filter((e) =>
+    e.boothList.some((booth) =>
+      booth.boothNumberList.some((boothNumber) =>
+        shallowEqual(boothNumber, boothNumberOrNull),
+      ),
+    ),
+  );
 }
 
 function searchByGroupNameAndRankBySimilarity(

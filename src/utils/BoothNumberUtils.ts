@@ -2,6 +2,21 @@ import { BoothNumber } from '../types/BoothNumber';
 import { TargetingBoxDimension } from '../types/TargetingBoxDimension';
 import { isBetween } from './NumberUtils';
 
+export function toBoothNumberOrNull(
+  rawBoothNumber: string,
+): BoothNumber | null {
+  if (rawBoothNumber.length !== 3) {
+    return null;
+  }
+
+  // Example: rawBoothNumber [A01] => row [A], num [01]
+  const row: string = rawBoothNumber.substring(0, 1);
+  const num: string = rawBoothNumber.substring(1, 3);
+
+  // TODO: use a more strict parsing strategy
+  return { row: row, number: parseInt(num, 10) } as BoothNumber;
+}
+
 export function boothNumberListToTargetingBoxDimension(
   boothNumberList: Array<BoothNumber>,
 ): TargetingBoxDimension {

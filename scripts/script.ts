@@ -2,6 +2,7 @@ import { Booth } from '../src/types/Booth';
 import { BoothActiveDay } from '../src/types/BoothActiveDay';
 import { BoothNumber } from '../src/types/BoothNumber';
 import { GroupData } from '../src/types/GroupData';
+import { toBoothNumberOrNull } from '../src/utils/BoothNumberUtils';
 import * as csv from 'csv-parser';
 import * as fs from 'fs';
 
@@ -125,16 +126,15 @@ function convertToBoothNumberList(boothListStr: string): Array<BoothNumber> {
   return boothListStr.split(',').map((rawBoothNumber: string) => {
     const trimmedRawBoothNumber = rawBoothNumber.trim();
 
-    if (trimmedRawBoothNumber.length !== 3) {
+    const boothNumberOrNull: BoothNumber | null = toBoothNumberOrNull(
+      trimmedRawBoothNumber,
+    );
+
+    if (boothNumberOrNull == null) {
       throw Error(`Invalid rawBoothNumber [${rawBoothNumber}].`);
     }
 
-    // Example: rawBoothNumber [A01] => row [A], num [01]
-    const row: string = trimmedRawBoothNumber.substring(0, 1);
-    const num: string = trimmedRawBoothNumber.substring(1, 3);
-
-    // TODO: use a more strict parsing strategy
-    return { row: row, number: parseInt(num, 10) } as BoothNumber;
+    return boothNumberOrNull;
   });
 }
 
