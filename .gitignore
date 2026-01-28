@@ -30,4 +30,6 @@ dist-ssr
 /gh-pages.pub
 .env
 /generate-data-script
+/sanitize-data-script
+unsanitized-group-data.json
 .~lock.*
