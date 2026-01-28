@@ -6,8 +6,8 @@
   "license": "BSD-3-Clause",
   "type": "module",
   "scripts": {
-    "gen-script": "tsc ./scripts/index.ts ./scripts/script.ts --outDir ./generated-script && cp ./scripts/package-for-script.json ./generated-script/package.json",
-    "gen-data": "node ./generated-script/scripts/index.js",
+    "generate-data-script": "tsc ./generate-data-script-src/index.ts ./generate-data-script-src/script.ts --outDir ./generate-data-script && cp ./generate-data-script-src/package-for-script.json ./generate-data-script/package.json",
+    "generate-data": "node ./generate-data-script/generate-data-script-src/index.js",
     "dev": "vite",
     "build": "vite build",
     "build:gh": "vite build",

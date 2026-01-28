@@ -29,5 +29,5 @@ dist-ssr
 /gh-pages
 /gh-pages.pub
 .env
-/generated-script
+/generate-data-script
 .~lock.*
