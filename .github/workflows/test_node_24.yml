@@ -28,9 +28,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm ci, build and test
+      - name: npm ci, build, sanitize and test
         continue-on-error: true # This step will only warn if it fails
         run: |
           npm ci
           npm run build:gh
+          npm run sanitize-data
           npm test

@@ -17,6 +17,13 @@ getUnsanitizedGroupDataList(CURRENT_GROUP_DATA)
       JSON.stringify(unsanitizedGroupDataList, null, 2), // 3rd argument is spacing level
       'utf-8',
     );
+
+    if (unsanitizedGroupDataList.length > 0) {
+      console.error("There is unsanitized group data. Run the command locally to see the result.");
+      return 1;
+    } else {
+      return 0;
+    }
   })
   .catch((e) => {
     console.error(e);
