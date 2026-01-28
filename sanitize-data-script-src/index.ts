@@ -7,7 +7,8 @@ import {
 import * as fs from 'fs';
 
 // The data should be validated in test (DO NOT use `as Array<GroupData>` in any other places)
-export const CURRENT_GROUP_DATA: Array<GroupData> = rawGroupData as Array<GroupData>;
+export const CURRENT_GROUP_DATA: Array<GroupData> =
+  rawGroupData as Array<GroupData>;
 
 getUnsanitizedGroupDataList(CURRENT_GROUP_DATA)
   .then((unsanitizedGroupDataList: Array<GroupDataWithSanitizationResult>) => {

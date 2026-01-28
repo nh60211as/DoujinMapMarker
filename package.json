@@ -8,14 +8,13 @@
   "scripts": {
     "generate-data-script": "tsc ./generate-data-script-src/index.ts ./generate-data-script-src/script.ts --outDir ./generate-data-script && cp ./generate-data-script-src/package-for-script.json ./generate-data-script/package.json",
     "generate-data": "node ./generate-data-script/generate-data-script-src/index.js",
-    "sanitize-data-script": "tsc --resolveJsonModule --esModuleInterop ./sanitize-data-script-src/index.ts ./sanitize-data-script-src/script.ts --outDir ./sanitize-data-script && cp ./sanitize-data-script-src/package-for-script.json ./sanitize-data-script/package.json",
-    "sanitize-data": "node ./sanitize-data-script/sanitize-data-script-src/index.js",
+    "sanitize-data": "node --import=tsx ./sanitize-data-script-src/index.ts",
     "dev": "vite",
     "build": "vite build",
     "build:gh": "vite build",
     "serve": "http-server ./build --port 8080",
     "test": "vitest ./tests --run --coverage",
-    "format": "prettier --config prettier.config.js  \"{generate-data-script-src,sanitize-url-script-src,src,tests}/**/*.{ts,tsx,js,jsx,css,json}\" data/TagList.ts package.json prettier.config.js tsconfig.json vite.config.ts --write"
+    "format": "prettier --config prettier.config.js  \"{generate-data-script-src,sanitize-data-script-src,src,tests}/**/*.{ts,tsx,js,jsx,css,json}\" data/TagList.ts package.json prettier.config.js tsconfig.json vite.config.ts --write"
   },
   "dependencies": {
     "preact": "^10.28.2",
@@ -26,6 +25,7 @@
     "string-similarity-js": "^2.1.4"
   },
   "devDependencies": {
+    "@backrunner/url-cleaner": "0.1.0",
     "@preact/preset-vite": "^2.10.2",
     "@types/node": "^22.19.1",
     "@vitest/coverage-v8": "^4.0.15",
@@ -33,11 +33,11 @@
     "csv-parser": "^3.2.0",
     "eslint": "^9.39.1",
     "eslint-config-preact": "^2.0.0",
-    "harden-urls": "^1.0.0",
     "http-server": "^14.1.1",
     "joi": "^18.0.1",
     "prettier": "^3.7.4",
     "prettier-plugin-sort-imports": "^1.8.8",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vite": "^7.2.6",
     "vite-plugin-checker": "^0.11.0",
