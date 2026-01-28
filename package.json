@@ -7,7 +7,9 @@
   "type": "module",
   "scripts": {
     "generate-data": "node --import=tsx ./generate-data-script-src/index.ts",
+    "gen-data": "npm run generate-data",
     "sanitize-data": "node --import=tsx ./sanitize-data-script-src/index.ts",
+    "san-data": "npm run sanitize-data",
     "dev": "vite",
     "build": "vite build",
     "build:gh": "vite build",

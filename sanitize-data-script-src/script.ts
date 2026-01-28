@@ -69,6 +69,15 @@ function getUrlCleaner(): URLCleaner {
     handleRedirects: true, // Enable automatic redirection for known URL shorteners
     redirectTimeout: 3000, // Optional: Set timeout for redirect requests (default: 5000ms)
     useDefaultLists: true, // Use built-in filter lists
+    filterLists: [
+      {
+        name: 'additional-tracking-params',
+        raw: `
+      # Facebook related
+      *$removeparam=rdid
+    `,
+      },
+    ],
   });
 }
 
