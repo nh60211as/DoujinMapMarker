@@ -3,7 +3,7 @@ import { BoothActiveDay } from '../src/types/BoothActiveDay';
 import { BoothNumber } from '../src/types/BoothNumber';
 import { GroupData } from '../src/types/GroupData';
 import { toBoothNumberOrNull } from '../src/utils/BoothNumberUtils';
-import * as csv from 'csv-parser';
+import csvParser from 'csv-parser';
 import * as fs from 'fs';
 
 export async function csvToGroupDataList(
@@ -28,7 +28,7 @@ function csvToGroupDataListWithoutBoothList(
 
     fs.createReadStream(groupListFilePath)
       .pipe(
-        csv({
+        csvParser({
           // FIXME: when using headers property, the header itself will be used in row data
           // headers: ["GROUP_ID", "GROUP_NAME", "GROUP_LINK", "MENU_LINK", "TAG_LIST"],
           separator: ',',
@@ -63,7 +63,7 @@ function fillGroupDataBoothListByCsv(
 
     fs.createReadStream(boothListFilePath)
       .pipe(
-        csv({
+        csvParser({
           // headers: ["BOOTH_ACTIVE_DAY", "BOOTH_LIST", "GROUP_NAME"],
           separator: ',',
           quote: '"',

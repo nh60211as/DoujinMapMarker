@@ -29,6 +29,5 @@ dist-ssr
 /gh-pages
 /gh-pages.pub
 .env
-/generate-data-script
 unsanitized-group-data.json
 .~lock.*
