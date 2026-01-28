@@ -19,12 +19,15 @@ getUnsanitizedGroupDataList(CURRENT_GROUP_DATA)
     );
 
     if (unsanitizedGroupDataList.length > 0) {
-      console.error("There is unsanitized group data. Run the command locally to see the result.");
-      return 1;
+      console.error(
+        'There is unsanitized group data. Run the command locally to see the result.',
+      );
+      process.exitCode = 1;
     } else {
-      return 0;
+      process.exitCode = 0;
     }
   })
   .catch((e) => {
     console.error(e);
+    process.exitCode = 1;
   });
