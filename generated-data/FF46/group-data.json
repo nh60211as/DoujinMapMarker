@@ -9502,8 +9502,8 @@
   {
     "groupId": "e49fcfb2c0fa4e6d87dc4523446e42a6",
     "groupName": "布來沒Bremen",
-    "groupLink": null,
-    "menuLink": null,
+    "groupLink": "https://x.com/bremen_today",
+    "menuLink": "https://x.com/bremen_today/status/2019019169484918877",
     "boothList": [
       {
         "activeDay": "FF46_DAY_1",
@@ -9524,7 +9524,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "7d4c7c9be9184e6e8152847ba9abc275",
@@ -32413,8 +32415,8 @@
   {
     "groupId": "c98c847d59b2494095614a0881eca908",
     "groupName": "XI˙Ɐ",
-    "groupLink": null,
-    "menuLink": null,
+    "groupLink": "https://x.com/Asasin_9",
+    "menuLink": "https://x.com/Asasin_9/status/2019016281333375090",
     "boothList": [
       {
         "activeDay": "FF46_DAY_3",
@@ -32426,7 +32428,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "aa99adbcbefa4c709dceb6460179d591",
