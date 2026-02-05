@@ -307,6 +307,7 @@ export const TAG_LIST: Array<string> = [
   'Darkest Dungeon',
   'Team Fortress 2',
   '光速蒙面俠21',
+  '第七王子',
   '來自深淵',
   'Cosplay',
   'VTuber',
