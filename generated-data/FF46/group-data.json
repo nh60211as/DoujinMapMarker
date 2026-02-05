@@ -1736,8 +1736,8 @@
   {
     "groupId": "c381bcecd5724aa6b85d8ebff4122dbd",
     "groupName": "いちごうららか",
-    "groupLink": null,
-    "menuLink": null,
+    "groupLink": "https://x.com/erisize",
+    "menuLink": "https://x.com/erisize/status/2019374462572040194",
     "boothList": [
       {
         "activeDay": "FF46_DAY_1",
@@ -1758,7 +1758,11 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber",
+      "絕區零",
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "1a7a3ba145404d8f9e80b222eb0eb8a5",
@@ -17115,7 +17119,7 @@
     "groupId": "5eebcc7bec6a4cebb834aa95e199e40a",
     "groupName": "貞尼鹹粥",
     "groupLink": "https://linktr.ee/JennieCongee",
-    "menuLink": null,
+    "menuLink": "https://www.plurk.com/p/3iaeal8n70",
     "boothList": [
       {
         "activeDay": "FF46_DAY_1",
@@ -17144,7 +17148,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "學園偶像大師"
+    ]
   },
   {
     "groupId": "b0bef6810c04441c8dfd6053dcec74e6",
@@ -22926,7 +22932,7 @@
     "groupId": "cd9087acdea44b41ac79013563018d58",
     "groupName": "JH科学",
     "groupLink": "https://x.com/JohnHathway",
-    "menuLink": null,
+    "menuLink": "https://x.com/JohnHathway/status/2019373905862095159",
     "boothList": [
       {
         "activeDay": "FF46_DAY_2",
@@ -22947,7 +22953,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "3c4774433d3e47709a1e49aa475e3d77",
