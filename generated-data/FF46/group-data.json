@@ -25709,8 +25709,8 @@
   {
     "groupId": "2c8dd68bc3674b4fb0123922fa046d36",
     "groupName": "Blue monday藍色星期一",
-    "groupLink": null,
-    "menuLink": null,
+    "groupLink": "https://x.com/bluemondayhk",
+    "menuLink": "https://x.com/bluemondayhk/status/2019747679157289117",
     "boothList": [
       {
         "activeDay": "FF46_DAY_2",
@@ -25731,7 +25731,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "0b33389961694349bb73734e7ca12b8d",
@@ -27210,7 +27212,7 @@
     "groupId": "3d60958704194ddf8e822a625de57930",
     "groupName": "Tempest",
     "groupLink": "https://www.plurk.com/Tempestylo",
-    "menuLink": "https://www.plurk.com/p/3i5qwp73af",
+    "menuLink": "https://www.plurk.com/p/3i9tqy73ds",
     "boothList": [
       {
         "activeDay": "FF46_DAY_2",
@@ -29829,7 +29831,7 @@
     "groupId": "f448cd41efa847bbbed60951b90c3052",
     "groupName": "詠桜堂",
     "groupLink": "https://www.facebook.com/cherryblossomfactory",
-    "menuLink": null,
+    "menuLink": "https://www.facebook.com/cherryblossomfactory/posts/pfbid02u7LWipsa9xzPr92r9aXQGgxvmcVjEDbrTXLsujgLg5hQZ3TFzC3x2TLHESvtTiG5l",
     "boothList": [
       {
         "activeDay": "FF46_DAY_2",
@@ -29855,10 +29857,9 @@
       }
     ],
     "tagList": [
-      "MyGO!!!!!/Ave Mujica",
-      "Girls Band Cry",
-      "VTuber",
-      "少女☆歌劇"
+      "魔法少女的魔女審判",
+      "少女☆歌劇",
+      "MyGO!!!!!/Ave Mujica"
     ]
   },
   {
@@ -30075,7 +30076,7 @@
     "groupId": "d704f6188fbe4f10b90e5db7a0f89c7c",
     "groupName": "紡星社",
     "groupLink": "https://www.facebook.com/profile.php?id=61573677164059",
-    "menuLink": null,
+    "menuLink": "https://www.facebook.com/permalink.php?story_fbid=pfbid0vJgnGk2d6rnVcDwcVUAutV2cTE8LcJF9VUhZvoaZXaTXmKHEtfhGYjwhmHnTQjZXl&id=61573677164059",
     "boothList": [
       {
         "activeDay": "FF46_DAY_2",
@@ -30101,7 +30102,9 @@
       }
     ],
     "tagList": [
-      "MyGO!!!!!/Ave Mujica"
+      "MyGO!!!!!/Ave Mujica",
+      "VTuber",
+      "星塔旅人"
     ]
   },
   {
@@ -30501,7 +30504,7 @@
     "groupId": "1ddfcf8e71324e71bd92c19aaeb0cbab",
     "groupName": "星夜蝶影",
     "groupLink": "https://lit.link/en/SeisakuYui13P",
-    "menuLink": "https://x.com/13PYui/status/2017580781661786610",
+    "menuLink": "https://x.com/13PYui/status/2019734205555700141",
     "boothList": [
       {
         "activeDay": "FF46_DAY_2",
@@ -30887,7 +30890,7 @@
     "groupId": "c11ef5e619e24ca2aa57b215cf3d6a21",
     "groupName": "MinuetWorks",
     "groupLink": "https://solo.to/travis_minuet",
-    "menuLink": "https://www.plurk.com/p/3i9unfvf8l",
+    "menuLink": "https://www.plurk.com/p/3iajqz0ipx",
     "boothList": [
       {
         "activeDay": "FF46_DAY_2",
@@ -31248,8 +31251,8 @@
   {
     "groupId": "12bfe9f929654cb88dd5f7e7413e5f8c",
     "groupName": "みゆる〜む伊月的空間",
-    "groupLink": null,
-    "menuLink": null,
+    "groupLink": "https://www.plurk.com/bluetwintail",
+    "menuLink": "https://www.plurk.com/p/3iajl1ifzy",
     "boothList": [
       {
         "activeDay": "FF46_DAY_2",
@@ -35861,8 +35864,8 @@
   {
     "groupId": "db301c6bd9414556afaab182aa8675f7",
     "groupName": "URA BOU",
-    "groupLink": "https://www.doujin.com.tw/authors/info/bockdog",
-    "menuLink": null,
+    "groupLink": "https://x.com/mzenura",
+    "menuLink": "https://x.com/mzenura/status/2018895423419945428",
     "boothList": [
       {
         "activeDay": "FF46_DAY_3",
@@ -35875,7 +35878,6 @@
       }
     ],
     "tagList": [
-      "Vocaloid",
       "世界計畫"
     ]
   },
