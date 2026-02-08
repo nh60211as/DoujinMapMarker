@@ -75,6 +75,9 @@ function getUrlCleaner(): URLCleaner {
         raw: `
       # Facebook related
       *$removeparam=rdid
+
+      # Instagram relate
+      *$removeparam=igshid
     `,
       },
     ],

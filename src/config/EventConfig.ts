@@ -44,11 +44,9 @@ export const EVENT_CONFIG: EventConfigInterface = {
     stringToBoothActiveDay: (boothActiveDayStr: string): BoothActiveDay => {
       switch (boothActiveDayStr) {
         case '1':
-          return 'FF46_DAY_1';
+          return 'CWT72_DAY_1';
         case '2':
-          return 'FF46_DAY_2';
-        case '3':
-          return 'FF46_DAY_3';
+          return 'CWT72_DAY_2';
         default:
           throw Error(`Unexpected boothActiveDayStr [${boothActiveDayStr}].`);
       }
@@ -57,26 +55,20 @@ export const EVENT_CONFIG: EventConfigInterface = {
   header: {
     BOOTH_ACTIVE_DAY_OPTION_LIST: [
       {
-        boothActiveDay: 'FF46_DAY_1',
-        displayText: '02/06 (五)',
+        boothActiveDay: 'CWT72_DAY_1',
+        displayText: '02/06 (六)',
       },
       {
-        boothActiveDay: 'FF46_DAY_2',
-        displayText: '02/07 (六)',
-      },
-      {
-        boothActiveDay: 'FF46_DAY_3',
-        displayText: '02/08 (日)',
+        boothActiveDay: 'CWT72_DAY_2',
+        displayText: '02/07 (日)',
       },
     ],
     getSourceLink: (activeDay: BoothActiveDay): string => {
       switch (activeDay) {
-        case 'FF46_DAY_1':
+        case 'CWT72_DAY_1':
           return 'https://www.f-2.com.tw/%e3%80%90ff46%e3%80%91%e7%ac%ac%e4%b8%80%e5%a4%a9%e6%94%a4%e4%bd%8d%e7%b7%a8%e8%99%9f/';
-        case 'FF46_DAY_2':
+        case 'CWT72_DAY_2':
           return 'https://www.f-2.com.tw/%e3%80%90ff46%e3%80%91%e7%ac%ac%e4%ba%8c%e5%a4%a9%e6%94%a4%e4%bd%8d%e7%b7%a8%e8%99%9f/';
-        case 'FF46_DAY_3':
-          return 'https://www.f-2.com.tw/%e3%80%90ff46%e3%80%91%e7%ac%ac%e4%b8%89%e5%a4%a9%e6%94%a4%e4%bd%8d%e7%b7%a8%e8%99%9f/';
       }
     },
   },
@@ -84,11 +76,9 @@ export const EVENT_CONFIG: EventConfigInterface = {
     DEFAULT_MAP_IMAGE_SIZE: { width: 1024, height: 724 },
     getImageSrcByActiveDay: (activeDay: BoothActiveDay): string => {
       switch (activeDay) {
-        case 'FF46_DAY_1':
+        case 'CWT72_DAY_1':
           return MAP;
-        case 'FF46_DAY_2':
-          return MAP;
-        case 'FF46_DAY_3':
+        case 'CWT72_DAY_2':
           return MAP;
       }
     },
@@ -96,16 +86,12 @@ export const EVENT_CONFIG: EventConfigInterface = {
   booth: {
     BOOTH_ACTIVE_DAY_DISPLAY_INFO_LIST: [
       {
-        boothActiveDay: 'FF46_DAY_1',
-        singleDayBoothInfoPrefixText: '02/06 (五) 攤位：',
+        boothActiveDay: 'CWT72_DAY_1',
+        singleDayBoothInfoPrefixText: '02/21 (六) 攤位：',
       },
       {
-        boothActiveDay: 'FF46_DAY_2',
-        singleDayBoothInfoPrefixText: '02/07 (六) 攤位：',
-      },
-      {
-        boothActiveDay: 'FF46_DAY_3',
-        singleDayBoothInfoPrefixText: '02/08 (日) 攤位：',
+        boothActiveDay: 'CWT72_DAY_2',
+        singleDayBoothInfoPrefixText: '02/22 (日) 攤位：',
       },
     ],
   },
