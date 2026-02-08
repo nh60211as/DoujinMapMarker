@@ -20,7 +20,7 @@ export async function csvToGroupDataList(
   return groupDataList;
 }
 
-function csvToGroupDataListWithoutBoothList(
+export async function csvToGroupDataListWithoutBoothList(
   groupListFilePath: string,
 ): Promise<Array<GroupData>> {
   return new Promise((resolve, reject) => {
@@ -112,11 +112,9 @@ function convertToTagList(tagListStr: string): Array<string> {
 function convertToBoothActiveDay(boothActiveDayStr: string): BoothActiveDay {
   switch (boothActiveDayStr) {
     case '1':
-      return 'FF46_DAY_1';
+      return 'CWT72_DAY_1';
     case '2':
-      return 'FF46_DAY_2';
-    case '3':
-      return 'FF46_DAY_3';
+      return 'CWT72_DAY_2';
     default:
       throw Error(`Unexpected boothActiveDayStr [${boothActiveDayStr}].`);
   }
