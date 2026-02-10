@@ -1,5 +1,5 @@
 // NOTE: The implementation should be changed with each event
-import rawGroupData from '../../generated-data/FF46/group-data.json';
+import rawGroupData from '../../generated-data/CWT72/group-data.json';
 import MAP from '../assets/maps/FF46社團攤位配置圖.jpg';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { EventType } from '../types/EventType';
@@ -56,11 +56,11 @@ export const EVENT_CONFIG: EventConfigInterface = {
     BOOTH_ACTIVE_DAY_OPTION_LIST: [
       {
         boothActiveDay: 'CWT72_DAY_1',
-        displayText: '02/06 (六)',
+        displayText: '02/21 (六)',
       },
       {
         boothActiveDay: 'CWT72_DAY_2',
-        displayText: '02/07 (日)',
+        displayText: '02/22 (日)',
       },
     ],
     getSourceLink: (activeDay: BoothActiveDay): string => {
