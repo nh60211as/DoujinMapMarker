@@ -1,12 +1,16 @@
 import { EventType } from '../src/types/EventType';
 import { GroupData } from '../src/types/GroupData';
-import { csvToGroupDataListWithoutBoothList } from './script';
+import { csvToGroupDataList } from './script';
 import * as fs from 'fs';
 
 // NOTE: The implementation should be changed with each event
 const eventType: EventType = 'CWT72';
 
-csvToGroupDataListWithoutBoothList(`./data/${eventType}/group-list.csv`)
+csvToGroupDataList(
+  `./data/${eventType}/group-list.csv`,
+  `./data/${eventType}/booth-list.csv`,
+  false,
+)
   .then((groupDataList: Array<GroupData>) => {
     fs.writeFileSync(
       `./generated-data/${eventType}/group-data.json`,
