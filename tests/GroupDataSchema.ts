@@ -90,7 +90,7 @@ const BoothNumberSchema = Joi.object<BoothNumber, true>({
 // Joi schema for Booth (BoothActiveDay and BoothNumber array)
 const BoothSchema = Joi.object<Booth, true>({
   activeDay: BoothActiveDaySchema,
-  boothNumberList: Joi.array().items(BoothNumberSchema).required(),
+  boothNumberList: Joi.array().items(BoothNumberSchema).min(1).required(),
 }).required();
 
 // Joi schema for GroupData (including boothList)
@@ -99,7 +99,7 @@ const GroupDataSchema = Joi.object<GroupData, true>({
   groupName: Joi.string().required(),
   groupLink: Joi.string().allow(null),
   menuLink: Joi.string().allow(null),
-  boothList: Joi.array().items(BoothSchema).required(),
+  boothList: Joi.array().items(BoothSchema).min(1).required(),
   tagList: Joi.array().items(Joi.string()).required(),
 });
 
