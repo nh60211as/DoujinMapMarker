@@ -9,6 +9,7 @@ import * as fs from 'fs';
 export async function csvToGroupDataList(
   groupListFilePath: string,
   boothListFilePath: string,
+  shouldValidateBoothNumber: boolean,
 ): Promise<Array<GroupData>> {
   const groupDataListWithoutBoothList: Array<GroupData> =
     await csvToGroupDataListWithoutBoothList(groupListFilePath);
@@ -16,11 +17,12 @@ export async function csvToGroupDataList(
   const groupDataList: Array<GroupData> = await fillGroupDataBoothListByCsv(
     groupDataListWithoutBoothList,
     boothListFilePath,
+    shouldValidateBoothNumber,
   );
   return groupDataList;
 }
 
-function csvToGroupDataListWithoutBoothList(
+export async function csvToGroupDataListWithoutBoothList(
   groupListFilePath: string,
 ): Promise<Array<GroupData>> {
   return new Promise((resolve, reject) => {
@@ -57,6 +59,7 @@ function csvToGroupDataListWithoutBoothList(
 function fillGroupDataBoothListByCsv(
   groupDataListWithoutBoothList: Array<GroupData>,
   boothListFilePath: string,
+  shouldValidateBoothNumber: boolean,
 ): Promise<Array<GroupData>> {
   return new Promise((resolve, reject) => {
     let result: GroupData[] = groupDataListWithoutBoothList;
@@ -73,7 +76,11 @@ function fillGroupDataBoothListByCsv(
         result = addBoothToGroupDataByGroupId(
           result,
           anyToTrimmedString(row.GROUP_NAME),
-          convertToBooth(row.BOOTH_ACTIVE_DAY, row.BOOTH_LIST),
+          convertToBooth(
+            row.BOOTH_ACTIVE_DAY,
+            row.BOOTH_LIST,
+            shouldValidateBoothNumber,
+          ),
         );
       })
       .on('end', () => {
@@ -88,10 +95,14 @@ function fillGroupDataBoothListByCsv(
 function convertToBooth(
   boothActiveDayStr: string,
   boothListStr: string,
+  shouldValidateBoothNumber: boolean,
 ): Booth {
   return {
     activeDay: convertToBoothActiveDay(boothActiveDayStr),
-    boothNumberList: convertToBoothNumberList(boothListStr),
+    boothNumberList: convertToBoothNumberList(
+      boothListStr,
+      shouldValidateBoothNumber,
+    ),
   };
 }
 
@@ -112,30 +123,37 @@ function convertToTagList(tagListStr: string): Array<string> {
 function convertToBoothActiveDay(boothActiveDayStr: string): BoothActiveDay {
   switch (boothActiveDayStr) {
     case '1':
-      return 'FF46_DAY_1';
+      return 'CWT72_DAY_1';
     case '2':
-      return 'FF46_DAY_2';
-    case '3':
-      return 'FF46_DAY_3';
+      return 'CWT72_DAY_2';
     default:
       throw Error(`Unexpected boothActiveDayStr [${boothActiveDayStr}].`);
   }
 }
 
-function convertToBoothNumberList(boothListStr: string): Array<BoothNumber> {
-  return boothListStr.split(',').map((rawBoothNumber: string) => {
-    const trimmedRawBoothNumber = rawBoothNumber.trim();
+function convertToBoothNumberList(
+  boothListStr: string,
+  shouldValidateBoothNumber: boolean,
+): Array<BoothNumber> {
+  if (shouldValidateBoothNumber === true) {
+    return boothListStr.split(',').map((rawBoothNumber: string) => {
+      const trimmedRawBoothNumber = rawBoothNumber.trim();
 
-    const boothNumberOrNull: BoothNumber | null = toBoothNumberOrNull(
-      trimmedRawBoothNumber,
-    );
+      const boothNumberOrNull: BoothNumber | null = toBoothNumberOrNull(
+        trimmedRawBoothNumber,
+      );
 
-    if (boothNumberOrNull == null) {
-      throw Error(`Invalid rawBoothNumber [${rawBoothNumber}].`);
-    }
+      if (boothNumberOrNull == null) {
+        throw Error(`Invalid rawBoothNumber [${rawBoothNumber}].`);
+      }
 
-    return boothNumberOrNull;
-  });
+      return boothNumberOrNull;
+    });
+  } else {
+    return boothListStr.split(',').map((rawBoothNumber: string) => {
+      return { row: rawBoothNumber, number: 1 } as BoothNumber;
+    });
+  }
 }
 
 function addBoothToGroupDataByGroupId(

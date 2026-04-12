@@ -8,6 +8,7 @@ export const eventTypeArray = [
   'IF6',
   'CWT70',
   'CWT71',
+  'CWT72',
   'CWTxACCF',
 ] as const;
 

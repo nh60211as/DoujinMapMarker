@@ -4,11 +4,12 @@ import { csvToGroupDataList } from './script';
 import * as fs from 'fs';
 
 // NOTE: The implementation should be changed with each event
-const eventType: EventType = 'FF46';
+const eventType: EventType = 'CWT72';
 
 csvToGroupDataList(
   `./data/${eventType}/group-list.csv`,
   `./data/${eventType}/booth-list.csv`,
+  false,
 )
   .then((groupDataList: Array<GroupData>) => {
     fs.writeFileSync(

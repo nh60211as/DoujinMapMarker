@@ -1,4 +1,4 @@
-import rawGroupData from '../generated-data/FF46/group-data.json';
+import rawGroupData from '../generated-data/CWT72/group-data.json';
 import { GroupData } from '../src/types/GroupData';
 import {
   getUnsanitizedGroupDataList,
