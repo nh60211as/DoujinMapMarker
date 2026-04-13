@@ -12,65 +12,21 @@ const BoothActiveDaySchema = Joi.string()
 // Joi schema for BoothNumber (with row-specific range validation)
 const BoothNumberSchema = Joi.object<BoothNumber, true>({
   row: Joi.string()
-    .valid(
-      'A',
-      'B',
-      'C',
-      'D',
-      'E',
-      'F',
-      'G',
-      'H',
-      'I',
-      'J',
-      'K',
-      'L',
-      'M',
-      'N',
-      'O',
-      'P',
-      'Q',
-      'R',
-      'S',
-      'T',
-      'U',
-      'V',
-      'W',
-    )
+    .valid('A', 'B', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'W')
     .required(),
   number: Joi.number()
     .custom((value, helpers) => {
       if (
-        isBetween(value, 1, 22) &&
-        ['A'].includes(helpers.state.ancestors[0].row)
+        isBetween(value, 1, 44) &&
+        ['A', 'B', 'C'].includes(helpers.state.ancestors[0].row)
       ) {
         return value;
       }
       if (
-        isBetween(value, 1, 44) &&
-        [
-          'B',
-          'C',
-          'D',
-          'E',
-          'F',
-          'G',
-          'H',
-          'I',
-          'J',
-          'K',
-          'L',
-          'M',
-          'N',
-          'O',
-          'P',
-          'Q',
-          'R',
-          'S',
-          'T',
-          'U',
-          'V',
-        ].includes(helpers.state.ancestors[0].row)
+        isBetween(value, 1, 48) &&
+        ['L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S'].includes(
+          helpers.state.ancestors[0].row,
+        )
       ) {
         return value;
       }

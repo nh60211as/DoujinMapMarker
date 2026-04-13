@@ -68,110 +68,91 @@ function boothNumberListGreaterThan2ToTargetingBoxDimension(
 function boothNumberToTargetingBoxDimension(
   boothNumber: BoothNumber,
 ): TargetingBoxDimension {
-  const A_TO_M_STARTING_Y_AXIS = 574;
-  const N_TO_V_STARTING_Y_AXIS = 338;
-  const A_TO_V_BOOTH_X_SIZE = 12;
-  const A_TO_V_BOOTH_Y_SIZE = 7.772727272727273;
+  const A_TO_C_STARTING_Y_AXIS = 3807;
+  const L_TO_S_STARTING_Y_AXIS = 2224;
+  const A_TO_S_BOOTH_X_SIZE = 79;
+  const A_TO_S_BOOTH_Y_SIZE = 51.04166666666667;
 
-  const W_Y_AXIS = 116;
-  const W_BOOTH_X_SIZE = 7.8;
-  const W_BOOTH_Y_SIZE = 12;
+  const W_Y_AXIS = 767;
+  const W_BOOTH_X_SIZE = 51.16666666666667;
+  const W_BOOTH_Y_SIZE = 79;
 
   switch (boothNumber.row) {
     case 'A':
-      return {
-        x: get_A_to_V_starting_X(boothNumber.row),
-        y:
-          A_TO_M_STARTING_Y_AXIS -
-          (boothNumber.number - 1) * A_TO_V_BOOTH_Y_SIZE,
-        width: A_TO_V_BOOTH_X_SIZE,
-        height: A_TO_V_BOOTH_Y_SIZE,
-      };
     case 'B':
     case 'C':
-    case 'D':
-    case 'E':
-    case 'F':
-    case 'G':
-    case 'H':
-    case 'I':
-    case 'J':
-    case 'K':
-    case 'L':
-    case 'M':
       if (isBetween(boothNumber.number, 1, 22)) {
         return {
-          x: get_A_to_V_starting_X(boothNumber.row),
+          x: get_A_to_S_starting_X(boothNumber.row),
           y:
-            A_TO_M_STARTING_Y_AXIS -
-            (boothNumber.number - 1) * A_TO_V_BOOTH_Y_SIZE,
-          width: A_TO_V_BOOTH_X_SIZE,
-          height: A_TO_V_BOOTH_Y_SIZE,
+            A_TO_C_STARTING_Y_AXIS -
+            (boothNumber.number - 1) * A_TO_S_BOOTH_Y_SIZE,
+          width: A_TO_S_BOOTH_X_SIZE,
+          height: A_TO_S_BOOTH_Y_SIZE,
         };
       } else {
         return {
-          x: get_A_to_V_starting_X(boothNumber.row) - A_TO_V_BOOTH_X_SIZE,
+          x: get_A_to_S_starting_X(boothNumber.row) - A_TO_S_BOOTH_X_SIZE,
           y:
-            A_TO_M_STARTING_Y_AXIS -
-            (44 - boothNumber.number) * A_TO_V_BOOTH_Y_SIZE,
-          width: A_TO_V_BOOTH_X_SIZE,
-          height: A_TO_V_BOOTH_Y_SIZE,
+            A_TO_C_STARTING_Y_AXIS -
+            (44 - boothNumber.number) * A_TO_S_BOOTH_Y_SIZE,
+          width: A_TO_S_BOOTH_X_SIZE,
+          height: A_TO_S_BOOTH_Y_SIZE,
         };
       }
+    case 'L':
+    case 'M':
     case 'N':
     case 'O':
     case 'P':
     case 'Q':
     case 'R':
     case 'S':
-    case 'T':
-    case 'U':
-    case 'V':
-      if (isBetween(boothNumber.number, 1, 22)) {
+      if (isBetween(boothNumber.number, 1, 24)) {
         return {
-          x: get_A_to_V_starting_X(boothNumber.row),
+          x: get_A_to_S_starting_X(boothNumber.row),
           y:
-            N_TO_V_STARTING_Y_AXIS -
-            (boothNumber.number - 1) * A_TO_V_BOOTH_Y_SIZE,
-          width: A_TO_V_BOOTH_X_SIZE,
-          height: A_TO_V_BOOTH_Y_SIZE,
+            L_TO_S_STARTING_Y_AXIS -
+            (boothNumber.number - 1) * A_TO_S_BOOTH_Y_SIZE,
+          width: A_TO_S_BOOTH_X_SIZE,
+          height: A_TO_S_BOOTH_Y_SIZE,
         };
       } else {
         return {
-          x: get_A_to_V_starting_X(boothNumber.row) - A_TO_V_BOOTH_X_SIZE,
+          x: get_A_to_S_starting_X(boothNumber.row) - A_TO_S_BOOTH_X_SIZE,
           y:
-            N_TO_V_STARTING_Y_AXIS -
-            (44 - boothNumber.number) * A_TO_V_BOOTH_Y_SIZE,
-          width: A_TO_V_BOOTH_X_SIZE,
-          height: A_TO_V_BOOTH_Y_SIZE,
+            L_TO_S_STARTING_Y_AXIS -
+            (48 - boothNumber.number) * A_TO_S_BOOTH_Y_SIZE,
+          width: A_TO_S_BOOTH_X_SIZE,
+          height: A_TO_S_BOOTH_Y_SIZE,
         };
       }
 
     case 'W':
       if (isBetween(boothNumber.number, 1, 6)) {
         return {
-          x: 846 - (boothNumber.number - 1) * W_BOOTH_X_SIZE,
+          x: 5564 - (boothNumber.number - 1) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
         };
-      } else if (isBetween(boothNumber.number, 7, 14)) {
+      } else if (isBetween(boothNumber.number, 7, 18)) {
         return {
-          x: 737 - (boothNumber.number - 7) * W_BOOTH_X_SIZE,
+          x: 4851 - (boothNumber.number - 7) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
         };
-      } else if (isBetween(boothNumber.number, 15, 24)) {
+      } else if (isBetween(boothNumber.number, 19, 24)) {
         return {
-          x: 667 - (boothNumber.number - 15) * W_BOOTH_X_SIZE,
+          x: 4185 - (boothNumber.number - 19) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
         };
       } else if (isBetween(boothNumber.number, 25, 34)) {
         return {
-          x: 520 - (boothNumber.number - 25) * W_BOOTH_X_SIZE,
+          x: 3425 - (boothNumber.number - 25) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
@@ -180,7 +161,7 @@ function boothNumberToTargetingBoxDimension(
       // 35 ~ 42
       else {
         return {
-          x: 431 - (boothNumber.number - 35) * W_BOOTH_X_SIZE,
+          x: 2835 - (boothNumber.number - 35) * W_BOOTH_X_SIZE,
           y: W_Y_AXIS,
           width: W_BOOTH_X_SIZE,
           height: W_BOOTH_Y_SIZE,
@@ -189,52 +170,30 @@ function boothNumberToTargetingBoxDimension(
   }
 }
 
-function get_A_to_V_starting_X(row: string): number {
+function get_A_to_S_starting_X(row: string): number {
   switch (row) {
     case 'A':
-      return 938;
+      return 4923;
     case 'B':
-      return 901;
+      return 4580;
     case 'C':
-      return 854;
-    case 'D':
-      return 807;
-    case 'E':
-      return 760;
-    case 'F':
-      return 713;
-    case 'G':
-      return 666;
-    case 'H':
-      return 619;
-    case 'I':
-      return 535;
-    case 'J':
-      return 489;
-    case 'K':
-      return 442;
+      return 4240;
     case 'L':
-      return 395;
+      return 5252;
     case 'M':
-      return 349;
+      return 4932;
     case 'N':
-      return 795;
+      return 4614;
     case 'O':
-      return 741;
+      return 4295;
     case 'P':
-      return 686;
+      return 3977;
     case 'Q':
-      return 632;
+      return 3658;
     case 'R':
-      return 577;
+      return 3339;
     case 'S':
-      return 522;
-    case 'T':
-      return 468;
-    case 'U':
-      return 415;
-    case 'V':
-      return 360;
+      return 3022;
     default:
       return 0;
   }
