@@ -1,6 +1,6 @@
 // NOTE: The implementation should be changed with each event
-import rawGroupData from '../../generated-data/CWT72/group-data.json';
-import MAP from '../assets/maps/FF46社團攤位配置圖.jpg';
+import rawGroupData from '../../generated-data/PF44/group-data.json';
+import MAP from '../assets/maps/PF44_circleMap.jpg';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { EventType } from '../types/EventType';
 import { ImageSize } from '../types/ImageSize';
@@ -44,9 +44,9 @@ export const EVENT_CONFIG: EventConfigInterface = {
     stringToBoothActiveDay: (boothActiveDayStr: string): BoothActiveDay => {
       switch (boothActiveDayStr) {
         case '1':
-          return 'CWT72_DAY_1';
+          return 'PF44_DAY_1';
         case '2':
-          return 'CWT72_DAY_2';
+          return 'PF44_DAY_2';
         default:
           throw Error(`Unexpected boothActiveDayStr [${boothActiveDayStr}].`);
       }
@@ -55,30 +55,30 @@ export const EVENT_CONFIG: EventConfigInterface = {
   header: {
     BOOTH_ACTIVE_DAY_OPTION_LIST: [
       {
-        boothActiveDay: 'CWT72_DAY_1',
-        displayText: '02/21 (六)',
+        boothActiveDay: 'PF44_DAY_1',
+        displayText: '05/16 (六)',
       },
       {
-        boothActiveDay: 'CWT72_DAY_2',
-        displayText: '02/22 (日)',
+        boothActiveDay: 'PF44_DAY_2',
+        displayText: '05/17 (日)',
       },
     ],
     getSourceLink: (activeDay: BoothActiveDay): string => {
       switch (activeDay) {
-        case 'CWT72_DAY_1':
-          return 'https://www.f-2.com.tw/%e3%80%90ff46%e3%80%91%e7%ac%ac%e4%b8%80%e5%a4%a9%e6%94%a4%e4%bd%8d%e7%b7%a8%e8%99%9f/';
-        case 'CWT72_DAY_2':
-          return 'https://www.f-2.com.tw/%e3%80%90ff46%e3%80%91%e7%ac%ac%e4%ba%8c%e5%a4%a9%e6%94%a4%e4%bd%8d%e7%b7%a8%e8%99%9f/';
+        case 'PF44_DAY_1':
+          return 'https://www.f-2.com.tw/pf44-%e9%a6%96%e6%97%a5%e6%94%a4%e4%bd%8d%e7%b7%a8%e8%99%9f/';
+        case 'PF44_DAY_2':
+          return 'https://www.f-2.com.tw/pf44-%e6%ac%a1%e6%97%a5%e6%94%a4%e4%bd%8d%e7%b7%a8%e8%99%9f/';
       }
     },
   },
   map: {
-    DEFAULT_MAP_IMAGE_SIZE: { width: 1024, height: 724 },
+    DEFAULT_MAP_IMAGE_SIZE: { width: 6736, height: 4760 },
     getImageSrcByActiveDay: (activeDay: BoothActiveDay): string => {
       switch (activeDay) {
-        case 'CWT72_DAY_1':
+        case 'PF44_DAY_1':
           return MAP;
-        case 'CWT72_DAY_2':
+        case 'PF44_DAY_2':
           return MAP;
       }
     },
@@ -86,12 +86,12 @@ export const EVENT_CONFIG: EventConfigInterface = {
   booth: {
     BOOTH_ACTIVE_DAY_DISPLAY_INFO_LIST: [
       {
-        boothActiveDay: 'CWT72_DAY_1',
-        singleDayBoothInfoPrefixText: '02/21 (六) 攤位：',
+        boothActiveDay: 'PF44_DAY_1',
+        singleDayBoothInfoPrefixText: '05/16 (六) 攤位：',
       },
       {
-        boothActiveDay: 'CWT72_DAY_2',
-        singleDayBoothInfoPrefixText: '02/22 (日) 攤位：',
+        boothActiveDay: 'PF44_DAY_2',
+        singleDayBoothInfoPrefixText: '05/17 (日) 攤位：',
       },
     ],
   },
