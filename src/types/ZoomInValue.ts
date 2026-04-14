@@ -3,7 +3,7 @@ export const zoomInValueList: Array<number> = [
 ];
 export type ValidZoomInValue = (typeof zoomInValueList)[number];
 
-export const DEFAULT_ZOOM_IN_VALUE: ValidZoomInValue = 0.75;
+export const DEFAULT_ZOOM_IN_VALUE: ValidZoomInValue = 0.25;
 export const DEFAULT_ZOOM_IN_VALUE_INDEX: number = zoomInValueList.findIndex(
   (e) => e === DEFAULT_ZOOM_IN_VALUE,
 );
