@@ -1,4 +1,5 @@
-import rawGroupData from '../generated-data/CWT72/group-data.json';
+// NOTE: The implementation should be changed with each event
+import rawGroupData from '../generated-data/IF7/group-data.json';
 import { GroupData } from '../src/types/GroupData';
 import {
   getUnsanitizedGroupDataList,

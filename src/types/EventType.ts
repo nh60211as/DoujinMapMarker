@@ -7,6 +7,7 @@ export const eventTypeArray = [
   'PF43',
   'PF44',
   'IF6',
+  'IF7',
   'CWT70',
   'CWT71',
   'CWT72',

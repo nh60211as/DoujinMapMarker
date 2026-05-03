@@ -78,6 +78,9 @@ function getUrlCleaner(): URLCleaner {
 
       # Instagram relate
       *$removeparam=igshid
+
+      # TikTok relate
+      *$removeparam=_t
     `,
       },
     ],
