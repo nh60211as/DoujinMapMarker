@@ -309,6 +309,7 @@ export const TAG_LIST: Array<string> = [
   '黑執事',
   '點兔',
   '龍與地下城',
+  '火影忍者',
   'Cosplay',
   'VTuber',
   '二創',
