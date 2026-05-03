@@ -11487,5 +11487,604 @@
       }
     ],
     "tagList": []
+  },
+  {
+    "groupId": "eb2c31e0260040149ebb0c2ec8eef4e1",
+    "groupName": "空罐王",
+    "groupLink": "https://www.facebook.com/canking",
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 1
+          },
+          {
+            "row": "C",
+            "number": 2
+          }
+        ]
+      },
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 1
+          },
+          {
+            "row": "C",
+            "number": 2
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "46186b56a76b4d759643136e3d948b49",
+    "groupName": "狐日和",
+    "groupLink": "https://www.facebook.com/kitsunebiyori",
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 3
+          },
+          {
+            "row": "C",
+            "number": 4
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "938f6998c93f45fab5e6da238f224024",
+    "groupName": "薑黃貓工作室",
+    "groupLink": "https://www.facebook.com/beancat53",
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 5
+          }
+        ]
+      },
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 3
+          },
+          {
+            "row": "C",
+            "number": 4
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "fd23899c52ce4cc3bc0525c5e85a8158",
+    "groupName": "長腿綿羊",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 6
+          }
+        ]
+      },
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 6
+          },
+          {
+            "row": "C",
+            "number": 7
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "3972e70294a84eb89f63542d9360cf61",
+    "groupName": "空色敘事曲",
+    "groupLink": "https://www.facebook.com/Ultramarineyuiao",
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 7
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "14b7bef2232040bc88934ff2d5bc4ee1",
+    "groupName": "羊駝怪人",
+    "groupLink": "https://portaly.cc/alpaca_ywy",
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 8
+          }
+        ]
+      },
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 8
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "c3a897e1329b425f9d9dfad8c00cd6b2",
+    "groupName": "ミンMIN",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 9
+          }
+        ]
+      },
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 9
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "1a50b7eaab954bfcbef494bc1f6bef96",
+    "groupName": "醡醬貓zuojiang neko",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 10
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "5274235b4eec4b5c87897a0f0d097e4c",
+    "groupName": "米雅日記",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 11
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "1bc48f43be104ed6b578efcbd8eec258",
+    "groupName": "畫加命藝術設計",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 12
+          }
+        ]
+      },
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 11
+          },
+          {
+            "row": "C",
+            "number": 12
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "d6d5b41585c04ed2a053d66507bf56e2",
+    "groupName": "CEMACEMAS",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 13
+          }
+        ]
+      },
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 13
+          },
+          {
+            "row": "C",
+            "number": 14
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "890efd0620514380865d931869fbf910",
+    "groupName": "偵探施抹布與樂葉",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 14
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "66c8e4a7a0d84b49b4ff640784a8f58f",
+    "groupName": "客家兄貴的骯髒部屋",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 15
+          }
+        ]
+      },
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 15
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "ce2516ffe6a34992b48daf0166976114",
+    "groupName": "鄰居家書櫃",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 16
+          }
+        ]
+      },
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 16
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "bef7937e7339424da49d76274db38ee8",
+    "groupName": "本土英雄-寶島轟雷",
+    "groupLink": "https://www.facebook.com/titw.thunder",
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 17
+          }
+        ]
+      },
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 17
+          },
+          {
+            "row": "C",
+            "number": 18
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "e3cd9d4b64aa41c591d63cdeaddc7911",
+    "groupName": "靈魂褓姆阿嚕",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 18
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "60d0cac5b90641fabf29a2899e4d903c",
+    "groupName": "小美叮",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 19
+          }
+        ]
+      },
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 21
+          },
+          {
+            "row": "C",
+            "number": 22
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "59a747f9b20f44939455d12f21d91ed1",
+    "groupName": "阿米亞Amaia",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 20
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "f5fce1cd1cb442f0ac1efb5e177bcac5",
+    "groupName": "bubukai",
+    "groupLink": "https://www.facebook.com/bubukaibubu",
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_1",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 21
+          },
+          {
+            "row": "C",
+            "number": 22
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "66e621d537764e8e8831017eab0043e8",
+    "groupName": "茜Cian",
+    "groupLink": "https://www.facebook.com/cianluoo",
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 5
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "a0d4962628564ba88c0665eda8f02560",
+    "groupName": "魔窟工作室",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 10
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "a09e8cdab1ae4b4fa65b1b99dfc91c40",
+    "groupName": "咖啡因工坊",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 19
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
+  },
+  {
+    "groupId": "1b810785f17a41b1b18b8789373c4977",
+    "groupName": "白範出版工作室",
+    "groupLink": null,
+    "menuLink": null,
+    "boothList": [
+      {
+        "activeDay": "PF44_DAY_2",
+        "boothNumberList": [
+          {
+            "row": "C",
+            "number": 20
+          }
+        ]
+      }
+    ],
+    "tagList": [
+      "原創"
+    ]
   }
 ]
