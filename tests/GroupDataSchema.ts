@@ -6,13 +6,13 @@ import Joi from 'joi';
 
 // NOTE: The implementation should be changed with each event
 const BoothActiveDaySchema = Joi.string()
-  .valid('FF46_DAY_1', 'FF46_DAY_2', 'FF46_DAY_3')
+  .valid('PF44_DAY_1', 'PF44_DAY_2')
   .required();
 
 // Joi schema for BoothNumber (with row-specific range validation)
 const BoothNumberSchema = Joi.object<BoothNumber, true>({
   row: Joi.string()
-    .valid('A', 'B', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'W')
+    .valid('A', 'B', 'C', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'W')
     .required(),
   number: Joi.number()
     .custom((value, helpers) => {

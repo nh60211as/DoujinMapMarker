@@ -10,7 +10,7 @@ const VALIDATED_GROUP_DATA_LIST: Array<GroupData> = getValidGroupDataList(
 );
 
 function getValidGroupDataList(input: any): Array<GroupData> {
-  return input as Array<GroupData>;
+  // return input as Array<GroupData>;
   // NOTE: use below logic if actually validating schema
 
   const { error: invalidError, value: validGroupDataList } =
