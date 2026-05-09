@@ -93,6 +93,7 @@ export const TAG_LIST: Array<string> = [
   'JoJo',
   'LAST MILE',
   'LAST ORIGIN',
+  'Life Is Strange',
   'Limbus Company',
   'MIU404',
   'MiSide',

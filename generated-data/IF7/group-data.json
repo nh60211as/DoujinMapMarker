@@ -138,7 +138,7 @@
   {
     "groupId": "2d7d035e7cc84514b86ea16b704e6572",
     "groupName": "回家日記",
-    "groupLink": "https://www.instagram.com/back_home_diary/?hl=zh-tw",
+    "groupLink": "https://www.instagram.com/back_home_diary",
     "menuLink": null,
     "boothList": [
       {
@@ -419,8 +419,8 @@
   {
     "groupId": "b8a695f4492e48549fb83de11584e175",
     "groupName": "K醬ㄉ攤",
-    "groupLink": "https://www.facebook.com/s092077?locale=zh_TW",
-    "menuLink": null,
+    "groupLink": "https://www.facebook.com/s092077",
+    "menuLink": "https://www.facebook.com/s092077/posts/pfbid02DruPofpesuP2QmfEqvtSP9WmBGFkLbG2haBN75sJPQxbkdKsZFZZqNBG3DULhNesl",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -483,7 +483,7 @@
   {
     "groupId": "3646dcf8faa444b8854ff1795167c909",
     "groupName": "湖底章魚音樂盒",
-    "groupLink": "https://x.com/sinyatako1?s=21&t=hMm51tDxzSwRLbs1B1XvAA",
+    "groupLink": "https://x.com/sinyatako1",
     "menuLink": null,
     "boothList": [
       {
@@ -630,7 +630,7 @@
   {
     "groupId": "65ab56923708482dae2a0efdfbe924af",
     "groupName": "布丁杯★",
-    "groupLink": "https://www.instagram.com/hahu_paint/?hl=zh-tw",
+    "groupLink": "https://www.instagram.com/hahu_paint",
     "menuLink": null,
     "boothList": [
       {
@@ -677,7 +677,7 @@
   {
     "groupId": "34b2b61ebe4e42ec9f5325fd0d7f485a",
     "groupName": "XX畫廊-ARu art",
-    "groupLink": "https://www.facebook.com/xxpainterroom/?ref=bookmarks",
+    "groupLink": "https://www.facebook.com/xxpainterroom",
     "menuLink": null,
     "boothList": [
       {
@@ -743,7 +743,7 @@
   {
     "groupId": "9b9581fc32a3465aa989b829ef1e455a",
     "groupName": "Twinkle",
-    "groupLink": "https://www.instagram.com/twinkle21_comic/?hl=zh-tw",
+    "groupLink": "https://www.instagram.com/twinkle21_comic",
     "menuLink": null,
     "boothList": [
       {
@@ -1066,7 +1066,7 @@
   {
     "groupId": "f29d272ffb384c26be7a7e81b75bc7bc",
     "groupName": "糸中註定冴愛凛",
-    "groupLink": "https://x.com/irina_reichi?s=21&t=ta3wndQi8XJLfJQMLcekBw",
+    "groupLink": "https://x.com/irina_reichi",
     "menuLink": null,
     "boothList": [
       {
@@ -1626,7 +1626,7 @@
     "groupId": "40e5881bc39b4e86b3b3ab2e2eff5c1c",
     "groupName": "光明系同人女",
     "groupLink": "https://www.plurk.com/ooinn_arts",
-    "menuLink": null,
+    "menuLink": "https://www.plurk.com/p/3in41ftj59",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -2060,7 +2060,7 @@
   {
     "groupId": "6dd79a68773545bfab8ae93ad7e86412",
     "groupName": "快樂罌粟花自耕農會",
-    "groupLink": "https://trapasocks.pse.is/8rdrx6",
+    "groupLink": "https://www.threads.com/@trapa_studio",
     "menuLink": null,
     "boothList": [
       {
@@ -3772,6 +3772,10 @@
         "boothNumberList": [
           {
             "row": "N",
+            "number": 35
+          },
+          {
+            "row": "N",
             "number": 36
           }
         ]
@@ -3835,7 +3839,7 @@
   {
     "groupId": "69693fedbbe14eb989062c7d321c7251",
     "groupName": "初入貓蘆",
-    "groupLink": "https://x.com/jj_catclaw?s=21&t=chkIsm8HqopMDgRFq_ICtQ",
+    "groupLink": "https://x.com/jj_catclaw",
     "menuLink": null,
     "boothList": [
       {
@@ -4157,7 +4161,7 @@
     "groupId": "7c6288c731954486957e0c12e433e493",
     "groupName": "NiNE's",
     "groupLink": "https://www.doujin.com.tw/groups/info/523/books",
-    "menuLink": null,
+    "menuLink": "https://www.plurk.com/p/3in09pitwf",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -4172,7 +4176,9 @@
     "tagList": [
       "嚕嚕米",
       "勇者動畫系列",
-      "九日"
+      "九日",
+      "地。-關於地球的運動-",
+      "吸血鬼馬上死"
     ]
   },
   {
@@ -4198,7 +4204,7 @@
   {
     "groupId": "c70dfc6d8b9b49aaa65c0e4302bc3f5d",
     "groupName": "PONKA",
-    "groupLink": "https://x.com/ponka2024?s=21",
+    "groupLink": "https://x.com/ponka2024",
     "menuLink": null,
     "boothList": [
       {
@@ -4835,7 +4841,7 @@
   {
     "groupId": "b5bd34ab93154f86bb99271316516fa3",
     "groupName": "名字可以自己取欸",
-    "groupLink": "https://www.facebook.com/peekaboo.ouzi?locale=zh_TW",
+    "groupLink": "https://www.facebook.com/peekaboo.ouzi",
     "menuLink": null,
     "boothList": [
       {
@@ -4924,7 +4930,7 @@
   {
     "groupId": "625e2903c1ff45a587c39bb07069a52c",
     "groupName": "仙界大濕快樂攤",
-    "groupLink": "https://www.instagram.com/wet_elephant/?hl=zh-tw",
+    "groupLink": "https://www.instagram.com/wet_elephant",
     "menuLink": null,
     "boothList": [
       {
@@ -5344,7 +5350,7 @@
   {
     "groupId": "c902aef812fe4b869d5898405723b111",
     "groupName": "一隻羊身上的羊毛",
-    "groupLink": "https://x.com/yomowork_mov/status/1984905750158958686?s=20",
+    "groupLink": "https://x.com/yomowork_mov/status/1984905750158958686",
     "menuLink": null,
     "boothList": [
       {
@@ -5676,7 +5682,7 @@
   {
     "groupId": "7a632807bf2d455bb44b484d5e1c1dfd",
     "groupName": "尹先",
-    "groupLink": "https://www.instagram.com/roxanne21___/?hl=zh-tw",
+    "groupLink": "https://www.instagram.com/roxanne21___",
     "menuLink": null,
     "boothList": [
       {
@@ -6598,7 +6604,7 @@
   {
     "groupId": "79bc87404ce14825a4fb77eecf8180f6",
     "groupName": "Aggie 慢慢走",
-    "groupLink": "https://instagram.com/aggie__amble?r=nametag",
+    "groupLink": "https://instagram.com/aggie__amble",
     "menuLink": null,
     "boothList": [
       {
@@ -6645,7 +6651,7 @@
     "groupId": "5bc336f832634b6fb3e9272169683a8c",
     "groupName": "KARAS押形",
     "groupLink": "https://www.facebook.com/KARASoshigata",
-    "menuLink": null,
+    "menuLink": "https://www.threads.com/@karas_oshigata/post/DX_jnhjjV7g",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -6790,7 +6796,7 @@
     "groupId": "7220481905b948178828faf9e8b1b98f",
     "groupName": "勝者早餐大冰紅",
     "groupLink": "https://www.plurk.com/renyinaloha",
-    "menuLink": null,
+    "menuLink": "https://www.plurk.com/p/3htvpaprbz",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -6918,7 +6924,7 @@
     "groupId": "ae5e6a3b8e3347dc991d3cfc98224d58",
     "groupName": "洛洛麵包舖",
     "groupLink": "https://www.facebook.com/luo.luo.153160",
-    "menuLink": null,
+    "menuLink": "https://www.facebook.com/luo.luo.153160/posts/pfbid02MxqM9HAfyJvJrT4XW2XiNjpPnyHCYkbCsJ1BeP6GcicHiE1DHg3XGhUGENaUNpgwl",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -7271,7 +7277,7 @@
     "groupId": "ed978d28afe4423a81234d40db9934a7",
     "groupName": "歐油希歡樂產業",
     "groupLink": "https://www.plurk.com/ouyouxi2020",
-    "menuLink": null,
+    "menuLink": "https://www.plurk.com/p/3ilebtnb56",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -7297,7 +7303,7 @@
     "groupId": "37d5d227b98544a9a41ca669170da0b5",
     "groupName": "小花",
     "groupLink": "https://x.com/pomeka35",
-    "menuLink": null,
+    "menuLink": "https://www.facebook.com/hua.xiao.hua.859628/posts/pfbid02ZRbZi9svoA7dyp64N54oaW1mfBHmw27Gh7vxeoqo2573wzNGcSfxqzybaozwF7KJl",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -7346,7 +7352,7 @@
     "groupId": "ad064f83de9a491bba9bb7045df83a34",
     "groupName": "No Yuri, No Life.",
     "groupLink": "https://portaly.cc/raker.natsume.0701",
-    "menuLink": null,
+    "menuLink": "https://www.plurk.com/p/3indp0kw9g",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -7517,7 +7523,7 @@
   {
     "groupId": "845586a0174f415c8f159b1ce3afc6a3",
     "groupName": "老P股",
-    "groupLink": "https://x.com/pesirxy?s=21",
+    "groupLink": "https://x.com/pesirxy",
     "menuLink": null,
     "boothList": [
       {
@@ -7558,7 +7564,7 @@
   {
     "groupId": "cfa814c71eca492b913720c1bc50f5ee",
     "groupName": "紡星社",
-    "groupLink": "https://www.facebook.com/61573677164059/",
+    "groupLink": "https://www.facebook.com/profile.php?id=61573677164059",
     "menuLink": null,
     "boothList": [
       {
@@ -7768,7 +7774,7 @@
   {
     "groupId": "788c49afda0040e6935f93402294ae1d",
     "groupName": "陽光女子百合團",
-    "groupLink": "https://x.com/rito_yu6039?s=21&t=B2bmzWyenr-f9o6UBHdH8w",
+    "groupLink": "https://x.com/rito_yu6039",
     "menuLink": null,
     "boothList": [
       {
@@ -8085,8 +8091,8 @@
   {
     "groupId": "e4279039af9945d6bc23c951af4e30c6",
     "groupName": "廢柴小R",
-    "groupLink": "https://x.com/rissole715?s=21",
-    "menuLink": null,
+    "groupLink": "https://x.com/rissole715",
+    "menuLink": "https://x.com/rissole715/status/2051669978093597148",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -8107,7 +8113,7 @@
     "groupId": "7eb8586da68d4b0f9a4b2a298075eb1f",
     "groupName": "黑黑黑",
     "groupLink": "https://x.com/KuroAjrtineico",
-    "menuLink": null,
+    "menuLink": "https://x.com/KuroAjrtineico/status/2052661700286173413",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -8458,7 +8464,7 @@
   {
     "groupId": "fbd3e1df51c44d65a9c29cbcc128c23d",
     "groupName": "狐狸的尾巴",
-    "groupLink": "https://reurl.cc/R9pnmz",
+    "groupLink": "https://www.facebook.com/omarutail/posts/pfbid02dewdqWCwHyhbj4ZT56s2k2PJ9k6nECTwP1w2kaPLRkat3nyUzdfHCCBcJEePpRTul",
     "menuLink": null,
     "boothList": [
       {
@@ -8500,7 +8506,7 @@
   {
     "groupId": "f5561b7c190f4f4a926f065355f4a1c1",
     "groupName": "活派 對",
-    "groupLink": "https://x.com/kumalongrule34?s=21",
+    "groupLink": "https://x.com/kumalongrule34",
     "menuLink": null,
     "boothList": [
       {
@@ -8567,8 +8573,8 @@
   {
     "groupId": "eabb7579e78e4c4689ddb1cbcb3fa0af",
     "groupName": "日初翱祥-陌千",
-    "groupLink": "https://www.threads.com/@mochian0819?hl=zh-tw",
-    "menuLink": null,
+    "groupLink": "https://www.threads.com/@mochian0819",
+    "menuLink": "https://www.plurk.com/p/3ingd92yvg",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -8586,7 +8592,9 @@
     ],
     "tagList": [
       "MyGO!!!!!/Ave Mujica",
-      "超時空輝耀姬"
+      "超時空輝耀姬",
+      "水星的魔女",
+      "Life Is Strange"
     ]
   },
   {
@@ -8635,7 +8643,7 @@
   {
     "groupId": "6ecebdf8fcd74c14a878285f49f4cafa",
     "groupName": "Mo子宅屋",
-    "groupLink": "https://www.facebook.com/BLUE1OR2?locale=zh_TW",
+    "groupLink": "https://www.facebook.com/BLUE1OR2",
     "menuLink": null,
     "boothList": [
       {
@@ -8861,7 +8869,7 @@
   {
     "groupId": "97deb5233a6349b5a6aeefde966fc071",
     "groupName": "東閣小樓",
-    "groupLink": "https://www.facebook.com/daybreak2779?",
+    "groupLink": "https://www.facebook.com/daybreak2779",
     "menuLink": null,
     "boothList": [
       {
@@ -8991,7 +8999,7 @@
   {
     "groupId": "ed47c7460e884855b25cfc0e96e68bb0",
     "groupName": "ボカロ虛擬歌姬交流會",
-    "groupLink": "https://www.facebook.com/miku3939circle?locale=zh_TW",
+    "groupLink": "https://www.facebook.com/miku3939circle",
     "menuLink": null,
     "boothList": [
       {
@@ -9121,7 +9129,7 @@
   {
     "groupId": "b0381f15bf834a59824925c363059944",
     "groupName": "同攤不同推",
-    "groupLink": "https://x.com/ak_lina0?s=20",
+    "groupLink": "https://x.com/ak_lina0",
     "menuLink": null,
     "boothList": [
       {
@@ -9227,7 +9235,7 @@
   {
     "groupId": "0597da32b44e482787227cc7d1a56ea6",
     "groupName": "不調了不調了😭",
-    "groupLink": "https://www.facebook.com/mei.emerald.96?",
+    "groupLink": "https://www.facebook.com/mei.emerald.96",
     "menuLink": null,
     "boothList": [
       {
@@ -9400,8 +9408,8 @@
   {
     "groupId": "3277c9ff18ff4ac2bee79bc863864348",
     "groupName": "KAITO的狗",
-    "groupLink": "https://www.facebook.com/tu.ben.hua?",
-    "menuLink": null,
+    "groupLink": "https://www.facebook.com/tu.ben.hua",
+    "menuLink": "https://www.plurk.com/p/3inepwdsj8",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -9852,7 +9860,7 @@
   {
     "groupId": "fed9a66a0b5f4913837e82346e66b750",
     "groupName": "記憶中的記事本",
-    "groupLink": "https://twitter.com/cometwave",
+    "groupLink": "https://x.com/cometwave",
     "menuLink": null,
     "boothList": [
       {
@@ -9870,7 +9878,7 @@
   {
     "groupId": "1293ac80e38b459bb68538211ba5a89d",
     "groupName": "桃京武戯夜",
-    "groupLink": "https://twitter.com/takapiyo",
+    "groupLink": "https://x.com/takapiyo",
     "menuLink": null,
     "boothList": [
       {
@@ -10302,7 +10310,7 @@
   {
     "groupId": "bea9f046ba92426aba3e00f797a44104",
     "groupName": "普羅丟薩的P是盤子的P 2nd",
-    "groupLink": "https://www.facebook.com/share/1GRHgrYa2t/",
+    "groupLink": "https://www.facebook.com/cathy.kao.352526",
     "menuLink": null,
     "boothList": [
       {
@@ -10565,8 +10573,8 @@
   {
     "groupId": "e3bac24a77154b13a7a1d3c7c1b86e38",
     "groupName": "彩虹盤子",
-    "groupLink": "https://www.facebook.com/CShiroha?",
-    "menuLink": null,
+    "groupLink": "https://www.facebook.com/CShiroha",
+    "menuLink": "https://www.plurk.com/p/3indd8tk5y",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
@@ -10616,7 +10624,7 @@
     "groupId": "54ee7e79caa646708477c176ce1e64e9",
     "groupName": "青雨閣",
     "groupLink": "https://www.instagram.com/chj_joanna",
-    "menuLink": null,
+    "menuLink": "https://www.plurk.com/p/3in3fc2e9k",
     "boothList": [
       {
         "activeDay": "IF7_DAY_1",
