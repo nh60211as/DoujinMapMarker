@@ -2374,8 +2374,8 @@
   {
     "groupId": "550f187382f84e96aaf74e7606b157a3",
     "groupName": "TyPhoon",
-    "groupLink": null,
-    "menuLink": null,
+    "groupLink": "https://lit.link/zh-tw/typhoon",
+    "menuLink": "https://www.facebook.com/TyPhoon0309/posts/pfbid02p9BcagAccShnKdFKPbEpgYrQWoqZ8tT4E5eBFiq4inzatzomyKJnNLkmghHEHTfsl",
     "boothList": [
       {
         "activeDay": "PF44_DAY_1",
@@ -8972,8 +8972,8 @@
   {
     "groupId": "a48f6a3476544afbb52105a5af55d97b",
     "groupName": "方舟 Ark",
-    "groupLink": "https://x.com/sacaPerezFF",
-    "menuLink": "https://x.com/sacaPerezFF/status/2052916465137799188",
+    "groupLink": "https://x.com/arkstudio_tw",
+    "menuLink": "https://x.com/arkstudio_tw/status/2053052357299093694",
     "boothList": [
       {
         "activeDay": "PF44_DAY_1",
@@ -9373,7 +9373,7 @@
     "groupId": "38a992dfdcdf49248e44aab4b6274489",
     "groupName": "緣流",
     "groupLink": "https://x.com/enruzero",
-    "menuLink": null,
+    "menuLink": "https://x.com/enruzero/status/2053133674133270694",
     "boothList": [
       {
         "activeDay": "PF44_DAY_1",
@@ -9473,8 +9473,8 @@
   {
     "groupId": "716361bb8cc6456bb1eef6c221ab120c",
     "groupName": "最混亂的場面",
-    "groupLink": null,
-    "menuLink": null,
+    "groupLink": "https://www.facebook.com/kevin.lin.54922",
+    "menuLink": "https://www.facebook.com/kevin.lin.54922/posts/pfbid022ii1kV4BiK7y5ZqAqyyMSDCeWKLdhKcKoEqaMXypFo6wiCJ7ggf8ajWGT2dYfW8Al",
     "boothList": [
       {
         "activeDay": "PF44_DAY_1",
@@ -9503,7 +9503,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "hololive",
+      "VTuber"
+    ]
   },
   {
     "groupId": "b3e11ff5535f444e9a5f7d3eca4ded99",
