@@ -414,4 +414,5 @@ export const TAG_LIST: Array<string> = [
   '黑豹',
   '點兔',
   '龍與地下城',
+  '銀河特急',
 ];
