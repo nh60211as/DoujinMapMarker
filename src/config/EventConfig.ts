@@ -37,7 +37,7 @@ type EventConfigInterface = {
 // NOTE: The implementation should be changed with each event
 export const EVENT_CONFIG: EventConfigInterface = {
   general: {
-    CURRENT_EVENT_TYPE: 'FF46',
+    CURRENT_EVENT_TYPE: 'IF7',
     RAW_GROUP_DATA: rawGroupData,
   },
   data: {
