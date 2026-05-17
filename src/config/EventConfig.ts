@@ -1,6 +1,6 @@
 // NOTE: The implementation should be changed with each event
-import rawGroupData from '../../generated-data/PF44/group-data.json';
-import MAP from '../assets/maps/PF44_circleMap.jpg';
+import rawGroupData from '../../generated-data/IF7/group-data.json';
+import MAP from '../assets/maps/map2026.png';
 import { BoothActiveDay } from '../types/BoothActiveDay';
 import { EventType } from '../types/EventType';
 import { ImageSize } from '../types/ImageSize';
@@ -44,9 +44,7 @@ export const EVENT_CONFIG: EventConfigInterface = {
     stringToBoothActiveDay: (boothActiveDayStr: string): BoothActiveDay => {
       switch (boothActiveDayStr) {
         case '1':
-          return 'PF44_DAY_1';
-        case '2':
-          return 'PF44_DAY_2';
+          return 'IF7_DAY_1';
         default:
           throw Error(`Unexpected boothActiveDayStr [${boothActiveDayStr}].`);
       }
@@ -55,30 +53,22 @@ export const EVENT_CONFIG: EventConfigInterface = {
   header: {
     BOOTH_ACTIVE_DAY_OPTION_LIST: [
       {
-        boothActiveDay: 'PF44_DAY_1',
-        displayText: '05/16 (六)',
-      },
-      {
-        boothActiveDay: 'PF44_DAY_2',
-        displayText: '05/17 (日)',
+        boothActiveDay: 'IF7_DAY_1',
+        displayText: '05/30 (六)',
       },
     ],
     getSourceLink: (activeDay: BoothActiveDay): string => {
       switch (activeDay) {
-        case 'PF44_DAY_1':
-          return 'https://www.f-2.com.tw/pf44-%e9%a6%96%e6%97%a5%e6%94%a4%e4%bd%8d%e7%b7%a8%e8%99%9f/';
-        case 'PF44_DAY_2':
-          return 'https://www.f-2.com.tw/pf44-%e6%ac%a1%e6%97%a5%e6%94%a4%e4%bd%8d%e7%b7%a8%e8%99%9f/';
+        case 'IF7_DAY_1':
+          return 'https://if.gjs.tw/circle-list.html';
       }
     },
   },
   map: {
-    DEFAULT_MAP_IMAGE_SIZE: { width: 6736, height: 4760 },
+    DEFAULT_MAP_IMAGE_SIZE: { width: 1501, height: 1500 },
     getImageSrcByActiveDay: (activeDay: BoothActiveDay): string => {
       switch (activeDay) {
-        case 'PF44_DAY_1':
-          return MAP;
-        case 'PF44_DAY_2':
+        case 'IF7_DAY_1':
           return MAP;
       }
     },
@@ -86,12 +76,8 @@ export const EVENT_CONFIG: EventConfigInterface = {
   booth: {
     BOOTH_ACTIVE_DAY_DISPLAY_INFO_LIST: [
       {
-        boothActiveDay: 'PF44_DAY_1',
-        singleDayBoothInfoPrefixText: '05/16 (六) 攤位：',
-      },
-      {
-        boothActiveDay: 'PF44_DAY_2',
-        singleDayBoothInfoPrefixText: '05/17 (日) 攤位：',
+        boothActiveDay: 'IF7_DAY_1',
+        singleDayBoothInfoPrefixText: '05/30 (六) 攤位：',
       },
     ],
   },
