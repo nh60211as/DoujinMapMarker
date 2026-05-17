@@ -1,5 +1,5 @@
 // NOTE: The implementation should be changed with each event
-export const boothActiveDayArray = ['PF44_DAY_1', 'PF44_DAY_2'] as const;
+export const boothActiveDayArray = ['IF7_DAY_1'] as const;
 
 export type BoothActiveDay = (typeof boothActiveDayArray)[number];
 

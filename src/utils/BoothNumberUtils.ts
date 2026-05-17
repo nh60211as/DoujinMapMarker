@@ -68,38 +68,16 @@ function boothNumberListGreaterThan2ToTargetingBoxDimension(
 function boothNumberToTargetingBoxDimension(
   boothNumber: BoothNumber,
 ): TargetingBoxDimension {
-  const A_TO_C_STARTING_Y_AXIS = 3807;
-  const L_TO_S_STARTING_Y_AXIS = 2224;
-  const A_TO_S_BOOTH_X_SIZE = 79;
-  const A_TO_S_BOOTH_Y_SIZE = 51.04166666666667;
-
-  const W_Y_AXIS = 767;
-  const W_BOOTH_X_SIZE = 51.16666666666667;
-  const W_BOOTH_Y_SIZE = 79;
+  const J_TO_R_STARTING_X_AXIS = 1269;
+  const S_TO_Z_STARTING_X_AXIS = 719;
+  const J_TO_R_BOOTH_X_SIZE = 23.25;
+  const S_TO_W_BOOTH_X_SIZE = 23.04545454545455;
+  const W_TO_Z_BOOTH_X_SIZE = 22.58333333333333;
+  const BOOTH_Y_SIZE = 24;
 
   switch (boothNumber.row) {
-    case 'A':
-    case 'B':
-    case 'C':
-      if (isBetween(boothNumber.number, 1, 22)) {
-        return {
-          x: get_A_to_S_starting_X(boothNumber.row),
-          y:
-            A_TO_C_STARTING_Y_AXIS -
-            (boothNumber.number - 1) * A_TO_S_BOOTH_Y_SIZE,
-          width: A_TO_S_BOOTH_X_SIZE,
-          height: A_TO_S_BOOTH_Y_SIZE,
-        };
-      } else {
-        return {
-          x: get_A_to_S_starting_X(boothNumber.row) - A_TO_S_BOOTH_X_SIZE,
-          y:
-            A_TO_C_STARTING_Y_AXIS -
-            (44 - boothNumber.number) * A_TO_S_BOOTH_Y_SIZE,
-          width: A_TO_S_BOOTH_X_SIZE,
-          height: A_TO_S_BOOTH_Y_SIZE,
-        };
-      }
+    case 'J':
+    case 'K':
     case 'L':
     case 'M':
     case 'N':
@@ -107,94 +85,401 @@ function boothNumberToTargetingBoxDimension(
     case 'P':
     case 'Q':
     case 'R':
-    case 'S':
-      if (isBetween(boothNumber.number, 1, 24)) {
+      if (isBetween(boothNumber.number, 1, 20)) {
         return {
-          x: get_A_to_S_starting_X(boothNumber.row),
-          y:
-            L_TO_S_STARTING_Y_AXIS -
-            (boothNumber.number - 1) * A_TO_S_BOOTH_Y_SIZE,
-          width: A_TO_S_BOOTH_X_SIZE,
-          height: A_TO_S_BOOTH_Y_SIZE,
+          x:
+            J_TO_R_STARTING_X_AXIS -
+            (boothNumber.number - 1) * J_TO_R_BOOTH_X_SIZE,
+          y: getY_Axis({ row: boothNumber.row, number: 1 }),
+          width: J_TO_R_BOOTH_X_SIZE,
+          height: BOOTH_Y_SIZE,
         };
       } else {
         return {
-          x: get_A_to_S_starting_X(boothNumber.row) - A_TO_S_BOOTH_X_SIZE,
-          y:
-            L_TO_S_STARTING_Y_AXIS -
-            (48 - boothNumber.number) * A_TO_S_BOOTH_Y_SIZE,
-          width: A_TO_S_BOOTH_X_SIZE,
-          height: A_TO_S_BOOTH_Y_SIZE,
+          x:
+            J_TO_R_STARTING_X_AXIS -
+            (boothNumber.number - 20 - 1) * J_TO_R_BOOTH_X_SIZE,
+          y: getY_Axis({ row: boothNumber.row, number: 21 }),
+          width: J_TO_R_BOOTH_X_SIZE,
+          height: BOOTH_Y_SIZE,
+        };
+      }
+    case 'S':
+    case 'T':
+    case 'U':
+    case 'V':
+      if (isBetween(boothNumber.number, 1, 22)) {
+        return {
+          x:
+            S_TO_Z_STARTING_X_AXIS -
+            (boothNumber.number - 1) * S_TO_W_BOOTH_X_SIZE,
+          y: getY_Axis({ row: boothNumber.row, number: 1 }),
+          width: S_TO_W_BOOTH_X_SIZE,
+          height: BOOTH_Y_SIZE,
+        };
+      } else {
+        return {
+          x:
+            S_TO_Z_STARTING_X_AXIS -
+            (boothNumber.number - 22 - 1) * S_TO_W_BOOTH_X_SIZE,
+          y: getY_Axis({ row: boothNumber.row, number: 23 }),
+          width: S_TO_W_BOOTH_X_SIZE,
+          height: BOOTH_Y_SIZE,
+        };
+      }
+    case 'W':
+      if (isBetween(boothNumber.number, 1, 20)) {
+        return {
+          x:
+            S_TO_Z_STARTING_X_AXIS -
+            (boothNumber.number - 1) * S_TO_W_BOOTH_X_SIZE,
+          y: getY_Axis({ row: boothNumber.row, number: 1 }),
+          width: S_TO_W_BOOTH_X_SIZE,
+          height: BOOTH_Y_SIZE,
+        };
+      } else {
+        return {
+          x:
+            S_TO_Z_STARTING_X_AXIS -
+            (boothNumber.number - 20 - 1) * S_TO_W_BOOTH_X_SIZE,
+          y: getY_Axis({ row: boothNumber.row, number: 21 }),
+          width: S_TO_W_BOOTH_X_SIZE,
+          height: BOOTH_Y_SIZE,
         };
       }
 
-    case 'W':
-      if (isBetween(boothNumber.number, 1, 6)) {
+    case 'X':
+    case 'Y':
+      if (isBetween(boothNumber.number, 1, 12)) {
         return {
-          x: 5564 - (boothNumber.number - 1) * W_BOOTH_X_SIZE,
-          y: W_Y_AXIS,
-          width: W_BOOTH_X_SIZE,
-          height: W_BOOTH_Y_SIZE,
+          x:
+            S_TO_Z_STARTING_X_AXIS -
+            (boothNumber.number - 1) * W_TO_Z_BOOTH_X_SIZE,
+          y: getY_Axis({ row: boothNumber.row, number: 1 }),
+          width: W_TO_Z_BOOTH_X_SIZE,
+          height: BOOTH_Y_SIZE,
         };
-      } else if (isBetween(boothNumber.number, 7, 18)) {
+      } else {
         return {
-          x: 4851 - (boothNumber.number - 7) * W_BOOTH_X_SIZE,
-          y: W_Y_AXIS,
-          width: W_BOOTH_X_SIZE,
-          height: W_BOOTH_Y_SIZE,
-        };
-      } else if (isBetween(boothNumber.number, 19, 24)) {
-        return {
-          x: 4185 - (boothNumber.number - 19) * W_BOOTH_X_SIZE,
-          y: W_Y_AXIS,
-          width: W_BOOTH_X_SIZE,
-          height: W_BOOTH_Y_SIZE,
-        };
-      } else if (isBetween(boothNumber.number, 25, 34)) {
-        return {
-          x: 3425 - (boothNumber.number - 25) * W_BOOTH_X_SIZE,
-          y: W_Y_AXIS,
-          width: W_BOOTH_X_SIZE,
-          height: W_BOOTH_Y_SIZE,
+          x:
+            S_TO_Z_STARTING_X_AXIS -
+            (boothNumber.number - 12 - 1) * W_TO_Z_BOOTH_X_SIZE,
+          y: getY_Axis({ row: boothNumber.row, number: 13 }),
+          width: W_TO_Z_BOOTH_X_SIZE,
+          height: BOOTH_Y_SIZE,
         };
       }
-      // 35 ~ 42
-      else {
+    case 'Z':
+      if (isBetween(boothNumber.number, 1, 12)) {
         return {
-          x: 2835 - (boothNumber.number - 35) * W_BOOTH_X_SIZE,
-          y: W_Y_AXIS,
-          width: W_BOOTH_X_SIZE,
-          height: W_BOOTH_Y_SIZE,
+          x:
+            S_TO_Z_STARTING_X_AXIS -
+            (boothNumber.number - 1) * W_TO_Z_BOOTH_X_SIZE,
+          y: getY_Axis({ row: boothNumber.row, number: 1 }),
+          width: W_TO_Z_BOOTH_X_SIZE,
+          height: BOOTH_Y_SIZE,
+        };
+      } else if (isBetween(boothNumber.number, 13, 24)) {
+        return {
+          x:
+            S_TO_Z_STARTING_X_AXIS -
+            (boothNumber.number - 12 - 1) * W_TO_Z_BOOTH_X_SIZE,
+          y: getY_Axis({ row: boothNumber.row, number: 13 }),
+          width: W_TO_Z_BOOTH_X_SIZE,
+          height: BOOTH_Y_SIZE,
+        };
+      } else if (isBetween(boothNumber.number, 25, 36)) {
+        return {
+          x:
+            S_TO_Z_STARTING_X_AXIS -
+            (boothNumber.number - 24 - 1) * W_TO_Z_BOOTH_X_SIZE,
+          y: getY_Axis({ row: boothNumber.row, number: 25 }),
+          width: W_TO_Z_BOOTH_X_SIZE,
+          height: BOOTH_Y_SIZE,
+        };
+      } else {
+        return {
+          x:
+            S_TO_Z_STARTING_X_AXIS -
+            (boothNumber.number - 36 - 1) * W_TO_Z_BOOTH_X_SIZE,
+          y: getY_Axis({ row: boothNumber.row, number: 37 }),
+          width: W_TO_Z_BOOTH_X_SIZE,
+          height: BOOTH_Y_SIZE,
         };
       }
   }
 }
 
-function get_A_to_S_starting_X(row: string): number {
-  switch (row) {
-    case 'A':
-      return 4923;
-    case 'B':
-      return 4580;
-    case 'C':
-      return 4240;
+function getY_Axis(
+  boothNumber:
+    | {
+        row: 'J';
+        number: 1;
+      }
+    | {
+        row: 'J';
+        number: 21;
+      }
+    | {
+        row: 'K';
+        number: 1;
+      }
+    | {
+        row: 'K';
+        number: 21;
+      }
+    | {
+        row: 'L';
+        number: 1;
+      }
+    | {
+        row: 'L';
+        number: 21;
+      }
+    | {
+        row: 'M';
+        number: 1;
+      }
+    | {
+        row: 'M';
+        number: 21;
+      }
+    | {
+        row: 'N';
+        number: 1;
+      }
+    | {
+        row: 'N';
+        number: 21;
+      }
+    | {
+        row: 'O';
+        number: 1;
+      }
+    | {
+        row: 'O';
+        number: 21;
+      }
+    | {
+        row: 'P';
+        number: 1;
+      }
+    | {
+        row: 'P';
+        number: 21;
+      }
+    | {
+        row: 'Q';
+        number: 1;
+      }
+    | {
+        row: 'Q';
+        number: 21;
+      }
+    | {
+        row: 'R';
+        number: 1;
+      }
+    | {
+        row: 'R';
+        number: 21;
+      }
+    | {
+        row: 'S';
+        number: 1;
+      }
+    | {
+        row: 'S';
+        number: 23;
+      }
+    | {
+        row: 'T';
+        number: 1;
+      }
+    | {
+        row: 'T';
+        number: 23;
+      }
+    | {
+        row: 'U';
+        number: 1;
+      }
+    | {
+        row: 'U';
+        number: 23;
+      }
+    | {
+        row: 'V';
+        number: 1;
+      }
+    | {
+        row: 'V';
+        number: 23;
+      }
+    | {
+        row: 'W';
+        number: 1;
+      }
+    | {
+        row: 'W';
+        number: 21;
+      }
+    | {
+        row: 'X';
+        number: 1;
+      }
+    | {
+        row: 'X';
+        number: 13;
+      }
+    | {
+        row: 'Y';
+        number: 1;
+      }
+    | {
+        row: 'Y';
+        number: 13;
+      }
+    | {
+        row: 'Z';
+        number: 1;
+      }
+    | {
+        row: 'Z';
+        number: 13;
+      }
+    | {
+        row: 'Z';
+        number: 25;
+      }
+    | {
+        row: 'Z';
+        number: 37;
+      },
+): number {
+  switch (boothNumber.row) {
+    case 'J':
+      switch (boothNumber.number) {
+        case 1:
+          return 142;
+        case 21:
+          return 177;
+      }
+    case 'K':
+      switch (boothNumber.number) {
+        case 1:
+          return 258;
+        case 21:
+          return 293;
+      }
     case 'L':
-      return 5252;
+      switch (boothNumber.number) {
+        case 1:
+          return 374;
+        case 21:
+          return 409;
+      }
     case 'M':
-      return 4932;
+      switch (boothNumber.number) {
+        case 1:
+          return 489;
+        case 21:
+          return 524;
+      }
     case 'N':
-      return 4614;
+      switch (boothNumber.number) {
+        case 1:
+          return 605;
+        case 21:
+          return 640;
+      }
     case 'O':
-      return 4295;
+      switch (boothNumber.number) {
+        case 1:
+          return 720;
+        case 21:
+          return 755;
+      }
     case 'P':
-      return 3977;
+      switch (boothNumber.number) {
+        case 1:
+          return 836;
+        case 21:
+          return 871;
+      }
     case 'Q':
-      return 3658;
+      switch (boothNumber.number) {
+        case 1:
+          return 952;
+        case 21:
+          return 987;
+      }
     case 'R':
-      return 3339;
+      switch (boothNumber.number) {
+        case 1:
+          return 1065;
+        case 21:
+          return 1100;
+      }
     case 'S':
-      return 3022;
-    default:
-      return 0;
+      switch (boothNumber.number) {
+        case 1:
+          return 139;
+        case 23:
+          return 180;
+      }
+    case 'T':
+      switch (boothNumber.number) {
+        case 1:
+          return 254;
+        case 23:
+          return 296;
+      }
+    case 'U':
+      switch (boothNumber.number) {
+        case 1:
+          return 370;
+        case 23:
+          return 411;
+      }
+    case 'V':
+      switch (boothNumber.number) {
+        case 1:
+          return 485;
+        case 23:
+          return 526;
+      }
+    case 'W':
+      switch (boothNumber.number) {
+        case 1:
+          return 601;
+        case 21:
+          return 642;
+      }
+    case 'X':
+      switch (boothNumber.number) {
+        case 1:
+          return 720;
+        case 13:
+          return 754;
+      }
+    case 'Y':
+      switch (boothNumber.number) {
+        case 1:
+          return 831;
+        case 13:
+          return 865;
+      }
+    case 'Z':
+      switch (boothNumber.number) {
+        case 1:
+          return 947;
+        case 13:
+          return 981;
+        case 25:
+          return 1065;
+        case 37:
+          return 1099;
+      }
   }
 }
