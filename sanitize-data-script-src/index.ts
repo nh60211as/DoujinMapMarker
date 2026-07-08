@@ -1,5 +1,5 @@
 // NOTE: The implementation should be changed with each event
-import rawGroupData from '../generated-data/IF7/group-data.json';
+import rawGroupData from '../generated-data/FF47/group-data.json';
 import { GroupData } from '../src/types/GroupData';
 import {
   getUnsanitizedGroupDataList,

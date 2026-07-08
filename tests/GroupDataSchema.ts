@@ -5,12 +5,23 @@ import { isBetween } from '../src/utils/NumberUtils';
 import Joi from 'joi';
 
 // NOTE: The implementation should be changed with each event
-const BoothActiveDaySchema = Joi.string().valid('IF7_DAY_1').required();
+const BoothActiveDaySchema = Joi.string()
+  .valid('FF47_DAY_1', 'FF47_DAY_2', 'FF47_DAY_3')
+  .required();
 
 // Joi schema for BoothNumber (with row-specific range validation)
 const BoothNumberSchema = Joi.object<BoothNumber, true>({
   row: Joi.string()
     .valid(
+      'A',
+      'B',
+      'C',
+      'D',
+      'E',
+      'F',
+      'G',
+      'H',
+      'I',
       'J',
       'K',
       'L',
@@ -25,42 +36,47 @@ const BoothNumberSchema = Joi.object<BoothNumber, true>({
       'U',
       'V',
       'W',
-      'X',
-      'Y',
-      'Z',
     )
     .required(),
   number: Joi.number()
     .custom((value, helpers) => {
       if (
-        isBetween(value, 1, 40) &&
-        ['J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R'].includes(
-          helpers.state.ancestors[0].row,
-        )
+        isBetween(value, 1, 22) &&
+        ['A'].includes(helpers.state.ancestors[0].row)
       ) {
         return value;
       }
       if (
         isBetween(value, 1, 44) &&
-        ['S', 'T', 'U', 'V'].includes(helpers.state.ancestors[0].row)
+        [
+          'B',
+          'C',
+          'D',
+          'E',
+          'F',
+          'G',
+          'H',
+          'I',
+          'J',
+          'K',
+          'L',
+          'M',
+          'N',
+          'O',
+          'P',
+          'Q',
+          'R',
+          'S',
+          'T',
+          'U',
+          'V',
+        ].includes(helpers.state.ancestors[0].row)
       ) {
         return value;
       }
       if (
-        isBetween(value, 1, 40) &&
+        isBetween(value, 1, 42) &&
         ['W'].includes(helpers.state.ancestors[0].row)
-      ) {
-        return value;
-      }
-      if (
-        isBetween(value, 1, 24) &&
-        ['X', 'Y'].includes(helpers.state.ancestors[0].row)
-      ) {
-        return value;
-      }
-      if (
-        isBetween(value, 1, 48) &&
-        ['Z'].includes(helpers.state.ancestors[0].row)
       ) {
         return value;
       }

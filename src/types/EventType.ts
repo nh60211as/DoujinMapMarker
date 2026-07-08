@@ -3,6 +3,7 @@ export const eventTypeArray = [
   'FF44',
   'FF45',
   'FF46',
+  'FF47',
   'PF42',
   'PF43',
   'PF44',
