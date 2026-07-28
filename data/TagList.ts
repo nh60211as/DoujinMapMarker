@@ -419,4 +419,5 @@ export const TAG_LIST: Array<string> = [
   '上伊那牡丹',
   '戰鎚40000',
   '無職轉生',
+  '刀劍神域',
 ];
