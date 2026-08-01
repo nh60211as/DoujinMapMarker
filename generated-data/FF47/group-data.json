@@ -2244,8 +2244,7 @@
       }
     ],
     "tagList": [
-      "原創",
-      "VTuber"
+      "星穹鐵道"
     ]
   },
   {
@@ -8697,7 +8696,8 @@
       }
     ],
     "tagList": [
-      "VTuber"
+      "VTuber",
+      "魔法少女的魔女審判"
     ]
   },
   {
@@ -20992,7 +20992,7 @@
       }
     ],
     "tagList": [
-      "魔法少女的魔女審判"
+      "鳴潮"
     ]
   },
   {
@@ -21091,7 +21091,8 @@
       }
     ],
     "tagList": [
-      "星穹鐵道"
+      "星穹鐵道",
+      "鳴潮"
     ]
   },
   {
@@ -21335,7 +21336,8 @@
       }
     ],
     "tagList": [
-      "妮姬"
+      "妮姬",
+      "VTuber"
     ]
   },
   {
@@ -22034,6 +22036,7 @@
     ],
     "tagList": [
       "寶可夢",
+      "魔物獵人",
       "薩爾達傳說"
     ]
   },
@@ -22501,7 +22504,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "明日方舟"
+    ]
   },
   {
     "groupId": "82757cecca2e4119bd3ad1fc943be642",
@@ -32963,7 +32968,11 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原神",
+      "星穹鐵道",
+      "賽馬娘"
+    ]
   },
   {
     "groupId": "6b9ad43db8c343b2a5d5d80cef96be75",
@@ -32985,7 +32994,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "賽馬娘"
+    ]
   },
   {
     "groupId": "766536ff18f646409dd41ef277cd3b36",
@@ -33196,7 +33207,8 @@
       }
     ],
     "tagList": [
-      "原創"
+      "原創",
+      "二創"
     ]
   },
   {
@@ -33215,7 +33227,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創",
+      "二創"
+    ]
   },
   {
     "groupId": "27482c4d4abc4859bc828c871091a2a0",
@@ -33325,7 +33340,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "藥師少女的獨語"
+    ]
   },
   {
     "groupId": "888ef961f28e4367a7985df41b726a10",
@@ -33867,8 +33884,7 @@
       }
     ],
     "tagList": [
-      "絕區零",
-      "蔚藍檔案"
+      "原創"
     ]
   },
   {
@@ -34523,7 +34539,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "4b286bf79ad441e6a8ddedf1c87a8073",
@@ -35411,7 +35429,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原神",
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "c252096777994745b2ea568ddc6da597",
@@ -35742,7 +35763,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "4ceee637673b4d0aacf754f22ff8f62d",
@@ -35764,7 +35787,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "b67a57e90fe341d7ac0679829d03dbbd",
@@ -35786,7 +35811,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "d99671d7b2734ab9ad3b2bfab2512230",
@@ -35808,7 +35835,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "53782043e9ba41daa8ef73b96d328b61",
@@ -35830,7 +35859,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "c639c622b788497bb88c98a02c6ce358",
@@ -35872,7 +35903,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "2f35c8662b4540579c01aa0010ae3ee9",
@@ -35894,7 +35927,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "cb111fbd882648bd843b0ab0aabe4675",
@@ -35912,7 +35947,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "2663aa4847ca499d859839c8aa992601",
@@ -35956,7 +35993,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "47f1bca433a14d1588850c382ff571d9",
@@ -36040,7 +36079,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "cfd409f3e5ef42aeb8bbf1f2e40222ef",
@@ -36058,7 +36099,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "15124e9fc39641389293120d627117e8",
@@ -36124,7 +36167,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "8f6a7fe0af1747e0909052a96f78089a",
@@ -36218,7 +36263,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Cosplay"
+    ]
   },
   {
     "groupId": "6be0735166f440ef9b82976291661751",
