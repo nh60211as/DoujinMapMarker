@@ -426,4 +426,8 @@ export const TAG_LIST: Array<string> = [
   '春夏秋冬代行者',
   '舊書店街的橋姬',
   '再見菈菈',
+  '夢想成為魔法少女',
+  '異環',
+  'Rotaeno',
+  'Shadowverse',
 ];
