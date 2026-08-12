@@ -430,4 +430,5 @@ export const TAG_LIST: Array<string> = [
   '異環',
   'Rotaeno',
   'Shadowverse',
+  '尼古喵喵',
 ];
