@@ -432,4 +432,8 @@ export const TAG_LIST: Array<string> = [
   'Shadowverse',
   '尼古喵喵',
   '魔法少女奈葉',
+  'mono女孩',
+  'Code Geass',
+  '我想成為影之強者',
+  'maimai',
 ];
