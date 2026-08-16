@@ -436,4 +436,5 @@ export const TAG_LIST: Array<string> = [
   'Code Geass',
   '我想成為影之強者',
   'maimai',
+  '最終休止符',
 ];
