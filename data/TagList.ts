@@ -437,4 +437,6 @@ export const TAG_LIST: Array<string> = [
   '我想成為影之強者',
   'maimai',
   '最終休止符',
+  '我的朋友很少',
+  '監獄學園',
 ];
