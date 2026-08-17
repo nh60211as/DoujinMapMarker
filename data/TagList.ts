@@ -439,4 +439,5 @@ export const TAG_LIST: Array<string> = [
   '最終休止符',
   '我的朋友很少',
   '監獄學園',
+  '格鬥天王',
 ];
