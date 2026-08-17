@@ -32,7 +32,7 @@ export async function csvToGroupDataListWithoutBoothList(
       .pipe(
         csvParser({
           // FIXME: when using headers property, the header itself will be used in row data
-          // headers: ["GROUP_ID", "GROUP_NAME", "GROUP_LINK", "MENU_LINK", "TAG_LIST"],
+          // headers: ["GROUP_ID", "GROUP_NAME", "GROUP_LINK", "MENU_LINKS", "TAG_LIST"],
           separator: ',',
           quote: '"',
         }),
@@ -42,7 +42,7 @@ export async function csvToGroupDataListWithoutBoothList(
           groupId: anyToTrimmedString(row.GROUP_ID),
           groupName: anyToTrimmedString(row.GROUP_NAME),
           groupLink: anyToTrimmedStringOrNull(row.GROUP_LINK),
-          menuLink: anyToTrimmedStringOrNull(row.MENU_LINK),
+          menuLinks: anyToTrimmedStringListOrEmpty(row.MENU_LINKS, '|'),
           boothList: [],
           tagList: convertToTagList(row.TAG_LIST),
         } satisfies GroupData);
@@ -185,5 +185,18 @@ function anyToTrimmedStringOrNull(input: any): string | null {
     return input.toString().trim();
   } else {
     return null;
+  }
+}
+
+function anyToTrimmedStringListOrEmpty(
+  input: any,
+  separator: string,
+): Array<string> {
+  if (input) {
+    const stringInput: string = input.toString();
+    const stringList: Array<string> = stringInput.split(separator);
+    return stringList.map((s) => s.trim());
+  } else {
+    return [];
   }
 }

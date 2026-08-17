@@ -5,9 +5,9 @@ export interface GroupDataWithSanitizationResult {
   groupId: string;
   groupName: string;
   groupLink: string | null;
-  menuLink: string | null;
+  menuLinks: Array<string>;
   sanitizedGroupLink: string | null;
-  sanitizedMenuLink: string | null;
+  sanitizedMenuLinks: Array<string>;
 }
 
 export async function getUnsanitizedGroupDataList(
@@ -23,9 +23,9 @@ export async function getUnsanitizedGroupDataList(
       groupId: groupData.groupId,
       groupName: groupData.groupName,
       groupLink: null,
-      menuLink: null,
+      menuLinks: [],
       sanitizedGroupLink: null,
-      sanitizedMenuLink: null,
+      sanitizedMenuLinks: [],
     };
 
     if (groupData.groupLink !== null) {
@@ -40,20 +40,24 @@ export async function getUnsanitizedGroupDataList(
       }
     }
 
-    if (groupData.menuLink !== null) {
-      const menuLinkResult = await cleaner.cleanURLWithResult(
-        groupData.menuLink,
-      );
+    if (groupData.menuLinks.length > 0) {
+      for (const menuLink of groupData.menuLinks) {
+        const menuLinkResult = await cleaner.cleanURLWithResult(menuLink);
 
-      if (menuLinkResult.modified) {
-        groupDataWithSanitizationResult.menuLink = menuLinkResult.originalUrl;
-        groupDataWithSanitizationResult.sanitizedMenuLink = menuLinkResult.url;
+        if (menuLinkResult.modified) {
+          groupDataWithSanitizationResult.menuLinks.push(
+            menuLinkResult.originalUrl,
+          );
+          groupDataWithSanitizationResult.sanitizedMenuLinks.push(
+            menuLinkResult.url,
+          );
+        }
       }
     }
 
     if (
       groupDataWithSanitizationResult.sanitizedGroupLink !== null ||
-      groupDataWithSanitizationResult.sanitizedMenuLink !== null
+      groupDataWithSanitizationResult.sanitizedMenuLinks.length > 0
     ) {
       result.push(groupDataWithSanitizationResult);
     }

@@ -98,7 +98,7 @@ const GroupDataSchema = Joi.object<GroupData, true>({
   groupId: Joi.string().required(),
   groupName: Joi.string().required(),
   groupLink: Joi.string().allow(null),
-  menuLink: Joi.string().allow(null),
+  menuLinks: Joi.array().items(Joi.string()).required(),
   boothList: Joi.array().items(BoothSchema).min(1).required(),
   tagList: Joi.array().items(Joi.string()).required(),
 });

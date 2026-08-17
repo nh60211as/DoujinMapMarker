@@ -268,7 +268,7 @@ function getCurrentGroupDataList(filter: Filter): Array<GroupData> {
       );
     case Filter.onlyWithMenuLink:
       return CURRENT_GROUP_DATA.filter(
-        (groupData) => groupData.menuLink !== null,
+        (groupData) => groupData.menuLinks.length > 0,
       );
     case Filter.onlyMarked:
       // TODO: extract function
@@ -354,7 +354,7 @@ function GroupTable(props: {
             </td>
             <td>{e.groupName}</td>
             <td>{getLink(e.groupLink)}</td>
-            <td>{getLink(e.menuLink)}</td>
+            <td>{getLinks(e.menuLinks)}</td>
           </tr>
         ))}
       </tbody>
@@ -370,6 +370,22 @@ function getLink(boothLink: string | null): JSX.Element {
     <a href={boothLink} target="_blank" rel="noopener noreferrer">
       連結
     </a>
+  );
+}
+
+function getLinks(boothLinks: Array<string>): JSX.Element {
+  if (boothLinks.length === 0) {
+    return <td></td>;
+  }
+
+  return (
+    <td>
+      {boothLinks
+        .map((boothLink) => getLink(boothLink))
+        .reduce((prev, curr, index) => (
+          <>{[prev, ' | ', curr]}</>
+        ))}
+    </td>
   );
 }
 
