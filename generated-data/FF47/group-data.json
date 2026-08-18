@@ -3648,7 +3648,9 @@
     "groupId": "f64913de789b4428845a5f9fb187c264",
     "groupName": "多肉生物",
     "groupLink": "https://www.plurk.com/peter781226",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1rvs7i72"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -3661,9 +3663,7 @@
       }
     ],
     "tagList": [
-      "原創",
-      "VTuber",
-      "葬送的芙莉蓮"
+      "原創"
     ]
   },
   {
@@ -4305,7 +4305,9 @@
     "groupId": "4a05830ee13b4d8f868039851c9fa25c",
     "groupName": "ETERNAL LAND",
     "groupLink": "https://www.plurk.com/eland_6U",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1rsuc3s7"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -4494,8 +4496,10 @@
   {
     "groupId": "ad2c02fae6a146a894c119b306aa479f",
     "groupName": "GODNASK",
-    "groupLink": "https://x.com/godnaskdigi",
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/godnaskdigi",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1roqt0uc"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -22558,7 +22562,9 @@
     "groupId": "f55b53f35b5b492aaac0f42558d45b4e",
     "groupName": "Takiki Palette",
     "groupLink": "https://x.com/takiki2828",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/Takiki2828/status/2089657446264672426"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -29235,8 +29241,10 @@
   {
     "groupId": "ee873d20712c4f0b8307b042b5e4027b",
     "groupName": "Ekoru(代理)",
-    "groupLink": "https://x.com/ek0ru",
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/ek0ru",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1rqq2cnj"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -30031,7 +30039,9 @@
     "groupId": "3bf233c37ab04ab581fd75f950b9b0fc",
     "groupName": "月宮櫻Tsukimiya Sakura",
     "groupLink": "https://lit.link/en/tsukimiyasakura92",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/super_chishima/status/2089656000270004379"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -30053,7 +30063,9 @@
       }
     ],
     "tagList": [
-      "Cosplay"
+      "Cosplay",
+      "妮姬",
+      "蔚藍檔案"
     ]
   },
   {
@@ -36943,7 +36955,9 @@
     "groupId": "e26cdf07840c4863a9be0f9c111aa40c",
     "groupName": "嚕卡蹦分貝超過100",
     "groupLink": null,
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/natsumi0913/status/2089657334515855650"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_3",
@@ -36956,7 +36970,8 @@
       }
     ],
     "tagList": [
-      "Cosplay"
+      "Cosplay",
+      "妮姬"
     ]
   },
   {
