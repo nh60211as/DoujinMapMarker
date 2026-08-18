@@ -335,7 +335,7 @@ function GroupTable(props: {
   onBoothInfoClicked: (groupId: string) => void;
 }): JSX.Element {
   return (
-    <table>
+    <table className={style.customTable}>
       <thead>
         <tr>
           <th>資訊</th>
@@ -375,17 +375,17 @@ function getLink(boothLink: string | null): JSX.Element {
 
 function getLinks(boothLinks: Array<string>): JSX.Element {
   if (boothLinks.length === 0) {
-    return <td></td>;
+    return <></>;
   }
 
   return (
-    <td>
+    <>
       {boothLinks
         .map((boothLink) => getLink(boothLink))
         .reduce((prev, curr, index) => (
-          <>{[prev, ' | ', curr]}</>
+          <>{[prev, <br />, curr]}</>
         ))}
-    </td>
+    </>
   );
 }
 

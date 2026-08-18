@@ -52,3 +52,13 @@
   flex-direction: row;
   justify-content: center;
 }
+
+.customTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.customTable th,
+.customTable td {
+  border: 1px solid #333333;
+}
