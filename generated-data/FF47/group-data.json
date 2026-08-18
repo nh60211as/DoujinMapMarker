@@ -1385,8 +1385,10 @@
   {
     "groupId": "da08944fad2b489ba9eea3a85e17f791",
     "groupName": "翻車貓MoNya MoNya",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/MoNyaMoNya",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1ra27k99"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -1402,7 +1404,11 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案",
+      "妮姬",
+      "VTuber"
+    ]
   },
   {
     "groupId": "b43aa9dd0f8a4f768883416d11e025db",
@@ -1825,7 +1831,9 @@
     "groupId": "579606a77c0a476a8a1c185316f8588e",
     "groupName": "美味兔堡",
     "groupLink": "https://lit.link/en/muling0606",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/MULING0606/status/2089643728046571999"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -1851,8 +1859,9 @@
       }
     ],
     "tagList": [
-      "原創",
-      "星穹鐵道"
+      "絕區零",
+      "星穹鐵道",
+      "原創"
     ]
   },
   {
@@ -1977,9 +1986,9 @@
   {
     "groupId": "a2c2dee6d5b04bdeb5dc04d1a9b2fb63",
     "groupName": "Wish+希冀之翼+",
-    "groupLink": "https://www.facebook.com/Wishswing",
+    "groupLink": "https://x.com/sakuranoruu",
     "menuLinks": [
-      "https://www.facebook.com/Wishswing/posts/pfbid0KRTSxZYqcNmHpn26F74UQ7VqjJ47hM2kof18qbM8VAfb3hJhw6TJLpTb5C3DgycTl"
+      "https://x.com/sakuranoruu/status/2089641605603217797"
     ],
     "boothList": [
       {
@@ -2010,7 +2019,8 @@
       }
     ],
     "tagList": [
-      "光之美少女"
+      "光之美少女",
+      "星穹鐵道"
     ]
   },
   {
@@ -2442,7 +2452,9 @@
     "groupId": "4fe5db77b4c54096b309ecedd72827fe",
     "groupName": "咩咩繪夢工坊",
     "groupLink": "https://potofu.me/kbmie",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1qp0yaly"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -2464,8 +2476,13 @@
       }
     ],
     "tagList": [
-      "原創",
-      "VTuber"
+      "寶可夢",
+      "迷宮飯",
+      "膽大黨",
+      "絕區零",
+      "葬送的芙莉蓮",
+      "星穹鐵道",
+      "蔚藍檔案"
     ]
   },
   {
@@ -2613,8 +2630,10 @@
   {
     "groupId": "f25214a7c3f84d19beceae20d27ba16e",
     "groupName": "奇怪的東西混入了",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/renda_desu",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1qae5v37"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -2635,7 +2654,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "maimai"
+    ]
   },
   {
     "groupId": "f111a42275cd4ed3998e2a5d31fab07c",
@@ -3937,7 +3958,9 @@
     "groupId": "5ad7811572234a23888e55cf409329c4",
     "groupName": "甜品製造所",
     "groupLink": "https://www.facebook.com/liu.tong.xue.241219/",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.facebook.com/liu.tong.xue.241219/posts/pfbid0wfs1wXnnh1hoRDgCTX9PCg29Ycb3pXrYuc2wqpZyhpsWWn7JCAAWvsfd2LXVbHLrl"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -3949,7 +3972,11 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "學園偶像大師",
+      "MyGO!!!!!/Ave Mujica",
+      "魔法少女的魔女審判"
+    ]
   },
   {
     "groupId": "8a1af56f4e7842b79528e9511c6c5192",
@@ -4428,7 +4455,9 @@
     "groupId": "7f2d3d1ebf3444088a1b4e415ef2ac15",
     "groupName": "まふゆ",
     "groupLink": "https://lit.link/en/mafuyuuu",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.facebook.com/neko.winter.9/posts/pfbid07kuLXgSjEpAoJKSpxep2beMn4tmFW24VnhEUFUpNW4nH6U2LWa1sRDb1DH52ggX5l"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -4441,7 +4470,6 @@
       }
     ],
     "tagList": [
-      "星穹鐵道",
       "原神"
     ]
   },
@@ -5170,8 +5198,10 @@
   {
     "groupId": "193b1d0507c84180ab6f6d59ddb1ed61",
     "groupName": "超易孕妊天堂",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/qaz0912309057",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1pq5420c"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -5187,7 +5217,12 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創",
+      "蔚藍檔案",
+      "公主連結",
+      "間諜家家酒"
+    ]
   },
   {
     "groupId": "dcb0dfbe1cc046598740d292b4526474",
@@ -7111,8 +7146,10 @@
   {
     "groupId": "10a5b3119e9c4a0f93021f0164a870ee",
     "groupName": "SCIFASAURUS(海穹文化)",
-    "groupLink": "https://www.facebook.com/SciFaSaurus",
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/scifasaurus",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1qa91do2"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -7141,7 +7178,9 @@
     "groupId": "5a3b4f825cef40b99aad3b385dd4e22b",
     "groupName": "Hsun Craft Studio",
     "groupLink": null,
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1qz06241"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -7170,7 +7209,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "佐賀偶像是傳奇",
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "3d2e70fdd10b4c4c982322a799c672ae",
@@ -7263,7 +7305,9 @@
     "groupId": "50be4e763f44421d9c9413f9571a96fa",
     "groupName": "天之火",
     "groupLink": "https://www.facebook.com/nnnnoooo007/",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.facebook.com/nnnnoooo007/posts/pfbid02zjDg9Sacw3QWB8ne85qjgs8GcoTcXY7QR4FidpjKLZTE4kWRxVDBHiP6Z83ZUyygl"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -7306,7 +7350,8 @@
       }
     ],
     "tagList": [
-      "原創"
+      "原創",
+      "上伊那牡丹"
     ]
   },
   {
@@ -8244,7 +8289,9 @@
     "groupId": "4612ee790174449d87cfa1b87fac0aa8",
     "groupName": "艾宅團",
     "groupLink": "https://x.com/kabihandmaker",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/kabihandmaker/status/2089569346159063418"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -8274,9 +8321,11 @@
       }
     ],
     "tagList": [
+      "鳴潮",
+      "絕區零",
       "VTuber",
       "Vocaloid",
-      "絕區零"
+      "寶可夢"
     ]
   },
   {
@@ -10136,7 +10185,8 @@
     ],
     "tagList": [
       "學園偶像大師",
-      "VTuber"
+      "VTuber",
+      "光之美少女"
     ]
   },
   {
@@ -13344,7 +13394,8 @@
     "groupName": "筑波的快樂輻射森林",
     "groupLink": "https://www.facebook.com/li.an.zhu.338696",
     "menuLinks": [
-      "https://www.facebook.com/li.an.zhu.338696/posts/pfbid0PFUkTeNFdJgF3N5Zp1UithLE12w5ZzVEdrmLEtYMd6JQZieRfyJCd2ruDaHJNB9El"
+      "https://www.facebook.com/li.an.zhu.338696/posts/pfbid0PFUkTeNFdJgF3N5Zp1UithLE12w5ZzVEdrmLEtYMd6JQZieRfyJCd2ruDaHJNB9El",
+      "https://www.facebook.com/li.an.zhu.338696/posts/pfbid037pitZ6RR2XCyr36qqEigWAeUp1YeDzw4BAYNPVEFTm4oyF4n4fXMA3YsSkEMz9eql"
     ],
     "boothList": [
       {
@@ -13628,8 +13679,10 @@
   {
     "groupId": "a44799ac24034765a1fff7f6ef08d73f",
     "groupName": "中央動畫社",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/NCUACG",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1qc9qdoa"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -13650,7 +13703,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "789babe90a0c498db3986a5dc2bdc10f",
@@ -13802,7 +13857,7 @@
     "groupName": "ＵＲＡＮ-ＦＡＣＴＯＲＹ",
     "groupLink": "https://www.plurk.com/URAN1017",
     "menuLinks": [
-      "https://www.plurk.com/p/3j11n582u6"
+      "https://www.plurk.com/p/3j1rb6kd32"
     ],
     "boothList": [
       {
@@ -18599,7 +18654,9 @@
     "groupId": "4f3ed6bcdd184554a21c697736d7aa25",
     "groupName": "夜觸人身",
     "groupLink": "https://lit.link/zh-tw/rinkopoi",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1q9a5506"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -18718,8 +18775,10 @@
   {
     "groupId": "45e94839676e4a058e2cac8eb6531531",
     "groupName": "新竹高中嶺風動畫",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.facebook.com/profile.php?id=100064487124991",
+    "menuLinks": [
+      "https://www.facebook.com/permalink.php?story_fbid=pfbid02b5kzKaFxJoDWgAgW2UhRXXUMrZP27JdSbf94W45u1gpX54NWdE3TyYuLxUUC6Tmtl&id=100064487124991"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -18903,8 +18962,10 @@
   {
     "groupId": "09a2a9bc841c4eb6a673f1c6440f084f",
     "groupName": "田中水草",
-    "groupLink": "https://instagram.com/almn_sk",
-    "menuLinks": [],
+    "groupLink": "https://x.com/almn_sk",
+    "menuLinks": [
+      "https://x.com/almn_sk/status/2089649594808635896"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -19147,7 +19208,7 @@
     "groupName": "稚稚丸",
     "groupLink": "https://www.plurk.com/ChiChiMaru",
     "menuLinks": [
-      "https://www.plurk.com/p/3iz7nxkcb3"
+      "https://www.plurk.com/p/3j1qnqmnxq"
     ],
     "boothList": [
       {
@@ -19232,7 +19293,7 @@
     "groupName": "小菊小花園",
     "groupLink": "https://www.facebook.com/hua.xiao.hua.859628",
     "menuLinks": [
-      "https://www.facebook.com/hua.xiao.hua.859628/posts/pfbid02v6LEw89mcgJgmiWFoVEt99oS6TefgBnpHSSbDCUyugeLfEqyzJR4ySK3GkzCfy5yl"
+      "https://www.facebook.com/hua.xiao.hua.859628/posts/pfbid0a9Uw6qR2VvgdAdyd9rjDCzwjynw9Lt78RPSqJzHhcJW5GGLGwi1NujGiGUAeo9pNl"
     ],
     "boothList": [
       {
@@ -19255,6 +19316,7 @@
       }
     ],
     "tagList": [
+      "超時空輝耀姬",
       "孤獨搖滾"
     ]
   },
@@ -19362,7 +19424,9 @@
     "groupId": "44501bffae414974a089a05373d7ba4c",
     "groupName": "瓜子工坊",
     "groupLink": "https://www.plurk.com/ray951209",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1pirhueb"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -19384,8 +19448,8 @@
       }
     ],
     "tagList": [
-      "鏈鋸人",
-      "膽大黨"
+      "琉璃的寶石",
+      "鏈鋸人"
     ]
   },
   {
@@ -25257,8 +25321,10 @@
   {
     "groupId": "5bc56eb837414e22b90f4415cb985cde",
     "groupName": "HitenKei",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://x.com/HitenKei",
+    "menuLinks": [
+      "https://x.com/HitenKei/status/2089652379272818700"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -25270,14 +25336,16 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "7b488ae486cf4d4e98b9c8a1adb3e404",
     "groupName": "WAGA illustration",
     "groupLink": "https://www.waga-illustration.com/",
     "menuLinks": [
-      "https://www.plurk.com/p/3izm49ge65"
+      "https://x.com/wagaillustrator/status/2089618171548639690"
     ],
     "boothList": [
       {
@@ -27178,8 +27246,10 @@
   {
     "groupId": "65488a72ac884e78906e41357795160b",
     "groupName": "工坊夏至千里",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://x.com/km1000km1000",
+    "menuLinks": [
+      "https://x.com/km1000km1000/status/2089640546692370534"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -27191,7 +27261,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "f5075d0f302d45e48557adb9883c4bea",
@@ -27768,7 +27840,9 @@
     "groupId": "7ce315b1e9344c969673157994ea1f9a",
     "groupName": "颶風攪拌機",
     "groupLink": "https://lit.link/en/hunman360",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1qvcxp6b"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -28421,8 +28495,10 @@
   {
     "groupId": "53b7a5bbf3e94f48b069cb2520d9e1a2",
     "groupName": "regnie",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://x.com/yzk_knmn",
+    "menuLinks": [
+      "https://x.com/yzk_knmn/status/2089653535629869431"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -28435,8 +28511,8 @@
       }
     ],
     "tagList": [
-      "VTuber",
-      "蔚藍檔案"
+      "蔚藍檔案",
+      "VTuber"
     ]
   },
   {
@@ -28491,8 +28567,10 @@
   {
     "groupId": "57288be6a3b346df91e54a2002deb8ad",
     "groupName": "Saturnalia",
-    "groupLink": "https://www.facebook.com/kyaroru0203",
-    "menuLinks": [],
+    "groupLink": "https://x.com/kyaroru0203",
+    "menuLinks": [
+      "https://x.com/kyaroru0203/status/2089636165930320040"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -28746,7 +28824,9 @@
     "groupId": "7cfbcae5aebc421db896e88e4c110784",
     "groupName": "小撿存檔點",
     "groupLink": "https://www.facebook.com/xiao.jen.3304",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.facebook.com/xiao.jen.3304/posts/pfbid02zAg4dp2gSHwYhsjSxznLb2ygoLRoXkozzhzLfA226sSdW3DE6UgrEwFdqzGUSyQLl"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -30857,8 +30937,10 @@
   {
     "groupId": "633bc7d70c734b7bba5d1cf112d634c5",
     "groupName": "#DREAMProject Neneko",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.facebook.com/profile.php?id=100044570073501",
+    "menuLinks": [
+      "https://www.facebook.com/permalink.php?story_fbid=pfbid02a39VRrjwDpvGXjEEMfz7vkVuQFZSFqSHBn8WRfRP8SA8WgCCVff6nKGsy4FeByDEl&id=100044570073501"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -32635,8 +32717,10 @@
   {
     "groupId": "49f9120396b64e23b494f540adfb8d40",
     "groupName": "木子的百合花園",
-    "groupLink": "https://www.facebook.com/MuziYuri/",
-    "menuLinks": [],
+    "groupLink": "https://www.facebook.com/MuziYuri",
+    "menuLinks": [
+      "https://www.facebook.com/MuziYuri/posts/pfbid032wegKn9ah8k6R2NeAcXBrb3f8oQphw5Cd4A65q8gE4rLPkASCk63b2x1Pn9FGF2il"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -32662,7 +32746,9 @@
       }
     ],
     "tagList": [
-      "原創"
+      "上伊那牡丹",
+      "原創",
+      "超時空輝耀姬"
     ]
   },
   {
@@ -33119,7 +33205,7 @@
     "groupName": "貓咪窩",
     "groupLink": "https://lit.link/zh-tw/lunluncat",
     "menuLinks": [
-      "https://www.plurk.com/p/3j0tarm0rz"
+      "https://www.plurk.com/p/3j1raopi8u"
     ],
     "boothList": [
       {
@@ -33580,8 +33666,10 @@
   {
     "groupId": "521d27bbd5b54ef39ea6b371ca71e9f7",
     "groupName": "肥肥紅鳥保育園區",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.facebook.com/hong.cook.2025",
+    "menuLinks": [
+      "https://www.facebook.com/hong.cook.2025/posts/pfbid02T8TMvGcq2vGBrH73vFZFZfRes1zfLGno7kwJvHXLUqVCnAkVsoGDj9pvMJNfVFWil"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_3",
@@ -33593,7 +33681,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "絕區零"
+    ]
   },
   {
     "groupId": "afd60ed6f6cb45ccb7068d95d6d304c5",
@@ -35026,7 +35116,7 @@
     "groupName": "大御哦哦哦",
     "groupLink": "https://x.com/Dayuh_820",
     "menuLinks": [
-      "https://www.facebook.com/dayuh.kawa/posts/pfbid0nWybbRiVz2zWpuArCvf66dG3Y2ALJAwFDy7uhoPSYKbQZfVYAKGTrW4dN8AZgSgql"
+      "https://www.facebook.com/dayuh.kawa/posts/pfbid0NJfG5VXVpgjSz6PNMQjsTYpSnyR3ESaTLQxXnpKvnx8rAwohcf1EA1AfNBGybtTLl"
     ],
     "boothList": [
       {
@@ -35901,7 +35991,9 @@
     "groupId": "6e547fcbde3e458f800ea7ab81688a27",
     "groupName": "夏日吉典",
     "groupLink": null,
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/hyoukakoori0126/status/2089532736016957450"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_3",
@@ -35913,7 +36005,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "665faae59a134b348140a65e7f2857ae",
@@ -37357,8 +37451,10 @@
   {
     "groupId": "54e53e4daea3403d85e5273d4ead069c",
     "groupName": "秋奈-AKINA",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://x.com/akina_mochi_",
+    "menuLinks": [
+      "https://x.com/akina_mochi_/status/2089631585666764996"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_3",
@@ -37370,7 +37466,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "Vocaloid",
+      "VTuber"
+    ]
   },
   {
     "groupId": "ac976ca9e46b4f788f3da080ed179038",
