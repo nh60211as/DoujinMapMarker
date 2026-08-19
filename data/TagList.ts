@@ -198,7 +198,7 @@ export const TAG_LIST: Array<string> = [
   '妮姬',
   '孤獨搖滾',
   '守護甜心',
-  '家庭教師HITMAN REBORN!',
+  '家庭教師HITMAN REBORN',
   '寶可夢',
   '寶石之國',
   '小智是女孩啦！',
@@ -441,4 +441,7 @@ export const TAG_LIST: Array<string> = [
   '監獄學園',
   '格鬥天王',
   'K-ON',
+  '物語系列',
+  '人機迷網',
+  'Keroro軍曹',
 ];
