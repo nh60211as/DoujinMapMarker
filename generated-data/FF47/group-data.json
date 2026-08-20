@@ -3941,7 +3941,8 @@
     "groupName": "炉研所",
     "groupLink": "https://www.facebook.com/jiang.wei.ting.241286",
     "menuLinks": [
-      "https://www.facebook.com/jiang.wei.ting.241286/posts/pfbid0QwZ58ksmrtibntUqitwYH44WupEiAV9C9gAkRdq15GYTCe4MwQM1csMMU4bpAKt4l"
+      "https://www.facebook.com/jiang.wei.ting.241286/posts/pfbid0QwZ58ksmrtibntUqitwYH44WupEiAV9C9gAkRdq15GYTCe4MwQM1csMMU4bpAKt4l",
+      "https://www.facebook.com/jiang.wei.ting.241286/posts/pfbid0Thf64osnCzrjzXN3N1MMgSh49VBKjjT8qh5NmkjVH4vsj7WBAz5f8oM2P8vpcaSZl"
     ],
     "boothList": [
       {
@@ -3969,7 +3970,9 @@
     ],
     "tagList": [
       "VTuber",
-      "蔚藍檔案"
+      "蔚藍檔案",
+      "偶像大師 百萬人演唱會",
+      "學園偶像大師"
     ]
   },
   {
@@ -4064,7 +4067,9 @@
     "groupId": "355cbc8e62444eb6b1ced34cb92a9520",
     "groupName": "台北人",
     "groupLink": "https://www.facebook.com/kun.salamander.3/",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.facebook.com/kun.salamander.3/posts/pfbid0C5KgAsL9fhDC63UBWJL79HUDhDDdrsNHVnRB2teAVCBWTVkLfhb6kpkpB4z8qyVSl"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -4090,9 +4095,7 @@
       }
     ],
     "tagList": [
-      "MyGO!!!!!/Ave Mujica",
-      "莉可麗絲",
-      "蓮之空"
+      "學園偶像大師"
     ]
   },
   {
@@ -5787,7 +5790,9 @@
     "groupId": "6f55d52cc53e42809d910dccaeed3731",
     "groupName": "RongChuhan榮初涵",
     "groupLink": "https://lit.link/en/LLGlailing",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/LLG_lailing18/status/2084957599540425115"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -12728,7 +12733,9 @@
     "groupId": "72bf831e7c554af0bb505b7be8d5cd91",
     "groupName": "Damier Cookie 妲米餅乾",
     "groupLink": "https://www.facebook.com/Damier.Cookie",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.facebook.com/Damier.Cookie/posts/pfbid02MM59dakFXi43gK4FDzx6XH2Dty76QQqckMAMmUpJPj83G4nHAuxoibAh2aoMd4Col"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -12758,9 +12765,10 @@
       }
     ],
     "tagList": [
+      "光之美少女",
       "蔚藍檔案",
-      "MyGO!!!!!/Ave Mujica",
-      "光之美少女"
+      "VTuber",
+      "MyGO!!!!!/Ave Mujica"
     ]
   },
   {
@@ -18800,8 +18808,10 @@
   {
     "groupId": "bb1e45fbabab4f7d8bf103a5698bfb4e",
     "groupName": "Oruka的墨水浴缸",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.facebook.com/OrukaOru",
+    "menuLinks": [
+      "https://www.facebook.com/OrukaOru/posts/pfbid0Vzg8Kf9GxkdsxoZAvJ7R5f1yXxVNWixXRp5aFfxMBeCyzzsW2tjQiPQGRjzTThTPl"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -18813,7 +18823,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "來自深淵"
+    ]
   },
   {
     "groupId": "3a2f42c04e4b4932879e10e4442f0a45",
@@ -20075,7 +20087,10 @@
     "tagList": [
       "葬送的芙莉蓮",
       "原創",
-      "戀上換裝娃娃"
+      "戀上換裝娃娃",
+      "MyGO!!!!!/Ave Mujica",
+      "迷宮飯",
+      "VTuber"
     ]
   },
   {
@@ -20163,7 +20178,9 @@
     "groupId": "3a7c834e497a4f7aa41fc054cc11cf26",
     "groupName": "壞菇社",
     "groupLink": "https://www.plurk.com/fg3517",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j22ejftj3"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -20741,8 +20758,10 @@
   {
     "groupId": "9599e5f0877f45a69f9e0b4a41d4104d",
     "groupName": "DISH",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://x.com/Dishwasher1910",
+    "menuLinks": [
+      "https://x.com/Dishwasher1910/status/2090390777696485424"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -20784,7 +20803,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "妮姬"
+    ]
   },
   {
     "groupId": "c8aa6a54870d4ae08e55dfb6386281ca",
@@ -21661,7 +21682,9 @@
     "groupId": "f34f5f2f07724380bd74df3610ff98e2",
     "groupName": "箱庭交響曲",
     "groupLink": "https://www.facebook.com/hknwsymphony",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.facebook.com/hknwsymphony/posts/pfbid03382VzjmUQb5HCnME2QUvsiZPPNGFtgABmzaA4KLHiAWPv4XWXcS3gfjfDVNQzR3ql"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -21691,7 +21714,7 @@
       }
     ],
     "tagList": [
-      "星穹鐵道"
+      "明日方舟"
     ]
   },
   {
@@ -23259,7 +23282,7 @@
   {
     "groupId": "546bc2351b3846a9812e977f9fe18282",
     "groupName": "URA BOU",
-    "groupLink": "https://www.doujin.com.tw/groups/info/2584/books",
+    "groupLink": "https://x.com/mzenura",
     "menuLinks": [
       "https://x.com/mzenura/status/2083505679298703748"
     ],
@@ -24695,7 +24718,9 @@
     "groupId": "839889598dd14dcda7cfb0e112d8ea38",
     "groupName": "Bedtime Story 被談聲聆",
     "groupLink": "https://bedtimestoryasmr.com",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/BedtimeStory923/status/2087860632574218339"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
