@@ -2409,7 +2409,9 @@
     "groupId": "9b2752c4b33d41dd9379bce3bc3bfd2d",
     "groupName": "藝吟花園",
     "groupLink": "https://www.plurk.com/hshshs20160503",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j233gzl4v"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -6775,7 +6777,7 @@
     "groupName": "超級米漿",
     "groupLink": "https://linkby.tw/michill.1121",
     "menuLinks": [
-      "https://www.facebook.com/jiang.jiang.193870/posts/pfbid0w2wh2W6TJoTiYFHVZQCe41Yx62DLLw7N9jxgciFi8SHjMb7H2vFnFVjMrzbkE7tHl"
+      "https://x.com/chenmimi21/status/2085297414974681137"
     ],
     "boothList": [
       {
@@ -17451,7 +17453,8 @@
     "groupName": "空姊姊的異想世界",
     "groupLink": null,
     "menuLinks": [
-      "https://x.com/sirotama0907/status/2090383872743932146"
+      "https://x.com/sirotama0907/status/2090383872743932146",
+      "https://x.com/__zzz___oo0/status/2090028167537017312"
     ],
     "boothList": [
       {
@@ -17491,7 +17494,8 @@
     "groupName": "麥茶工作坊",
     "groupLink": null,
     "menuLinks": [
-      "https://x.com/kri_cos/status/2089686243470930339"
+      "https://x.com/kri_cos/status/2089686243470930339",
+      "https://x.com/__zzz___oo0/status/2090028167537017312"
     ],
     "boothList": [
       {
@@ -17524,7 +17528,8 @@
     "groupLink": null,
     "menuLinks": [
       "https://x.com/yukimuraYY2/status/2090411175368671462",
-      "https://x.com/kri0063/status/2090410650023629013"
+      "https://x.com/kri0063/status/2090410650023629013",
+      "https://x.com/__zzz___oo0/status/2090028167537017312"
     ],
     "boothList": [
       {
@@ -24080,7 +24085,9 @@
     "groupId": "c120bd4b643e406b8c2fd216b4f465e4",
     "groupName": "俺企鵝",
     "groupLink": "https://www.plurk.com/Ayaa2lu",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j22vyu1w3"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -25068,7 +25075,9 @@
     "groupId": "256302ae4216493bbd6ef0cfb92439f3",
     "groupName": "東方project文文新聞資訊部",
     "groupLink": null,
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j238826sl"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -25089,7 +25098,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "東方"
+    ]
   },
   {
     "groupId": "a50e16bc7314499a87ff0fac043ba5e1",
@@ -25525,8 +25536,10 @@
   {
     "groupId": "ea1b53ebfbe646e3943d6e7ba91631e8",
     "groupName": "咖哩東",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/ikaridon",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j235um1ym"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -25547,7 +25560,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創",
+      "孤獨搖滾"
+    ]
   },
   {
     "groupId": "4751bd6a1ed04d47a0cd46ef918eeed7",
@@ -26903,7 +26919,7 @@
     "groupName": "好惠圖屋",
     "groupLink": "https://lit.link/en/yoshieeneko",
     "menuLinks": [
-      "https://www.facebook.com/YoshieEneko/posts/pfbid02WurbN23T6EfUqwpfV4njh3LX7ADjhkfwGxZCUrnD6K4bC91rfaBytgkxaFho77wCl"
+      "https://x.com/YoshieEneko/status/2087810183343014066"
     ],
     "boothList": [
       {
@@ -31942,6 +31958,7 @@
     "groupName": "Hiroshi studio",
     "groupLink": null,
     "menuLinks": [
+      "https://x.com/__zzz___oo0/status/2090028167537017312",
       "https://x.com/haru_no_inu/status/2089660528570609883",
       "https://x.com/kujoamani/status/2090043537467597171"
     ],
