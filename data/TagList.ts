@@ -445,4 +445,5 @@ export const TAG_LIST: Array<string> = [
   '人機迷網',
   'Keroro軍曹',
   '鍊金工房',
+  '沉默之丘',
 ];
