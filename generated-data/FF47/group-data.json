@@ -108,7 +108,7 @@
     "groupName": "蒼銀之星",
     "groupLink": "https://www.plurk.com/Aokihoshi",
     "menuLinks": [
-      "https://www.plurk.com/p/3j1vtf0zjt"
+      "https://www.plurk.com/p/3j20h0z6jv"
     ],
     "boothList": [
       {
@@ -152,14 +152,17 @@
       }
     ],
     "tagList": [
-      "葬送的芙莉蓮"
+      "葬送的芙莉蓮",
+      "GQuuuuuuX"
     ]
   },
   {
     "groupId": "3b64127621584810b89116995a5f31ef",
     "groupName": "殺必死天國",
     "groupLink": "https://www.plurk.com/hayashi_kenji",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1xsvqiv1"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -711,7 +714,7 @@
     "groupName": "姬瑟研",
     "groupLink": "https://linktr.ee/dean0011",
     "menuLinks": [
-      "https://www.plurk.com/p/3j0vr9b5sn"
+      "https://www.plurk.com/p/3j20njlacr"
     ],
     "boothList": [
       {
@@ -734,8 +737,8 @@
       }
     ],
     "tagList": [
-      "妮姬",
-      "VTuber"
+      "VTuber",
+      "妮姬"
     ]
   },
   {
@@ -3597,8 +3600,10 @@
   {
     "groupId": "90ca599b59d24dd09751e8038b09ea30",
     "groupName": "秋森萬玩具店",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/ched11332003",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1zldus0q"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -3842,7 +3847,9 @@
     "groupId": "6c0ada650a0c4f61bb2206f3d56fa66e",
     "groupName": "[CHOCOLATE SHOP]",
     "groupLink": "https://x.com/chocolateshop_i",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/chocolateshop_i/status/2090043282961408243"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -3878,8 +3885,10 @@
   {
     "groupId": "048f6fedad9542ecb6f6c9b20aaa6c41",
     "groupName": "助客勃",
-    "groupLink": "https://www.facebook.com/zhukebo",
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/suckerbird",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1ypqbkkc"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -4307,8 +4316,10 @@
   {
     "groupId": "acee293d8f3f4325828442ec8e81bc4d",
     "groupName": "いちごうららか",
-    "groupLink": "https://x.com/erisize",
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/natsumeeri",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1x9esjud"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -4330,7 +4341,6 @@
       }
     ],
     "tagList": [
-      "VTuber",
       "絕區零",
       "蔚藍檔案"
     ]
@@ -4441,7 +4451,9 @@
     "groupId": "21f2cb735e9c47b98471190991f709dd",
     "groupName": "萌妹子前線",
     "groupLink": "https://www.plurk.com/mopackp09062",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1x4pggm0"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -4816,7 +4828,8 @@
     "groupName": "カカオポッド",
     "groupLink": "https://x.com/kakao_rantan",
     "menuLinks": [
-      "https://x.com/kakao_rantan/status/2090002762226671746"
+      "https://x.com/kakao_rantan/status/2090002762226671746",
+      "https://www.plurk.com/p/3j20x276ax"
     ],
     "boothList": [
       {
@@ -4925,7 +4938,9 @@
     "groupId": "6433d647188448929871292a5c2179f0",
     "groupName": "しゅにち関数",
     "groupLink": "https://x.com/syunichill_",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/syunichill_/status/2089567752084406500"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -5046,7 +5061,7 @@
     "groupName": "葛西的腐敗西瓜園",
     "groupLink": "https://x.com/HungKasai",
     "menuLinks": [
-      "https://x.com/HungKasai/status/2086326576808136756"
+      "https://www.plurk.com/p/3j20ooqi0s"
     ],
     "boothList": [
       {
@@ -5956,7 +5971,9 @@
     "groupId": "24ac5d8a939e41d5b2386d0caa694411",
     "groupName": "宇宙波神山崎本社",
     "groupLink": "https://www.plurk.com/topgoustking",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1y56v8qz"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -5970,7 +5987,8 @@
     ],
     "tagList": [
       "原創",
-      "二創"
+      "蔚藍檔案",
+      "超時空輝耀姬"
     ]
   },
   {
@@ -6138,7 +6156,7 @@
     "groupName": "失去明天(あしたをなくす)",
     "groupLink": "https://lit.link/zh-tw/psy_soda",
     "menuLinks": [
-      "https://www.plurk.com/p/3j1mxvmpod"
+      "https://www.plurk.com/p/3j1x1dqoo1"
     ],
     "boothList": [
       {
@@ -6379,8 +6397,10 @@
   {
     "groupId": "38537cfb51364eef9fe7b1008acee951",
     "groupName": "希朵米_Hitomi",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/hitomi_7828",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j21ku03kq"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -6502,8 +6522,10 @@
   {
     "groupId": "0a3a7c0f71fe4834a1e605ec245437bb",
     "groupName": "saumoniere栗子鮭魚屋",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://x.com/ririge_",
+    "menuLinks": [
+      "https://x.com/ririge_/status/2090380158792606110"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -6842,7 +6864,9 @@
     "groupId": "188717bec2624f2091768333dd86d443",
     "groupName": "GAKAKU",
     "groupLink": "https://www.plurk.com/GAKAKU",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1zlpqkai"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -6927,7 +6951,7 @@
     "groupName": "幻想布萊梅",
     "groupLink": "http://gensoubremen.blog.fc2.com/",
     "menuLinks": [
-      "https://www.plurk.com/p/3j0skzl71c"
+      "https://www.plurk.com/p/3j1x93kevh"
     ],
     "boothList": [
       {
@@ -6950,7 +6974,10 @@
       }
     ],
     "tagList": [
-      "東方"
+      "東方",
+      "原創",
+      "鋼管公主",
+      "艦隊收藏"
     ]
   },
   {
@@ -7741,7 +7768,7 @@
     "groupName": "英國酒狐",
     "groupLink": "https://linktr.ee/YoukaiNatori",
     "menuLinks": [
-      "https://www.plurk.com/p/3iy3r7trf7"
+      "https://www.plurk.com/p/3j1xm3tb0a"
     ],
     "boothList": [
       {
@@ -7828,7 +7855,9 @@
     "groupId": "29d26594206744dfa564b9d6f76ab59e",
     "groupName": "MiraKE",
     "groupLink": "https://www.plurk.com/fatkewell",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1zm43tw4"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -7845,7 +7874,9 @@
       }
     ],
     "tagList": [
-      "原創"
+      "原創",
+      "蔚藍檔案",
+      "Cosplay"
     ]
   },
   {
@@ -8453,8 +8484,10 @@
   {
     "groupId": "6d6aa5a30c8345a9be612284c1e4ed58",
     "groupName": "三分糖手作中",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/Erenehsu",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j219o7zlv"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -8748,7 +8781,9 @@
     "groupId": "b05e9658c9df4ac0956d20c51b0c3358",
     "groupName": "M.O.K.茶包",
     "groupLink": "https://www.plurk.com/ONITA",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j204ef1yb"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -9114,8 +9149,10 @@
   {
     "groupId": "26a49bfa56ec4eb7bbec331b816c47fd",
     "groupName": "Good Chemistry",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://x.com/C_goodchemistry",
+    "menuLinks": [
+      "https://x.com/C_goodchemistry/status/2090382929822429420"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -9136,7 +9173,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "VTuber"
+    ]
   },
   {
     "groupId": "e79fc94e3b3a463e861b49a7c8e47b99",
@@ -10322,8 +10361,10 @@
   {
     "groupId": "cbfeb5b04c094785ae6a709dadef9c4a",
     "groupName": "Flaneur",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/summerair",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1xlcpdu1"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -10344,7 +10385,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "f5456e099c6247d8a89d958072c935ba",
@@ -10604,8 +10647,10 @@
   {
     "groupId": "169b96b0ef814e399843b10d24e6ab07",
     "groupName": "IVY",
-    "groupLink": "https://x.com/IVYbyENST9",
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/ENST9",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1zqi35dl"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -12923,7 +12968,9 @@
     "groupId": "b648f57043594bf2aac3caae6a1a7c2a",
     "groupName": "Arisu24",
     "groupLink": null,
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/Pepq__/status/2090007389919691019"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -12944,7 +12991,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "83447bb4fc2b4a57b1c0393871083836",
@@ -13861,8 +13910,10 @@
   {
     "groupId": "75493440d74945df8819e03346098963",
     "groupName": "野獸關東煮帝國(黑輪)",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/a88723",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j202b9iry"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -13874,7 +13925,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "8a74e7e2471647dd97fc14e2ff0c2539",
@@ -13928,8 +13981,10 @@
   {
     "groupId": "d821a338ab0d4e9693e0a7d01672a8b7",
     "groupName": "菇菇の王樣",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/kinoking",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1zscw77u"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -13950,7 +14005,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "a4e2ece1e1154bd187e6a6d7d0484c48",
@@ -14163,8 +14220,10 @@
   {
     "groupId": "401deeb346004c7192c61c7512d789d8",
     "groupName": "少搬三箱 席恩C嘻完售雞精會",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/dragonfire",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j20iy6ep7"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -14189,7 +14248,11 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案",
+      "絕區零",
+      "Fate"
+    ]
   },
   {
     "groupId": "2b25599f963c4d2ba04c74adc7f43ae4",
@@ -14460,7 +14523,8 @@
     "groupName": "Cilentz",
     "groupLink": "https://linktr.ee/ciza_illust",
     "menuLinks": [
-      "https://www.facebook.com/permalink.php?story_fbid=pfbid0E8aHY8BjXvQULzUkEcqLwy6ocKhNUxpQV3hftfJ1xESRxyMhgSyQ9WSaPpHKMAWKl&id=100094436799360"
+      "https://www.facebook.com/permalink.php?story_fbid=pfbid0E8aHY8BjXvQULzUkEcqLwy6ocKhNUxpQV3hftfJ1xESRxyMhgSyQ9WSaPpHKMAWKl&id=100094436799360",
+      "https://www.plurk.com/p/3j1x9p9e9e"
     ],
     "boothList": [
       {
@@ -14491,7 +14555,8 @@
       }
     ],
     "tagList": [
-      "蔚藍檔案"
+      "蔚藍檔案",
+      "原創"
     ]
   },
   {
@@ -14585,7 +14650,9 @@
     "groupId": "8bba4cd99443472d94e9e52f7cbedecd",
     "groupName": "日田天領水溝水(仮)",
     "groupLink": null,
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1yq8hbr7"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -14597,7 +14664,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "蔚藍檔案"
+    ]
   },
   {
     "groupId": "b43424be312945e3ab401df20d2fc1b5",
@@ -14775,14 +14844,18 @@
       }
     ],
     "tagList": [
-      "蔚藍檔案"
+      "蔚藍檔案",
+      "孤獨搖滾",
+      "VTuber"
     ]
   },
   {
     "groupId": "4fed2e66007c4bb6897bb1c738578395",
     "groupName": "Kakela*Hane",
     "groupLink": "https://www.plurk.com/hane_anna",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j21dyy78m"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -14805,9 +14878,7 @@
     ],
     "tagList": [
       "蔚藍檔案",
-      "孤獨搖滾",
-      "東方",
-      "VTuber"
+      "東方"
     ]
   },
   {
@@ -16889,8 +16960,10 @@
   {
     "groupId": "ced495f366bd450db2d87f18bbabdb2c",
     "groupName": "猫耳メイド屋",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://x.com/Kasyou3roshieru",
+    "menuLinks": [
+      "https://x.com/Kasyou3roshieru/status/2090039354316230679"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -17035,8 +17108,11 @@
   {
     "groupId": "0e97e410edc3412a8ae6cb7ad69edec5",
     "groupName": "Ellyfam",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://x.com/rin_risu2",
+    "menuLinks": [
+      "https://x.com/rin_risu2/status/2090381961999360088",
+      "https://x.com/disney1118dream/status/2090378696184172778"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -17059,6 +17135,8 @@
     ],
     "tagList": [
       "Cosplay",
+      "妮姬",
+      "FGO",
       "蔚藍檔案"
     ]
   },
@@ -17179,8 +17257,10 @@
   {
     "groupId": "b1189134ca3e4415aa34b6186b88ac60",
     "groupName": "ネトーチカ",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://x.com/neti_jp",
+    "menuLinks": [
+      "https://x.com/neti_jp/status/2090046117388152919"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -17202,7 +17282,8 @@
       }
     ],
     "tagList": [
-      "Cosplay"
+      "Cosplay",
+      "鍊金工房"
     ]
   },
   {
@@ -17275,7 +17356,9 @@
     "groupId": "a44a8943f8a54c208faa300e02c89767",
     "groupName": "空姊姊的異想世界",
     "groupLink": null,
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/sirotama0907/status/2090383872743932146"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -17305,7 +17388,8 @@
       }
     ],
     "tagList": [
-      "Cosplay"
+      "Cosplay",
+      "妮姬"
     ]
   },
   {
@@ -18947,7 +19031,7 @@
     "groupName": "壞孤兒",
     "groupLink": "https://www.facebook.com/na.zhi.lu",
     "menuLinks": [
-      "https://www.facebook.com/na.zhi.lu/posts/pfbid09HaeVn1XQ1S8dCRQVJj8MRcSXpimBmJtAgG9m98mbCov9PTC7ByTLQzi6AVCV1A3l"
+      "https://www.facebook.com/na.zhi.lu/posts/pfbid0MaqKLLk1wE5DD9gZxg9ptZanjo5UwP3U8uLoAkyAkwxggxkgu1zxZh6ZTHZ7RKeUl"
     ],
     "boothList": [
       {
@@ -18974,7 +19058,9 @@
       }
     ],
     "tagList": [
+      "超時空輝耀姬",
       "魔法少女的魔女審判",
+      "上伊那牡丹",
       "MyGO!!!!!/Ave Mujica",
       "Girls Band Cry"
     ]
@@ -19147,7 +19233,9 @@
     "groupId": "a9559711ab9f4ea7af2aa91a94a78f34",
     "groupName": "風船貓插畫神社",
     "groupLink": "https://www.plurk.com/nazo001",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1y98smgo"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -20425,7 +20513,9 @@
     "groupId": "dc8d2a7aa97340f18146e5ae9678daac",
     "groupName": "XIxeong",
     "groupLink": "https://x.com/xi_xeong",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/lovecacao/status/2089955941907378495"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -20498,8 +20588,10 @@
   {
     "groupId": "9745def8c5fb4b78add15928da120876",
     "groupName": "BIYA",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://x.com/biyagura",
+    "menuLinks": [
+      "https://x.com/biyagura/status/2090048349823197405"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -20542,7 +20634,9 @@
       }
     ],
     "tagList": [
-      "Cosplay"
+      "Cosplay",
+      "碧藍航線",
+      "妮姬"
     ]
   },
   {
@@ -20735,7 +20829,9 @@
     "groupId": "b4f2fde09caa47078ce418833193edde",
     "groupName": "超斬開",
     "groupLink": "https://www.plurk.com/toku0408",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1xcbixh5"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_1",
@@ -20765,6 +20861,7 @@
       }
     ],
     "tagList": [
+      "寶可夢",
       "原創"
     ]
   },
@@ -21497,7 +21594,9 @@
     "groupId": "c06519c545e147a1b7989caea2a0d69e",
     "groupName": "curry and rice(咖哩飯)",
     "groupLink": "https://x.com/curry_and_rice4",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j21st1ljb"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -21665,7 +21764,7 @@
     "groupName": "漂泊社",
     "groupLink": "https://x.com/ZingHui1",
     "menuLinks": [
-      "https://x.com/ZingHui1/status/2088144892086382595"
+      "https://www.plurk.com/p/3j21nqjx9e"
     ],
     "boothList": [
       {
@@ -22223,9 +22322,9 @@
   {
     "groupId": "5988fd3f823d4e83b28c1c8cc93d4a83",
     "groupName": "Aminww阿明明",
-    "groupLink": "https://www.facebook.com/Aminww.amin",
+    "groupLink": "https://www.plurk.com/aminww",
     "menuLinks": [
-      "https://www.plurk.com/p/3izsyumt4u"
+      "https://www.plurk.com/p/3j1x776zq9"
     ],
     "boothList": [
       {
@@ -22655,7 +22754,7 @@
     "groupName": "月面基地",
     "groupLink": "https://lit.link/en/kyawsan2005",
     "menuLinks": [
-      "https://www.plurk.com/p/3j0n1qi8rx"
+      "https://www.plurk.com/p/3j1zy7skib"
     ],
     "boothList": [
       {
@@ -23136,9 +23235,9 @@
   {
     "groupId": "9299f6b161d3453496f9ca3972a5a804",
     "groupName": "Nemumi Parfait",
-    "groupLink": "https://www.facebook.com/mofuuneko",
+    "groupLink": "https://x.com/mofuuneko",
     "menuLinks": [
-      "https://www.facebook.com/mofuuneko/posts/pfbid02Qj6fg5YJCUcRaetB3o5By6TCB7EiiCfYkMXtkdGbXiKeJKfyaMdUfRG43ZFCFSj1l"
+      "https://x.com/mofuuneko/status/2090384638623789178"
     ],
     "boothList": [
       {
@@ -23747,7 +23846,9 @@
     "groupId": "b99b1063d01c4cc4b8b2288890887011",
     "groupName": "逸遊団",
     "groupLink": "https://x.com/Its_you_dan",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/Its_you_dan/status/2090378651598832032"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -23769,9 +23870,10 @@
       }
     ],
     "tagList": [
-      "FGO",
-      "蔚藍檔案",
-      "東方"
+      "Vocaloid",
+      "賽馬娘",
+      "東方",
+      "蔚藍檔案"
     ]
   },
   {
@@ -24347,7 +24449,7 @@
     "groupName": "に向思考",
     "groupLink": "https://www.plurk.com/sss4361",
     "menuLinks": [
-      "https://www.plurk.com/p/3j18r8pwe4"
+      "https://www.plurk.com/p/3j21t96ui5"
     ],
     "boothList": [
       {
@@ -24403,8 +24505,11 @@
   {
     "groupId": "e5bad142f3404d8d8f03c89d6efa2fee",
     "groupName": "和(なごみ)",
-    "groupLink": "https://linktr.ee/shian.shining",
-    "menuLinks": [],
+    "groupLink": "https://x.com/tenmu_nagomi",
+    "menuLinks": [
+      "https://x.com/tenmu_nagomi/status/2090361840127885720",
+      "https://www.plurk.com/p/3j20x276ax"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -24632,8 +24737,10 @@
   {
     "groupId": "2a6d5625b19e4a6691423744913ab356",
     "groupName": "黑子娛樂",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://www.plurk.com/yan1210",
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1zr6ep5c"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -24654,7 +24761,10 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "東方",
+      "音樂"
+    ]
   },
   {
     "groupId": "2ae06561ef2e43bc8fdf6d91b8455a2e",
@@ -24865,7 +24975,7 @@
     "groupName": "愛肉通販",
     "groupLink": "https://www.plurk.com/erohon",
     "menuLinks": [
-      "https://www.plurk.com/p/3j0n44wgb2"
+      "https://www.plurk.com/p/3j20qramvt"
     ],
     "boothList": [
       {
@@ -25163,7 +25273,9 @@
     "groupId": "5f3dab3ab70547fd8b6c76aa23a5a251",
     "groupName": "綾枷家の猫",
     "groupLink": "https://www.plurk.com/chiyoko241",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1xb6qudq"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -25192,7 +25304,9 @@
         ]
       }
     ],
-    "tagList": []
+    "tagList": [
+      "原創"
+    ]
   },
   {
     "groupId": "aa8a4df8c3f94154b8c72774fffa5d0e",
@@ -27620,7 +27734,9 @@
     "groupId": "f3b34064ac4540c6a45732db02c471cf",
     "groupName": "波乙馬桶",
     "groupLink": "https://lit.link/zh-tw/boyima",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/BoBoYiMa/status/2090386199777276135"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -27642,6 +27758,7 @@
       }
     ],
     "tagList": [
+      "原創",
       "VTuber"
     ]
   },
@@ -27729,7 +27846,7 @@
     "groupName": "PoiLiang",
     "groupLink": "https://x.com/PoiLiang",
     "menuLinks": [
-      "https://www.facebook.com/permalink.php?story_fbid=pfbid02kw99w7MbTnJQofPh7qM6KJVGSNJAqWSHYey58ozRUweA3Pg8VSGqFgs8qkx265Mcl&id=61579182357523"
+      "https://x.com/PoiLiang/status/2090378369812820112"
     ],
     "boothList": [
       {
@@ -28018,7 +28135,9 @@
     "groupId": "5908504fc93344659d5301d28a5c5d04",
     "groupName": "EPO’s Art",
     "groupLink": "https://www.plurk.com/EPO_",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1xh8d9wn"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -29087,7 +29206,7 @@
     "groupName": "四季注意",
     "groupLink": "https://www.plurk.com/s60398123",
     "menuLinks": [
-      "https://www.plurk.com/p/3j1hu7uazl"
+      "https://www.plurk.com/p/3j1x2fkt1f"
     ],
     "boothList": [
       {
@@ -29478,8 +29597,10 @@
   {
     "groupId": "f21b4839d9524c93a388534b05bb2e68",
     "groupName": "よねや",
-    "groupLink": null,
-    "menuLinks": [],
+    "groupLink": "https://x.com/Aimiuni",
+    "menuLinks": [
+      "https://x.com/Aimiuni/status/2090316474019942720"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -31722,7 +31843,9 @@
     "groupId": "22795c2e64cf4a1096fafcd1d67f7c8f",
     "groupName": "cho~",
     "groupLink": null,
-    "menuLinks": [],
+    "menuLinks": [
+      "https://x.com/idobataer/status/2090373315315835151"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -32608,9 +32731,9 @@
   {
     "groupId": "de2eb946d50c4525aa13438290ac80fb",
     "groupName": "KARAS押形",
-    "groupLink": "https://www.facebook.com/KARASoshigata",
+    "groupLink": "https://www.plurk.com/karas_",
     "menuLinks": [
-      "https://www.plurk.com/p/3ixyenz7wt"
+      "https://www.plurk.com/p/3j20ofny2g"
     ],
     "boothList": [
       {
@@ -32634,7 +32757,9 @@
     ],
     "tagList": [
       "原創",
-      "上伊那牡丹"
+      "上伊那牡丹",
+      "MyGO!!!!!/Ave Mujica",
+      "BanG Dream"
     ]
   },
   {
@@ -32749,7 +32874,9 @@
     "groupId": "23d25e6deca6465a83103c69eb1e8368",
     "groupName": "香のん可可 澁谷本舖",
     "groupLink": "https://www.plurk.com/goliio",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j1x7e3kr9"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_2",
@@ -32771,7 +32898,8 @@
       }
     ],
     "tagList": [
-      "Love Live"
+      "Love Live",
+      "虹咲"
     ]
   },
   {
@@ -33509,7 +33637,7 @@
     "groupName": "交大 VTuber 社",
     "groupLink": "https://x.com/nycu_vtuber",
     "menuLinks": [
-      "https://x.com/nycu_vtuber/status/2089289999036694805"
+      "https://x.com/nycu_vtuber/status/2090387272395002090"
     ],
     "boothList": [
       {
@@ -33623,9 +33751,9 @@
   {
     "groupId": "874af966f2ef47f5b91c18578ea5c42b",
     "groupName": "猛少女之拳",
-    "groupLink": "https://x.com/FuStvfu",
+    "groupLink": "https://www.plurk.com/stvfu",
     "menuLinks": [
-      "https://www.plurk.com/p/3izhnni7vh"
+      "https://www.plurk.com/p/3j21eyfwpd"
     ],
     "boothList": [
       {
@@ -34813,7 +34941,9 @@
     "groupId": "bacba8a5b1e84fc6a54fbc4d9b33b8ef",
     "groupName": "記得繳房貸",
     "groupLink": "https://portaly.cc/nagadrawdraw",
-    "menuLinks": [],
+    "menuLinks": [
+      "https://www.plurk.com/p/3j21lqzsp1"
+    ],
     "boothList": [
       {
         "activeDay": "FF47_DAY_3",
@@ -35905,9 +36035,9 @@
   {
     "groupId": "b86612592fc547cc9ce11ecd233604ed",
     "groupName": "愛過橘毛陣線",
-    "groupLink": "https://www.facebook.com/lisachang2011",
+    "groupLink": "https://www.plurk.com/lisachang201213",
     "menuLinks": [
-      "https://www.facebook.com/lisachang2011/posts/pfbid0JztP18w3vkqjENCeNSeYMBTMk6sXJHKNfVaweN7TEjGHEVHrdatyH1R7E2GS6khNl"
+      "https://www.plurk.com/p/3j1zyu25wu"
     ],
     "boothList": [
       {
