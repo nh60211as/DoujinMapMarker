@@ -454,4 +454,5 @@ export const TAG_LIST: Array<string> = [
   '異種族風俗娘評鑑指南',
   '工作細胞',
   '冰雪奇緣',
+  '絕地戰兵2',
 ];
